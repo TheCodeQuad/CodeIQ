@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "FUNC::app.py::home::6",
+      "type": "function",
+      "file": "app.py",
+      "name": "home"
+    },
+    {
+      "id": "FUNC::app.py::about::10",
+      "type": "function",
+      "file": "app.py",
+      "name": "about"
+    },
+    {
+      "id": "FUNC::models.py::__init__::2",
+      "type": "function",
+      "file": "models.py",
+      "name": "__init__"
+    },
+    {
+      "id": "FUNC::models.py::__repr__::6",
+      "type": "function",
+      "file": "models.py",
+      "name": "__repr__"
+    },
+    {
+      "id": "CLASS::models.py::User",
+      "type": "class",
+      "file": "models.py",
+      "name": "User"
+    },
+    {
+      "id": "FUNC::routes.py::list_users::4",
+      "type": "function",
+      "file": "routes.py",
+      "name": "list_users"
+    },
+    {
+      "id": "FILE::app.py",
+      "type": "file"
+    },
+    {
+      "id": "FILE::routes.py",
+      "type": "file"
+    }
+  ],
+  "edges": [
+    {
+      "src": "FILE::routes.py",
+      "dst": "FILE::app.py",
+      "type": "import"
+    }
+  ]
+}

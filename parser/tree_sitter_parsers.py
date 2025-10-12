@@ -31,7 +31,7 @@ EXT_LANG_MAP = {
 }
 
 # Folder containing files to parse
-SOURCE_DIR = '../source_files/flask_app'
+SOURCE_DIR = '../source_files'
 
 parser = Parser()
 

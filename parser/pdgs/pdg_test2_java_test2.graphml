@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d3" for="edge" attr.name="label" attr.type="string"/>
+<key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="node" attr.name="type" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="class_test2">
+  <data key="d0">🏛️ test2</data>
+  <data key="d1">class</data>
+</node>
+<node id="method_test2_add">
+  <data key="d0">🔸 add
+(2 params)</data>
+  <data key="d1">method</data>
+</node>
+<node id="method_test2_main">
+  <data key="d0">🔸 main
+(1 params)</data>
+  <data key="d1">method</data>
+</node>
+<edge source="class_test2" target="method_test2_add">
+  <data key="d2">data_dep</data>
+  <data key="d3">contains</data>
+</edge>
+<edge source="class_test2" target="method_test2_main">
+  <data key="d2">data_dep</data>
+  <data key="d3">contains</data>
+</edge>
+</graph></graphml>

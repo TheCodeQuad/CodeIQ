@@ -1,110 +1,1611 @@
 [
     {
-        "file_name": "app.py",
+        "file_name": "test1.py",
+        "file_path": "../source_files\\test1.py",
         "language": "py",
+        "imports": [],
         "functions": [
             {
-                "name": "home",
-                "parameters": [],
-                "start_line": 6,
-                "end_line": 7
-            },
-            {
-                "name": "about",
-                "parameters": [],
-                "start_line": 10,
-                "end_line": 11
-            }
-        ],
-        "classes": [],
-        "variables": [
-            {
-                "name": "app",
-                "line": 3
-            },
-            {
-                "name": "app",
-                "line": 3
-            }
-        ]
-    },
-    {
-        "file_name": "models.py",
-        "language": "py",
-        "functions": [
-            {
-                "name": "__init__",
+                "id": "test1.py_add_0_0",
+                "name": "add",
                 "parameters": [
-                    "self",
-                    "username",
-                    "email"
+                    {
+                        "name": "a",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "b",
+                        "type": null,
+                        "default": null
+                    }
                 ],
-                "start_line": 2,
-                "end_line": 4
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 1,
+                "end_line": 2,
+                "body": "return a + b",
+                "calls": [],
+                "complexity": 1,
+                "is_async": false,
+                "language": "py"
             },
             {
-                "name": "__repr__",
+                "id": "test1.py_multiply_4_4",
+                "name": "multiply",
                 "parameters": [
-                    "self"
+                    {
+                        "name": "x",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "y",
+                        "type": null,
+                        "default": null
+                    }
                 ],
-                "start_line": 6,
-                "end_line": 7
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 5,
+                "end_line": 6,
+                "body": "return x * y",
+                "calls": [],
+                "complexity": 1,
+                "is_async": false,
+                "language": "py"
             }
         ],
         "classes": [
             {
-                "name": "User",
-                "start_line": 1,
-                "end_line": 7
+                "id": "test1.py_3_6",
+                "name": "Calculator",
+                "superclass": null,
+                "decorators": [],
+                "docstring": null,
+                "methods": [
+                    {
+                        "id": "test1.py_multiply_4_4",
+                        "name": "multiply",
+                        "parameters": [
+                            {
+                                "name": "x",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "y",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 5,
+                        "end_line": 6,
+                        "body": "return x * y",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "py"
+                    },
+                    {
+                        "id": "test1.py_Calculator_multiply_4_4",
+                        "name": "multiply",
+                        "parameters": [
+                            {
+                                "name": "x",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "y",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 5,
+                        "end_line": 6,
+                        "body": "return x * y",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "py"
+                    }
+                ],
+                "attributes": [],
+                "start_line": 4,
+                "end_line": 6,
+                "language": "py"
             }
         ],
-        "variables": [
-            {
-                "name": "self.username",
-                "line": 3
-            },
-            {
-                "name": "self.username",
-                "line": 3
-            },
-            {
-                "name": "self.email",
-                "line": 4
-            },
-            {
-                "name": "self.email",
-                "line": 4
-            }
-        ]
+        "variables": [],
+        "total_lines": 9,
+        "stats": {
+            "num_functions": 2,
+            "num_classes": 1,
+            "num_variables": 0,
+            "has_docstrings": 0
+        }
     },
     {
-        "file_name": "routes.py",
-        "language": "py",
+        "file_name": "test2.java",
+        "file_path": "../source_files\\test2.java",
+        "language": "java",
+        "imports": [],
         "functions": [
             {
-                "name": "list_users",
-                "parameters": [],
-                "start_line": 4,
-                "end_line": 6
-            }
-        ],
-        "classes": [],
-        "variables": []
-    },
-    {
-        "file_name": "__init__.py",
-        "language": "py",
-        "functions": [],
-        "classes": [],
-        "variables": [
-            {
-                "name": "app",
-                "line": 3
+                "id": "test2.java_add_1_4",
+                "name": "add",
+                "parameters": [
+                    {
+                        "name": "a",
+                        "type": "int",
+                        "default": null
+                    },
+                    {
+                        "name": "b",
+                        "type": "int",
+                        "default": null
+                    }
+                ],
+                "return_type": "int",
+                "docstring": null,
+                "decorators": [],
+                "start_line": 2,
+                "end_line": 4,
+                "body": "{\r\n        return a + b;\r\n    }",
+                "calls": [],
+                "complexity": 1,
+                "is_async": false,
+                "language": "java"
             },
             {
-                "name": "app",
-                "line": 3
+                "id": "test2.java_main_5_4",
+                "name": "main",
+                "parameters": [
+                    {
+                        "name": "args",
+                        "type": "String[]",
+                        "default": null
+                    }
+                ],
+                "return_type": "void",
+                "docstring": null,
+                "decorators": [],
+                "start_line": 6,
+                "end_line": 8,
+                "body": "{\r\n        System.out.println(add(5, 7));\r\n    }",
+                "calls": [],
+                "complexity": 1,
+                "is_async": false,
+                "language": "java"
             }
-        ]
+        ],
+        "classes": [
+            {
+                "id": "test2.java_0_13",
+                "name": "test2",
+                "superclass": null,
+                "decorators": [],
+                "docstring": null,
+                "methods": [
+                    {
+                        "id": "test2.java_add_1_4",
+                        "name": "add",
+                        "parameters": [
+                            {
+                                "name": "a",
+                                "type": "int",
+                                "default": null
+                            },
+                            {
+                                "name": "b",
+                                "type": "int",
+                                "default": null
+                            }
+                        ],
+                        "return_type": "int",
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 2,
+                        "end_line": 4,
+                        "body": "{\r\n        return a + b;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "java"
+                    },
+                    {
+                        "id": "test2.java_main_5_4",
+                        "name": "main",
+                        "parameters": [
+                            {
+                                "name": "args",
+                                "type": "String[]",
+                                "default": null
+                            }
+                        ],
+                        "return_type": "void",
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 6,
+                        "end_line": 8,
+                        "body": "{\r\n        System.out.println(add(5, 7));\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "java"
+                    },
+                    {
+                        "id": "test2.java_test2_add_1_4",
+                        "name": "add",
+                        "parameters": [
+                            {
+                                "name": "a",
+                                "type": "int",
+                                "default": null
+                            },
+                            {
+                                "name": "b",
+                                "type": "int",
+                                "default": null
+                            }
+                        ],
+                        "return_type": "int",
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 2,
+                        "end_line": 4,
+                        "body": "{\r\n        return a + b;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "java"
+                    },
+                    {
+                        "id": "test2.java_test2_main_5_4",
+                        "name": "main",
+                        "parameters": [
+                            {
+                                "name": "args",
+                                "type": "String[]",
+                                "default": null
+                            }
+                        ],
+                        "return_type": "void",
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 6,
+                        "end_line": 8,
+                        "body": "{\r\n        System.out.println(add(5, 7));\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "java"
+                    }
+                ],
+                "attributes": [],
+                "start_line": 1,
+                "end_line": 9,
+                "language": "java"
+            }
+        ],
+        "variables": [],
+        "total_lines": 10,
+        "stats": {
+            "num_functions": 2,
+            "num_classes": 1,
+            "num_variables": 0,
+            "has_docstrings": 0
+        }
+    },
+    {
+        "file_name": "test3.js",
+        "file_path": "../source_files\\test3.js",
+        "language": "js",
+        "imports": [],
+        "functions": [
+            {
+                "id": "test3.js_generateId_5_0",
+                "name": "generateId",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 6,
+                "end_line": 8,
+                "body": "{\r\n    return '_' + Math.random().toString(36).substr(2, 9);\r\n}",
+                "calls": [
+                    "Math.random",
+                    "Math.random().toString",
+                    "Math.random().toString(36).substr"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_saveToLocalStorage_9_0",
+                "name": "saveToLocalStorage",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "data",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 10,
+                "end_line": 12,
+                "body": "{\r\n    localStorage.setItem(key, JSON.stringify(data));\r\n}",
+                "calls": [
+                    "JSON.stringify",
+                    "localStorage.setItem"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_loadFromLocalStorage_13_0",
+                "name": "loadFromLocalStorage",
+                "parameters": [
+                    {
+                        "name": "key",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 14,
+                "end_line": 17,
+                "body": "{\r\n    const data = localStorage.getItem(key);\r\n    return data ? JSON.parse(data) : [];\r\n}",
+                "calls": [
+                    "localStorage.getItem",
+                    "JSON.parse"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_constructor_20_4",
+                "name": "constructor",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "description",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "dueDate",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 21,
+                "end_line": 29,
+                "body": "{\r\n        this.id = generateId();\r\n        this.title = title;\r\n        this.description = description;\r\n        this.dueDate = dueDate;\r\n        this.priority = priority;\r\n        this.completed = false;\r\n        this.createdAt = new Date().toISOString();\r\n    }",
+                "calls": [
+                    "new Date().toISOString",
+                    "generateId"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_toggleComplete_30_4",
+                "name": "toggleComplete",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 31,
+                "end_line": 33,
+                "body": "{\r\n        this.completed = !this.completed;\r\n    }",
+                "calls": [],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_updateDetails_34_4",
+                "name": "updateDetails",
+                "parameters": [
+                    {
+                        "name": "newTitle",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "newDescription",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "newDueDate",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "newPriority",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 35,
+                "end_line": 40,
+                "body": "{\r\n        this.title = newTitle;\r\n        this.description = newDescription;\r\n        this.dueDate = newDueDate;\r\n        this.priority = newPriority;\r\n    }",
+                "calls": [],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_constructor_44_4",
+                "name": "constructor",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 45,
+                "end_line": 48,
+                "body": "{\r\n        this.storageKey = storageKey;\r\n        this.tasks = loadFromLocalStorage(this.storageKey);\r\n    }",
+                "calls": [
+                    "loadFromLocalStorage"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_addTask_49_4",
+                "name": "addTask",
+                "parameters": [
+                    {
+                        "name": "task",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 50,
+                "end_line": 53,
+                "body": "{\r\n        this.tasks.push(task);\r\n        this._save();\r\n    }",
+                "calls": [
+                    "this.tasks.push",
+                    "this._save"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_deleteTask_54_4",
+                "name": "deleteTask",
+                "parameters": [
+                    {
+                        "name": "taskId",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 55,
+                "end_line": 58,
+                "body": "{\r\n        this.tasks = this.tasks.filter(t => t.id !== taskId);\r\n        this._save();\r\n    }",
+                "calls": [
+                    "this.tasks.filter",
+                    "this._save"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_getTask_59_4",
+                "name": "getTask",
+                "parameters": [
+                    {
+                        "name": "taskId",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 60,
+                "end_line": 62,
+                "body": "{\r\n        return this.tasks.find(t => t.id === taskId);\r\n    }",
+                "calls": [
+                    "this.tasks.find"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_toggleTask_63_4",
+                "name": "toggleTask",
+                "parameters": [
+                    {
+                        "name": "taskId",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 64,
+                "end_line": 70,
+                "body": "{\r\n        const task = this.getTask(taskId);\r\n        if (task) {\r\n            task.toggleComplete();\r\n            this._save();\r\n        }\r\n    }",
+                "calls": [
+                    "this._save",
+                    "this.getTask",
+                    "task.toggleComplete"
+                ],
+                "complexity": 2,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_updateTask_71_4",
+                "name": "updateTask",
+                "parameters": [
+                    {
+                        "name": "taskId",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "title",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "desc",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "date",
+                        "type": null,
+                        "default": null
+                    },
+                    {
+                        "name": "priority",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 72,
+                "end_line": 78,
+                "body": "{\r\n        const task = this.getTask(taskId);\r\n        if (task) {\r\n            task.updateDetails(title, desc, date, priority);\r\n            this._save();\r\n        }\r\n    }",
+                "calls": [
+                    "this._save",
+                    "task.updateDetails",
+                    "this.getTask"
+                ],
+                "complexity": 2,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_clearCompleted_79_4",
+                "name": "clearCompleted",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 80,
+                "end_line": 83,
+                "body": "{\r\n        this.tasks = this.tasks.filter(t => !t.completed);\r\n        this._save();\r\n    }",
+                "calls": [
+                    "this.tasks.filter",
+                    "this._save"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js__save_84_4",
+                "name": "_save",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 85,
+                "end_line": 87,
+                "body": "{\r\n        saveToLocalStorage(this.storageKey, this.tasks);\r\n    }",
+                "calls": [
+                    "saveToLocalStorage"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_getAllTasks_88_4",
+                "name": "getAllTasks",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 89,
+                "end_line": 91,
+                "body": "{\r\n        return this.tasks;\r\n    }",
+                "calls": [],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_filterTasks_92_4",
+                "name": "filterTasks",
+                "parameters": [
+                    {
+                        "name": "filterType",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 93,
+                "end_line": 102,
+                "body": "{\r\n        switch (filterType) {\r\n            case 'completed':\r\n                return this.tasks.filter(t => t.completed);\r\n            case 'pending':\r\n                return this.tasks.filter(t => !t.completed);\r\n            default:\r\n                return this.tasks;\r\n        }\r\n    }",
+                "calls": [
+                    "this.tasks.filter"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_constructor_106_4",
+                "name": "constructor",
+                "parameters": [
+                    {
+                        "name": "taskManager",
+                        "type": null,
+                        "default": null
+                    }
+                ],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 107,
+                "end_line": 114,
+                "body": "{\r\n        this.taskManager = taskManager;\r\n        this.taskList = document.getElementById('task-list');\r\n        this.addForm = document.getElementById('add-task-form');\r\n        this.filterSelect = document.getElementById('filter');\r\n\r\n        this._init();\r\n    }",
+                "calls": [
+                    "document.getElementById",
+                    "this._init"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js__init_115_4",
+                "name": "_init",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 116,
+                "end_line": 134,
+                "body": "{\r\n        this.addForm.addEventListener('submit', (e) => {\r\n            e.preventDefault();\r\n            const title = document.getElementById('title').value.trim();\r\n            const desc = document.getElementById('description').value.trim();\r\n            const date = document.getElementById('due-date').value;\r\n            const priority = document.getElementById('priority').value;\r\n\r\n            if (title) {\r\n                const task = new Task(title, desc, date, priority);\r\n                this.taskManager.addTask(task);\r\n                this._render();\r\n                this.addForm.reset();\r\n            }\r\n        });\r\n\r\n        this.filterSelect.addEventListener('change', () => this._render());\r\n        this._render();\r\n    }",
+                "calls": [
+                    "document.getElementById('description').value.trim",
+                    "e.preventDefault",
+                    "this.taskManager.addTask",
+                    "this.addForm.reset",
+                    "document.getElementById",
+                    "this._render",
+                    "this.filterSelect.addEventListener",
+                    "document.getElementById('title').value.trim",
+                    "this.addForm.addEventListener"
+                ],
+                "complexity": 2,
+                "is_async": false,
+                "language": "js"
+            },
+            {
+                "id": "test3.js__render_135_4",
+                "name": "_render",
+                "parameters": [],
+                "return_type": null,
+                "docstring": null,
+                "decorators": [],
+                "start_line": 136,
+                "end_line": 168,
+                "body": "{\r\n        const filterType = this.filterSelect.value;\r\n        const tasks = this.taskManager.filterTasks(filterType);\r\n        this.taskList.innerHTML = '';\r\n\r\n        tasks.forEach(task => {\r\n            const li = document.createElement('li');\r\n            li.className = `task-item ${task.completed ? 'completed' : ''}`;\r\n            li.innerHTML = `\r\n                <div>\r\n                    <h3>${task.title}</h3>\r\n                    <p>${task.description}</p>\r\n                    <small>Due: ${task.dueDate || 'N/A'} | Priority: ${task.priority}</small>\r\n                </div>\r\n                <div>\r\n                    <button class=\"toggle\">${task.completed ? 'Undo' : 'Complete'}</button>\r\n                    <button class=\"delete\">Delete</button>\r\n                </div>\r\n            `;\r\n\r\n            li.querySelector('.toggle').addEventListener('click', () => {\r\n                this.taskManager.toggleTask(task.id);\r\n                this._render();\r\n            });\r\n\r\n            li.querySelector('.delete').addEventListener('click', () => {\r\n                this.taskManager.deleteTask(task.id);\r\n                this._render();\r\n            });\r\n\r\n            this.taskList.appendChild(li);\r\n        });\r\n    }",
+                "calls": [
+                    "this.taskList.appendChild",
+                    "li.querySelector",
+                    "this.taskManager.deleteTask",
+                    "this.taskManager.toggleTask",
+                    "li.querySelector('.toggle').addEventListener",
+                    "this._render",
+                    "document.createElement",
+                    "this.taskManager.filterTasks",
+                    "tasks.forEach",
+                    "li.querySelector('.delete').addEventListener"
+                ],
+                "complexity": 1,
+                "is_async": false,
+                "language": "js"
+            }
+        ],
+        "classes": [
+            {
+                "id": "test3.js_19_6",
+                "name": "Task",
+                "superclass": null,
+                "decorators": [],
+                "docstring": null,
+                "methods": [
+                    {
+                        "id": "test3.js_constructor_20_4",
+                        "name": "constructor",
+                        "parameters": [
+                            {
+                                "name": "title",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "description",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "dueDate",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 21,
+                        "end_line": 29,
+                        "body": "{\r\n        this.id = generateId();\r\n        this.title = title;\r\n        this.description = description;\r\n        this.dueDate = dueDate;\r\n        this.priority = priority;\r\n        this.completed = false;\r\n        this.createdAt = new Date().toISOString();\r\n    }",
+                        "calls": [
+                            "new Date().toISOString",
+                            "generateId"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_toggleComplete_30_4",
+                        "name": "toggleComplete",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 31,
+                        "end_line": 33,
+                        "body": "{\r\n        this.completed = !this.completed;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_updateDetails_34_4",
+                        "name": "updateDetails",
+                        "parameters": [
+                            {
+                                "name": "newTitle",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "newDescription",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "newDueDate",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "newPriority",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 35,
+                        "end_line": 40,
+                        "body": "{\r\n        this.title = newTitle;\r\n        this.description = newDescription;\r\n        this.dueDate = newDueDate;\r\n        this.priority = newPriority;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_Task_constructor_20_4",
+                        "name": "constructor",
+                        "parameters": [
+                            {
+                                "name": "title",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "description",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "dueDate",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 21,
+                        "end_line": 29,
+                        "body": "{\r\n        this.id = generateId();\r\n        this.title = title;\r\n        this.description = description;\r\n        this.dueDate = dueDate;\r\n        this.priority = priority;\r\n        this.completed = false;\r\n        this.createdAt = new Date().toISOString();\r\n    }",
+                        "calls": [
+                            "new Date().toISOString",
+                            "generateId"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_Task_toggleComplete_30_4",
+                        "name": "toggleComplete",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 31,
+                        "end_line": 33,
+                        "body": "{\r\n        this.completed = !this.completed;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_Task_updateDetails_34_4",
+                        "name": "updateDetails",
+                        "parameters": [
+                            {
+                                "name": "newTitle",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "newDescription",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "newDueDate",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "newPriority",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 35,
+                        "end_line": 40,
+                        "body": "{\r\n        this.title = newTitle;\r\n        this.description = newDescription;\r\n        this.dueDate = newDueDate;\r\n        this.priority = newPriority;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    }
+                ],
+                "attributes": [],
+                "start_line": 20,
+                "end_line": 41,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_43_6",
+                "name": "TaskManager",
+                "superclass": null,
+                "decorators": [],
+                "docstring": null,
+                "methods": [
+                    {
+                        "id": "test3.js_constructor_44_4",
+                        "name": "constructor",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 45,
+                        "end_line": 48,
+                        "body": "{\r\n        this.storageKey = storageKey;\r\n        this.tasks = loadFromLocalStorage(this.storageKey);\r\n    }",
+                        "calls": [
+                            "loadFromLocalStorage"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_addTask_49_4",
+                        "name": "addTask",
+                        "parameters": [
+                            {
+                                "name": "task",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 50,
+                        "end_line": 53,
+                        "body": "{\r\n        this.tasks.push(task);\r\n        this._save();\r\n    }",
+                        "calls": [
+                            "this.tasks.push",
+                            "this._save"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_deleteTask_54_4",
+                        "name": "deleteTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 55,
+                        "end_line": 58,
+                        "body": "{\r\n        this.tasks = this.tasks.filter(t => t.id !== taskId);\r\n        this._save();\r\n    }",
+                        "calls": [
+                            "this.tasks.filter",
+                            "this._save"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_getTask_59_4",
+                        "name": "getTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 60,
+                        "end_line": 62,
+                        "body": "{\r\n        return this.tasks.find(t => t.id === taskId);\r\n    }",
+                        "calls": [
+                            "this.tasks.find"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_toggleTask_63_4",
+                        "name": "toggleTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 64,
+                        "end_line": 70,
+                        "body": "{\r\n        const task = this.getTask(taskId);\r\n        if (task) {\r\n            task.toggleComplete();\r\n            this._save();\r\n        }\r\n    }",
+                        "calls": [
+                            "this._save",
+                            "this.getTask",
+                            "task.toggleComplete"
+                        ],
+                        "complexity": 2,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_updateTask_71_4",
+                        "name": "updateTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "title",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "desc",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "date",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "priority",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 72,
+                        "end_line": 78,
+                        "body": "{\r\n        const task = this.getTask(taskId);\r\n        if (task) {\r\n            task.updateDetails(title, desc, date, priority);\r\n            this._save();\r\n        }\r\n    }",
+                        "calls": [
+                            "this._save",
+                            "task.updateDetails",
+                            "this.getTask"
+                        ],
+                        "complexity": 2,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_clearCompleted_79_4",
+                        "name": "clearCompleted",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 80,
+                        "end_line": 83,
+                        "body": "{\r\n        this.tasks = this.tasks.filter(t => !t.completed);\r\n        this._save();\r\n    }",
+                        "calls": [
+                            "this.tasks.filter",
+                            "this._save"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js__save_84_4",
+                        "name": "_save",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 85,
+                        "end_line": 87,
+                        "body": "{\r\n        saveToLocalStorage(this.storageKey, this.tasks);\r\n    }",
+                        "calls": [
+                            "saveToLocalStorage"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_getAllTasks_88_4",
+                        "name": "getAllTasks",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 89,
+                        "end_line": 91,
+                        "body": "{\r\n        return this.tasks;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_filterTasks_92_4",
+                        "name": "filterTasks",
+                        "parameters": [
+                            {
+                                "name": "filterType",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 93,
+                        "end_line": 102,
+                        "body": "{\r\n        switch (filterType) {\r\n            case 'completed':\r\n                return this.tasks.filter(t => t.completed);\r\n            case 'pending':\r\n                return this.tasks.filter(t => !t.completed);\r\n            default:\r\n                return this.tasks;\r\n        }\r\n    }",
+                        "calls": [
+                            "this.tasks.filter"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_constructor_44_4",
+                        "name": "constructor",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 45,
+                        "end_line": 48,
+                        "body": "{\r\n        this.storageKey = storageKey;\r\n        this.tasks = loadFromLocalStorage(this.storageKey);\r\n    }",
+                        "calls": [
+                            "loadFromLocalStorage"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_addTask_49_4",
+                        "name": "addTask",
+                        "parameters": [
+                            {
+                                "name": "task",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 50,
+                        "end_line": 53,
+                        "body": "{\r\n        this.tasks.push(task);\r\n        this._save();\r\n    }",
+                        "calls": [
+                            "this.tasks.push",
+                            "this._save"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_deleteTask_54_4",
+                        "name": "deleteTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 55,
+                        "end_line": 58,
+                        "body": "{\r\n        this.tasks = this.tasks.filter(t => t.id !== taskId);\r\n        this._save();\r\n    }",
+                        "calls": [
+                            "this.tasks.filter",
+                            "this._save"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_getTask_59_4",
+                        "name": "getTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 60,
+                        "end_line": 62,
+                        "body": "{\r\n        return this.tasks.find(t => t.id === taskId);\r\n    }",
+                        "calls": [
+                            "this.tasks.find"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_toggleTask_63_4",
+                        "name": "toggleTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 64,
+                        "end_line": 70,
+                        "body": "{\r\n        const task = this.getTask(taskId);\r\n        if (task) {\r\n            task.toggleComplete();\r\n            this._save();\r\n        }\r\n    }",
+                        "calls": [
+                            "this._save",
+                            "this.getTask",
+                            "task.toggleComplete"
+                        ],
+                        "complexity": 2,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_updateTask_71_4",
+                        "name": "updateTask",
+                        "parameters": [
+                            {
+                                "name": "taskId",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "title",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "desc",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "date",
+                                "type": null,
+                                "default": null
+                            },
+                            {
+                                "name": "priority",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 72,
+                        "end_line": 78,
+                        "body": "{\r\n        const task = this.getTask(taskId);\r\n        if (task) {\r\n            task.updateDetails(title, desc, date, priority);\r\n            this._save();\r\n        }\r\n    }",
+                        "calls": [
+                            "this._save",
+                            "task.updateDetails",
+                            "this.getTask"
+                        ],
+                        "complexity": 2,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_clearCompleted_79_4",
+                        "name": "clearCompleted",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 80,
+                        "end_line": 83,
+                        "body": "{\r\n        this.tasks = this.tasks.filter(t => !t.completed);\r\n        this._save();\r\n    }",
+                        "calls": [
+                            "this.tasks.filter",
+                            "this._save"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager__save_84_4",
+                        "name": "_save",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 85,
+                        "end_line": 87,
+                        "body": "{\r\n        saveToLocalStorage(this.storageKey, this.tasks);\r\n    }",
+                        "calls": [
+                            "saveToLocalStorage"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_getAllTasks_88_4",
+                        "name": "getAllTasks",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 89,
+                        "end_line": 91,
+                        "body": "{\r\n        return this.tasks;\r\n    }",
+                        "calls": [],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_TaskManager_filterTasks_92_4",
+                        "name": "filterTasks",
+                        "parameters": [
+                            {
+                                "name": "filterType",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 93,
+                        "end_line": 102,
+                        "body": "{\r\n        switch (filterType) {\r\n            case 'completed':\r\n                return this.tasks.filter(t => t.completed);\r\n            case 'pending':\r\n                return this.tasks.filter(t => !t.completed);\r\n            default:\r\n                return this.tasks;\r\n        }\r\n    }",
+                        "calls": [
+                            "this.tasks.filter"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    }
+                ],
+                "attributes": [],
+                "start_line": 44,
+                "end_line": 103,
+                "language": "js"
+            },
+            {
+                "id": "test3.js_105_6",
+                "name": "UI",
+                "superclass": null,
+                "decorators": [],
+                "docstring": null,
+                "methods": [
+                    {
+                        "id": "test3.js_constructor_106_4",
+                        "name": "constructor",
+                        "parameters": [
+                            {
+                                "name": "taskManager",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 107,
+                        "end_line": 114,
+                        "body": "{\r\n        this.taskManager = taskManager;\r\n        this.taskList = document.getElementById('task-list');\r\n        this.addForm = document.getElementById('add-task-form');\r\n        this.filterSelect = document.getElementById('filter');\r\n\r\n        this._init();\r\n    }",
+                        "calls": [
+                            "document.getElementById",
+                            "this._init"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js__init_115_4",
+                        "name": "_init",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 116,
+                        "end_line": 134,
+                        "body": "{\r\n        this.addForm.addEventListener('submit', (e) => {\r\n            e.preventDefault();\r\n            const title = document.getElementById('title').value.trim();\r\n            const desc = document.getElementById('description').value.trim();\r\n            const date = document.getElementById('due-date').value;\r\n            const priority = document.getElementById('priority').value;\r\n\r\n            if (title) {\r\n                const task = new Task(title, desc, date, priority);\r\n                this.taskManager.addTask(task);\r\n                this._render();\r\n                this.addForm.reset();\r\n            }\r\n        });\r\n\r\n        this.filterSelect.addEventListener('change', () => this._render());\r\n        this._render();\r\n    }",
+                        "calls": [
+                            "document.getElementById('description').value.trim",
+                            "e.preventDefault",
+                            "this.taskManager.addTask",
+                            "this.addForm.reset",
+                            "document.getElementById",
+                            "this._render",
+                            "this.filterSelect.addEventListener",
+                            "document.getElementById('title').value.trim",
+                            "this.addForm.addEventListener"
+                        ],
+                        "complexity": 2,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js__render_135_4",
+                        "name": "_render",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 136,
+                        "end_line": 168,
+                        "body": "{\r\n        const filterType = this.filterSelect.value;\r\n        const tasks = this.taskManager.filterTasks(filterType);\r\n        this.taskList.innerHTML = '';\r\n\r\n        tasks.forEach(task => {\r\n            const li = document.createElement('li');\r\n            li.className = `task-item ${task.completed ? 'completed' : ''}`;\r\n            li.innerHTML = `\r\n                <div>\r\n                    <h3>${task.title}</h3>\r\n                    <p>${task.description}</p>\r\n                    <small>Due: ${task.dueDate || 'N/A'} | Priority: ${task.priority}</small>\r\n                </div>\r\n                <div>\r\n                    <button class=\"toggle\">${task.completed ? 'Undo' : 'Complete'}</button>\r\n                    <button class=\"delete\">Delete</button>\r\n                </div>\r\n            `;\r\n\r\n            li.querySelector('.toggle').addEventListener('click', () => {\r\n                this.taskManager.toggleTask(task.id);\r\n                this._render();\r\n            });\r\n\r\n            li.querySelector('.delete').addEventListener('click', () => {\r\n                this.taskManager.deleteTask(task.id);\r\n                this._render();\r\n            });\r\n\r\n            this.taskList.appendChild(li);\r\n        });\r\n    }",
+                        "calls": [
+                            "this.taskList.appendChild",
+                            "li.querySelector",
+                            "this.taskManager.deleteTask",
+                            "this.taskManager.toggleTask",
+                            "li.querySelector('.toggle').addEventListener",
+                            "this._render",
+                            "document.createElement",
+                            "this.taskManager.filterTasks",
+                            "tasks.forEach",
+                            "li.querySelector('.delete').addEventListener"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_UI_constructor_106_4",
+                        "name": "constructor",
+                        "parameters": [
+                            {
+                                "name": "taskManager",
+                                "type": null,
+                                "default": null
+                            }
+                        ],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 107,
+                        "end_line": 114,
+                        "body": "{\r\n        this.taskManager = taskManager;\r\n        this.taskList = document.getElementById('task-list');\r\n        this.addForm = document.getElementById('add-task-form');\r\n        this.filterSelect = document.getElementById('filter');\r\n\r\n        this._init();\r\n    }",
+                        "calls": [
+                            "document.getElementById",
+                            "this._init"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_UI__init_115_4",
+                        "name": "_init",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 116,
+                        "end_line": 134,
+                        "body": "{\r\n        this.addForm.addEventListener('submit', (e) => {\r\n            e.preventDefault();\r\n            const title = document.getElementById('title').value.trim();\r\n            const desc = document.getElementById('description').value.trim();\r\n            const date = document.getElementById('due-date').value;\r\n            const priority = document.getElementById('priority').value;\r\n\r\n            if (title) {\r\n                const task = new Task(title, desc, date, priority);\r\n                this.taskManager.addTask(task);\r\n                this._render();\r\n                this.addForm.reset();\r\n            }\r\n        });\r\n\r\n        this.filterSelect.addEventListener('change', () => this._render());\r\n        this._render();\r\n    }",
+                        "calls": [
+                            "document.getElementById('description').value.trim",
+                            "e.preventDefault",
+                            "this.taskManager.addTask",
+                            "this.addForm.reset",
+                            "document.getElementById",
+                            "this._render",
+                            "this.filterSelect.addEventListener",
+                            "document.getElementById('title').value.trim",
+                            "this.addForm.addEventListener"
+                        ],
+                        "complexity": 2,
+                        "is_async": false,
+                        "language": "js"
+                    },
+                    {
+                        "id": "test3.js_UI__render_135_4",
+                        "name": "_render",
+                        "parameters": [],
+                        "return_type": null,
+                        "docstring": null,
+                        "decorators": [],
+                        "start_line": 136,
+                        "end_line": 168,
+                        "body": "{\r\n        const filterType = this.filterSelect.value;\r\n        const tasks = this.taskManager.filterTasks(filterType);\r\n        this.taskList.innerHTML = '';\r\n\r\n        tasks.forEach(task => {\r\n            const li = document.createElement('li');\r\n            li.className = `task-item ${task.completed ? 'completed' : ''}`;\r\n            li.innerHTML = `\r\n                <div>\r\n                    <h3>${task.title}</h3>\r\n                    <p>${task.description}</p>\r\n                    <small>Due: ${task.dueDate || 'N/A'} | Priority: ${task.priority}</small>\r\n                </div>\r\n                <div>\r\n                    <button class=\"toggle\">${task.completed ? 'Undo' : 'Complete'}</button>\r\n                    <button class=\"delete\">Delete</button>\r\n                </div>\r\n            `;\r\n\r\n            li.querySelector('.toggle').addEventListener('click', () => {\r\n                this.taskManager.toggleTask(task.id);\r\n                this._render();\r\n            });\r\n\r\n            li.querySelector('.delete').addEventListener('click', () => {\r\n                this.taskManager.deleteTask(task.id);\r\n                this._render();\r\n            });\r\n\r\n            this.taskList.appendChild(li);\r\n        });\r\n    }",
+                        "calls": [
+                            "this.taskList.appendChild",
+                            "li.querySelector",
+                            "this.taskManager.deleteTask",
+                            "this.taskManager.toggleTask",
+                            "li.querySelector('.toggle').addEventListener",
+                            "this._render",
+                            "document.createElement",
+                            "this.taskManager.filterTasks",
+                            "tasks.forEach",
+                            "li.querySelector('.delete').addEventListener"
+                        ],
+                        "complexity": 1,
+                        "is_async": false,
+                        "language": "js"
+                    }
+                ],
+                "attributes": [],
+                "start_line": 106,
+                "end_line": 169,
+                "language": "js"
+            }
+        ],
+        "variables": [],
+        "total_lines": 176,
+        "stats": {
+            "num_functions": 19,
+            "num_classes": 3,
+            "num_variables": 0,
+            "has_docstrings": 0
+        }
     }
 ]

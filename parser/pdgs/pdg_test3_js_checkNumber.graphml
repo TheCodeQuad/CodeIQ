@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d3" for="edge" attr.name="label" attr.type="string"/>
+<key id="d2" for="edge" attr.name="type" attr.type="string"/>
+<key id="d1" for="node" attr.name="type" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="entry">
+  <data key="d0">ENTRY</data>
+  <data key="d1">entry</data>
+</node>
+<node id="func_checkNumber">
+  <data key="d0">🔹 checkNumber</data>
+  <data key="d1">function</data>
+</node>
+<node id="exit">
+  <data key="d0">EXIT</data>
+  <data key="d1">exit</data>
+</node>
+<node id="param_num">
+  <data key="d0">📌 num</data>
+  <data key="d1">parameter</data>
+</node>
+<node id="complexity_checkNumber">
+  <data key="d0">📊 complexity: 3</data>
+  <data key="d1">metric</data>
+</node>
+<edge source="entry" target="func_checkNumber">
+  <data key="d2">control_dep</data>
+  <data key="d3">calls</data>
+</edge>
+<edge source="func_checkNumber" target="exit">
+  <data key="d2">control_dep</data>
+  <data key="d3">returns</data>
+</edge>
+<edge source="func_checkNumber" target="param_num">
+  <data key="d2">data_dep</data>
+  <data key="d3">uses</data>
+</edge>
+<edge source="func_checkNumber" target="complexity_checkNumber">
+  <data key="d2">data_dep</data>
+  <data key="d3">measures</data>
+</edge>
+</graph></graphml>

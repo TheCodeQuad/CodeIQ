@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d10" for="edge" attr.name="relationship" attr.type="string"/>
+<key id="d9" for="node" attr.name="attributes" attr.type="long"/>
+<key id="d8" for="node" attr.name="methods" attr.type="long"/>
+<key id="d7" for="node" attr.name="complexity" attr.type="long"/>
+<key id="d6" for="node" attr.name="params" attr.type="long"/>
+<key id="d5" for="node" attr.name="language" attr.type="string"/>
+<key id="d4" for="node" attr.name="lines" attr.type="long"/>
+<key id="d3" for="node" attr.name="size" attr.type="long"/>
+<key id="d2" for="node" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="type" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="file_test1.py">
+  <data key="d0">📁 test1.py
+(py)</data>
+  <data key="d1">file</data>
+  <data key="d2">#FF6B6B</data>
+  <data key="d3">3000</data>
+  <data key="d4">9</data>
+  <data key="d5">py</data>
+</node>
+<node id="test1.py_add_0_0">
+  <data key="d0">🔹 add
+(2 params)</data>
+  <data key="d1">function</data>
+  <data key="d2">#45B7D1</data>
+  <data key="d3">1500</data>
+  <data key="d6">2</data>
+  <data key="d7">1</data>
+  <data key="d4">2</data>
+</node>
+<node id="test1.py_multiply_4_4">
+  <data key="d0">🔸 multiply
+(2 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">2</data>
+  <data key="d7">1</data>
+  <data key="d4">2</data>
+</node>
+<node id="test1.py_3_6">
+  <data key="d0">🏛️ Calculator
+2 methods</data>
+  <data key="d1">class</data>
+  <data key="d2">#4ECDC4</data>
+  <data key="d3">2000</data>
+  <data key="d8">2</data>
+  <data key="d9">0</data>
+</node>
+<node id="test1.py_Calculator_multiply_4_4">
+  <data key="d0">🔸 multiply
+(2 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">2</data>
+  <data key="d7">1</data>
+</node>
+<node id="file_test2.java">
+  <data key="d0">📁 test2.java
+(java)</data>
+  <data key="d1">file</data>
+  <data key="d2">#FF6B6B</data>
+  <data key="d3">3000</data>
+  <data key="d4">10</data>
+  <data key="d5">java</data>
+</node>
+<node id="test2.java_add_1_4">
+  <data key="d0">🔸 add
+(2 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">2</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test2.java_main_5_4">
+  <data key="d0">🔸 main
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test2.java_0_13">
+  <data key="d0">🏛️ test2
+4 methods</data>
+  <data key="d1">class</data>
+  <data key="d2">#4ECDC4</data>
+  <data key="d3">2000</data>
+  <data key="d8">4</data>
+  <data key="d9">0</data>
+</node>
+<node id="test2.java_test2_add_1_4">
+  <data key="d0">🔸 add
+(2 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">2</data>
+  <data key="d7">1</data>
+</node>
+<node id="test2.java_test2_main_5_4">
+  <data key="d0">🔸 main
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+</node>
+<node id="file_test3.js">
+  <data key="d0">📁 test3.js
+(js)</data>
+  <data key="d1">file</data>
+  <data key="d2">#FF6B6B</data>
+  <data key="d3">3000</data>
+  <data key="d4">176</data>
+  <data key="d5">js</data>
+</node>
+<node id="test3.js_generateId_5_0">
+  <data key="d0">🔹 generateId
+(0 params)</data>
+  <data key="d1">function</data>
+  <data key="d2">#45B7D1</data>
+  <data key="d3">1500</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test3.js_saveToLocalStorage_9_0">
+  <data key="d0">🔹 saveToLocalStorage
+(2 params)</data>
+  <data key="d1">function</data>
+  <data key="d2">#45B7D1</data>
+  <data key="d3">1500</data>
+  <data key="d6">2</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test3.js_loadFromLocalStorage_13_0">
+  <data key="d0">🔹 loadFromLocalStorage
+(1 params)</data>
+  <data key="d1">function</data>
+  <data key="d2">#45B7D1</data>
+  <data key="d3">1500</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+  <data key="d4">4</data>
+</node>
+<node id="test3.js_constructor_20_4">
+  <data key="d0">🔸 constructor
+(3 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">3</data>
+  <data key="d7">1</data>
+  <data key="d4">9</data>
+</node>
+<node id="test3.js_toggleComplete_30_4">
+  <data key="d0">🔸 toggleComplete
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test3.js_updateDetails_34_4">
+  <data key="d0">🔸 updateDetails
+(4 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">4</data>
+  <data key="d7">1</data>
+  <data key="d4">6</data>
+</node>
+<node id="test3.js_constructor_44_4">
+  <data key="d0">🔸 constructor
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d4">4</data>
+</node>
+<node id="test3.js_addTask_49_4">
+  <data key="d0">🔸 addTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+  <data key="d4">4</data>
+</node>
+<node id="test3.js_deleteTask_54_4">
+  <data key="d0">🔸 deleteTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+  <data key="d4">4</data>
+</node>
+<node id="test3.js_getTask_59_4">
+  <data key="d0">🔸 getTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test3.js_toggleTask_63_4">
+  <data key="d0">🔸 toggleTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">2</data>
+  <data key="d4">7</data>
+</node>
+<node id="test3.js_updateTask_71_4">
+  <data key="d0">🔸 updateTask
+(5 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">5</data>
+  <data key="d7">2</data>
+  <data key="d4">7</data>
+</node>
+<node id="test3.js_clearCompleted_79_4">
+  <data key="d0">🔸 clearCompleted
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d4">4</data>
+</node>
+<node id="test3.js__save_84_4">
+  <data key="d0">🔸 _save
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test3.js_getAllTasks_88_4">
+  <data key="d0">🔸 getAllTasks
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d4">3</data>
+</node>
+<node id="test3.js_filterTasks_92_4">
+  <data key="d0">🔸 filterTasks
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+  <data key="d4">10</data>
+</node>
+<node id="test3.js_constructor_106_4">
+  <data key="d0">🔸 constructor
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+  <data key="d4">8</data>
+</node>
+<node id="test3.js__init_115_4">
+  <data key="d0">🔸 _init
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">2</data>
+  <data key="d4">19</data>
+</node>
+<node id="test3.js__render_135_4">
+  <data key="d0">🔸 _render
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d4">33</data>
+</node>
+<node id="test3.js_19_6">
+  <data key="d0">🏛️ Task
+6 methods</data>
+  <data key="d1">class</data>
+  <data key="d2">#4ECDC4</data>
+  <data key="d3">2000</data>
+  <data key="d8">6</data>
+  <data key="d9">0</data>
+</node>
+<node id="test3.js_Task_constructor_20_4">
+  <data key="d0">🔸 constructor
+(3 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">3</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_Task_toggleComplete_30_4">
+  <data key="d0">🔸 toggleComplete
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_Task_updateDetails_34_4">
+  <data key="d0">🔸 updateDetails
+(4 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">4</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_43_6">
+  <data key="d0">🏛️ TaskManager
+20 methods</data>
+  <data key="d1">class</data>
+  <data key="d2">#4ECDC4</data>
+  <data key="d3">2000</data>
+  <data key="d8">20</data>
+  <data key="d9">0</data>
+</node>
+<node id="test3.js_TaskManager_constructor_44_4">
+  <data key="d0">🔸 constructor
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_TaskManager_addTask_49_4">
+  <data key="d0">🔸 addTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_TaskManager_deleteTask_54_4">
+  <data key="d0">🔸 deleteTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_TaskManager_getTask_59_4">
+  <data key="d0">🔸 getTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_TaskManager_toggleTask_63_4">
+  <data key="d0">🔸 toggleTask
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">2</data>
+</node>
+<node id="test3.js_TaskManager_updateTask_71_4">
+  <data key="d0">🔸 updateTask
+(5 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">5</data>
+  <data key="d7">2</data>
+</node>
+<node id="test3.js_TaskManager_clearCompleted_79_4">
+  <data key="d0">🔸 clearCompleted
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_TaskManager__save_84_4">
+  <data key="d0">🔸 _save
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_TaskManager_getAllTasks_88_4">
+  <data key="d0">🔸 getAllTasks
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_TaskManager_filterTasks_92_4">
+  <data key="d0">🔸 filterTasks
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_105_6">
+  <data key="d0">🏛️ UI
+6 methods</data>
+  <data key="d1">class</data>
+  <data key="d2">#4ECDC4</data>
+  <data key="d3">2000</data>
+  <data key="d8">6</data>
+  <data key="d9">0</data>
+</node>
+<node id="test3.js_UI_constructor_106_4">
+  <data key="d0">🔸 constructor
+(1 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">1</data>
+  <data key="d7">1</data>
+</node>
+<node id="test3.js_UI__init_115_4">
+  <data key="d0">🔸 _init
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">2</data>
+</node>
+<node id="test3.js_UI__render_135_4">
+  <data key="d0">🔸 _render
+(0 params)</data>
+  <data key="d1">method</data>
+  <data key="d2">#96CEB4</data>
+  <data key="d3">1200</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+</node>
+<edge source="file_test1.py" target="test1.py_add_0_0">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test1.py" target="test1.py_multiply_4_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test1.py" target="test1.py_3_6">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test1.py_3_6" target="test1.py_multiply_4_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test1.py_3_6" target="test1.py_Calculator_multiply_4_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test2.java" target="test2.java_add_1_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test2.java" target="test2.java_main_5_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test2.java" target="test2.java_0_13">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test2.java_0_13" target="test2.java_add_1_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test2.java_0_13" target="test2.java_main_5_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test2.java_0_13" target="test2.java_test2_add_1_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test2.java_0_13" target="test2.java_test2_main_5_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_generateId_5_0">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_saveToLocalStorage_9_0">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_loadFromLocalStorage_13_0">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_constructor_20_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_toggleComplete_30_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_updateDetails_34_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_constructor_44_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_addTask_49_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_deleteTask_54_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_getTask_59_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_toggleTask_63_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_updateTask_71_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_clearCompleted_79_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js__save_84_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_getAllTasks_88_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_filterTasks_92_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_constructor_106_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js__init_115_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js__render_135_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_19_6">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_43_6">
+  <data key="d10">contains</data>
+</edge>
+<edge source="file_test3.js" target="test3.js_105_6">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_constructor_20_4" target="test3.js_generateId_5_0">
+  <data key="d10">calls</data>
+</edge>
+<edge source="test3.js_constructor_44_4" target="test3.js_loadFromLocalStorage_13_0">
+  <data key="d10">calls</data>
+</edge>
+<edge source="test3.js__save_84_4" target="test3.js_saveToLocalStorage_9_0">
+  <data key="d10">calls</data>
+</edge>
+<edge source="test3.js_19_6" target="test3.js_constructor_20_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_19_6" target="test3.js_toggleComplete_30_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_19_6" target="test3.js_updateDetails_34_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_19_6" target="test3.js_Task_constructor_20_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_19_6" target="test3.js_Task_toggleComplete_30_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_19_6" target="test3.js_Task_updateDetails_34_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_Task_constructor_20_4" target="test3.js_generateId_5_0">
+  <data key="d10">calls</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_constructor_44_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_addTask_49_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_deleteTask_54_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_getTask_59_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_toggleTask_63_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_updateTask_71_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_clearCompleted_79_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js__save_84_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_getAllTasks_88_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_filterTasks_92_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_constructor_44_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_addTask_49_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_deleteTask_54_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_getTask_59_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_toggleTask_63_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_updateTask_71_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_clearCompleted_79_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager__save_84_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_getAllTasks_88_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_43_6" target="test3.js_TaskManager_filterTasks_92_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_TaskManager_constructor_44_4" target="test3.js_loadFromLocalStorage_13_0">
+  <data key="d10">calls</data>
+</edge>
+<edge source="test3.js_TaskManager__save_84_4" target="test3.js_saveToLocalStorage_9_0">
+  <data key="d10">calls</data>
+</edge>
+<edge source="test3.js_105_6" target="test3.js_constructor_106_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_105_6" target="test3.js__init_115_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_105_6" target="test3.js__render_135_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_105_6" target="test3.js_UI_constructor_106_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_105_6" target="test3.js_UI__init_115_4">
+  <data key="d10">contains</data>
+</edge>
+<edge source="test3.js_105_6" target="test3.js_UI__render_135_4">
+  <data key="d10">contains</data>
+</edge>
+</graph></graphml>

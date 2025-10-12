@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d4" for="edge" attr.name="label" attr.type="string"/>
+<key id="d3" for="edge" attr.name="type" attr.type="string"/>
+<key id="d2" for="node" attr.name="language" attr.type="string"/>
+<key id="d1" for="node" attr.name="type" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="file_test3_js">
+  <data key="d0">📁 test3.js
+(js)</data>
+  <data key="d1">file</data>
+  <data key="d2">js</data>
+</node>
+<node id="func_checkNumber">
+  <data key="d0">🔹 checkNumber
+(1 params)</data>
+  <data key="d1">function</data>
+</node>
+<node id="param_checkNumber_num">
+  <data key="d0">📌 num</data>
+  <data key="d1">parameter</data>
+</node>
+<edge source="file_test3_js" target="func_checkNumber">
+  <data key="d3">data_dep</data>
+  <data key="d4">contains</data>
+</edge>
+<edge source="func_checkNumber" target="param_checkNumber_num">
+  <data key="d3">data_dep</data>
+  <data key="d4">uses</data>
+</edge>
+</graph></graphml>
