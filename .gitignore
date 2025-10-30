@@ -1,0 +1,71 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# === Virtual environments ===
+venv/
+.env/
+.venv/
+
+# === Build artifacts ===
+build/
+dist/
+*.egg-info/
+.eggs/
+*.lib
+*.exp
+
+# === Logs & reports ===
+*.log
+*.out
+*.err
+logs/
+coverage/
+htmlcov/
+
+# === IDE / Editors ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# === Temporary & cache files ===
+*.tmp
+*.temp
+*.cache
+.cache/
+.mypy_cache/
+pytest_cache/
+
+# === Node (if frontend present) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Environment files ===
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Misc ===
+# Ignore Tree-sitter build artifacts
+navigator/parsers/build/
+navigator/parsers/tree-sitter-python/
+navigator/parsers/*.so
+navigator/parsers/*.dll
+navigator/parsers/*.dylib
+
+# === Backup or data ===
+*.zip
+*.tar
+*.gz
+*.bak
