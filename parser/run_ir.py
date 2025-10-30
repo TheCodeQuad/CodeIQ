@@ -1,27 +1,34 @@
 import os
-import json
-from ir_builder import parse_file, detect_language
+from typing import Optional
 
-SOURCE_DIR = '../source_files'
-OUTPUT_JSON = 'ir_output.json'
-SKIP_DIRS = {'venv', '__pycache__'}  # directories to skip
+# Supported languages
+EXT_LANG = {
+    '.c': 'c',
+    '.java': 'java',
+    '.py': 'python',
+    '.js': 'javascript',
+    '.ts': 'typescript',
+}
 
-all_ir = {}
+# Files/extensions to skip
+SKIP_EXT = {
+    '.md', '.txt', '.json', '.yml', '.yaml',
+    '.xml', '.csv', '.html', '.css', '.lock'
+}
 
-for root, dirs, files in os.walk(SOURCE_DIR):
-    # Skip unwanted directories
-    dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
+SKIP_FILES = {
+    '__init__.py',
+    'package-lock.json',
+    'requirements.txt'
+}
 
-    for file in files:
-        file_path = os.path.join(root, file)
-        lang = detect_language(file_path)
-        if not lang:
-            continue
-        print(f"Parsing {file_path} as {lang}")
-        ir_tree = parse_file(file_path, lang)
-        all_ir[file_path] = ir_tree.to_dict()
+def detect_language(file_path: str) -> Optional[str]:
+    """Detect programming language based on extension."""
+    _, ext = os.path.splitext(file_path)
+    return EXT_LANG.get(ext.lower())
 
-with open(OUTPUT_JSON, 'w') as f:
-    json.dump(all_ir, f, indent=4)
-
-print(f"IR JSON saved to {OUTPUT_JSON}")
+def should_skip(file_path: str) -> bool:
+    """Return True if file should be ignored."""
+    _, ext = os.path.splitext(file_path)
+    name = os.path.basename(file_path)
+    return name in SKIP_FILES or ext.lower() in SKIP_EXT

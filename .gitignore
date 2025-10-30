@@ -23,3 +23,50 @@ Thumbs.db
 
 # Logs
 *.log
+
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Build output
+build/
+dist/
+.cache/
+coverage/
+.next/
+out/
+.temp/
+.vite/
+*.tsbuildinfo
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# 🔐 MISC / SYSTEM
+# ==============================
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Python notebooks cache
+.ipynb_checkpoints
+
+# Local test data
+test_data/
+tmp/
