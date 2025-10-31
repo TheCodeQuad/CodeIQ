@@ -1,0 +1,30 @@
+{
+    "selected": [
+        {
+            "path": "C:\\CODEIQNEW\\backend\\data\\pyfiglet\\pyfiglet\\test.py",
+            "score": 37
+        },
+        {
+            "path": "C:\\CODEIQNEW\\backend\\data\\pyfiglet\\pyfiglet\\__init__.py",
+            "score": 148
+        },
+        {
+            "path": "C:\\CODEIQNEW\\backend\\data\\pyfiglet\\pyfiglet\\__main__.py",
+            "score": 6
+        },
+        {
+            "path": "C:\\CODEIQNEW\\backend\\data\\pyfiglet\\pyfiglet\\fonts-standard\\__init__.py",
+            "score": 4
+        }
+    ],
+    "excluded": [
+        {
+            "path": "C:\\CODEIQNEW\\backend\\data\\pyfiglet\\setup.py",
+            "score": 3
+        },
+        {
+            "path": "C:\\CODEIQNEW\\backend\\data\\pyfiglet\\pyfiglet\\version.py",
+            "score": 3
+        }
+    ]
+}
