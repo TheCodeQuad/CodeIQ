@@ -1,4 +1,10 @@
 import sys, os, json
+
+# Debug: print Python info
+print(f"Python executable: {sys.executable}", file=sys.stderr)
+print(f"Python version: {sys.version}", file=sys.stderr)
+print(f"Working directory: {os.getcwd()}", file=sys.stderr)
+
 from python_parser import parse_python_repo  # your custom parser function
 
 def main():

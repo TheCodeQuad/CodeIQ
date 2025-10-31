@@ -11,9 +11,8 @@ try:
     # Get the language as a PyCapsule and wrap it in Language
     PY_LANGUAGE = Language(tree_sitter_python.language())
     parser = Parser(PY_LANGUAGE)
-    print("✅ Using tree-sitter-python package")
     
-except ImportError:
+except ImportError as e:
     # Fallback: try loading compiled library manually
     try:
         from tree_sitter import Language, Parser
@@ -46,12 +45,12 @@ except ImportError:
         
         PY_LANGUAGE = Language(str(lib_path), "python")
         parser = Parser(PY_LANGUAGE)
-        print(f"✅ Loaded language from {lib_path}")
         
     except Exception as e:
-        print(f"❌ Failed to load tree-sitter Python language: {e}")
-        print("\nTo fix this, install the tree-sitter-python package:")
-        print("  pip install tree-sitter-python")
+        import sys
+        print("Failed to load tree-sitter Python language:", str(e), file=sys.stderr)
+        print("\nTo fix this, install the tree-sitter-python package:", file=sys.stderr)
+        print("  pip install tree-sitter-python", file=sys.stderr)
         raise
 
 # ---------------------------------------------------------
