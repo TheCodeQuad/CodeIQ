@@ -1,0 +1,84 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_measure.py",
+  "imports": [
+    "from rich.text import Text",
+    "import pytest",
+    "from rich.errors import NotRenderableError",
+    "from rich.console import Console",
+    "from rich.measure import Measurement, measure_renderables"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_span",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Measurement"
+      ],
+      "variables": [
+        "measurement"
+      ],
+      "start_line": 9,
+      "end_line": 11
+    },
+    {
+      "name": "test_no_renderable",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "Text",
+        "pytest.raises",
+        "Measurement.get"
+      ],
+      "variables": [
+        "console",
+        "text"
+      ],
+      "start_line": 14,
+      "end_line": 19
+    },
+    {
+      "name": "test_measure_renderables",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "Measurement",
+        "console.options.update_width",
+        "measure_renderables"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 22,
+      "end_line": 27
+    },
+    {
+      "name": "test_clamp",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Measurement",
+        "measurement.clamp"
+      ],
+      "variables": [
+        "measurement"
+      ],
+      "start_line": 30,
+      "end_line": 36
+    }
+  ],
+  "variables": [
+    "measurement",
+    "console",
+    "text",
+    "console",
+    "measurement"
+  ]
+}

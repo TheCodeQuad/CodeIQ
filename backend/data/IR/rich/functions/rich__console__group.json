@@ -1,0 +1,16 @@
+{
+  "name": "group",
+  "parameters": [],
+  "return_type": "Callable[..., Callable[..., Group]]",
+  "docstring": null,
+  "calls": [
+    "wraps",
+    "Group",
+    "method"
+  ],
+  "variables": [
+    "renderables"
+  ],
+  "start_line": 489,
+  "end_line": 508
+}

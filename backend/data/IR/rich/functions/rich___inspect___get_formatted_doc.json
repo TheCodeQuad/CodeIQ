@@ -1,0 +1,29 @@
+{
+  "name": "_get_formatted_doc",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "Optional[str]",
+  "docstring": null,
+  "calls": [
+    "escape_control_codes",
+    "getdoc",
+    "_first_paragraph",
+    "cleandoc(docs).strip",
+    "cleandoc"
+  ],
+  "variables": [
+    "docs",
+    "docs",
+    "docs"
+  ],
+  "start_line": 214,
+  "end_line": 233
+}

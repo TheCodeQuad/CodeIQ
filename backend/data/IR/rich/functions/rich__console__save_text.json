@@ -1,0 +1,25 @@
+{
+  "name": "save_text",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.export_text",
+    "open",
+    "write_file.write"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 2205,
+  "end_line": 2217
+}

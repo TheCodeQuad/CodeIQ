@@ -1,0 +1,19 @@
+{
+  "name": "bar",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "print"
+  ],
+  "variables": [
+    "one"
+  ],
+  "start_line": 877,
+  "end_line": 881
+}

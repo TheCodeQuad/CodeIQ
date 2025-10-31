@@ -1,0 +1,20 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.get_renderable",
+    "RLock",
+    "get_console",
+    "LiveRender"
+  ],
+  "variables": [],
+  "start_line": 57,
+  "end_line": 96
+}

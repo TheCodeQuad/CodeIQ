@@ -1,0 +1,17 @@
+{
+  "name": "test_justify_right",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.file.getvalue",
+    "io.StringIO",
+    "console.print"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 436,
+  "end_line": 439
+}

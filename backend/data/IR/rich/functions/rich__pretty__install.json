@@ -1,0 +1,24 @@
+{
+  "name": "install",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "get_console",
+    "RichFormatter",
+    "_safe_isinstance",
+    "_ipy_display_hook",
+    "console.print",
+    "Pretty",
+    "get_ipython",
+    "repr"
+  ],
+  "variables": [
+    "console",
+    "ip",
+    "pprint",
+    "rich_formatter"
+  ],
+  "start_line": 171,
+  "end_line": 250
+}

@@ -1,0 +1,18 @@
+{
+  "name": "test_no_renderable",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "Text",
+    "pytest.raises",
+    "Measurement.get"
+  ],
+  "variables": [
+    "console",
+    "text"
+  ],
+  "start_line": 14,
+  "end_line": 19
+}

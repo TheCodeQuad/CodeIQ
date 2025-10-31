@@ -1,0 +1,30 @@
+{
+  "name": "stylize_range",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "StyleType"
+    },
+    {
+      "name": null,
+      "type": "SyntaxPosition"
+    },
+    {
+      "name": null,
+      "type": "SyntaxPosition"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "_SyntaxHighlightRange",
+    "self._stylized_ranges.append"
+  ],
+  "variables": [],
+  "start_line": 552,
+  "end_line": 571
+}

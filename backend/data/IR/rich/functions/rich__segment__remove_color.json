@@ -1,0 +1,26 @@
+{
+  "name": "remove_color",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[\"Segment\"]"
+    }
+  ],
+  "return_type": "Iterable[\"Segment\"]",
+  "docstring": null,
+  "calls": [
+    "cache.get",
+    "cls"
+  ],
+  "variables": [
+    "cache",
+    "colorless_style",
+    "colorless_style"
+  ],
+  "start_line": 580,
+  "end_line": 599
+}

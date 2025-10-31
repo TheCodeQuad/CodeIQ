@@ -1,0 +1,38 @@
+{
+  "name": "render",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "LogRecord"
+    },
+    {
+      "name": null,
+      "type": "Optional[Traceback]"
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleRenderable\""
+    }
+  ],
+  "return_type": "\"ConsoleRenderable\"",
+  "docstring": null,
+  "calls": [
+    "self._log_render",
+    "datetime.fromtimestamp",
+    "Path",
+    "self.get_level_text"
+  ],
+  "variables": [
+    "path",
+    "level",
+    "time_format",
+    "log_time",
+    "log_renderable"
+  ],
+  "start_line": 207,
+  "end_line": 239
+}

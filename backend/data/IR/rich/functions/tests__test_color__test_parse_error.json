@@ -1,0 +1,13 @@
+{
+  "name": "test_parse_error",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Color.parse",
+    "pytest.raises"
+  ],
+  "variables": [],
+  "start_line": 98,
+  "end_line": 112
+}

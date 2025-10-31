@@ -1,0 +1,13 @@
+{
+  "name": "test_str",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Color.parse",
+    "str"
+  ],
+  "variables": [],
+  "start_line": 16,
+  "end_line": 17
+}

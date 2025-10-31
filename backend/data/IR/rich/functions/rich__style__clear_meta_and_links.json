@@ -1,0 +1,19 @@
+{
+  "name": "clear_meta_and_links",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Style\"",
+  "docstring": null,
+  "calls": [
+    "self.__new__"
+  ],
+  "variables": [
+    "style"
+  ],
+  "start_line": 645,
+  "end_line": 665
+}

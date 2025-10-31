@@ -1,0 +1,150 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tools\\make_terminal_widths.py",
+  "imports": [
+    "import subprocess",
+    "from typing import List, Tuple",
+    "import sys",
+    "from rich.progress import Progress",
+    "from wcwidth import wcwidth"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "make_widths_table",
+      "parameters": [],
+      "return_type": "List[Tuple[int, int, int]]",
+      "docstring": null,
+      "calls": [
+        "append",
+        "next",
+        "iter",
+        "chr",
+        "progress.track",
+        "progress.add_task",
+        "wcwidth",
+        "len",
+        "range"
+      ],
+      "variables": [
+        "table",
+        "append",
+        "make_table_task",
+        "widths",
+        "_widths",
+        "iter_widths",
+        "start_codepoint",
+        "end_codepoint",
+        "start_codepoint",
+        "end_codepoint",
+        "group_cell_size",
+        "end_codepoint"
+      ],
+      "start_line": 13,
+      "end_line": 39
+    },
+    {
+      "name": "get_cell_size",
+      "parameters": [
+        {
+          "name": null,
+          "type": "List[Tuple[int, int, int]]"
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "len",
+        "ord"
+      ],
+      "variables": [
+        "codepoint",
+        "lower_bound",
+        "upper_bound",
+        "index",
+        "upper_bound",
+        "lower_bound",
+        "index"
+      ],
+      "start_line": 42,
+      "end_line": 58
+    },
+    {
+      "name": "test",
+      "parameters": [
+        {
+          "name": "widths_table",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "chr",
+        "progress.track",
+        "wcwidth",
+        "range",
+        "print",
+        "get_cell_size"
+      ],
+      "variables": [
+        "character",
+        "width1",
+        "width2"
+      ],
+      "start_line": 61,
+      "end_line": 70
+    },
+    {
+      "name": "run",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "test",
+        "subprocess.run",
+        "make_widths_table",
+        "open",
+        "fh.write"
+      ],
+      "variables": [
+        "widths_table",
+        "table_file"
+      ],
+      "start_line": 73,
+      "end_line": 85
+    }
+  ],
+  "variables": [
+    "progress",
+    "table",
+    "append",
+    "make_table_task",
+    "widths",
+    "_widths",
+    "iter_widths",
+    "start_codepoint",
+    "end_codepoint",
+    "end_codepoint",
+    "start_codepoint",
+    "end_codepoint",
+    "end_codepoint",
+    "group_cell_size",
+    "end_codepoint",
+    "codepoint",
+    "lower_bound",
+    "upper_bound",
+    "index",
+    "upper_bound",
+    "lower_bound",
+    "index",
+    "character",
+    "width1",
+    "width2",
+    "widths_table",
+    "table_file"
+  ]
+}

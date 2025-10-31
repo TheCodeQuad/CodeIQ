@@ -1,0 +1,12 @@
+{
+  "name": "live_render",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "LiveRender"
+  ],
+  "variables": [],
+  "start_line": 9,
+  "end_line": 10
+}

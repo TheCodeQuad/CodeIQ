@@ -1,0 +1,15 @@
+{
+  "name": "_enter_buffer",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 819,
+  "end_line": 821
+}

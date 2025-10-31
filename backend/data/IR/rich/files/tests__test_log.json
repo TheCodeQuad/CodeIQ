@@ -1,0 +1,106 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_log.py",
+  "imports": [
+    "import io",
+    "import re",
+    "from rich.console import Console"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "replace_link_ids",
+      "parameters": [
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "re_link_ids.sub"
+      ],
+      "variables": [],
+      "start_line": 12,
+      "end_line": 17
+    },
+    {
+      "name": "render_log",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "replace_link_ids",
+        "console.log",
+        "replace_link_ids(console.file.getvalue()).replace"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 23,
+      "end_line": 35
+    },
+    {
+      "name": "test_log",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "repr",
+        "replace_link_ids",
+        "print",
+        "render_log"
+      ],
+      "variables": [
+        "expected",
+        "rendered"
+      ],
+      "start_line": 38,
+      "end_line": 44
+    },
+    {
+      "name": "test_log_caller_frame_info",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console._caller_frame_info",
+        "range"
+      ],
+      "variables": [],
+      "start_line": 47,
+      "end_line": 51
+    },
+    {
+      "name": "test_justify",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.end_capture",
+        "console.log"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 54,
+      "end_line": 59
+    }
+  ],
+  "variables": [
+    "re_link_ids",
+    "test_data",
+    "console",
+    "expected",
+    "rendered",
+    "console",
+    "result",
+    "render"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "test_theme_stack",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Theme",
+    "ThemeStack",
+    "Style.parse",
+    "stack.get",
+    "stack.push_theme",
+    "stack.pop_theme",
+    "pytest.raises"
+  ],
+  "variables": [
+    "theme",
+    "stack",
+    "new_theme"
+  ],
+  "start_line": 43,
+  "end_line": 53
+}

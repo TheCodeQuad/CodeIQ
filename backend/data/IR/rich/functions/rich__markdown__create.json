@@ -1,0 +1,27 @@
+{
+  "name": "create",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Markdown"
+    },
+    {
+      "name": null,
+      "type": "Token"
+    }
+  ],
+  "return_type": "MarkdownElement",
+  "docstring": null,
+  "calls": [
+    "cls",
+    "str",
+    "token.attrs.get"
+  ],
+  "variables": [],
+  "start_line": 416,
+  "end_line": 426
+}

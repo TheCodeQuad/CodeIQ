@@ -1,0 +1,33 @@
+{
+  "name": "set_cell_size",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "len",
+    "_is_single_cell_widths",
+    "cell_len"
+  ],
+  "variables": [
+    "size",
+    "cell_size",
+    "start",
+    "end",
+    "pos",
+    "before",
+    "before_len",
+    "end",
+    "start"
+  ],
+  "start_line": 96,
+  "end_line": 128
+}

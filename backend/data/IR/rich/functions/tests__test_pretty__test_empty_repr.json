@@ -1,0 +1,13 @@
+{
+  "name": "test_empty_repr",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Foo",
+    "pretty_repr"
+  ],
+  "variables": [],
+  "start_line": 609,
+  "end_line": 614
+}

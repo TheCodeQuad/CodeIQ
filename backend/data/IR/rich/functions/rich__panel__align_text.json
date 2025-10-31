@@ -1,0 +1,42 @@
+{
+  "name": "align_text",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Text"
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "Style"
+    }
+  ],
+  "return_type": "Text",
+  "docstring": null,
+  "calls": [
+    "cell_len",
+    "text.copy",
+    "console.get_style",
+    "text.truncate",
+    "text.stylize",
+    "Text.assemble"
+  ],
+  "variables": [
+    "text",
+    "excess_space",
+    "left"
+  ],
+  "start_line": 159,
+  "end_line": 204
+}

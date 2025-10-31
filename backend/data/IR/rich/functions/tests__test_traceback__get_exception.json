@@ -1,0 +1,17 @@
+{
+  "name": "get_exception",
+  "parameters": [],
+  "return_type": "Traceback",
+  "docstring": null,
+  "calls": [
+    "foo",
+    "print",
+    "Traceback",
+    "bar"
+  ],
+  "variables": [
+    "tb"
+  ],
+  "start_line": 76,
+  "end_line": 90
+}

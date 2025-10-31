@@ -1,0 +1,19 @@
+{
+  "name": "header",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "highlight",
+    "console.rule",
+    "console.print"
+  ],
+  "variables": [],
+  "start_line": 967,
+  "end_line": 970
+}

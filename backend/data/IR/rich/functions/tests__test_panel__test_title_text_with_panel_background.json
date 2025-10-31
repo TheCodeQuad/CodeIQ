@@ -1,0 +1,24 @@
+{
+  "name": "test_title_text_with_panel_background",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "Text",
+    "repr",
+    "console.file.getvalue",
+    "console.print",
+    "Panel",
+    "print"
+  ],
+  "variables": [
+    "panel",
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 151,
+  "end_line": 172
+}

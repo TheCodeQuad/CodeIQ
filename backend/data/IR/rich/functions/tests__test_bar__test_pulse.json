@@ -1,0 +1,19 @@
+{
+  "name": "test_pulse",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "print",
+    "ProgressBar",
+    "repr"
+  ],
+  "variables": [
+    "bar",
+    "bar_render",
+    "expected"
+  ],
+  "start_line": 56,
+  "end_line": 61
+}

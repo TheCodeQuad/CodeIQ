@@ -1,0 +1,14 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\cp_progress.py",
+  "imports": [
+    "import os",
+    "import shutil",
+    "import sys",
+    "from rich.progress import Progress"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "desc"
+  ]
+}

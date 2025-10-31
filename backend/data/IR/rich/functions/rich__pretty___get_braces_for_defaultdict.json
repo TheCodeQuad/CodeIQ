@@ -1,0 +1,15 @@
+{
+  "name": "_get_braces_for_defaultdict",
+  "parameters": [
+    {
+      "name": null,
+      "type": "DefaultDict[Any, Any]"
+    }
+  ],
+  "return_type": "Tuple[str, str, str]",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 357,
+  "end_line": 362
+}

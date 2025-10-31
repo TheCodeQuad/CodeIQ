@@ -1,0 +1,15 @@
+{
+  "name": "__repr__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 76,
+  "end_line": 77
+}

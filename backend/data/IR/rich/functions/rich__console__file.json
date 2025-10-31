@@ -1,0 +1,19 @@
+{
+  "name": "file",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "IO[str]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 772,
+  "end_line": 774
+}

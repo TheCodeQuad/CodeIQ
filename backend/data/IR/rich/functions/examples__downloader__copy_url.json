@@ -1,0 +1,38 @@
+{
+  "name": "copy_url",
+  "parameters": [
+    {
+      "name": null,
+      "type": "TaskID"
+    },
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "progress.start_task",
+    "dest_file.write",
+    "iter",
+    "partial",
+    "int",
+    "progress.console.log",
+    "done_event.is_set",
+    "open",
+    "urlopen",
+    "response.info",
+    "len",
+    "progress.update"
+  ],
+  "variables": [
+    "response"
+  ],
+  "start_line": 47,
+  "end_line": 60
+}

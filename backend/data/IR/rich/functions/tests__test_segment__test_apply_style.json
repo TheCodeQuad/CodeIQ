@@ -1,0 +1,17 @@
+{
+  "name": "test_apply_style",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "list",
+    "Style",
+    "Segment.apply_style"
+  ],
+  "variables": [
+    "segments"
+  ],
+  "start_line": 23,
+  "end_line": 29
+}

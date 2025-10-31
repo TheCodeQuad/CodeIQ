@@ -1,0 +1,17 @@
+{
+  "name": "rstrip",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.plain.rstrip"
+  ],
+  "variables": [],
+  "start_line": 662,
+  "end_line": 664
+}

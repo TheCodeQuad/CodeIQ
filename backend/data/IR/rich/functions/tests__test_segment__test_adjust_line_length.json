@@ -1,0 +1,17 @@
+{
+  "name": "test_adjust_line_length",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "Segment.adjust_line_length"
+  ],
+  "variables": [
+    "line",
+    "line",
+    "line"
+  ],
+  "start_line": 47,
+  "end_line": 58
+}

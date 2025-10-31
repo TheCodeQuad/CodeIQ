@@ -1,0 +1,25 @@
+{
+  "name": "start",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.console.set_alt_screen",
+    "self.stop",
+    "self.console.push_render_hook",
+    "self.console.set_live",
+    "self.console.show_cursor",
+    "self._enable_redirect_io",
+    "self.refresh",
+    "self._refresh_thread.start",
+    "_RefreshThread"
+  ],
+  "variables": [],
+  "start_line": 111,
+  "end_line": 143
+}

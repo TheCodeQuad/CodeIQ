@@ -1,0 +1,14 @@
+{
+  "name": "test_finished",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "make_progress"
+  ],
+  "variables": [
+    "progress"
+  ],
+  "start_line": 173,
+  "end_line": 175
+}

@@ -1,0 +1,21 @@
+{
+  "name": "get_object_types_mro",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Union[object, Type[Any]]"
+    }
+  ],
+  "return_type": "Tuple[type, ...]",
+  "docstring": null,
+  "calls": [
+    "hasattr",
+    "getattr",
+    "type"
+  ],
+  "variables": [
+    "obj"
+  ],
+  "start_line": 236,
+  "end_line": 242
+}

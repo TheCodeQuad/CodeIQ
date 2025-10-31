@@ -1,0 +1,16 @@
+{
+  "name": "test_pretty_namedtuple_empty",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "collections.namedtuple(\"Thing\", [])",
+    "collections.namedtuple",
+    "pretty_repr"
+  ],
+  "variables": [
+    "instance"
+  ],
+  "start_line": 239,
+  "end_line": 241
+}

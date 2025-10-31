@@ -1,0 +1,19 @@
+{
+  "name": "test_highlight_json_empty_string_only",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "JSONHighlighter",
+    "Text",
+    "highlighter.highlight",
+    "Span"
+  ],
+  "variables": [
+    "json_string",
+    "text",
+    "highlighter"
+  ],
+  "start_line": 195,
+  "end_line": 200
+}

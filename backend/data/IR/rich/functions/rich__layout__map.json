@@ -1,0 +1,15 @@
+{
+  "name": "map",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "RenderMap",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 194,
+  "end_line": 196
+}

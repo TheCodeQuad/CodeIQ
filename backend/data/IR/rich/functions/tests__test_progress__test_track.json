@@ -1,0 +1,26 @@
+{
+  "name": "test_track",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "next",
+    "track",
+    "iter",
+    "Console",
+    "MockClock",
+    "console.file.getvalue",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "test",
+    "expected_values",
+    "result",
+    "expected"
+  ],
+  "start_line": 280,
+  "end_line": 306
+}

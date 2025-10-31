@@ -1,0 +1,12 @@
+{
+  "name": "test_strip_control_codes",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "strip_control_codes"
+  ],
+  "variables": [],
+  "start_line": 10,
+  "end_line": 13
+}

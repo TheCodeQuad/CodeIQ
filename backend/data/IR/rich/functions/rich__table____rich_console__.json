@@ -1,0 +1,44 @@
+{
+  "name": "__rich_console__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "\"RenderResult\"",
+  "docstring": null,
+  "calls": [
+    "render_options.update",
+    "self._render",
+    "sum",
+    "options.update_width",
+    "isinstance",
+    "Segment",
+    "self._calculate_column_widths",
+    "Style.pick_first",
+    "options.update",
+    "render_annotation",
+    "console.render",
+    "console.render_str"
+  ],
+  "variables": [
+    "max_width",
+    "max_width",
+    "extra_width",
+    "widths",
+    "table_width",
+    "render_options",
+    "render_text"
+  ],
+  "start_line": 476,
+  "end_line": 521
+}

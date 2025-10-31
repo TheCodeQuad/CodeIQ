@@ -1,0 +1,29 @@
+{
+  "name": "get_style_for_token",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "TokenType"
+    }
+  ],
+  "return_type": "Style",
+  "docstring": null,
+  "calls": [
+    "get_style",
+    "tuple"
+  ],
+  "variables": [
+    "get_style",
+    "token",
+    "style",
+    "_style",
+    "style",
+    "token"
+  ],
+  "start_line": 189,
+  "end_line": 207
+}

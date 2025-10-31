@@ -1,0 +1,13 @@
+{
+  "name": "test_rich_repr",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "repr",
+    "Foo"
+  ],
+  "variables": [],
+  "start_line": 92,
+  "end_line": 94
+}

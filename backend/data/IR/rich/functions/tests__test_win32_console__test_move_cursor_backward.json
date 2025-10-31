@@ -1,0 +1,30 @@
+{
+  "name": "test_move_cursor_backward",
+  "parameters": [
+    {
+      "name": "SetConsoleCursorPosition",
+      "type": null
+    },
+    {
+      "name": "win32_console_getters",
+      "type": null
+    },
+    {
+      "name": "win32_handle",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "LegacyWindowsTerm",
+    "SetConsoleCursorPosition.assert_called_once_with",
+    "term.move_cursor_backward",
+    "WindowsCoordinates"
+  ],
+  "variables": [
+    "term"
+  ],
+  "start_line": 348,
+  "end_line": 355
+}

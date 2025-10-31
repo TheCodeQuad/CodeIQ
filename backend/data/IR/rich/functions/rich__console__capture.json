@@ -1,0 +1,19 @@
+{
+  "name": "capture",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Capture",
+  "docstring": null,
+  "calls": [
+    "Capture"
+  ],
+  "variables": [
+    "capture"
+  ],
+  "start_line": 1102,
+  "end_line": 1117
+}

@@ -1,0 +1,864 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\benchmarks\\benchmarks.py",
+  "imports": [
+    "from io import StringIO",
+    "from benchmarks import snippets",
+    "from rich.color import Color, ColorSystem",
+    "from rich.console import Console",
+    "from rich.pretty import Pretty",
+    "from rich.segment import Segment",
+    "from rich.style import Style",
+    "from rich.syntax import Syntax",
+    "from rich.table import Table",
+    "from rich.text import Text"
+  ],
+  "classes": [
+    {
+      "name": "TextSuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TextHotCacheSuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "SyntaxWrappingSuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TableSuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "PrettySuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "StyleSuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ColorSuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ColorSuiteCached",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "SegmentSuite",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "StringIO",
+        "Text.from_markup",
+        "len"
+      ],
+      "variables": [],
+      "start_line": 15,
+      "end_line": 20
+    },
+    {
+      "name": "time_wrapping",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.text.wrap"
+      ],
+      "variables": [],
+      "start_line": 22,
+      "end_line": 23
+    },
+    {
+      "name": "time_indent_guides",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text",
+        "Text(snippets.PYTHON_SNIPPET).with_indent_guides"
+      ],
+      "variables": [],
+      "start_line": 25,
+      "end_line": 26
+    },
+    {
+      "name": "time_fit",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text",
+        "Text(snippets.LOREM_IPSUM).fit"
+      ],
+      "variables": [],
+      "start_line": 28,
+      "end_line": 29
+    },
+    {
+      "name": "time_split",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.text.split"
+      ],
+      "variables": [],
+      "start_line": 31,
+      "end_line": 32
+    },
+    {
+      "name": "time_divide",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text(snippets.LOREM_IPSUM).divide",
+        "Text",
+        "range"
+      ],
+      "variables": [],
+      "start_line": 34,
+      "end_line": 35
+    },
+    {
+      "name": "time_align_center",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text",
+        "Text(snippets.LOREM_IPSUM).align"
+      ],
+      "variables": [],
+      "start_line": 37,
+      "end_line": 38
+    },
+    {
+      "name": "time_render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.text.render",
+        "list"
+      ],
+      "variables": [],
+      "start_line": 40,
+      "end_line": 41
+    },
+    {
+      "name": "time_wrapping_unicode_heavy",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text(snippets.UNICODE_HEAVY_TEXT).wrap",
+        "Text"
+      ],
+      "variables": [],
+      "start_line": 43,
+      "end_line": 44
+    },
+    {
+      "name": "time_fit_unicode_heavy",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text",
+        "Text(snippets.UNICODE_HEAVY_TEXT).fit"
+      ],
+      "variables": [],
+      "start_line": 46,
+      "end_line": 47
+    },
+    {
+      "name": "time_split_unicode_heavy",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text",
+        "Text(snippets.UNICODE_HEAVY_TEXT).split"
+      ],
+      "variables": [],
+      "start_line": 49,
+      "end_line": 50
+    },
+    {
+      "name": "time_divide_unicode_heavy",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.text.divide",
+        "range"
+      ],
+      "variables": [],
+      "start_line": 52,
+      "end_line": 53
+    },
+    {
+      "name": "time_align_center_unicode_heavy",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text",
+        "Text(snippets.UNICODE_HEAVY_TEXT).align"
+      ],
+      "variables": [],
+      "start_line": 55,
+      "end_line": 58
+    },
+    {
+      "name": "time_render_unicode_heavy",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "list",
+        "Text",
+        "Text(snippets.UNICODE_HEAVY_TEXT).render"
+      ],
+      "variables": [],
+      "start_line": 60,
+      "end_line": 61
+    },
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "StringIO"
+      ],
+      "variables": [],
+      "start_line": 65,
+      "end_line": 68
+    },
+    {
+      "name": "time_wrapping_unicode_heavy_warm_cache",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text(snippets.UNICODE_HEAVY_TEXT).wrap",
+        "Text",
+        "range"
+      ],
+      "variables": [],
+      "start_line": 70,
+      "end_line": 72
+    },
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "StringIO",
+        "Syntax"
+      ],
+      "variables": [],
+      "start_line": 76,
+      "end_line": 82
+    },
+    {
+      "name": "time_text_thin_terminal_heavy_wrapping",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self._print_with_width"
+      ],
+      "variables": [],
+      "start_line": 84,
+      "end_line": 85
+    },
+    {
+      "name": "time_text_thin_terminal_medium_wrapping",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self._print_with_width"
+      ],
+      "variables": [],
+      "start_line": 87,
+      "end_line": 88
+    },
+    {
+      "name": "time_text_wide_terminal_no_wrapping",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self._print_with_width"
+      ],
+      "variables": [],
+      "start_line": 90,
+      "end_line": 91
+    },
+    {
+      "name": "_print_with_width",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "width",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.console.print"
+      ],
+      "variables": [],
+      "start_line": 93,
+      "end_line": 94
+    },
+    {
+      "name": "time_table_no_wrapping",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self._print_table"
+      ],
+      "variables": [],
+      "start_line": 98,
+      "end_line": 99
+    },
+    {
+      "name": "time_table_heavy_wrapping",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self._print_table"
+      ],
+      "variables": [],
+      "start_line": 101,
+      "end_line": 102
+    },
+    {
+      "name": "_print_table",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "width",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "Console",
+        "StringIO",
+        "console.print",
+        "Table",
+        "table.add_column"
+      ],
+      "variables": [
+        "table",
+        "console"
+      ],
+      "start_line": 104,
+      "end_line": 126
+    },
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "StringIO"
+      ],
+      "variables": [],
+      "start_line": 130,
+      "end_line": 133
+    },
+    {
+      "name": "time_pretty",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Pretty",
+        "self.console.print"
+      ],
+      "variables": [
+        "pretty"
+      ],
+      "start_line": 135,
+      "end_line": 137
+    },
+    {
+      "name": "time_pretty_indent_guides",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Pretty",
+        "self.console.print"
+      ],
+      "variables": [
+        "pretty"
+      ],
+      "start_line": 139,
+      "end_line": 141
+    },
+    {
+      "name": "time_pretty_justify_center",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Pretty",
+        "self.console.print"
+      ],
+      "variables": [
+        "pretty"
+      ],
+      "start_line": 143,
+      "end_line": 145
+    },
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "StringIO",
+        "Style.parse"
+      ],
+      "variables": [],
+      "start_line": 149,
+      "end_line": 154
+    },
+    {
+      "name": "time_parse_ansi",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.parse"
+      ],
+      "variables": [],
+      "start_line": 156,
+      "end_line": 157
+    },
+    {
+      "name": "time_parse_hex",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.parse"
+      ],
+      "variables": [],
+      "start_line": 159,
+      "end_line": 160
+    },
+    {
+      "name": "time_parse_mixed_complex_style",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.parse"
+      ],
+      "variables": [],
+      "start_line": 162,
+      "end_line": 163
+    },
+    {
+      "name": "time_style_add",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 165,
+      "end_line": 166
+    },
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "StringIO",
+        "Color.parse"
+      ],
+      "variables": [],
+      "start_line": 170,
+      "end_line": 174
+    },
+    {
+      "name": "time_downgrade_to_eight_bit",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.color.downgrade"
+      ],
+      "variables": [],
+      "start_line": 176,
+      "end_line": 177
+    },
+    {
+      "name": "time_downgrade_to_standard",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.color.downgrade"
+      ],
+      "variables": [],
+      "start_line": 179,
+      "end_line": 180
+    },
+    {
+      "name": "time_downgrade_to_windows",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.color.downgrade"
+      ],
+      "variables": [],
+      "start_line": 182,
+      "end_line": 183
+    },
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "self.color.downgrade",
+        "StringIO",
+        "Color.parse"
+      ],
+      "variables": [],
+      "start_line": 187,
+      "end_line": 195
+    },
+    {
+      "name": "time_downgrade_to_eight_bit",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.color.downgrade"
+      ],
+      "variables": [],
+      "start_line": 197,
+      "end_line": 198
+    },
+    {
+      "name": "time_downgrade_to_standard",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.color.downgrade"
+      ],
+      "variables": [],
+      "start_line": 200,
+      "end_line": 201
+    },
+    {
+      "name": "time_downgrade_to_windows",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.color.downgrade"
+      ],
+      "variables": [],
+      "start_line": 203,
+      "end_line": 204
+    },
+    {
+      "name": "setup",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment"
+      ],
+      "variables": [],
+      "start_line": 208,
+      "end_line": 215
+    },
+    {
+      "name": "test_divide_complex",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment.divide",
+        "list"
+      ],
+      "variables": [],
+      "start_line": 217,
+      "end_line": 218
+    }
+  ],
+  "variables": [
+    "table",
+    "console",
+    "pretty",
+    "pretty",
+    "pretty"
+  ]
+}

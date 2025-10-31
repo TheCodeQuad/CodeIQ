@@ -1,0 +1,17 @@
+{
+  "name": "test_rich_measure",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "Measurement.get",
+    "Spinner"
+  ],
+  "variables": [
+    "console",
+    "spinner"
+  ],
+  "start_line": 61,
+  "end_line": 66
+}

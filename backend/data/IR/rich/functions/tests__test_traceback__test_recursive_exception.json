@@ -1,0 +1,18 @@
+{
+  "name": "test_recursive_exception",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "RuntimeError",
+    "Console",
+    "console.print_exception",
+    "foo",
+    "bar"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 378,
+  "end_line": 399
+}

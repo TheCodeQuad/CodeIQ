@@ -1,0 +1,31 @@
+{
+  "name": "render",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "float"
+    }
+  ],
+  "return_type": "\"RenderableType\"",
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "int",
+    "isinstance",
+    "Text",
+    "Table.grid",
+    "len",
+    "Text.assemble"
+  ],
+  "variables": [
+    "frame_no",
+    "frame",
+    "table"
+  ],
+  "start_line": 61,
+  "end_line": 93
+}

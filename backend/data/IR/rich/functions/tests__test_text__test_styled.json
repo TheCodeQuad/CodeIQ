@@ -1,0 +1,16 @@
+{
+  "name": "test_styled",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text.styled",
+    "str",
+    "Span"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 856,
+  "end_line": 860
+}

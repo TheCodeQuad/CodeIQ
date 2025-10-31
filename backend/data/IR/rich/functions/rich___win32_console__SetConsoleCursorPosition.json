@@ -1,0 +1,22 @@
+{
+  "name": "SetConsoleCursorPosition",
+  "parameters": [
+    {
+      "name": null,
+      "type": "wintypes.HANDLE"
+    },
+    {
+      "name": null,
+      "type": "WindowsCoordinates"
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "bool",
+    "_SetConsoleCursorPosition"
+  ],
+  "variables": [],
+  "start_line": 252,
+  "end_line": 264
+}

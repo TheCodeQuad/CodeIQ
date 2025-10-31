@@ -1,0 +1,20 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "len",
+    "strip_control_codes"
+  ],
+  "variables": [
+    "sanitized_text"
+  ],
+  "start_line": 144,
+  "end_line": 165
+}

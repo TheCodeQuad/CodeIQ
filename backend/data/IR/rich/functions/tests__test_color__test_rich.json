@@ -1,0 +1,21 @@
+{
+  "name": "test_rich",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Span",
+    "color.__rich__",
+    "Text",
+    "Color.parse",
+    "Style",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "color",
+    "as_text"
+  ],
+  "start_line": 28,
+  "end_line": 35
+}

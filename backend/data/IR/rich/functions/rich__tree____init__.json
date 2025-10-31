@@ -1,0 +1,19 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "RenderableType"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 37,
+  "end_line": 53
+}

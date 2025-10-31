@@ -1,0 +1,21 @@
+{
+  "name": "test_log",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "console.file.getvalue",
+    "console.log",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "expected",
+    "result"
+  ],
+  "start_line": 273,
+  "end_line": 286
+}

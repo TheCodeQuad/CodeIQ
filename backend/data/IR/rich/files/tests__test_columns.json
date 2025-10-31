@@ -1,0 +1,57 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_columns.py",
+  "imports": [
+    "import io",
+    "from rich.columns import Columns",
+    "from rich.console import Console"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.rule",
+        "io.StringIO",
+        "Console",
+        "Columns",
+        "columns.add_renderable",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console",
+        "empty_columns",
+        "columns",
+        "render_result"
+      ],
+      "start_line": 31,
+      "end_line": 61
+    },
+    {
+      "name": "test_render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "render"
+      ],
+      "variables": [
+        "expected"
+      ],
+      "start_line": 64,
+      "end_line": 66
+    }
+  ],
+  "variables": [
+    "COLUMN_DATA",
+    "console",
+    "empty_columns",
+    "columns",
+    "render_result",
+    "expected",
+    "result"
+  ]
+}

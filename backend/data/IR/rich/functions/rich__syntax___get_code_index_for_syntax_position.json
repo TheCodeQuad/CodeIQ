@@ -1,0 +1,27 @@
+{
+  "name": "_get_code_index_for_syntax_position",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Sequence[int]"
+    },
+    {
+      "name": null,
+      "type": "SyntaxPosition"
+    }
+  ],
+  "return_type": "Optional[int]",
+  "docstring": null,
+  "calls": [
+    "len",
+    "min"
+  ],
+  "variables": [
+    "lines_count",
+    "line_index",
+    "line_length",
+    "column_index"
+  ],
+  "start_line": 841,
+  "end_line": 865
+}

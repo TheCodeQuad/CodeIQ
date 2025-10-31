@@ -1,0 +1,18 @@
+{
+  "name": "test_capture",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "Console",
+    "console.print",
+    "pytest.raises",
+    "capture.get"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 377,
+  "end_line": 383
+}

@@ -1,0 +1,23 @@
+{
+  "name": "test_prompt_str_case_insensitive",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "Prompt.ask",
+    "console.file.getvalue",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "INPUT",
+    "console",
+    "name",
+    "expected",
+    "output"
+  ],
+  "start_line": 24,
+  "end_line": 39
+}

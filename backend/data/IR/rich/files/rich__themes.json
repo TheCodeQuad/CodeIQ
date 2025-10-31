@@ -1,0 +1,12 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\themes.py",
+  "imports": [
+    "from .default_styles import DEFAULT_STYLES",
+    "from .theme import Theme"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "DEFAULT"
+  ]
+}

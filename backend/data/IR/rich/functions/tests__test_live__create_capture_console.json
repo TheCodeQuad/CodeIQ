@@ -1,0 +1,12 @@
+{
+  "name": "create_capture_console",
+  "parameters": [],
+  "return_type": "Console",
+  "docstring": null,
+  "calls": [
+    "Console"
+  ],
+  "variables": [],
+  "start_line": 11,
+  "end_line": 21
+}

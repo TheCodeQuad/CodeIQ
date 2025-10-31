@@ -1,0 +1,19 @@
+{
+  "name": "test_option_no_wrap",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "render",
+    "print",
+    "repr",
+    "Syntax"
+  ],
+  "variables": [
+    "syntax",
+    "rendered_syntax",
+    "expected"
+  ],
+  "start_line": 233,
+  "end_line": 247
+}

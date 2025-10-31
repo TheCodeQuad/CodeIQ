@@ -1,0 +1,26 @@
+{
+  "name": "test_rule_not_enough_space_for_title_text",
+  "parameters": [
+    {
+      "name": "align",
+      "type": null
+    },
+    {
+      "name": "outcome",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.rule",
+    "io.StringIO",
+    "console.file.getvalue"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 72,
+  "end_line": 75
+}

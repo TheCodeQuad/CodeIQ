@@ -1,0 +1,17 @@
+{
+  "name": "test_fit",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "text.fit",
+    "str"
+  ],
+  "variables": [
+    "text",
+    "lines"
+  ],
+  "start_line": 644,
+  "end_line": 648
+}

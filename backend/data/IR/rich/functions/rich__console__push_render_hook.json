@@ -1,0 +1,21 @@
+{
+  "name": "push_render_hook",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "RenderHook"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._render_hooks.append"
+  ],
+  "variables": [],
+  "start_line": 849,
+  "end_line": 856
+}

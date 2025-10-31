@@ -1,0 +1,30 @@
+{
+  "name": "test_control_erase_line",
+  "parameters": [
+    {
+      "name": "legacy_term_mock",
+      "type": null
+    },
+    {
+      "name": "erase_mode",
+      "type": null
+    },
+    {
+      "name": "method_name",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "getattr(legacy_term_mock, method_name).assert_called_once_with",
+    "Segment",
+    "getattr",
+    "legacy_windows_render"
+  ],
+  "variables": [
+    "buffer"
+  ],
+  "start_line": 104,
+  "end_line": 109
+}

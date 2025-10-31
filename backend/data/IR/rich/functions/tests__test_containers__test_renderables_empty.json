@@ -1,0 +1,18 @@
+{
+  "name": "test_renderables_empty",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "Renderables",
+    "renderables.__rich_measure__"
+  ],
+  "variables": [
+    "console",
+    "renderables",
+    "result"
+  ],
+  "start_line": 20,
+  "end_line": 27
+}

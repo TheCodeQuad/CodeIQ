@@ -1,0 +1,17 @@
+{
+  "name": "test_rule_center_aligned_title_not_enough_space_for_rule",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.rule",
+    "io.StringIO",
+    "console.file.getvalue"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 78,
+  "end_line": 81
+}

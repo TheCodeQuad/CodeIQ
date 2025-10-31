@@ -1,0 +1,17 @@
+{
+  "name": "_reset",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._progress.clear"
+  ],
+  "variables": [],
+  "start_line": 1054,
+  "end_line": 1058
+}

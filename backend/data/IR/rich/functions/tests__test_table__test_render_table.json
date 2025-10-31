@@ -1,0 +1,17 @@
+{
+  "name": "test_render_table",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "repr",
+    "print",
+    "render_tables"
+  ],
+  "variables": [
+    "expected",
+    "result"
+  ],
+  "start_line": 89,
+  "end_line": 93
+}

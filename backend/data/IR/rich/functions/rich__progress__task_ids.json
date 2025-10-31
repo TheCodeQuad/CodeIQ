@@ -1,0 +1,18 @@
+{
+  "name": "task_ids",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "List[TaskID]",
+  "docstring": null,
+  "calls": [
+    "list",
+    "self._tasks.keys"
+  ],
+  "variables": [],
+  "start_line": 1155,
+  "end_line": 1158
+}

@@ -1,0 +1,41 @@
+{
+  "name": "align_middle",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Type[\"Segment\"]"
+    },
+    {
+      "name": null,
+      "type": "List[List[\"Segment\"]]"
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "Style"
+    }
+  ],
+  "return_type": "List[List[\"Segment\"]]",
+  "docstring": null,
+  "calls": [
+    "len",
+    "cls"
+  ],
+  "variables": [
+    "extra_lines",
+    "lines",
+    "blank",
+    "top_lines",
+    "bottom_lines",
+    "lines"
+  ],
+  "start_line": 492,
+  "end_line": 520
+}

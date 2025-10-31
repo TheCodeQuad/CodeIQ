@@ -1,0 +1,92 @@
+{
+  "name": "_render",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    },
+    {
+      "name": null,
+      "type": "List[int]"
+    }
+  ],
+  "return_type": "\"RenderResult\"",
+  "docstring": null,
+  "calls": [
+    "align_cell",
+    "self._get_cells",
+    "options.update",
+    "_box.get_bottom",
+    "console.get_style",
+    "len",
+    "_box.get_row",
+    "self.box.substitute",
+    "enumerate",
+    "loop_last",
+    "_Segment.set_shape",
+    "Style.null",
+    "list",
+    "pick_bool",
+    "max",
+    "cells.append",
+    "range",
+    "zip",
+    "console.render_lines",
+    "_box.get_top",
+    "Segment.line",
+    "_Segment.align_middle",
+    "_Segment.align_top",
+    "loop_first_last",
+    "_divider.text.strip",
+    "_Segment",
+    "get_style",
+    "_Segment.align_bottom",
+    "_box.get_plain_headed_box",
+    "get_row_style"
+  ],
+  "variables": [
+    "table_style",
+    "border_style",
+    "_column_cells",
+    "row_cells",
+    "_box",
+    "_box",
+    "new_line",
+    "columns",
+    "show_header",
+    "show_footer",
+    "show_edge",
+    "show_lines",
+    "leading",
+    "_Segment",
+    "box_segments",
+    "box_segments",
+    "get_row_style",
+    "get_style",
+    "header_row",
+    "footer_row",
+    "row",
+    "max_height",
+    "cells",
+    "row_style",
+    "row_style",
+    "render_options",
+    "lines",
+    "max_height",
+    "row_height",
+    "vertical",
+    "vertical",
+    "divider",
+    "end_section"
+  ],
+  "start_line": 747,
+  "end_line": 926
+}

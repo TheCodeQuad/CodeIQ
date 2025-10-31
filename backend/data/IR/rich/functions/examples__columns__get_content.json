@@ -1,0 +1,18 @@
+{
+  "name": "get_content",
+  "parameters": [
+    {
+      "name": "user",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [],
+  "variables": [
+    "country",
+    "name"
+  ],
+  "start_line": 15,
+  "end_line": 19
+}

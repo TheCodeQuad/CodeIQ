@@ -1,0 +1,30 @@
+{
+  "name": "test_table_show_header_false_substitution",
+  "parameters": [
+    {
+      "name": "box",
+      "type": null
+    },
+    {
+      "name": "result",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "console.export_text",
+    "Console",
+    "console.print",
+    "Table",
+    "table.add_column"
+  ],
+  "variables": [
+    "table",
+    "console",
+    "output"
+  ],
+  "start_line": 195,
+  "end_line": 209
+}

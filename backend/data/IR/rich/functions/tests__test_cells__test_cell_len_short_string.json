@@ -1,0 +1,12 @@
+{
+  "name": "test_cell_len_short_string",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "cells.cell_len"
+  ],
+  "variables": [],
+  "start_line": 14,
+  "end_line": 18
+}

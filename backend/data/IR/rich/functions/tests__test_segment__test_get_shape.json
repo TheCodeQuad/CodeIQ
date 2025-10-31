@@ -1,0 +1,13 @@
+{
+  "name": "test_get_shape",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "Segment.get_shape"
+  ],
+  "variables": [],
+  "start_line": 65,
+  "end_line": 67
+}

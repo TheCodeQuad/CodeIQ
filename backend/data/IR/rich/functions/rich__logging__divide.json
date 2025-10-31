@@ -1,0 +1,17 @@
+{
+  "name": "divide",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "log.exception",
+    "log.debug"
+  ],
+  "variables": [
+    "number",
+    "divisor",
+    "foos"
+  ],
+  "start_line": 283,
+  "end_line": 291
+}

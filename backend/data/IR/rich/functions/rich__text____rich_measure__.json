@@ -1,0 +1,35 @@
+{
+  "name": "__rich_measure__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "Measurement",
+  "docstring": null,
+  "calls": [
+    "text.split",
+    "cell_len",
+    "text.splitlines",
+    "max",
+    "Measurement"
+  ],
+  "variables": [
+    "text",
+    "lines",
+    "max_text_width",
+    "words",
+    "min_text_width"
+  ],
+  "start_line": 708,
+  "end_line": 718
+}

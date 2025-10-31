@@ -1,0 +1,39 @@
+{
+  "name": "divide_line",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "list[int]",
+  "docstring": null,
+  "calls": [
+    "append",
+    "loop_last",
+    "_cell_len",
+    "word.rstrip",
+    "chop_cells",
+    "len",
+    "words"
+  ],
+  "variables": [
+    "break_positions",
+    "append",
+    "cell_offset",
+    "_cell_len",
+    "word_length",
+    "remaining_space",
+    "word_fits_remaining_space",
+    "folded_word",
+    "cell_offset",
+    "cell_offset",
+    "cell_offset"
+  ],
+  "start_line": 26,
+  "end_line": 78
+}

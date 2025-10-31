@@ -1,0 +1,17 @@
+{
+  "name": "render_locals",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Frame"
+    }
+  ],
+  "return_type": "Iterable[ConsoleRenderable]",
+  "docstring": null,
+  "calls": [
+    "render_scope"
+  ],
+  "variables": [],
+  "start_line": 749,
+  "end_line": 757
+}

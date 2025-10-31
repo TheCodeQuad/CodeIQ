@@ -1,0 +1,27 @@
+{
+  "name": "test_compact_time_remaining_column",
+  "parameters": [
+    {
+      "name": "task_time",
+      "type": null
+    },
+    {
+      "name": "formatted",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "str",
+    "column.render",
+    "SimpleNamespace",
+    "TimeRemainingColumn"
+  ],
+  "variables": [
+    "task",
+    "column"
+  ],
+  "start_line": 106,
+  "end_line": 110
+}

@@ -1,0 +1,19 @@
+{
+  "name": "expand",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "bool"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 292,
+  "end_line": 294
+}

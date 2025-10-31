@@ -1,0 +1,15 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tools\\stress_test_pretty.py",
+  "imports": [
+    "from rich.console import Console",
+    "from rich.panel import Panel",
+    "from rich.pretty import Pretty",
+    "from rich._timer import timer"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "DATA",
+    "console"
+  ]
+}

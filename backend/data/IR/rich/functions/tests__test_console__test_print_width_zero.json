@@ -1,0 +1,17 @@
+{
+  "name": "test_print_width_zero",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.capture",
+    "console.print",
+    "capture.get"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 838,
+  "end_line": 842
+}

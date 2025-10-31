@@ -1,0 +1,24 @@
+{
+  "name": "readinto",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[bytearray, memoryview, mmap]"
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "self.progress.advance",
+    "self.handle.readinto"
+  ],
+  "variables": [
+    "n"
+  ],
+  "start_line": 250,
+  "end_line": 253
+}

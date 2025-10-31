@@ -1,0 +1,20 @@
+{
+  "name": "test_broken_str",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "BrokenStr",
+    "console.file.getvalue",
+    "console.print_exception",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "result"
+  ],
+  "start_line": 236,
+  "end_line": 248
+}

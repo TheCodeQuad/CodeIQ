@@ -1,0 +1,25 @@
+{
+  "name": "speed",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Optional[float]",
+  "docstring": null,
+  "calls": [
+    "next",
+    "iter",
+    "sum"
+  ],
+  "variables": [
+    "progress",
+    "total_time",
+    "iter_progress",
+    "total_completed",
+    "speed"
+  ],
+  "start_line": 1023,
+  "end_line": 1038
+}

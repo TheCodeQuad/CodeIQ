@@ -1,0 +1,193 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\status.py",
+  "imports": [
+    "from types import TracebackType",
+    "from typing import Optional, Type",
+    "from .console import Console, RenderableType",
+    "from .jupyter import JupyterMixin",
+    "from .live import Live",
+    "from .spinner import Spinner",
+    "from .style import StyleType",
+    "from time import sleep",
+    "from .console import Console"
+  ],
+  "classes": [
+    {
+      "name": "Status",
+      "base_classes": "(JupyterMixin)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "RenderableType"
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Live",
+        "Spinner"
+      ],
+      "variables": [],
+      "start_line": 23,
+      "end_line": 42
+    },
+    {
+      "name": "renderable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Spinner",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 45,
+      "end_line": 46
+    },
+    {
+      "name": "console",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "\"Console\"",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 49,
+      "end_line": 51
+    },
+    {
+      "name": "update",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self._spinner.update",
+        "self._live.update",
+        "Spinner"
+      ],
+      "variables": [],
+      "start_line": 53,
+      "end_line": 83
+    },
+    {
+      "name": "start",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self._live.start"
+      ],
+      "variables": [],
+      "start_line": 85,
+      "end_line": 87
+    },
+    {
+      "name": "stop",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self._live.stop"
+      ],
+      "variables": [],
+      "start_line": 89,
+      "end_line": 91
+    },
+    {
+      "name": "__rich__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 93,
+      "end_line": 94
+    },
+    {
+      "name": "__enter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "\"Status\"",
+      "docstring": null,
+      "calls": [
+        "self.start"
+      ],
+      "variables": [],
+      "start_line": 96,
+      "end_line": 98
+    },
+    {
+      "name": "__exit__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[Type[BaseException]]"
+        },
+        {
+          "name": null,
+          "type": "Optional[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.stop"
+      ],
+      "variables": [],
+      "start_line": 100,
+      "end_line": 106
+    }
+  ],
+  "variables": [
+    "console"
+  ]
+}

@@ -1,0 +1,1735 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_pretty.py",
+  "imports": [
+    "import collections",
+    "import io",
+    "import sys",
+    "from array import array",
+    "from collections import UserDict, defaultdict, deque",
+    "from dataclasses import dataclass, field",
+    "from typing import Any, List, NamedTuple",
+    "import attr",
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.measure import Measurement",
+    "from rich.pretty import Node, Pretty, _ipy_display_hook, install, pprint, pretty_repr",
+    "from rich.text import Text",
+    "from dataclasses import dataclass, field"
+  ],
+  "classes": [
+    {
+      "name": "Thing",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Thing",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Thing",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Thing",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ExampleDataclass",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Empty",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "StockKeepingUnit",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Thing",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "LooksLikeANamedTupleButIsnt",
+      "base_classes": "(tuple)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Hello",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "BrokenRepr",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "BrokenAttr",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Example",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Example",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Example",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Example",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Bar",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Bar",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Bar",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Point",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Nada",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "D1",
+      "base_classes": "(UserDict)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "D2",
+      "base_classes": "(UserDict)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Foo",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "BadDataclass",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "test_install",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "install",
+        "Console",
+        "console.file.getvalue",
+        "sys.displayhook"
+      ],
+      "variables": [
+        "console",
+        "dh"
+      ],
+      "start_line": 47,
+      "end_line": 53
+    },
+    {
+      "name": "test_install_max_depth",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "install",
+        "Console",
+        "console.file.getvalue",
+        "sys.displayhook"
+      ],
+      "variables": [
+        "console",
+        "dh"
+      ],
+      "start_line": 56,
+      "end_line": 62
+    },
+    {
+      "name": "test_ipy_display_hook__repr_html",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "io.StringIO",
+        "console.end_capture",
+        "Console",
+        "Thing",
+        "_ipy_display_hook"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 65,
+      "end_line": 76
+    },
+    {
+      "name": "_repr_html_",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 69,
+      "end_line": 70
+    },
+    {
+      "name": "test_ipy_display_hook__multiple_special_reprs",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "Thing",
+        "_ipy_display_hook"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 79,
+      "end_line": 98
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 88,
+      "end_line": 89
+    },
+    {
+      "name": "_repr_latex_",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 91,
+      "end_line": 92
+    },
+    {
+      "name": "_repr_html_",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 94,
+      "end_line": 95
+    },
+    {
+      "name": "test_ipy_display_hook__no_special_repr_methods",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "Thing",
+        "_ipy_display_hook"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 101,
+      "end_line": 110
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 105,
+      "end_line": 106
+    },
+    {
+      "name": "test_ipy_display_hook__special_repr_raises_exception",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Thing",
+        "Exception",
+        "_ipy_display_hook"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 113,
+      "end_line": 134
+    },
+    {
+      "name": "_repr_markdown_",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Exception"
+      ],
+      "variables": [],
+      "start_line": 121,
+      "end_line": 122
+    },
+    {
+      "name": "_repr_latex_",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 124,
+      "end_line": 125
+    },
+    {
+      "name": "_repr_html_",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 127,
+      "end_line": 128
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 130,
+      "end_line": 131
+    },
+    {
+      "name": "test_ipy_display_hook__console_renderables_on_newline",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "io.StringIO",
+        "Console",
+        "Text",
+        "_ipy_display_hook"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 137,
+      "end_line": 141
+    },
+    {
+      "name": "test_pretty",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "print",
+        "pretty_repr"
+      ],
+      "variables": [
+        "test",
+        "result",
+        "expected"
+      ],
+      "start_line": 144,
+      "end_line": 157
+    },
+    {
+      "name": "test_pretty_dataclass",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "repr",
+        "ExampleDataclass",
+        "print",
+        "pretty_repr"
+      ],
+      "variables": [
+        "dc",
+        "result",
+        "result",
+        "result"
+      ],
+      "start_line": 174,
+      "end_line": 191
+    },
+    {
+      "name": "test_empty_dataclass",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Empty",
+        "pretty_repr"
+      ],
+      "variables": [],
+      "start_line": 194,
+      "end_line": 196
+    },
+    {
+      "name": "test_pretty_namedtuple",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "StockKeepingUnit",
+        "Console",
+        "pretty_repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "example_namedtuple",
+        "result"
+      ],
+      "start_line": 207,
+      "end_line": 231
+    },
+    {
+      "name": "test_pretty_namedtuple_length_one_no_trailing_comma",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "collections.namedtuple",
+        "collections.namedtuple(\"Thing\", [\"name\"])",
+        "pretty_repr"
+      ],
+      "variables": [
+        "instance"
+      ],
+      "start_line": 234,
+      "end_line": 236
+    },
+    {
+      "name": "test_pretty_namedtuple_empty",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "collections.namedtuple(\"Thing\", [])",
+        "collections.namedtuple",
+        "pretty_repr"
+      ],
+      "variables": [
+        "instance"
+      ],
+      "start_line": 239,
+      "end_line": 241
+    },
+    {
+      "name": "test_pretty_namedtuple_custom_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Thing",
+        "pretty_repr"
+      ],
+      "variables": [],
+      "start_line": 244,
+      "end_line": 249
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 246,
+      "end_line": 247
+    },
+    {
+      "name": "test_pretty_namedtuple_fields_invalid_type",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "LooksLikeANamedTupleButIsnt",
+        "pretty_repr"
+      ],
+      "variables": [
+        "_fields",
+        "instance",
+        "result"
+      ],
+      "start_line": 252,
+      "end_line": 258
+    },
+    {
+      "name": "test_pretty_namedtuple_max_depth",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "StockKeepingUnit",
+        "pretty_repr"
+      ],
+      "variables": [
+        "instance",
+        "result"
+      ],
+      "start_line": 261,
+      "end_line": 264
+    },
+    {
+      "name": "test_small_width",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "pretty_repr"
+      ],
+      "variables": [
+        "test",
+        "result",
+        "expected"
+      ],
+      "start_line": 267,
+      "end_line": 271
+    },
+    {
+      "name": "test_ansi_in_pretty_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "console.export_text",
+        "Console",
+        "Pretty",
+        "console.print",
+        "Hello"
+      ],
+      "variables": [
+        "pretty",
+        "console",
+        "result"
+      ],
+      "start_line": 274,
+      "end_line": 285
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 276,
+      "end_line": 277
+    },
+    {
+      "name": "test_broken_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "BrokenRepr",
+        "pretty_repr"
+      ],
+      "variables": [
+        "test",
+        "result",
+        "expected"
+      ],
+      "start_line": 288,
+      "end_line": 296
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 290,
+      "end_line": 291
+    },
+    {
+      "name": "test_broken_getattr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "pretty_repr",
+        "BrokenAttr"
+      ],
+      "variables": [
+        "test",
+        "result"
+      ],
+      "start_line": 299,
+      "end_line": 309
+    },
+    {
+      "name": "__getattr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "name",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 301,
+      "end_line": 302
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 304,
+      "end_line": 305
+    },
+    {
+      "name": "test_reference_cycle_container",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "test[1].append",
+        "test.append",
+        "pretty_repr"
+      ],
+      "variables": [
+        "test",
+        "res",
+        "test",
+        "res",
+        "a",
+        "test",
+        "res"
+      ],
+      "start_line": 312,
+      "end_line": 327
+    },
+    {
+      "name": "test_reference_cycle_namedtuple",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Example",
+        "test.y[0].y.append",
+        "pretty_repr"
+      ],
+      "variables": [
+        "x",
+        "y",
+        "test",
+        "res",
+        "a",
+        "test",
+        "res"
+      ],
+      "start_line": 330,
+      "end_line": 344
+    },
+    {
+      "name": "test_reference_cycle_dataclass",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Example",
+        "pretty_repr"
+      ],
+      "variables": [
+        "x",
+        "y",
+        "test",
+        "res",
+        "test",
+        "res",
+        "a",
+        "test",
+        "res"
+      ],
+      "start_line": 347,
+      "end_line": 367
+    },
+    {
+      "name": "test_reference_cycle_attrs",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Example",
+        "pretty_repr"
+      ],
+      "variables": [
+        "x",
+        "y",
+        "test",
+        "res",
+        "test",
+        "res",
+        "a",
+        "test",
+        "res"
+      ],
+      "start_line": 370,
+      "end_line": 390
+    },
+    {
+      "name": "test_reference_cycle_custom_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Example",
+        "pretty_repr"
+      ],
+      "variables": [
+        "test",
+        "res",
+        "test",
+        "res",
+        "a",
+        "test",
+        "res"
+      ],
+      "start_line": 393,
+      "end_line": 417
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "x",
+          "type": null
+        },
+        {
+          "name": "y",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 395,
+      "end_line": 397
+    },
+    {
+      "name": "__rich_repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 399,
+      "end_line": 401
+    },
+    {
+      "name": "test_max_depth",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "pretty_repr"
+      ],
+      "variables": [
+        "d"
+      ],
+      "start_line": 420,
+      "end_line": 439
+    },
+    {
+      "name": "test_max_depth_rich_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Bar",
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [],
+      "start_line": 442,
+      "end_line": 460
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "foo",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 444,
+      "end_line": 445
+    },
+    {
+      "name": "__rich_repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 447,
+      "end_line": 448
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "bar",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 451,
+      "end_line": 452
+    },
+    {
+      "name": "__rich_repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 454,
+      "end_line": 455
+    },
+    {
+      "name": "test_max_depth_attrs",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Bar",
+        "attr.field",
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [
+        "foo",
+        "bar"
+      ],
+      "start_line": 463,
+      "end_line": 475
+    },
+    {
+      "name": "test_max_depth_dataclass",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Bar",
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [
+        "foo",
+        "bar"
+      ],
+      "start_line": 478,
+      "end_line": 490
+    },
+    {
+      "name": "test_defaultdict",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "defaultdict",
+        "pretty_repr"
+      ],
+      "variables": [
+        "test_dict",
+        "result"
+      ],
+      "start_line": 493,
+      "end_line": 496
+    },
+    {
+      "name": "test_deque",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "deque",
+        "pretty_repr"
+      ],
+      "variables": [
+        "test_deque",
+        "result",
+        "test_deque",
+        "result",
+        "test_deque",
+        "result",
+        "test_deque",
+        "result",
+        "test_deque",
+        "result",
+        "test_deque",
+        "result",
+        "test_deque",
+        "result",
+        "test_deque",
+        "result"
+      ],
+      "start_line": 499,
+      "end_line": 523
+    },
+    {
+      "name": "test_array",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "array",
+        "pretty_repr"
+      ],
+      "variables": [
+        "test_array",
+        "result"
+      ],
+      "start_line": 526,
+      "end_line": 529
+    },
+    {
+      "name": "test_tuple_of_one",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "pretty_repr"
+      ],
+      "variables": [],
+      "start_line": 532,
+      "end_line": 533
+    },
+    {
+      "name": "test_node",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Node",
+        "pretty_repr"
+      ],
+      "variables": [
+        "node"
+      ],
+      "start_line": 536,
+      "end_line": 538
+    },
+    {
+      "name": "test_indent_lines",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "console.print",
+        "Pretty",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 541,
+      "end_line": 554
+    },
+    {
+      "name": "test_pprint",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.end_capture",
+        "pprint"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 557,
+      "end_line": 561
+    },
+    {
+      "name": "test_pprint_max_values",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.end_capture",
+        "pprint"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 564,
+      "end_line": 568
+    },
+    {
+      "name": "test_pprint_max_items",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.end_capture",
+        "pprint"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 571,
+      "end_line": 575
+    },
+    {
+      "name": "test_pprint_max_string",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.end_capture",
+        "pprint"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 578,
+      "end_line": 582
+    },
+    {
+      "name": "test_tuples",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "pprint",
+        "Console",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 585,
+      "end_line": 597
+    },
+    {
+      "name": "test_newline",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "console.print",
+        "Pretty"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 600,
+      "end_line": 606
+    },
+    {
+      "name": "test_empty_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [],
+      "start_line": 609,
+      "end_line": 614
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 611,
+      "end_line": 612
+    },
+    {
+      "name": "test_attrs",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Point",
+        "pretty_repr",
+        "repr",
+        "print",
+        "attr.field"
+      ],
+      "variables": [
+        "x",
+        "y",
+        "foo",
+        "z",
+        "result",
+        "expected"
+      ],
+      "start_line": 617,
+      "end_line": 628
+    },
+    {
+      "name": "test_attrs_empty",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "print",
+        "Nada",
+        "repr",
+        "pretty_repr"
+      ],
+      "variables": [
+        "result",
+        "expected"
+      ],
+      "start_line": 631,
+      "end_line": 639
+    },
+    {
+      "name": "test_attrs_broken",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "repr",
+        "print",
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [
+        "bar",
+        "foo",
+        "result",
+        "expected"
+      ],
+      "start_line": 647,
+      "end_line": 657
+    },
+    {
+      "name": "test_attrs_broken_310",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "repr",
+        "print",
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [
+        "bar",
+        "foo",
+        "result",
+        "expected",
+        "expected"
+      ],
+      "start_line": 662,
+      "end_line": 675
+    },
+    {
+      "name": "test_user_dict",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "D1",
+        "pretty_repr",
+        "repr",
+        "print",
+        "D2"
+      ],
+      "variables": [
+        "d1",
+        "d2",
+        "result",
+        "result"
+      ],
+      "start_line": 678,
+      "end_line": 693
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 683,
+      "end_line": 684
+    },
+    {
+      "name": "test_lying_attribute",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [
+        "foo",
+        "result"
+      ],
+      "start_line": 696,
+      "end_line": 705
+    },
+    {
+      "name": "__getattr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "attr",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 700,
+      "end_line": 701
+    },
+    {
+      "name": "test_measure_pretty",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "Pretty",
+        "Measurement",
+        "console.measure"
+      ],
+      "variables": [
+        "console",
+        "pretty",
+        "measurement"
+      ],
+      "start_line": 708,
+      "end_line": 715
+    },
+    {
+      "name": "test_tuple_rich_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [],
+      "start_line": 718,
+      "end_line": 727
+    },
+    {
+      "name": "__rich_repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 724,
+      "end_line": 725
+    },
+    {
+      "name": "test_tuple_rich_repr_default",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Foo",
+        "pretty_repr"
+      ],
+      "variables": [],
+      "start_line": 730,
+      "end_line": 739
+    },
+    {
+      "name": "__rich_repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 736,
+      "end_line": 737
+    },
+    {
+      "name": "test_dataclass_no_attribute",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "Console",
+        "dataclass",
+        "console.print",
+        "BadDataclass",
+        "field",
+        "capture.get"
+      ],
+      "variables": [
+        "item",
+        "bad_data_class",
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 742,
+      "end_line": 759
+    }
+  ],
+  "variables": [
+    "skip_py38",
+    "skip_py39",
+    "skip_py310",
+    "skip_py311",
+    "skip_py312",
+    "skip_py313",
+    "skip_py314",
+    "console",
+    "dh",
+    "console",
+    "dh",
+    "console",
+    "console",
+    "result",
+    "console",
+    "result",
+    "console",
+    "result",
+    "console",
+    "result",
+    "test",
+    "result",
+    "expected",
+    "foo",
+    "bar",
+    "ignore",
+    "baz",
+    "last",
+    "dc",
+    "result",
+    "result",
+    "result",
+    "name",
+    "description",
+    "price",
+    "category",
+    "reviews",
+    "console",
+    "example_namedtuple",
+    "result",
+    "instance",
+    "instance",
+    "_fields",
+    "instance",
+    "result",
+    "instance",
+    "result",
+    "test",
+    "result",
+    "expected",
+    "pretty",
+    "console",
+    "result",
+    "test",
+    "result",
+    "expected",
+    "test",
+    "result",
+    "test",
+    "res",
+    "test",
+    "res",
+    "a",
+    "test",
+    "res",
+    "x",
+    "y",
+    "test",
+    "res",
+    "a",
+    "test",
+    "res",
+    "x",
+    "y",
+    "test",
+    "res",
+    "test",
+    "res",
+    "a",
+    "test",
+    "res",
+    "x",
+    "y",
+    "test",
+    "res",
+    "test",
+    "res",
+    "a",
+    "test",
+    "res",
+    "test",
+    "res",
+    "test",
+    "res",
+    "a",
+    "test",
+    "res",
+    "d",
+    "foo",
+    "bar",
+    "foo",
+    "bar",
+    "test_dict",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_array",
+    "result",
+    "node",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "result",
+    "expected",
+    "x",
+    "y",
+    "foo",
+    "z",
+    "result",
+    "expected",
+    "result",
+    "expected",
+    "bar",
+    "foo",
+    "result",
+    "expected",
+    "bar",
+    "foo",
+    "result",
+    "expected",
+    "expected",
+    "d1",
+    "d2",
+    "result",
+    "result",
+    "foo",
+    "result",
+    "console",
+    "pretty",
+    "measurement",
+    "item",
+    "bad_data_class",
+    "console",
+    "expected",
+    "result"
+  ]
+}

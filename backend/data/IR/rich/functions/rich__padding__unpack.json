@@ -1,0 +1,21 @@
+{
+  "name": "unpack",
+  "parameters": [
+    {
+      "name": null,
+      "type": "\"PaddingDimensions\""
+    }
+  ],
+  "return_type": "Tuple[int, int, int, int]",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "len",
+    "ValueError"
+  ],
+  "variables": [
+    "_pad"
+  ],
+  "start_line": 61,
+  "end_line": 74
+}

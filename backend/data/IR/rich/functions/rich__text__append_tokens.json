@@ -1,0 +1,31 @@
+{
+  "name": "append_tokens",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[Tuple[str, Optional[StyleType]]]"
+    }
+  ],
+  "return_type": "\"Text\"",
+  "docstring": null,
+  "calls": [
+    "append_span",
+    "append_text",
+    "strip_control_codes",
+    "len",
+    "_Span"
+  ],
+  "variables": [
+    "append_text",
+    "append_span",
+    "_Span",
+    "offset",
+    "content"
+  ],
+  "start_line": 1031,
+  "end_line": 1053
+}

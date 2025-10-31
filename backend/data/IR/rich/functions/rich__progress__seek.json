@@ -1,0 +1,24 @@
+{
+  "name": "seek",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "self.progress.update",
+    "self.handle.seek"
+  ],
+  "variables": [
+    "pos"
+  ],
+  "start_line": 270,
+  "end_line": 273
+}

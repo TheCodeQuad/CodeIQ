@@ -1,0 +1,40 @@
+{
+  "name": "ratio_reduce",
+  "parameters": [
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "List[int]"
+    },
+    {
+      "name": null,
+      "type": "List[int]"
+    },
+    {
+      "name": null,
+      "type": "List[int]"
+    }
+  ],
+  "return_type": "List[int]",
+  "docstring": null,
+  "calls": [
+    "round",
+    "append",
+    "sum",
+    "min",
+    "zip"
+  ],
+  "variables": [
+    "ratios",
+    "total_ratio",
+    "total_remaining",
+    "result",
+    "append",
+    "distributed"
+  ],
+  "start_line": 75,
+  "end_line": 104
+}

@@ -1,0 +1,21 @@
+{
+  "name": "test_get_pulse_segments",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "ProgressBar",
+    "Style.parse",
+    "bar._get_pulse_segments",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "bar",
+    "segments",
+    "expected"
+  ],
+  "start_line": 64,
+  "end_line": 92
+}

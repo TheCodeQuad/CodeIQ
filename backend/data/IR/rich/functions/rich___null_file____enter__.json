@@ -1,0 +1,15 @@
+{
+  "name": "__enter__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "IO[str]",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 48,
+  "end_line": 49
+}

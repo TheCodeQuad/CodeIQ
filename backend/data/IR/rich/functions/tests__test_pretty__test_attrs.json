@@ -1,0 +1,23 @@
+{
+  "name": "test_attrs",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Point",
+    "pretty_repr",
+    "repr",
+    "print",
+    "attr.field"
+  ],
+  "variables": [
+    "x",
+    "y",
+    "foo",
+    "z",
+    "result",
+    "expected"
+  ],
+  "start_line": 617,
+  "end_line": 628
+}

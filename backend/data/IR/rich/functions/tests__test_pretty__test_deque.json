@@ -1,0 +1,30 @@
+{
+  "name": "test_deque",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "deque",
+    "pretty_repr"
+  ],
+  "variables": [
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result",
+    "test_deque",
+    "result"
+  ],
+  "start_line": 499,
+  "end_line": 523
+}

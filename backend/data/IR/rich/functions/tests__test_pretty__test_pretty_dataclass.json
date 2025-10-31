@@ -1,0 +1,20 @@
+{
+  "name": "test_pretty_dataclass",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "repr",
+    "ExampleDataclass",
+    "print",
+    "pretty_repr"
+  ],
+  "variables": [
+    "dc",
+    "result",
+    "result",
+    "result"
+  ],
+  "start_line": 174,
+  "end_line": 191
+}

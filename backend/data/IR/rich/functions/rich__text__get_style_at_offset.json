@@ -1,0 +1,31 @@
+{
+  "name": "get_style_at_offset",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "Style",
+  "docstring": null,
+  "calls": [
+    "len",
+    "get_style",
+    "get_style(self.style).copy"
+  ],
+  "variables": [
+    "offset",
+    "get_style",
+    "style"
+  ],
+  "start_line": 552,
+  "end_line": 570
+}

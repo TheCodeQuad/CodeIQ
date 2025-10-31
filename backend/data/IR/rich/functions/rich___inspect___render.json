@@ -1,0 +1,63 @@
+{
+  "name": "_render",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Iterable[RenderableType]",
+  "docstring": null,
+  "calls": [
+    "callable",
+    "key.strip(\"_\").lower",
+    "safe_getattr",
+    "key.startswith",
+    "len",
+    "dir",
+    "items.sort",
+    "doc.stylize",
+    "highlighter",
+    "getattr",
+    "add_row",
+    "ismodule",
+    "Panel",
+    "items_table.add_column",
+    "self._get_signature",
+    "Text",
+    "self._get_formatted_doc",
+    "Table.grid",
+    "repr",
+    "Text.assemble",
+    "isclass",
+    "key_text.copy",
+    "Pretty",
+    "_signature_text.append",
+    "warning.stylize",
+    "Text.from_markup",
+    "key.strip"
+  ],
+  "variables": [
+    "obj",
+    "keys",
+    "total_items",
+    "keys",
+    "keys",
+    "not_shown_count",
+    "items",
+    "items_table",
+    "add_row",
+    "highlighter",
+    "signature",
+    "_doc",
+    "doc_text",
+    "doc_text",
+    "key_text",
+    "warning",
+    "_signature_text",
+    "docs",
+    "doc"
+  ],
+  "start_line": 121,
+  "end_line": 212
+}

@@ -1,0 +1,15 @@
+{
+  "name": "top",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "T",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 10,
+  "end_line": 12
+}

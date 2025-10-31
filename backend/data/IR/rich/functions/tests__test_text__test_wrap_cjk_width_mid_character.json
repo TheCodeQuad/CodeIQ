@@ -1,0 +1,17 @@
+{
+  "name": "test_wrap_cjk_width_mid_character",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "text.wrap",
+    "Text"
+  ],
+  "variables": [
+    "text",
+    "lines"
+  ],
+  "start_line": 495,
+  "end_line": 502
+}

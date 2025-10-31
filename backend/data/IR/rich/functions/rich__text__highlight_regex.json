@@ -1,0 +1,38 @@
+{
+  "name": "highlight_regex",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[Pattern[str], str]"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "callable",
+    "re.compile",
+    "append_span",
+    "re_highlight.finditer",
+    "style",
+    "isinstance",
+    "match.groupdict",
+    "get_span",
+    "match.groupdict().keys",
+    "_Span"
+  ],
+  "variables": [
+    "count",
+    "append_span",
+    "_Span",
+    "plain",
+    "re_highlight",
+    "get_span",
+    "match_style"
+  ],
+  "start_line": 593,
+  "end_line": 631
+}

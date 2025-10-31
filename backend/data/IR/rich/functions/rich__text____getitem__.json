@@ -1,0 +1,32 @@
+{
+  "name": "__getitem__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[int, slice]"
+    }
+  ],
+  "return_type": "\"Text\"",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "Text",
+    "get_text_at",
+    "slice.indices",
+    "self.divide",
+    "len",
+    "TypeError",
+    "_Span"
+  ],
+  "variables": [
+    "_Span",
+    "text",
+    "lines"
+  ],
+  "start_line": 198,
+  "end_line": 222
+}

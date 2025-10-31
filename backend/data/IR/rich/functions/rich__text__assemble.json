@@ -1,0 +1,28 @@
+{
+  "name": "assemble",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[str, \"Text\", Tuple[str, StyleType]]"
+    }
+  ],
+  "return_type": "\"Text\"",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "cls",
+    "text.apply_meta",
+    "append"
+  ],
+  "variables": [
+    "text",
+    "append",
+    "_Text"
+  ],
+  "start_line": 357,
+  "end_line": 400
+}

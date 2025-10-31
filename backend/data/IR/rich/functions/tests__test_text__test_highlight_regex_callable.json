@@ -1,0 +1,23 @@
+{
+  "name": "test_highlight_regex_callable",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "re.compile",
+    "Text",
+    "Style.parse",
+    "text.highlight_regex",
+    "len",
+    "text._spans.clear"
+  ],
+  "variables": [
+    "text",
+    "re_cve",
+    "compiled_re_cve",
+    "count",
+    "count"
+  ],
+  "start_line": 230,
+  "end_line": 263
+}

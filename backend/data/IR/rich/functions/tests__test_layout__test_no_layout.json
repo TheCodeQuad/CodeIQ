@@ -1,0 +1,16 @@
+{
+  "name": "test_no_layout",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Layout",
+    "layout.split",
+    "pytest.raises"
+  ],
+  "variables": [
+    "layout"
+  ],
+  "start_line": 10,
+  "end_line": 13
+}

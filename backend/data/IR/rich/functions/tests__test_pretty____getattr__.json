@@ -1,0 +1,19 @@
+{
+  "name": "__getattr__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": "attr",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 700,
+  "end_line": 701
+}

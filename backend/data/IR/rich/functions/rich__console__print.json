@@ -1,0 +1,51 @@
+{
+  "name": "print",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "render",
+    "self._buffer.extend",
+    "self.options.update",
+    "self.get_style",
+    "Segment.line",
+    "Segment.split_and_crop_lines",
+    "\"\".join",
+    "\"\".join(segment.text for segment in new_segments).splitlines",
+    "self._collect_renderables",
+    "hook.process_renderables",
+    "len",
+    "new_segments.insert",
+    "Segment.apply_style",
+    "extend",
+    "buffer_extend",
+    "min",
+    "NewLine"
+  ],
+  "variables": [
+    "objects",
+    "soft_wrap",
+    "no_wrap",
+    "overflow",
+    "crop",
+    "render_hooks",
+    "renderables",
+    "renderables",
+    "render_options",
+    "new_segments",
+    "extend",
+    "render",
+    "buffer_extend"
+  ],
+  "start_line": 1648,
+  "end_line": 1745
+}

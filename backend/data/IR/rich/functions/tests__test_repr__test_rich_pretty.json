@@ -1,0 +1,20 @@
+{
+  "name": "test_rich_pretty",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "Console",
+    "console.print",
+    "Foo",
+    "capture.get"
+  ],
+  "variables": [
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 137,
+  "end_line": 143
+}

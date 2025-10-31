@@ -1,0 +1,22 @@
+{
+  "name": "move",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    }
+  ],
+  "return_type": "\"Control\"",
+  "docstring": null,
+  "calls": [
+    "get_codes",
+    "abs",
+    "cls"
+  ],
+  "variables": [
+    "control",
+    "control"
+  ],
+  "start_line": 79,
+  "end_line": 105
+}

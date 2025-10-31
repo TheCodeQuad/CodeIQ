@@ -1,0 +1,23 @@
+{
+  "name": "GetConsoleCursorInfo",
+  "parameters": [
+    {
+      "name": null,
+      "type": "wintypes.HANDLE"
+    },
+    {
+      "name": null,
+      "type": "CONSOLE_CURSOR_INFO"
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "bool",
+    "byref",
+    "_GetConsoleCursorInfo"
+  ],
+  "variables": [],
+  "start_line": 275,
+  "end_line": 288
+}

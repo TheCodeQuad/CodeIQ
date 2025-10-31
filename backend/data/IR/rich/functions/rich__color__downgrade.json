@@ -1,0 +1,41 @@
+{
+  "name": "downgrade",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "ColorSystem"
+    }
+  ],
+  "return_type": "\"Color\"",
+  "docstring": null,
+  "calls": [
+    "ColorTriplet",
+    "round",
+    "STANDARD_PALETTE.match",
+    "rgb_to_hls",
+    "WINDOWS_PALETTE.match",
+    "Color"
+  ],
+  "variables": [
+    "gray",
+    "color_number",
+    "color_number",
+    "color_number",
+    "six_red",
+    "six_green",
+    "six_blue",
+    "color_number",
+    "triplet",
+    "triplet",
+    "color_number",
+    "triplet",
+    "triplet",
+    "color_number"
+  ],
+  "start_line": 513,
+  "end_line": 568
+}

@@ -1,0 +1,44 @@
+{
+  "name": "with_indent_guides",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Text\"",
+  "docstring": null,
+  "calls": [
+    "text.split",
+    "re.compile",
+    "line.stylize",
+    "new_lines.extend",
+    "self.detect_indentation",
+    "text.blank_copy",
+    "re_indent.match",
+    "match.group",
+    "Text",
+    "text.blank_copy(\"\\n\").join",
+    "add_line",
+    "divmod",
+    "len",
+    "text.expand_tabs",
+    "self.copy"
+  ],
+  "variables": [
+    "_indent_size",
+    "text",
+    "indent_line",
+    "re_indent",
+    "new_lines",
+    "add_line",
+    "blank_lines",
+    "match",
+    "indent",
+    "new_indent",
+    "blank_lines",
+    "new_text"
+  ],
+  "start_line": 1287,
+  "end_line": 1333
+}

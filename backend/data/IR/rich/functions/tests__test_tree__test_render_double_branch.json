@@ -1,0 +1,24 @@
+{
+  "name": "test_render_double_branch",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "tree.add",
+    "Console",
+    "console.print",
+    "repr",
+    "Tree",
+    "print"
+  ],
+  "variables": [
+    "tree",
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 30,
+  "end_line": 40
+}

@@ -1,0 +1,15 @@
+{
+  "name": "test_inspect_swig_edge_case",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Thing",
+    "inspect"
+  ],
+  "variables": [
+    "thing"
+  ],
+  "start_line": 370,
+  "end_line": 382
+}

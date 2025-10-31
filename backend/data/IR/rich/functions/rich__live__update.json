@@ -1,0 +1,25 @@
+{
+  "name": "update",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "RenderableType"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "self.refresh",
+    "self.console.render_str"
+  ],
+  "variables": [
+    "renderable"
+  ],
+  "start_line": 226,
+  "end_line": 238
+}

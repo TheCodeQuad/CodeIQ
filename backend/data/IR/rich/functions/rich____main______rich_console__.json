@@ -1,0 +1,35 @@
+{
+  "name": "__rich_console__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Console"
+    },
+    {
+      "name": null,
+      "type": "ConsoleOptions"
+    }
+  ],
+  "return_type": "RenderResult",
+  "docstring": null,
+  "calls": [
+    "colorsys.hls_to_rgb",
+    "Color.from_rgb",
+    "Segment.line",
+    "Segment",
+    "Style",
+    "range"
+  ],
+  "variables": [
+    "h",
+    "l",
+    "bgcolor",
+    "color"
+  ],
+  "start_line": 19,
+  "end_line": 31
+}

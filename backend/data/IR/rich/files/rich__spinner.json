@@ -1,0 +1,162 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\spinner.py",
+  "imports": [
+    "from typing import TYPE_CHECKING, List, Optional, Union, cast",
+    "from ._spinners import SPINNERS",
+    "from .measure import Measurement",
+    "from .table import Table",
+    "from .text import Text",
+    "from .console import Console, ConsoleOptions, RenderableType, RenderResult",
+    "from .style import StyleType",
+    "from time import sleep",
+    "from .console import Group",
+    "from .live import Live"
+  ],
+  "classes": [
+    {
+      "name": "Spinner",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "KeyError",
+        "cast",
+        "Text.from_markup"
+      ],
+      "variables": [
+        "spinner"
+      ],
+      "start_line": 26,
+      "end_line": 48
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "\"ConsoleOptions\""
+        }
+      ],
+      "return_type": "\"RenderResult\"",
+      "docstring": null,
+      "calls": [
+        "self.render",
+        "console.get_time"
+      ],
+      "variables": [],
+      "start_line": 50,
+      "end_line": 53
+    },
+    {
+      "name": "__rich_measure__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "\"ConsoleOptions\""
+        }
+      ],
+      "return_type": "Measurement",
+      "docstring": null,
+      "calls": [
+        "self.render",
+        "Measurement.get"
+      ],
+      "variables": [
+        "text"
+      ],
+      "start_line": 55,
+      "end_line": 59
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "float"
+        }
+      ],
+      "return_type": "\"RenderableType\"",
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "int",
+        "isinstance",
+        "Text",
+        "Table.grid",
+        "len",
+        "Text.assemble"
+      ],
+      "variables": [
+        "frame_no",
+        "frame",
+        "table"
+      ],
+      "start_line": 61,
+      "end_line": 93
+    },
+    {
+      "name": "update",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "Text.from_markup"
+      ],
+      "variables": [],
+      "start_line": 95,
+      "end_line": 114
+    }
+  ],
+  "variables": [
+    "spinner",
+    "text",
+    "frame_no",
+    "frame",
+    "table",
+    "all_spinners"
+  ]
+}

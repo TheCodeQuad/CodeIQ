@@ -1,0 +1,20 @@
+{
+  "name": "test_end",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "StringIO",
+    "Group",
+    "console.file.getvalue",
+    "console.print",
+    "Text.from_markup"
+  ],
+  "variables": [
+    "console",
+    "text"
+  ],
+  "start_line": 371,
+  "end_line": 375
+}

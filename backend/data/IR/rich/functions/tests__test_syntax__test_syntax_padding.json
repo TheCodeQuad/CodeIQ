@@ -1,0 +1,20 @@
+{
+  "name": "test_syntax_padding",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "console.export_text",
+    "Syntax",
+    "Console",
+    "console.print"
+  ],
+  "variables": [
+    "syntax",
+    "console",
+    "output"
+  ],
+  "start_line": 374,
+  "end_line": 387
+}

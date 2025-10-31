@@ -1,0 +1,16 @@
+{
+  "name": "test_spinner_markup",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "str",
+    "Spinner"
+  ],
+  "variables": [
+    "spinner"
+  ],
+  "start_line": 69,
+  "end_line": 72
+}

@@ -1,0 +1,17 @@
+{
+  "name": "test_measure_renderables",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "Measurement",
+    "console.options.update_width",
+    "measure_renderables"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 22,
+  "end_line": 27
+}

@@ -1,0 +1,29 @@
+{
+  "name": "test_min_width",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "console.begin_capture",
+    "console.end_capture",
+    "output.splitlines",
+    "Console",
+    "table.__rich_measure__",
+    "all",
+    "console.print",
+    "Table",
+    "console.options.update_width",
+    "len",
+    "print",
+    "Measurement"
+  ],
+  "variables": [
+    "table",
+    "console",
+    "console",
+    "output"
+  ],
+  "start_line": 128,
+  "end_line": 140
+}

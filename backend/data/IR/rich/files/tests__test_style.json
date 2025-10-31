@@ -1,0 +1,430 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_style.py",
+  "imports": [
+    "import pytest",
+    "from rich import errors",
+    "from rich.color import Color, ColorSystem, ColorType",
+    "from rich.style import Style, StyleStack"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_str",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style",
+        "str"
+      ],
+      "variables": [
+        "all_styles",
+        "expected"
+      ],
+      "start_line": 8,
+      "end_line": 35
+    },
+    {
+      "name": "test_ansi_codes",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "all_styles._make_ansi_codes",
+        "Style"
+      ],
+      "variables": [
+        "all_styles",
+        "expected"
+      ],
+      "start_line": 38,
+      "end_line": 57
+    },
+    {
+      "name": "test_repr",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "repr",
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 60,
+      "end_line": 64
+    },
+    {
+      "name": "test_eq",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style().__eq__",
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 67,
+      "end_line": 70
+    },
+    {
+      "name": "test_hash",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "hash",
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 73,
+      "end_line": 74
+    },
+    {
+      "name": "test_empty",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.null",
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 77,
+      "end_line": 78
+    },
+    {
+      "name": "test_bool",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.parse",
+        "bool",
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 81,
+      "end_line": 85
+    },
+    {
+      "name": "test_color_property",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style",
+        "Color"
+      ],
+      "variables": [],
+      "start_line": 88,
+      "end_line": 89
+    },
+    {
+      "name": "test_bgcolor_property",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style",
+        "Color"
+      ],
+      "variables": [],
+      "start_line": 92,
+      "end_line": 93
+    },
+    {
+      "name": "test_parse",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.parse",
+        "pytest.raises",
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 96,
+      "end_line": 115
+    },
+    {
+      "name": "test_link_id",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "Style.parse",
+        "Style",
+        "len"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 118,
+      "end_line": 124
+    },
+    {
+      "name": "test_get_html_style",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "print",
+        "Style(\n        reverse=True,\n        dim=True,\n        color=\"red\",\n        bgcolor=\"blue\",\n        bold=True,\n        italic=True,\n        underline=True,\n        strike=True,\n        overline=True,\n    ).get_html_style",
+        "Style",
+        "repr"
+      ],
+      "variables": [
+        "expected",
+        "html_style"
+      ],
+      "start_line": 127,
+      "end_line": 141
+    },
+    {
+      "name": "test_chain",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style",
+        "Style.chain"
+      ],
+      "variables": [],
+      "start_line": 144,
+      "end_line": 147
+    },
+    {
+      "name": "test_copy",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style",
+        "style.copy"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 150,
+      "end_line": 153
+    },
+    {
+      "name": "test_render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style().render",
+        "Style(color=\"red\").render",
+        "Style",
+        "Style(color=\"red\", bgcolor=\"black\", bold=True).render"
+      ],
+      "variables": [],
+      "start_line": 156,
+      "end_line": 162
+    },
+    {
+      "name": "test_test",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style(color=\"red\").test",
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 165,
+      "end_line": 166
+    },
+    {
+      "name": "test_add",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 169,
+      "end_line": 170
+    },
+    {
+      "name": "test_iadd",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 173,
+      "end_line": 178
+    },
+    {
+      "name": "test_style_stack",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style",
+        "stack.push",
+        "repr",
+        "stack.pop",
+        "StyleStack"
+      ],
+      "variables": [
+        "stack"
+      ],
+      "start_line": 181,
+      "end_line": 188
+    },
+    {
+      "name": "test_pick_first",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.pick_first",
+        "pytest.raises"
+      ],
+      "variables": [],
+      "start_line": 191,
+      "end_line": 193
+    },
+    {
+      "name": "test_background_style",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style"
+      ],
+      "variables": [],
+      "start_line": 196,
+      "end_line": 199
+    },
+    {
+      "name": "test_without_color",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.null",
+        "Style"
+      ],
+      "variables": [
+        "style",
+        "colorless_style",
+        "null_style"
+      ],
+      "start_line": 202,
+      "end_line": 209
+    },
+    {
+      "name": "test_meta",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "repr",
+        "Style"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 212,
+      "end_line": 220
+    },
+    {
+      "name": "test_from_meta",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style.from_meta"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 223,
+      "end_line": 226
+    },
+    {
+      "name": "test_on",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Style",
+        "Style.on"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 229,
+      "end_line": 231
+    },
+    {
+      "name": "test_clear_meta_and_links",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "style.clear_meta_and_links",
+        "Style.parse",
+        "Color.parse",
+        "Style.on"
+      ],
+      "variables": [
+        "style",
+        "clear_style"
+      ],
+      "start_line": 234,
+      "end_line": 253
+    },
+    {
+      "name": "test_clear_meta_and_links_clears_hash",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "hash",
+        "Style.parse",
+        "Style.on",
+        "style.clear_meta_and_links"
+      ],
+      "variables": [
+        "style",
+        "clear_style"
+      ],
+      "start_line": 256,
+      "end_line": 267
+    }
+  ],
+  "variables": [
+    "all_styles",
+    "expected",
+    "all_styles",
+    "expected",
+    "style",
+    "expected",
+    "html_style",
+    "style",
+    "style",
+    "stack",
+    "style",
+    "colorless_style",
+    "null_style",
+    "style",
+    "style",
+    "style",
+    "style",
+    "clear_style",
+    "style",
+    "clear_style"
+  ]
+}

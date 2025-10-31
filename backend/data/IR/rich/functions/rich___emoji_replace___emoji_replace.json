@@ -1,0 +1,27 @@
+{
+  "name": "_emoji_replace",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "match.groups",
+    "get_emoji",
+    "_emoji_sub",
+    "variants.get",
+    "emoji_name.lower",
+    "get_variant"
+  ],
+  "variables": [
+    "get_emoji",
+    "variants",
+    "get_variant",
+    "default_variant_code"
+  ],
+  "start_line": 12,
+  "end_line": 32
+}

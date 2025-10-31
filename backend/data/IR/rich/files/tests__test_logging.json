@@ -1,0 +1,157 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_logging.py",
+  "imports": [
+    "import io",
+    "import os",
+    "import logging",
+    "from typing import Optional",
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.logging import RichHandler"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_exception",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "handler_with_tracebacks.console.file.getvalue",
+        "RichHandler",
+        "log.addHandler",
+        "log.error",
+        "handler_with_tracebacks.setFormatter",
+        "log.exception",
+        "print",
+        "logging.Formatter"
+      ],
+      "variables": [
+        "console",
+        "handler_with_tracebacks",
+        "formatter",
+        "render"
+      ],
+      "start_line": 35,
+      "end_line": 61
+    },
+    {
+      "name": "test_exception_with_extra_lines",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "handler_extra_lines.console.file.getvalue",
+        "RichHandler",
+        "log.addHandler",
+        "log.exception",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "handler_extra_lines",
+        "render"
+      ],
+      "start_line": 64,
+      "end_line": 91
+    },
+    {
+      "name": "test_stderr_and_stdout_are_none",
+      "parameters": [
+        {
+          "name": "monkeypatch",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "RichHandler",
+        "log.addHandler",
+        "log.removeHandler",
+        "log.exception",
+        "monkeypatch.setattr"
+      ],
+      "variables": [
+        "console",
+        "target_handler",
+        "actual_record",
+        "actual_record"
+      ],
+      "start_line": 94,
+      "end_line": 122
+    },
+    {
+      "name": "mock_handle_error",
+      "parameters": [
+        {
+          "name": "record",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [
+        "actual_record"
+      ],
+      "start_line": 106,
+      "end_line": 108
+    },
+    {
+      "name": "test_markup_and_highlight",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "handler.setFormatter",
+        "Console",
+        "RichHandler",
+        "log.addHandler",
+        "log.error",
+        "handler.console.file.getvalue",
+        "logging.Formatter"
+      ],
+      "variables": [
+        "console",
+        "handler",
+        "formatter",
+        "log_message",
+        "render_fancy",
+        "render_markup",
+        "render_plain"
+      ],
+      "start_line": 125,
+      "end_line": 162
+    }
+  ],
+  "variables": [
+    "handler",
+    "log",
+    "skip_win",
+    "console",
+    "handler_with_tracebacks",
+    "formatter",
+    "render",
+    "console",
+    "handler_extra_lines",
+    "render",
+    "console",
+    "target_handler",
+    "actual_record",
+    "actual_record",
+    "console",
+    "handler",
+    "formatter",
+    "log_message",
+    "render_fancy",
+    "render_markup",
+    "render_plain"
+  ]
+}

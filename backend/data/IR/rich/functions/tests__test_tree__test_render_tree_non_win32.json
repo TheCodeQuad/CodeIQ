@@ -1,0 +1,26 @@
+{
+  "name": "test_render_tree_non_win32",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "tree.add",
+    "Console",
+    "console.print",
+    "repr",
+    "Tree",
+    "print",
+    "baz_tree.add"
+  ],
+  "variables": [
+    "tree",
+    "baz_tree",
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 62,
+  "end_line": 78
+}

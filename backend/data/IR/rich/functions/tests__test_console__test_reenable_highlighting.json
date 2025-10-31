@@ -1,0 +1,22 @@
+{
+  "name": "test_reenable_highlighting",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "repr",
+    "console.file.getvalue",
+    "console.print",
+    "print",
+    "output.splitlines"
+  ],
+  "variables": [
+    "console",
+    "output",
+    "lines"
+  ],
+  "start_line": 974,
+  "end_line": 997
+}

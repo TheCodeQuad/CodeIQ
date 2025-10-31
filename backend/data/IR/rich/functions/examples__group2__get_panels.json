@@ -1,0 +1,12 @@
+{
+  "name": "get_panels",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Panel"
+  ],
+  "variables": [],
+  "start_line": 7,
+  "end_line": 9
+}

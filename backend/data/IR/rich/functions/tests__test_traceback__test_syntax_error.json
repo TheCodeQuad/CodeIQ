@@ -1,0 +1,19 @@
+{
+  "name": "test_syntax_error",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "eval",
+    "console.file.getvalue",
+    "console.print_exception"
+  ],
+  "variables": [
+    "console",
+    "exception_text"
+  ],
+  "start_line": 127,
+  "end_line": 135
+}

@@ -1,0 +1,16 @@
+{
+  "name": "test_rstrip",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "text.rstrip",
+    "str"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 129,
+  "end_line": 132
+}

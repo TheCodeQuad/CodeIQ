@@ -1,0 +1,13 @@
+{
+  "name": "test_str",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "str"
+  ],
+  "variables": [],
+  "start_line": 49,
+  "end_line": 50
+}

@@ -1,0 +1,23 @@
+{
+  "name": "test_render",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "inspect",
+    "console.file.getvalue",
+    "Foo",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "foo",
+    "result",
+    "expected"
+  ],
+  "start_line": 98,
+  "end_line": 106
+}

@@ -1,0 +1,16 @@
+{
+  "name": "test_update_screen_lines",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.update_screen_lines",
+    "pytest.raises"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 823,
+  "end_line": 828
+}

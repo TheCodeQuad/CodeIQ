@@ -1,0 +1,24 @@
+{
+  "name": "split_cells",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "Tuple[\"Segment\", \"Segment\"]",
+  "docstring": null,
+  "calls": [
+    "len",
+    "_is_single_cell_widths",
+    "self._split_cells",
+    "Segment"
+  ],
+  "variables": [],
+  "start_line": 158,
+  "end_line": 182
+}

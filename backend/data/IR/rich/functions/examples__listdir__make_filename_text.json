@@ -1,0 +1,25 @@
+{
+  "name": "make_filename_text",
+  "parameters": [
+    {
+      "name": "filename",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "os.path.abspath",
+    "os.path.join",
+    "Text",
+    "os.path.isdir",
+    "text.highlight_regex",
+    "text.stylize"
+  ],
+  "variables": [
+    "path",
+    "text"
+  ],
+  "start_line": 22,
+  "end_line": 27
+}

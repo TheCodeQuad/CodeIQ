@@ -1,0 +1,13 @@
+{
+  "name": "test_events_broken",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "pytest.raises"
+  ],
+  "variables": [],
+  "start_line": 193,
+  "end_line": 198
+}

@@ -1,0 +1,12 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tools\\make_emoji.py",
+  "imports": [
+    "import emoji",
+    "from emoji.unicode_codes import EMOJI_ALIAS_UNICODE"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "emoji"
+  ]
+}

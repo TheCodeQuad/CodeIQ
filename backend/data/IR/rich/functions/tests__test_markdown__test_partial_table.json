@@ -1,0 +1,19 @@
+{
+  "name": "test_partial_table",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "print",
+    "Markdown",
+    "repr"
+  ],
+  "variables": [
+    "markdown",
+    "result",
+    "expected"
+  ],
+  "start_line": 169,
+  "end_line": 174
+}

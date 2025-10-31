@@ -1,0 +1,18 @@
+{
+  "name": "test_style_stack",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style",
+    "stack.push",
+    "repr",
+    "stack.pop",
+    "StyleStack"
+  ],
+  "variables": [
+    "stack"
+  ],
+  "start_line": 181,
+  "end_line": 188
+}

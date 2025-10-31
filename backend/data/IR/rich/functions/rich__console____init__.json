@@ -1,0 +1,43 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "ThemeStack",
+    "int",
+    "ConsoleThreadLocals",
+    "LogRender",
+    "columns.isdigit",
+    "self._environ.get",
+    "threading.RLock",
+    "self._detect_color_system",
+    "detect_legacy_windows",
+    "jupyter_lines.isdigit",
+    "lines.isdigit",
+    "jupyter_columns.isdigit",
+    "_is_jupyter"
+  ],
+  "variables": [
+    "jupyter_columns",
+    "width",
+    "width",
+    "jupyter_lines",
+    "height",
+    "height",
+    "columns",
+    "width",
+    "lines",
+    "height",
+    "tty_interactive",
+    "force_interactive",
+    "force_interactive"
+  ],
+  "start_line": 625,
+  "end_line": 757
+}

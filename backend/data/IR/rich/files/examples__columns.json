@@ -1,0 +1,38 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\columns.py",
+  "imports": [
+    "import json",
+    "from urllib.request import urlopen",
+    "from rich.console import Console",
+    "from rich.columns import Columns",
+    "from rich.panel import Panel"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "get_content",
+      "parameters": [
+        {
+          "name": "user",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [
+        "country",
+        "name"
+      ],
+      "start_line": 15,
+      "end_line": 19
+    }
+  ],
+  "variables": [
+    "country",
+    "name",
+    "console",
+    "users",
+    "user_renderables"
+  ]
+}

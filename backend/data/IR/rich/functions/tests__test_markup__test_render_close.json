@@ -1,0 +1,16 @@
+{
+  "name": "test_render_close",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "str",
+    "Span"
+  ],
+  "variables": [
+    "result"
+  ],
+  "start_line": 137,
+  "end_line": 140
+}

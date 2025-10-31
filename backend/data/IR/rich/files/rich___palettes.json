@@ -1,0 +1,13 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_palettes.py",
+  "imports": [
+    "from .palette import Palette"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "WINDOWS_PALETTE",
+    "STANDARD_PALETTE",
+    "EIGHT_BIT_PALETTE"
+  ]
+}

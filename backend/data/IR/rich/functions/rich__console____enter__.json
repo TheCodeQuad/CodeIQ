@@ -1,0 +1,17 @@
+{
+  "name": "__enter__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Console\"",
+  "docstring": null,
+  "calls": [
+    "self._enter_buffer"
+  ],
+  "variables": [],
+  "start_line": 863,
+  "end_line": 866
+}

@@ -1,0 +1,23 @@
+{
+  "name": "test_downgrade",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Color.parse(\"color(255)\").downgrade",
+    "Color.parse(\"bright_red\").downgrade",
+    "Color.parse(\"#ff0000\").downgrade",
+    "Color.parse(\"#00ff00\").downgrade",
+    "Color.parse",
+    "Color.parse(\"color(9)\").downgrade",
+    "Color.parse(\"color(20)\").downgrade",
+    "Color",
+    "Color.parse(\"#404142\").downgrade",
+    "Color.parse(\"red\").downgrade",
+    "Color.parse(\"#ffffff\").downgrade",
+    "Color.parse(\"#000000\").downgrade"
+  ],
+  "variables": [],
+  "start_line": 126,
+  "end_line": 177
+}

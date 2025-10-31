@@ -1,0 +1,20 @@
+{
+  "name": "test_divide_edge_2",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment.divide",
+    "Segment",
+    "list",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "segments",
+    "result",
+    "expected"
+  ],
+  "start_line": 235,
+  "end_line": 248
+}

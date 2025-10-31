@@ -1,0 +1,29 @@
+{
+  "name": "wrap_file",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "BinaryIO"
+    }
+  ],
+  "return_type": "BinaryIO",
+  "docstring": null,
+  "calls": [
+    "ValueError",
+    "_Reader",
+    "self.add_task",
+    "self.update"
+  ],
+  "variables": [
+    "total_bytes",
+    "total_bytes",
+    "total_bytes",
+    "task_id"
+  ],
+  "start_line": 1236,
+  "end_line": 1276
+}

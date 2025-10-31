@@ -1,0 +1,177 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\__main__.py",
+  "imports": [
+    "import colorsys",
+    "import io",
+    "from time import process_time",
+    "from rich import box",
+    "from rich.color import Color",
+    "from rich.console import Console, ConsoleOptions, Group, RenderableType, RenderResult",
+    "from rich.markdown import Markdown",
+    "from rich.measure import Measurement",
+    "from rich.pretty import Pretty",
+    "from rich.segment import Segment",
+    "from rich.style import Style",
+    "from rich.syntax import Syntax",
+    "from rich.table import Table",
+    "from rich.text import Text",
+    "from rich.panel import Panel"
+  ],
+  "classes": [
+    {
+      "name": "ColorBox",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "colorsys.hls_to_rgb",
+        "Color.from_rgb",
+        "Segment.line",
+        "Segment",
+        "Style",
+        "range"
+      ],
+      "variables": [
+        "h",
+        "l",
+        "bgcolor",
+        "color"
+      ],
+      "start_line": 19,
+      "end_line": 31
+    },
+    {
+      "name": "__rich_measure__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "Measurement",
+      "docstring": null,
+      "calls": [
+        "Measurement"
+      ],
+      "variables": [],
+      "start_line": 33,
+      "end_line": 36
+    },
+    {
+      "name": "make_test_card",
+      "parameters": [],
+      "return_type": "Table",
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "Syntax",
+        "lorem_table.add_row",
+        "Text",
+        "comparison",
+        "Group",
+        "example_table.add_row",
+        "ColorBox",
+        "Markdown",
+        "Table.grid",
+        "example_table.add_column",
+        "Pretty",
+        "Table",
+        "color_table.add_row",
+        "Text.from_markup",
+        "table.add_column"
+      ],
+      "variables": [
+        "table",
+        "color_table",
+        "lorem",
+        "lorem_table",
+        "table",
+        "markup_example",
+        "example_table",
+        "code",
+        "pretty_data",
+        "markdown_example"
+      ],
+      "start_line": 39,
+      "end_line": 206
+    },
+    {
+      "name": "comparison",
+      "parameters": [
+        {
+          "name": null,
+          "type": "RenderableType"
+        },
+        {
+          "name": null,
+          "type": "RenderableType"
+        }
+      ],
+      "return_type": "Table",
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "Table",
+        "table.add_column"
+      ],
+      "variables": [
+        "table"
+      ],
+      "start_line": 90,
+      "end_line": 95
+    }
+  ],
+  "variables": [
+    "h",
+    "l",
+    "bgcolor",
+    "color",
+    "table",
+    "color_table",
+    "lorem",
+    "lorem_table",
+    "table",
+    "markup_example",
+    "example_table",
+    "code",
+    "pretty_data",
+    "markdown_example",
+    "console",
+    "test_card",
+    "start",
+    "pre_cache_taken",
+    "start",
+    "taken",
+    "c",
+    "console"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "default",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    }
+  ],
+  "return_type": "\"Color\"",
+  "docstring": null,
+  "calls": [
+    "cls"
+  ],
+  "variables": [],
+  "start_line": 423,
+  "end_line": 429
+}

@@ -1,0 +1,21 @@
+{
+  "name": "control",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Control"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._buffer.extend"
+  ],
+  "variables": [],
+  "start_line": 1606,
+  "end_line": 1614
+}

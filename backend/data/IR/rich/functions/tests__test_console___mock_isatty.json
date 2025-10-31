@@ -1,0 +1,12 @@
+{
+  "name": "_mock_isatty",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "ValueError"
+  ],
+  "variables": [],
+  "start_line": 869,
+  "end_line": 870
+}

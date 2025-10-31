@@ -1,0 +1,22 @@
+{
+  "name": "make_table",
+  "parameters": [
+    {
+      "name": "vertical_align",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "Table",
+    "\"\\n\".join",
+    "table.add_column"
+  ],
+  "variables": [
+    "table"
+  ],
+  "start_line": 164,
+  "end_line": 169
+}

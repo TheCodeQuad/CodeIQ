@@ -1,0 +1,21 @@
+{
+  "name": "time_remaining",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Optional[float]",
+  "docstring": null,
+  "calls": [
+    "ceil"
+  ],
+  "variables": [
+    "speed",
+    "remaining",
+    "estimate"
+  ],
+  "start_line": 1041,
+  "end_line": 1052
+}

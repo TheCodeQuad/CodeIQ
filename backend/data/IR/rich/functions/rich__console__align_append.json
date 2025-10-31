@@ -1,0 +1,19 @@
+{
+  "name": "align_append",
+  "parameters": [
+    {
+      "name": null,
+      "type": "RenderableType"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Align",
+    "cast",
+    "_append"
+  ],
+  "variables": [],
+  "start_line": 1539,
+  "end_line": 1540
+}

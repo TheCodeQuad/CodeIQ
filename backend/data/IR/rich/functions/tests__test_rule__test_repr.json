@@ -1,0 +1,16 @@
+{
+  "name": "test_repr",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Rule",
+    "repr",
+    "isinstance"
+  ],
+  "variables": [
+    "rule"
+  ],
+  "start_line": 123,
+  "end_line": 125
+}

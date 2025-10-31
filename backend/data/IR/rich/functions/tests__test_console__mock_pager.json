@@ -1,0 +1,17 @@
+{
+  "name": "mock_pager",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [
+    "pager_content"
+  ],
+  "start_line": 627,
+  "end_line": 629
+}

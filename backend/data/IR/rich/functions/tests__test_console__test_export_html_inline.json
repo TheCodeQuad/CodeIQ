@@ -1,0 +1,20 @@
+{
+  "name": "test_export_html_inline",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.export_html",
+    "console.print",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "html",
+    "expected"
+  ],
+  "start_line": 522,
+  "end_line": 528
+}

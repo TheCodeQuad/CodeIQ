@@ -1,0 +1,15 @@
+{
+  "name": "is_system_defined",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 340,
+  "end_line": 342
+}

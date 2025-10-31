@@ -1,0 +1,19 @@
+{
+  "name": "options",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "ConsoleOptions",
+  "docstring": null,
+  "calls": [
+    "ConsoleOptions"
+  ],
+  "variables": [
+    "size"
+  ],
+  "start_line": 997,
+  "end_line": 1008
+}

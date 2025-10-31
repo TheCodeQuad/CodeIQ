@@ -1,0 +1,26 @@
+{
+  "name": "render_annotation",
+  "parameters": [
+    {
+      "name": null,
+      "type": "TextType"
+    },
+    {
+      "name": null,
+      "type": "StyleType"
+    }
+  ],
+  "return_type": "\"RenderResult\"",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "console.render",
+    "render_options.update",
+    "console.render_str"
+  ],
+  "variables": [
+    "render_text"
+  ],
+  "start_line": 497,
+  "end_line": 507
+}

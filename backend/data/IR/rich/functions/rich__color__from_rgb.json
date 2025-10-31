@@ -1,0 +1,31 @@
+{
+  "name": "from_rgb",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "float"
+    },
+    {
+      "name": null,
+      "type": "float"
+    },
+    {
+      "name": null,
+      "type": "float"
+    }
+  ],
+  "return_type": "\"Color\"",
+  "docstring": null,
+  "calls": [
+    "cls.from_triplet",
+    "ColorTriplet",
+    "int"
+  ],
+  "variables": [],
+  "start_line": 409,
+  "end_line": 420
+}

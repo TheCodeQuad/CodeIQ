@@ -1,0 +1,20 @@
+{
+  "name": "test_get_style_for_token",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Color.default",
+    "PygmentsSyntaxTheme",
+    "Syntax",
+    "Style",
+    "syntax._get_line_numbers_color"
+  ],
+  "variables": [
+    "style",
+    "style_dict",
+    "syntax"
+  ],
+  "start_line": 212,
+  "end_line": 230
+}

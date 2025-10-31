@@ -1,0 +1,2269 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_console.py",
+  "imports": [
+    "import datetime",
+    "import io",
+    "import os",
+    "import subprocess",
+    "import sys",
+    "import tempfile",
+    "from typing import Optional, Tuple, Type, Union",
+    "from unittest import mock",
+    "import pytest",
+    "from rich import errors",
+    "from rich._null_file import NullFile",
+    "from rich.color import ColorSystem",
+    "from rich.console import (\n    CaptureError,\n    Console,\n    ConsoleDimensions,\n    ConsoleOptions,\n    ScreenUpdate,\n    group,\n)",
+    "from rich.control import Control",
+    "from rich.measure import measure_renderables",
+    "from rich.padding import Padding",
+    "from rich.pager import SystemPager",
+    "from rich.panel import Panel",
+    "from rich.region import Region",
+    "from rich.segment import Segment",
+    "from rich.status import Status",
+    "from rich.style import Style",
+    "from rich.text import Text",
+    "import rich.console"
+  ],
+  "classes": [
+    {
+      "name": "BrokenRenderable",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Panels",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "FakeTTY",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "FakeFile",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "test_dumb_terminal",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console",
+        "console"
+      ],
+      "start_line": 37,
+      "end_line": 45
+    },
+    {
+      "name": "test_soft_wrap",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 48,
+      "end_line": 51
+    },
+    {
+      "name": "test_16color_terminal",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 55,
+      "end_line": 59
+    },
+    {
+      "name": "test_truecolor_terminal",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 63,
+      "end_line": 69
+    },
+    {
+      "name": "test_kitty_terminal",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 73,
+      "end_line": 79
+    },
+    {
+      "name": "test_console_options_update",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "options.update",
+        "ConsoleOptions",
+        "ConsoleDimensions"
+      ],
+      "variables": [
+        "options",
+        "options1",
+        "options2",
+        "options_copy"
+      ],
+      "start_line": 82,
+      "end_line": 103
+    },
+    {
+      "name": "test_console_options_update_height",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ConsoleOptions",
+        "ConsoleDimensions",
+        "options.update_height"
+      ],
+      "variables": [
+        "options",
+        "render_options"
+      ],
+      "start_line": 106,
+      "end_line": 120
+    },
+    {
+      "name": "test_init",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console",
+        "console",
+        "console"
+      ],
+      "start_line": 123,
+      "end_line": 128
+    },
+    {
+      "name": "test_size",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console",
+        "console"
+      ],
+      "start_line": 131,
+      "end_line": 138
+    },
+    {
+      "name": "test_size_can_fall_back_to_std_descriptors",
+      "parameters": [
+        {
+          "name": null,
+          "type": "mock.MagicMock"
+        },
+        {
+          "name": null,
+          "type": "bool"
+        },
+        {
+          "name": null,
+          "type": "Union[Tuple[int, int], Type[ValueError]]"
+        },
+        {
+          "name": null,
+          "type": "Union[Tuple[int, int], Type[ValueError]]"
+        },
+        {
+          "name": null,
+          "type": "Union[Tuple[int, int], Type[ValueError]]"
+        },
+        {
+          "name": null,
+          "type": "Union[Tuple[int, int], Type[ValueError]]"
+        },
+        {
+          "name": null,
+          "type": "Tuple[int, int]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "sys.__stdout__.fileno",
+        "mock.patch",
+        "Console",
+        "sys.__stderr__.fileno",
+        "sys.__stdin__.fileno"
+      ],
+      "variables": [
+        "value",
+        "console"
+      ],
+      "start_line": 155,
+      "end_line": 180
+    },
+    {
+      "name": "get_terminal_size_mock_impl",
+      "parameters": [],
+      "return_type": "Tuple[int, int]",
+      "docstring": null,
+      "calls": [
+        "sys.__stdout__.fileno",
+        "sys.__stderr__.fileno",
+        "sys.__stdin__.fileno"
+      ],
+      "variables": [
+        "value"
+      ],
+      "start_line": 164,
+      "end_line": 173
+    },
+    {
+      "name": "test_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "str",
+        "repr",
+        "isinstance"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 183,
+      "end_line": 186
+    },
+    {
+      "name": "test_print",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 189,
+      "end_line": 192
+    },
+    {
+      "name": "test_print_multiple",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 195,
+      "end_line": 198
+    },
+    {
+      "name": "test_print_text",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Text",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 201,
+      "end_line": 204
+    },
+    {
+      "name": "test_print_text_multiple",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Text",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 207,
+      "end_line": 210
+    },
+    {
+      "name": "test_print_json",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "console.print_json",
+        "Console",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 213,
+      "end_line": 219
+    },
+    {
+      "name": "test_print_json_error",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "pytest.raises",
+        "console.print_json"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 222,
+      "end_line": 225
+    },
+    {
+      "name": "test_print_json_data",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "console.print_json",
+        "Console",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 228,
+      "end_line": 234
+    },
+    {
+      "name": "test_print_json_ensure_ascii",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "console.print_json",
+        "Console",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 237,
+      "end_line": 243
+    },
+    {
+      "name": "test_print_json_with_default_ensure_ascii",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "console.print_json",
+        "Console",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 246,
+      "end_line": 252
+    },
+    {
+      "name": "test_print_json_indent_none",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "console.file.getvalue",
+        "console.print_json"
+      ],
+      "variables": [
+        "console",
+        "data",
+        "result",
+        "expected"
+      ],
+      "start_line": 255,
+      "end_line": 261
+    },
+    {
+      "name": "test_console_null_file",
+      "parameters": [
+        {
+          "name": "monkeypatch",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "monkeypatch.setattr",
+        "isinstance"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 264,
+      "end_line": 270
+    },
+    {
+      "name": "test_log",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.log",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 273,
+      "end_line": 286
+    },
+    {
+      "name": "test_log_milliseconds",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Text",
+        "console.file.getvalue",
+        "console.log"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 289,
+      "end_line": 298
+    },
+    {
+      "name": "time_formatter",
+      "parameters": [
+        {
+          "name": null,
+          "type": "datetime"
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "Text"
+      ],
+      "variables": [],
+      "start_line": 290,
+      "end_line": 291
+    },
+    {
+      "name": "test_print_empty",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 301,
+      "end_line": 304
+    },
+    {
+      "name": "test_markup_highlight",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 307,
+      "end_line": 313
+    },
+    {
+      "name": "test_print_style",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 316,
+      "end_line": 319
+    },
+    {
+      "name": "test_show_cursor",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.show_cursor",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 322,
+      "end_line": 329
+    },
+    {
+      "name": "test_clear",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "console.file.getvalue",
+        "console.clear"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 332,
+      "end_line": 336
+    },
+    {
+      "name": "test_clear_no_terminal",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "console.file.getvalue",
+        "console.clear"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 339,
+      "end_line": 343
+    },
+    {
+      "name": "test_get_style",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "Style",
+        "console.get_style"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 346,
+      "end_line": 348
+    },
+    {
+      "name": "test_get_style_default",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "Style",
+        "console.get_style"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 351,
+      "end_line": 353
+    },
+    {
+      "name": "test_get_style_error",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "pytest.raises",
+        "console.get_style"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 356,
+      "end_line": 361
+    },
+    {
+      "name": "test_render_error",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "list",
+        "pytest.raises",
+        "console.render"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 364,
+      "end_line": 367
+    },
+    {
+      "name": "test_control",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Control.clear",
+        "console.file.getvalue",
+        "console.print",
+        "console.control"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 370,
+      "end_line": 374
+    },
+    {
+      "name": "test_capture",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "Console",
+        "console.print",
+        "pytest.raises",
+        "capture.get"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 377,
+      "end_line": 383
+    },
+    {
+      "name": "test_input",
+      "parameters": [
+        {
+          "name": "monkeypatch",
+          "type": null
+        },
+        {
+          "name": "capsys",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.file.write",
+        "Console",
+        "capsys.readouterr",
+        "console.input",
+        "monkeypatch.setattr"
+      ],
+      "variables": [
+        "console",
+        "user_input"
+      ],
+      "start_line": 386,
+      "end_line": 395
+    },
+    {
+      "name": "fake_input",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.file.write"
+      ],
+      "variables": [],
+      "start_line": 387,
+      "end_line": 389
+    },
+    {
+      "name": "test_input_password",
+      "parameters": [
+        {
+          "name": "monkeypatch",
+          "type": null
+        },
+        {
+          "name": "capsys",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.file.write",
+        "Console",
+        "capsys.readouterr",
+        "console.input",
+        "monkeypatch.setattr"
+      ],
+      "variables": [
+        "console",
+        "user_input"
+      ],
+      "start_line": 398,
+      "end_line": 409
+    },
+    {
+      "name": "fake_input",
+      "parameters": [
+        {
+          "name": "prompt",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.file.write"
+      ],
+      "variables": [],
+      "start_line": 399,
+      "end_line": 401
+    },
+    {
+      "name": "test_status",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "console.status",
+        "isinstance"
+      ],
+      "variables": [
+        "console",
+        "status"
+      ],
+      "start_line": 412,
+      "end_line": 415
+    },
+    {
+      "name": "test_justify_none",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 418,
+      "end_line": 421
+    },
+    {
+      "name": "test_justify_left",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 424,
+      "end_line": 427
+    },
+    {
+      "name": "test_justify_center",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 430,
+      "end_line": 433
+    },
+    {
+      "name": "test_justify_right",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 436,
+      "end_line": 439
+    },
+    {
+      "name": "test_justify_renderable_none",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "Panel"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 442,
+      "end_line": 451
+    },
+    {
+      "name": "test_justify_renderable_left",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "Panel"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 454,
+      "end_line": 463
+    },
+    {
+      "name": "test_justify_renderable_center",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "Panel"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 466,
+      "end_line": 475
+    },
+    {
+      "name": "test_justify_renderable_right",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "Panel"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 478,
+      "end_line": 490
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "console",
+          "type": null
+        },
+        {
+          "name": "options",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 494,
+      "end_line": 495
+    },
+    {
+      "name": "test_render_broken_renderable",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "BrokenRenderable",
+        "list",
+        "console.render",
+        "pytest.raises"
+      ],
+      "variables": [
+        "console",
+        "broken"
+      ],
+      "start_line": 498,
+      "end_line": 502
+    },
+    {
+      "name": "test_export_text",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.print",
+        "console.export_text"
+      ],
+      "variables": [
+        "console",
+        "text",
+        "expected"
+      ],
+      "start_line": 505,
+      "end_line": 510
+    },
+    {
+      "name": "test_export_html",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.export_html",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "html",
+        "expected"
+      ],
+      "start_line": 513,
+      "end_line": 519
+    },
+    {
+      "name": "test_export_html_inline",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.export_html",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "html",
+        "expected"
+      ],
+      "start_line": 522,
+      "end_line": 528
+    },
+    {
+      "name": "test_export_svg",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.print",
+        "console.export_svg",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "svg"
+      ],
+      "start_line": 534,
+      "end_line": 542
+    },
+    {
+      "name": "test_export_svg_specified_unique_id",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "EXPECTED_SVG.replace",
+        "Console",
+        "console.print",
+        "console.export_svg",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "expected_svg",
+        "console",
+        "svg"
+      ],
+      "start_line": 545,
+      "end_line": 554
+    },
+    {
+      "name": "test_save_svg",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "os.path.join",
+        "svg_file.read",
+        "Console",
+        "tempfile.TemporaryDirectory",
+        "open",
+        "console.print",
+        "console.save_svg"
+      ],
+      "variables": [
+        "console",
+        "export_path"
+      ],
+      "start_line": 557,
+      "end_line": 566
+    },
+    {
+      "name": "test_save_text",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.save_text",
+        "os.path.join",
+        "Console",
+        "tempfile.TemporaryDirectory",
+        "open",
+        "console.print",
+        "text_file.read"
+      ],
+      "variables": [
+        "console",
+        "export_path"
+      ],
+      "start_line": 569,
+      "end_line": 576
+    },
+    {
+      "name": "test_save_html",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "os.path.join",
+        "Console",
+        "tempfile.TemporaryDirectory",
+        "html_file.read",
+        "open",
+        "console.print",
+        "repr",
+        "print",
+        "console.save_html"
+      ],
+      "variables": [
+        "expected",
+        "console",
+        "export_path",
+        "html"
+      ],
+      "start_line": 579,
+      "end_line": 589
+    },
+    {
+      "name": "test_no_wrap",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 592,
+      "end_line": 595
+    },
+    {
+      "name": "test_soft_wrap",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 598,
+      "end_line": 601
+    },
+    {
+      "name": "test_unicode_error",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.print",
+        "tempfile.TemporaryFile",
+        "str"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 604,
+      "end_line": 612
+    },
+    {
+      "name": "test_bell",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.end_capture",
+        "console.bell"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 615,
+      "end_line": 619
+    },
+    {
+      "name": "test_pager",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.print",
+        "SystemPager",
+        "console.pager"
+      ],
+      "variables": [
+        "console",
+        "pager_content",
+        "pager_content",
+        "pager"
+      ],
+      "start_line": 622,
+      "end_line": 641
+    },
+    {
+      "name": "mock_pager",
+      "parameters": [
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [
+        "pager_content"
+      ],
+      "start_line": 627,
+      "end_line": 629
+    },
+    {
+      "name": "test_out",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.end_capture",
+        "console.out"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 644,
+      "end_line": 648
+    },
+    {
+      "name": "test_render_group",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "group",
+        "Console",
+        "renderable",
+        "range",
+        "measure_renderables"
+      ],
+      "variables": [
+        "renderables",
+        "console"
+      ],
+      "start_line": 651,
+      "end_line": 662
+    },
+    {
+      "name": "renderable",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 653,
+      "end_line": 657
+    },
+    {
+      "name": "test_render_group_fit",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "group",
+        "Console",
+        "renderable",
+        "range",
+        "measure_renderables"
+      ],
+      "variables": [
+        "renderables",
+        "console"
+      ],
+      "start_line": 665,
+      "end_line": 678
+    },
+    {
+      "name": "renderable",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 667,
+      "end_line": 671
+    },
+    {
+      "name": "test_get_time",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "datetime.datetime",
+        "console.get_datetime",
+        "console.get_time"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 681,
+      "end_line": 686
+    },
+    {
+      "name": "test_console_style",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 689,
+      "end_line": 696
+    },
+    {
+      "name": "test_no_color",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 699,
+      "end_line": 707
+    },
+    {
+      "name": "test_quiet",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.file.getvalue",
+        "io.StringIO",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 710,
+      "end_line": 713
+    },
+    {
+      "name": "test_screen",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "Console",
+        "console.screen",
+        "console.print",
+        "repr",
+        "print",
+        "capture.get"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 717,
+      "end_line": 727
+    },
+    {
+      "name": "test_screen_update",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "Console",
+        "repr",
+        "console.screen",
+        "screen.update",
+        "print",
+        "capture.get"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 731,
+      "end_line": 743
+    },
+    {
+      "name": "test_height",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 746,
+      "end_line": 748
+    },
+    {
+      "name": "test_columns_env",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console",
+        "console",
+        "console"
+      ],
+      "start_line": 751,
+      "end_line": 758
+    },
+    {
+      "name": "test_lines_env",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console"
+      ],
+      "variables": [
+        "console",
+        "console",
+        "console"
+      ],
+      "start_line": 761,
+      "end_line": 768
+    },
+    {
+      "name": "test_screen_update_class",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "Segment",
+        "repr",
+        "console.print",
+        "ScreenUpdate",
+        "print"
+      ],
+      "variables": [
+        "screen_update",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 771,
+      "end_line": 782
+    },
+    {
+      "name": "test_is_alt_screen",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.screen"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 785,
+      "end_line": 792
+    },
+    {
+      "name": "test_set_console_title",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.capture",
+        "console.set_window_title",
+        "captured.get"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 795,
+      "end_line": 804
+    },
+    {
+      "name": "test_update_screen",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "console.screen",
+        "Region",
+        "console.update_screen",
+        "repr",
+        "print",
+        "pytest.raises"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 807,
+      "end_line": 820
+    },
+    {
+      "name": "test_update_screen_lines",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.update_screen_lines",
+        "pytest.raises"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 823,
+      "end_line": 828
+    },
+    {
+      "name": "test_update_options_markup",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "options.update"
+      ],
+      "variables": [
+        "console",
+        "options"
+      ],
+      "start_line": 831,
+      "end_line": 835
+    },
+    {
+      "name": "test_print_width_zero",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.capture",
+        "console.print",
+        "capture.get"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 838,
+      "end_line": 842
+    },
+    {
+      "name": "test_size_properties",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "ConsoleDimensions"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 845,
+      "end_line": 853
+    },
+    {
+      "name": "test_print_newline_start",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.begin_capture",
+        "console.print",
+        "console.end_capture"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 856,
+      "end_line": 863
+    },
+    {
+      "name": "test_is_terminal_broken_file",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "ValueError"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 866,
+      "end_line": 874
+    },
+    {
+      "name": "_mock_isatty",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "ValueError"
+      ],
+      "variables": [],
+      "start_line": 869,
+      "end_line": 870
+    },
+    {
+      "name": "test_detect_color_system",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console._detect_color_system"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 878,
+      "end_line": 880
+    },
+    {
+      "name": "test_reset_height",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "Console",
+        "repr",
+        "console.print",
+        "Panels",
+        "Panel",
+        "print",
+        "capture.get"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 883,
+      "end_line": 906
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "console",
+          "type": null
+        },
+        {
+          "name": "options",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Panel"
+      ],
+      "variables": [],
+      "start_line": 888,
+      "end_line": 890
+    },
+    {
+      "name": "test_render_lines_height_minus_vertical_pad_is_negative",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.options.update_height",
+        "console.render_lines",
+        "Padding"
+      ],
+      "variables": [
+        "console",
+        "options"
+      ],
+      "start_line": 909,
+      "end_line": 921
+    },
+    {
+      "name": "test_recording_no_stdout_and_no_stderr_files",
+      "parameters": [
+        {
+          "name": "monkeypatch",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.print",
+        "console.export_text",
+        "monkeypatch.setattr"
+      ],
+      "variables": [
+        "console",
+        "text"
+      ],
+      "start_line": 924,
+      "end_line": 934
+    },
+    {
+      "name": "test_capturing_no_stdout_and_no_stderr_files",
+      "parameters": [
+        {
+          "name": "monkeypatch",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "capture.get",
+        "Console",
+        "console.print",
+        "monkeypatch.setattr"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 937,
+      "end_line": 943
+    },
+    {
+      "name": "test_force_color",
+      "parameters": [
+        {
+          "name": "env_value",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 947,
+      "end_line": 951
+    },
+    {
+      "name": "test_force_color_jupyter",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 954,
+      "end_line": 959
+    },
+    {
+      "name": "test_force_color",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 962,
+      "end_line": 971
+    },
+    {
+      "name": "test_reenable_highlighting",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "repr",
+        "console.file.getvalue",
+        "console.print",
+        "print",
+        "output.splitlines"
+      ],
+      "variables": [
+        "console",
+        "output",
+        "lines"
+      ],
+      "start_line": 974,
+      "end_line": 997
+    },
+    {
+      "name": "test_brokenpipeerror",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "subprocess.Popen",
+        "proc2.wait",
+        "proc1.stdout.close",
+        "subprocess.run",
+        "proc2.communicate",
+        "\"python -m rich\".split",
+        "\"head -1\".split",
+        "proc1.wait"
+      ],
+      "variables": [
+        "rich_cmd",
+        "check",
+        "head_cmd",
+        "proc1",
+        "proc2"
+      ],
+      "start_line": 1001,
+      "end_line": 1017
+    },
+    {
+      "name": "test_capture_and_record",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "console.export_text",
+        "Console",
+        "console.print",
+        "repr",
+        "print",
+        "capture.get"
+      ],
+      "variables": [
+        "console",
+        "capture_content",
+        "recorded_content"
+      ],
+      "start_line": 1020,
+      "end_line": 1038
+    },
+    {
+      "name": "test_tty_interactive",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.BytesIO"
+      ],
+      "variables": [
+        "console",
+        "console",
+        "console",
+        "console",
+        "console"
+      ],
+      "start_line": 1041,
+      "end_line": 1063
+    },
+    {
+      "name": "test_tty_compatible",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "FakeTTY",
+        "FakeFile"
+      ],
+      "variables": [
+        "console",
+        "console",
+        "console",
+        "console",
+        "console",
+        "console"
+      ],
+      "start_line": 1066,
+      "end_line": 1129
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1072,
+      "end_line": 1073
+    },
+    {
+      "name": "isatty",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1075,
+      "end_line": 1077
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1082,
+      "end_line": 1083
+    },
+    {
+      "name": "isatty",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1085,
+      "end_line": 1087
+    }
+  ],
+  "variables": [
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "options",
+    "options1",
+    "options2",
+    "options_copy",
+    "options",
+    "render_options",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "value",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "data",
+    "result",
+    "expected",
+    "console",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "result",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "user_input",
+    "console",
+    "user_input",
+    "console",
+    "status",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "broken",
+    "console",
+    "text",
+    "expected",
+    "console",
+    "html",
+    "expected",
+    "console",
+    "html",
+    "expected",
+    "EXPECTED_SVG",
+    "console",
+    "svg",
+    "expected_svg",
+    "console",
+    "svg",
+    "console",
+    "export_path",
+    "console",
+    "export_path",
+    "expected",
+    "console",
+    "export_path",
+    "html",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "pager_content",
+    "pager_content",
+    "pager",
+    "console",
+    "renderables",
+    "console",
+    "renderables",
+    "console",
+    "console",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "screen_update",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "console",
+    "result",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "console",
+    "options",
+    "console",
+    "console",
+    "console",
+    "result",
+    "console",
+    "console",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "options",
+    "console",
+    "text",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "output",
+    "lines",
+    "rich_cmd",
+    "check",
+    "head_cmd",
+    "proc1",
+    "proc2",
+    "console",
+    "capture_content",
+    "recorded_content",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console"
+  ]
+}

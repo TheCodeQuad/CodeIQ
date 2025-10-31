@@ -1,0 +1,19 @@
+{
+  "name": "test_on",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "Text",
+    "text.on",
+    "text.get_style_at_offset"
+  ],
+  "variables": [
+    "console",
+    "text",
+    "expected"
+  ],
+  "start_line": 1002,
+  "end_line": 1009
+}

@@ -1,0 +1,15 @@
+{
+  "name": "transparent_background",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 459,
+  "end_line": 461
+}

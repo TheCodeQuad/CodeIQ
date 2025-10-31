@@ -1,0 +1,13 @@
+{
+  "name": "test_parse_rgb_hex",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "ColorTriplet",
+    "parse_rgb_hex"
+  ],
+  "variables": [],
+  "start_line": 180,
+  "end_line": 181
+}

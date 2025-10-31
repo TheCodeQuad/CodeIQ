@@ -1,0 +1,14 @@
+{
+  "name": "test_variant",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "repr",
+    "print",
+    "Emoji.replace"
+  ],
+  "variables": [],
+  "start_line": 27,
+  "end_line": 32
+}

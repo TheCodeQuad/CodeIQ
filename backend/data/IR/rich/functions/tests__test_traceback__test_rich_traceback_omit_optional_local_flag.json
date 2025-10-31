@@ -1,0 +1,35 @@
+{
+  "name": "test_rich_traceback_omit_optional_local_flag",
+  "parameters": [
+    {
+      "name": null,
+      "type": "bool"
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "List[str]"
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "sys.exc_info",
+    "level1",
+    "level3",
+    "len",
+    "Traceback.from_exception",
+    "level2"
+  ],
+  "variables": [
+    "_rich_traceback_omit",
+    "trace",
+    "frames",
+    "frame_names"
+  ],
+  "start_line": 305,
+  "end_line": 329
+}

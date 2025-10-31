@@ -1,0 +1,20 @@
+{
+  "name": "test_lines_rich_console",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "Text",
+    "lines.__rich_console__",
+    "list",
+    "Lines"
+  ],
+  "variables": [
+    "console",
+    "lines",
+    "result"
+  ],
+  "start_line": 30,
+  "end_line": 35
+}

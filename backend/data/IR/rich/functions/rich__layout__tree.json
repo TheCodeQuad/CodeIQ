@@ -1,0 +1,32 @@
+{
+  "name": "tree",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Tree\"",
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "recurse",
+    "tree.add",
+    "layout.splitter.get_tree_icon",
+    "Table.grid",
+    "Styled",
+    "Pretty",
+    "summary",
+    "Tree"
+  ],
+  "variables": [
+    "icon",
+    "table",
+    "text",
+    "_summary",
+    "layout",
+    "tree"
+  ],
+  "start_line": 223,
+  "end_line": 259
+}

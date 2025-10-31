@@ -1,0 +1,164 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_ratio.py",
+  "imports": [
+    "from fractions import Fraction",
+    "from math import ceil",
+    "from typing import cast, List, Optional, Sequence, Protocol",
+    "from dataclasses import dataclass"
+  ],
+  "classes": [
+    {
+      "name": "Edge",
+      "base_classes": "(Protocol)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "E",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "ratio_resolve",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "Sequence[Edge]"
+        }
+      ],
+      "return_type": "List[int]",
+      "docstring": null,
+      "calls": [
+        "cast",
+        "sum",
+        "enumerate",
+        "divmod",
+        "_Fraction",
+        "zip"
+      ],
+      "variables": [
+        "sizes",
+        "_Fraction",
+        "flexible_edges",
+        "remaining",
+        "portion",
+        "remainder"
+      ],
+      "start_line": 14,
+      "end_line": 72
+    },
+    {
+      "name": "ratio_reduce",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "List[int]"
+        },
+        {
+          "name": null,
+          "type": "List[int]"
+        },
+        {
+          "name": null,
+          "type": "List[int]"
+        }
+      ],
+      "return_type": "List[int]",
+      "docstring": null,
+      "calls": [
+        "round",
+        "append",
+        "sum",
+        "min",
+        "zip"
+      ],
+      "variables": [
+        "ratios",
+        "total_ratio",
+        "total_remaining",
+        "result",
+        "append",
+        "distributed"
+      ],
+      "start_line": 75,
+      "end_line": 104
+    },
+    {
+      "name": "ratio_distribute",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "List[int]"
+        }
+      ],
+      "return_type": "List[int]",
+      "docstring": null,
+      "calls": [
+        "append",
+        "sum",
+        "ceil",
+        "len",
+        "max",
+        "zip"
+      ],
+      "variables": [
+        "ratios",
+        "total_ratio",
+        "total_remaining",
+        "distributed_total",
+        "append",
+        "_minimums",
+        "_minimums",
+        "distributed",
+        "distributed"
+      ],
+      "start_line": 107,
+      "end_line": 140
+    }
+  ],
+  "variables": [
+    "size",
+    "ratio",
+    "minimum_size",
+    "sizes",
+    "_Fraction",
+    "flexible_edges",
+    "remaining",
+    "portion",
+    "remainder",
+    "ratios",
+    "total_ratio",
+    "total_remaining",
+    "result",
+    "append",
+    "distributed",
+    "ratios",
+    "total_ratio",
+    "total_remaining",
+    "distributed_total",
+    "append",
+    "_minimums",
+    "_minimums",
+    "distributed",
+    "distributed",
+    "size",
+    "ratio",
+    "minimum_size",
+    "resolved"
+  ]
+}

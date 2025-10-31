@@ -1,0 +1,31 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "os.path.abspath",
+    "self.extract",
+    "sys.exc_info",
+    "Syntax.get_theme",
+    "ValueError",
+    "isinstance",
+    "os.path.normpath",
+    "os.path.dirname",
+    "max",
+    "self.suppress.append"
+  ],
+  "variables": [
+    "trace",
+    "path",
+    "path",
+    "path"
+  ],
+  "start_line": 286,
+  "end_line": 337
+}

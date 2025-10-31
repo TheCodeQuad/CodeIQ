@@ -1,0 +1,1001 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_progress.py",
+  "imports": [
+    "import io",
+    "import os",
+    "import tempfile",
+    "from types import SimpleNamespace",
+    "import pytest",
+    "import rich.progress",
+    "from rich.console import Console",
+    "from rich.highlighter import NullHighlighter",
+    "from rich.progress import (\n    BarColumn,\n    DownloadColumn,\n    FileSizeColumn,\n    MofNCompleteColumn,\n    Progress,\n    RenderableColumn,\n    SpinnerColumn,\n    Task,\n    TaskID,\n    TaskProgressColumn,\n    TextColumn,\n    TimeElapsedColumn,\n    TimeRemainingColumn,\n    TotalFileSizeColumn,\n    TransferSpeedColumn,\n    _TrackThread,\n    track,\n)",
+    "from rich.progress_bar import ProgressBar",
+    "from rich.text import Text",
+    "from .render import replace_link_ids",
+    "from time import sleep"
+  ],
+  "classes": [
+    {
+      "name": "MockClock",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "FakeTask",
+      "base_classes": "(Task)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 39,
+      "end_line": 41
+    },
+    {
+      "name": "__call__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "float",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 43,
+      "end_line": 48
+    },
+    {
+      "name": "tick",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 50,
+      "end_line": 51
+    },
+    {
+      "name": "test_bar_columns",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "bar_column",
+        "Task",
+        "isinstance",
+        "BarColumn"
+      ],
+      "variables": [
+        "bar_column",
+        "task",
+        "bar"
+      ],
+      "start_line": 54,
+      "end_line": 61
+    },
+    {
+      "name": "test_text_column",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "text_column.render",
+        "Text",
+        "NullHighlighter",
+        "TextColumn",
+        "str",
+        "Task"
+      ],
+      "variables": [
+        "text_column",
+        "task",
+        "text",
+        "text_column",
+        "task",
+        "text"
+      ],
+      "start_line": 64,
+      "end_line": 73
+    },
+    {
+      "name": "test_time_elapsed_column",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Task",
+        "TimeElapsedColumn",
+        "column.render",
+        "str"
+      ],
+      "variables": [
+        "column",
+        "task",
+        "text"
+      ],
+      "start_line": 76,
+      "end_line": 80
+    },
+    {
+      "name": "test_time_remaining_column",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "column",
+        "str",
+        "TimeRemainingColumn",
+        "Task",
+        "FakeTask"
+      ],
+      "variables": [
+        "time_remaining",
+        "column",
+        "task",
+        "text",
+        "text"
+      ],
+      "start_line": 83,
+      "end_line": 93
+    },
+    {
+      "name": "test_compact_time_remaining_column",
+      "parameters": [
+        {
+          "name": "task_time",
+          "type": null
+        },
+        {
+          "name": "formatted",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "str",
+        "column.render",
+        "SimpleNamespace",
+        "TimeRemainingColumn"
+      ],
+      "variables": [
+        "task",
+        "column"
+      ],
+      "start_line": 106,
+      "end_line": 110
+    },
+    {
+      "name": "test_time_remaining_column_elapsed_when_finished",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "str",
+        "column.render",
+        "SimpleNamespace",
+        "TimeRemainingColumn"
+      ],
+      "variables": [
+        "task_time",
+        "formatted",
+        "task",
+        "column"
+      ],
+      "start_line": 113,
+      "end_line": 120
+    },
+    {
+      "name": "test_renderable_column",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Task",
+        "column.render",
+        "RenderableColumn"
+      ],
+      "variables": [
+        "column",
+        "task"
+      ],
+      "start_line": 123,
+      "end_line": 126
+    },
+    {
+      "name": "test_spinner_column",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "column.spinner.update",
+        "column.render",
+        "repr",
+        "str",
+        "SpinnerColumn",
+        "Task",
+        "print",
+        "column.set_spinner"
+      ],
+      "variables": [
+        "time",
+        "column",
+        "task",
+        "result",
+        "expected",
+        "result",
+        "expected"
+      ],
+      "start_line": 129,
+      "end_line": 149
+    },
+    {
+      "name": "get_time",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 132,
+      "end_line": 134
+    },
+    {
+      "name": "test_download_progress_uses_decimal_units",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "DownloadColumn",
+        "column.render",
+        "Task",
+        "str"
+      ],
+      "variables": [
+        "column",
+        "test_task",
+        "rendered_progress",
+        "expected"
+      ],
+      "start_line": 152,
+      "end_line": 157
+    },
+    {
+      "name": "test_download_progress_uses_binary_units",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "DownloadColumn",
+        "column.render",
+        "Task",
+        "str"
+      ],
+      "variables": [
+        "column",
+        "test_task",
+        "rendered_progress",
+        "expected"
+      ],
+      "start_line": 160,
+      "end_line": 165
+    },
+    {
+      "name": "test_task_ids",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "make_progress"
+      ],
+      "variables": [
+        "progress"
+      ],
+      "start_line": 168,
+      "end_line": 170
+    },
+    {
+      "name": "test_finished",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "make_progress"
+      ],
+      "variables": [
+        "progress"
+      ],
+      "start_line": 173,
+      "end_line": 175
+    },
+    {
+      "name": "make_progress",
+      "parameters": [],
+      "return_type": "Progress",
+      "docstring": null,
+      "calls": [
+        "progress.remove_task",
+        "io.StringIO",
+        "progress.advance",
+        "progress.start_task",
+        "Progress",
+        "Console",
+        "progress.stop_task",
+        "progress.add_task",
+        "progress.update"
+      ],
+      "variables": [
+        "_time",
+        "console",
+        "progress",
+        "task1",
+        "task2",
+        "task3",
+        "task4",
+        "task4"
+      ],
+      "start_line": 178,
+      "end_line": 210
+    },
+    {
+      "name": "fake_time",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 181,
+      "end_line": 186
+    },
+    {
+      "name": "render_progress",
+      "parameters": [],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "progress.stop",
+        "progress.start",
+        "make_progress",
+        "progress.console.file.getvalue"
+      ],
+      "variables": [
+        "progress",
+        "progress_render"
+      ],
+      "start_line": 213,
+      "end_line": 220
+    },
+    {
+      "name": "test_expand_bar",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Progress",
+        "Console",
+        "console.file.getvalue",
+        "progress.add_task",
+        "BarColumn",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "progress",
+        "expected",
+        "render_result"
+      ],
+      "start_line": 223,
+      "end_line": 245
+    },
+    {
+      "name": "test_progress_with_none_total_renders_a_pulsing_bar",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Progress",
+        "Console",
+        "console.file.getvalue",
+        "progress.add_task",
+        "BarColumn",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "progress",
+        "expected",
+        "render_result"
+      ],
+      "start_line": 248,
+      "end_line": 270
+    },
+    {
+      "name": "test_render",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "repr",
+        "render_progress",
+        "print"
+      ],
+      "variables": [
+        "expected",
+        "render_result"
+      ],
+      "start_line": 273,
+      "end_line": 277
+    },
+    {
+      "name": "test_track",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "next",
+        "track",
+        "iter",
+        "Console",
+        "MockClock",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "test",
+        "expected_values",
+        "result",
+        "expected"
+      ],
+      "start_line": 280,
+      "end_line": 306
+    },
+    {
+      "name": "test_progress_track",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "next",
+        "iter",
+        "Progress",
+        "Console",
+        "progress.track",
+        "MockClock",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "progress",
+        "test",
+        "expected_values",
+        "result",
+        "expected"
+      ],
+      "start_line": 309,
+      "end_line": 335
+    },
+    {
+      "name": "test_columns",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "MockClock",
+        "console.print",
+        "print",
+        "progress.advance",
+        "Console",
+        "TextColumn",
+        "TimeElapsedColumn",
+        "console.log",
+        "range",
+        "TotalFileSizeColumn",
+        "MofNCompleteColumn",
+        "TransferSpeedColumn",
+        "console.file.getvalue",
+        "replace_link_ids",
+        "progress.add_task",
+        "FileSizeColumn",
+        "repr",
+        "io.StringIO",
+        "Progress",
+        "BarColumn",
+        "TimeRemainingColumn",
+        "DownloadColumn",
+        "progress.refresh"
+      ],
+      "variables": [
+        "console",
+        "progress",
+        "task1",
+        "task2",
+        "result",
+        "expected"
+      ],
+      "start_line": 338,
+      "end_line": 382
+    },
+    {
+      "name": "test_using_default_columns",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "type",
+        "Progress.get_default_columns",
+        "Progress",
+        "TimeElapsedColumn",
+        "SpinnerColumn"
+      ],
+      "variables": [
+        "expected_default_types",
+        "progress",
+        "progress"
+      ],
+      "start_line": 385,
+      "end_line": 408
+    },
+    {
+      "name": "test_task_create",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Task",
+        "TaskID"
+      ],
+      "variables": [
+        "task"
+      ],
+      "start_line": 411,
+      "end_line": 417
+    },
+    {
+      "name": "test_task_start",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Task",
+        "get_time",
+        "TaskID"
+      ],
+      "variables": [
+        "current_time",
+        "task"
+      ],
+      "start_line": 420,
+      "end_line": 436
+    },
+    {
+      "name": "get_time",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 423,
+      "end_line": 425
+    },
+    {
+      "name": "test_task_zero_total",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Task",
+        "TaskID"
+      ],
+      "variables": [
+        "task"
+      ],
+      "start_line": 439,
+      "end_line": 441
+    },
+    {
+      "name": "test_progress_create",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Progress"
+      ],
+      "variables": [
+        "progress"
+      ],
+      "start_line": 444,
+      "end_line": 448
+    },
+    {
+      "name": "test_track_thread",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "_TrackThread",
+        "progress.add_task",
+        "sleep",
+        "Progress"
+      ],
+      "variables": [
+        "progress",
+        "task_id",
+        "track_thread"
+      ],
+      "start_line": 451,
+      "end_line": 462
+    },
+    {
+      "name": "test_reset",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "progress.add_task",
+        "progress.advance",
+        "progress.reset",
+        "Progress"
+      ],
+      "variables": [
+        "progress",
+        "task_id",
+        "task"
+      ],
+      "start_line": 465,
+      "end_line": 487
+    },
+    {
+      "name": "test_progress_max_refresh",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Progress",
+        "Console",
+        "TextColumn",
+        "progress.add_task",
+        "repr",
+        "progress.update",
+        "progress.refresh",
+        "print",
+        "range"
+      ],
+      "variables": [
+        "time",
+        "time",
+        "console",
+        "column",
+        "progress",
+        "task_id",
+        "result"
+      ],
+      "start_line": 490,
+      "end_line": 527
+    },
+    {
+      "name": "get_time",
+      "parameters": [],
+      "return_type": "float",
+      "docstring": null,
+      "calls": [],
+      "variables": [
+        "time"
+      ],
+      "start_line": 494,
+      "end_line": 499
+    },
+    {
+      "name": "test_live_is_started_if_progress_is_enabled",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Progress"
+      ],
+      "variables": [
+        "progress"
+      ],
+      "start_line": 530,
+      "end_line": 534
+    },
+    {
+      "name": "test_live_is_not_started_if_progress_is_disabled",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Progress"
+      ],
+      "variables": [
+        "progress"
+      ],
+      "start_line": 537,
+      "end_line": 541
+    },
+    {
+      "name": "test_no_output_if_progress_is_disabled",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "next",
+        "iter",
+        "Progress",
+        "Console",
+        "progress.track",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "progress",
+        "test",
+        "expected_values",
+        "result",
+        "expected"
+      ],
+      "start_line": 544,
+      "end_line": 565
+    },
+    {
+      "name": "test_open",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "io.StringIO",
+        "os.fdopen",
+        "Progress",
+        "Console",
+        "rich.progress.open",
+        "os.remove",
+        "f.read",
+        "f.write"
+      ],
+      "variables": [
+        "console",
+        "progress"
+      ],
+      "start_line": 568,
+      "end_line": 589
+    },
+    {
+      "name": "test_open_text_mode",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "os.fdopen",
+        "rich.progress.open",
+        "os.remove",
+        "f.read",
+        "f.write"
+      ],
+      "variables": [],
+      "start_line": 592,
+      "end_line": 602
+    },
+    {
+      "name": "test_wrap_file",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "os.fdopen",
+        "os.remove",
+        "open",
+        "f.read",
+        "f.write",
+        "rich.progress.wrap_file"
+      ],
+      "variables": [
+        "total"
+      ],
+      "start_line": 605,
+      "end_line": 620
+    },
+    {
+      "name": "test_wrap_file_task_total",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "io.StringIO",
+        "os.fdopen",
+        "Progress",
+        "Console",
+        "progress.wrap_file",
+        "os.remove",
+        "open",
+        "progress.add_task",
+        "f.read",
+        "f.write"
+      ],
+      "variables": [
+        "console",
+        "progress",
+        "total",
+        "task_id"
+      ],
+      "start_line": 623,
+      "end_line": 646
+    },
+    {
+      "name": "test_task_progress_column_speed",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "TaskProgressColumn.render_speed"
+      ],
+      "variables": [
+        "speed_text",
+        "speed_text",
+        "speed_text",
+        "speed_text"
+      ],
+      "start_line": 649,
+      "end_line": 660
+    }
+  ],
+  "variables": [
+    "bar_column",
+    "task",
+    "bar",
+    "text_column",
+    "task",
+    "text",
+    "text_column",
+    "task",
+    "text",
+    "column",
+    "task",
+    "text",
+    "time_remaining",
+    "column",
+    "task",
+    "text",
+    "text",
+    "task",
+    "column",
+    "task_time",
+    "formatted",
+    "task",
+    "column",
+    "column",
+    "task",
+    "time",
+    "column",
+    "task",
+    "result",
+    "expected",
+    "result",
+    "expected",
+    "column",
+    "test_task",
+    "rendered_progress",
+    "expected",
+    "column",
+    "test_task",
+    "rendered_progress",
+    "expected",
+    "progress",
+    "progress",
+    "_time",
+    "console",
+    "progress",
+    "task1",
+    "task2",
+    "task3",
+    "task4",
+    "task4",
+    "progress",
+    "progress_render",
+    "console",
+    "progress",
+    "expected",
+    "render_result",
+    "console",
+    "progress",
+    "expected",
+    "render_result",
+    "expected",
+    "render_result",
+    "console",
+    "test",
+    "expected_values",
+    "result",
+    "expected",
+    "console",
+    "progress",
+    "test",
+    "expected_values",
+    "result",
+    "expected",
+    "console",
+    "progress",
+    "task1",
+    "task2",
+    "result",
+    "expected",
+    "expected_default_types",
+    "progress",
+    "progress",
+    "task",
+    "current_time",
+    "task",
+    "task",
+    "progress",
+    "progress",
+    "task_id",
+    "track_thread",
+    "progress",
+    "task_id",
+    "task",
+    "time",
+    "time",
+    "console",
+    "column",
+    "progress",
+    "task_id",
+    "result",
+    "progress",
+    "progress",
+    "console",
+    "progress",
+    "test",
+    "expected_values",
+    "result",
+    "expected",
+    "console",
+    "progress",
+    "total",
+    "console",
+    "progress",
+    "total",
+    "task_id",
+    "speed_text",
+    "speed_text",
+    "speed_text",
+    "speed_text",
+    "_render"
+  ]
+}

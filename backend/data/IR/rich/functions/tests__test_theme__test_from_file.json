@@ -1,0 +1,20 @@
+{
+  "name": "test_from_file",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Theme",
+    "Theme.from_file",
+    "text_file.write",
+    "text_file.seek"
+  ],
+  "variables": [
+    "theme",
+    "text_file",
+    "load_theme"
+  ],
+  "start_line": 23,
+  "end_line": 30
+}

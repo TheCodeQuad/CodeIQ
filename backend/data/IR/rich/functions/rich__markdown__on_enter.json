@@ -1,0 +1,23 @@
+{
+  "name": "on_enter",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "MarkdownContext"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Text",
+    "super().on_enter",
+    "super"
+  ],
+  "variables": [],
+  "start_line": 434,
+  "end_line": 437
+}

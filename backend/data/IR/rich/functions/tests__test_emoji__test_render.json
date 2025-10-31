@@ -1,0 +1,15 @@
+{
+  "name": "test_render",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "Emoji"
+  ],
+  "variables": [
+    "render_result"
+  ],
+  "start_line": 22,
+  "end_line": 24
+}

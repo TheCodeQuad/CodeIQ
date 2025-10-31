@@ -1,0 +1,29 @@
+{
+  "name": "from_data",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "\"JSON\"",
+  "docstring": null,
+  "calls": [
+    "NullHighlighter",
+    "highlighter",
+    "dumps",
+    "JSONHighlighter",
+    "cls.__new__"
+  ],
+  "variables": [
+    "json_instance",
+    "json",
+    "highlighter"
+  ],
+  "start_line": 54,
+  "end_line": 99
+}

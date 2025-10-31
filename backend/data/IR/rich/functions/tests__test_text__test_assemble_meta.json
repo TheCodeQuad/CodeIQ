@@ -1,0 +1,22 @@
+{
+  "name": "test_assemble_meta",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Span",
+    "text.get_style_at_offset",
+    "Console",
+    "Style",
+    "str",
+    "Text.assemble"
+  ],
+  "variables": [
+    "text",
+    "spans",
+    "expected",
+    "console"
+  ],
+  "start_line": 843,
+  "end_line": 853
+}

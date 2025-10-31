@@ -1,0 +1,29 @@
+{
+  "name": "__rich_console__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "\"RenderResult\"",
+  "docstring": null,
+  "calls": [
+    "console.render",
+    "min",
+    "options.update_width"
+  ],
+  "variables": [
+    "child_options"
+  ],
+  "start_line": 22,
+  "end_line": 29
+}

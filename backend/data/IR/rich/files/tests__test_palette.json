@@ -1,0 +1,28 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_palette.py",
+  "imports": [
+    "from rich._palettes import STANDARD_PALETTE",
+    "from rich.table import Table"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_rich_cast",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "STANDARD_PALETTE.__rich__"
+      ],
+      "variables": [
+        "table"
+      ],
+      "start_line": 5,
+      "end_line": 8
+    }
+  ],
+  "variables": [
+    "table"
+  ]
+}

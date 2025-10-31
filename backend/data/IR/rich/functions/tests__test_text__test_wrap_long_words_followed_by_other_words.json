@@ -1,0 +1,17 @@
+{
+  "name": "test_wrap_long_words_followed_by_other_words",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "text.wrap",
+    "Text"
+  ],
+  "variables": [
+    "text",
+    "lines"
+  ],
+  "start_line": 567,
+  "end_line": 578
+}

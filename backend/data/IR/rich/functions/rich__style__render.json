@@ -1,0 +1,21 @@
+{
+  "name": "render",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "self._make_ansi_codes"
+  ],
+  "variables": [
+    "attrs",
+    "rendered",
+    "rendered"
+  ],
+  "start_line": 690,
+  "end_line": 714
+}

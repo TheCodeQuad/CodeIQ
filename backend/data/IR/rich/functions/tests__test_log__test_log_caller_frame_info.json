@@ -1,0 +1,13 @@
+{
+  "name": "test_log_caller_frame_info",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console._caller_frame_info",
+    "range"
+  ],
+  "variables": [],
+  "start_line": 47,
+  "end_line": 51
+}

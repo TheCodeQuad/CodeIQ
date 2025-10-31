@@ -1,0 +1,19 @@
+{
+  "name": "test_time_elapsed_column",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Task",
+    "TimeElapsedColumn",
+    "column.render",
+    "str"
+  ],
+  "variables": [
+    "column",
+    "task",
+    "text"
+  ],
+  "start_line": 76,
+  "end_line": 80
+}

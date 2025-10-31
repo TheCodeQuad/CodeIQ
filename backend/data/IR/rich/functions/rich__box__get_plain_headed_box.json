@@ -1,0 +1,17 @@
+{
+  "name": "get_plain_headed_box",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Box\"",
+  "docstring": null,
+  "calls": [
+    "PLAIN_HEADED_SUBSTITUTIONS.get"
+  ],
+  "variables": [],
+  "start_line": 85,
+  "end_line": 93
+}

@@ -1,0 +1,21 @@
+{
+  "name": "divide_all",
+  "parameters": [
+    {
+      "name": null,
+      "type": "List[Tuple[float, float]]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "divide_by",
+    "console.print",
+    "console.print_exception"
+  ],
+  "variables": [
+    "result"
+  ],
+  "start_line": 18,
+  "end_line": 28
+}

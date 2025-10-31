@@ -1,0 +1,21 @@
+{
+  "name": "generate_process",
+  "parameters": [
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "Process",
+  "docstring": null,
+  "calls": [
+    "Process",
+    "random.randint",
+    "datetime.timedelta",
+    "random.random",
+    "datetime.datetime.now"
+  ],
+  "variables": [],
+  "start_line": 37,
+  "end_line": 47
+}

@@ -1,0 +1,15 @@
+{
+  "name": "iter_attrs",
+  "parameters": [],
+  "return_type": "(\n                        Iterable[Tuple[str, Any, Optional[Callable[[Any], str]]]]\n                    )",
+  "docstring": null,
+  "calls": [
+    "callable",
+    "getattr"
+  ],
+  "variables": [
+    "value"
+  ],
+  "start_line": 731,
+  "end_line": 747
+}

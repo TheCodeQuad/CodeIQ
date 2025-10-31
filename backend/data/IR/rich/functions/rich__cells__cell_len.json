@@ -1,0 +1,21 @@
+{
+  "name": "cell_len",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "sum",
+    "map",
+    "_cell_len",
+    "_is_single_cell_widths",
+    "len"
+  ],
+  "variables": [],
+  "start_line": 51,
+  "end_line": 64
+}

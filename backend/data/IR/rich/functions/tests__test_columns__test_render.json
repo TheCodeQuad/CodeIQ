@@ -1,0 +1,14 @@
+{
+  "name": "test_render",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render"
+  ],
+  "variables": [
+    "expected"
+  ],
+  "start_line": 64,
+  "end_line": 66
+}

@@ -1,0 +1,118 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\top_lite_simulator.py",
+  "imports": [
+    "import datetime",
+    "import random",
+    "import time",
+    "from dataclasses import dataclass",
+    "from rich import box",
+    "from rich.console import Console",
+    "from rich.live import Live",
+    "from rich.table import Table",
+    "from typing import Literal"
+  ],
+  "classes": [
+    {
+      "name": "Process",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "memory_str",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "int",
+        "str"
+      ],
+      "variables": [],
+      "start_line": 25,
+      "end_line": 30
+    },
+    {
+      "name": "time_str",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "str",
+        "datetime.datetime.now"
+      ],
+      "variables": [],
+      "start_line": 33,
+      "end_line": 34
+    },
+    {
+      "name": "generate_process",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "Process",
+      "docstring": null,
+      "calls": [
+        "Process",
+        "random.randint",
+        "datetime.timedelta",
+        "random.random",
+        "datetime.datetime.now"
+      ],
+      "variables": [],
+      "start_line": 37,
+      "end_line": 47
+    },
+    {
+      "name": "create_process_table",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "Table",
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "sorted",
+        "generate_process",
+        "Table",
+        "str",
+        "range"
+      ],
+      "variables": [
+        "processes",
+        "table"
+      ],
+      "start_line": 50,
+      "end_line": 71
+    }
+  ],
+  "variables": [
+    "pid",
+    "command",
+    "cpu_percent",
+    "memory",
+    "start_time",
+    "thread_count",
+    "state",
+    "processes",
+    "table",
+    "console"
+  ]
+}

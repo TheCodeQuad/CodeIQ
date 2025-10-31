@@ -1,0 +1,33 @@
+{
+  "name": "ratio_resolve",
+  "parameters": [
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "Sequence[Edge]"
+    }
+  ],
+  "return_type": "List[int]",
+  "docstring": null,
+  "calls": [
+    "cast",
+    "sum",
+    "enumerate",
+    "divmod",
+    "_Fraction",
+    "zip"
+  ],
+  "variables": [
+    "sizes",
+    "_Fraction",
+    "flexible_edges",
+    "remaining",
+    "portion",
+    "remainder"
+  ],
+  "start_line": 14,
+  "end_line": 72
+}

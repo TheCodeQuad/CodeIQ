@@ -1,0 +1,18 @@
+{
+  "name": "test_plain_property_setter",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "text.append",
+    "str",
+    "Span"
+  ],
+  "variables": [
+    "text",
+    "text"
+  ],
+  "start_line": 84,
+  "end_line": 92
+}

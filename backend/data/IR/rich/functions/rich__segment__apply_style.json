@@ -1,0 +1,27 @@
+{
+  "name": "apply_style",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[\"Segment\"]"
+    }
+  ],
+  "return_type": "Iterable[\"Segment\"]",
+  "docstring": null,
+  "calls": [
+    "cls",
+    "apply"
+  ],
+  "variables": [
+    "result_segments",
+    "apply",
+    "result_segments",
+    "result_segments"
+  ],
+  "start_line": 190,
+  "end_line": 228
+}

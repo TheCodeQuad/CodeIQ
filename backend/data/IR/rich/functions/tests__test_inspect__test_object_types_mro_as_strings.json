@@ -1,0 +1,21 @@
+{
+  "name": "test_object_types_mro_as_strings",
+  "parameters": [
+    {
+      "name": null,
+      "type": "object"
+    },
+    {
+      "name": null,
+      "type": "Sequence[str]"
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "get_object_types_mro_as_strings"
+  ],
+  "variables": [],
+  "start_line": 477,
+  "end_line": 478
+}

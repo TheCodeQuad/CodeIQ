@@ -1,0 +1,18 @@
+{
+  "name": "test_get_html_style",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "print",
+    "Style(\n        reverse=True,\n        dim=True,\n        color=\"red\",\n        bgcolor=\"blue\",\n        bold=True,\n        italic=True,\n        underline=True,\n        strike=True,\n        overline=True,\n    ).get_html_style",
+    "Style",
+    "repr"
+  ],
+  "variables": [
+    "expected",
+    "html_style"
+  ],
+  "start_line": 127,
+  "end_line": 141
+}

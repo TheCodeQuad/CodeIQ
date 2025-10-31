@@ -1,0 +1,25 @@
+{
+  "name": "test_vertical_center",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "Console",
+    "console.print",
+    "repr",
+    "VerticalCenter",
+    "print",
+    "Measurement",
+    "Measurement.get"
+  ],
+  "variables": [
+    "console",
+    "vertical_center",
+    "result",
+    "expected"
+  ],
+  "start_line": 139,
+  "end_line": 151
+}

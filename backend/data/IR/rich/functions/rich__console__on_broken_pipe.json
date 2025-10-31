@@ -1,0 +1,22 @@
+{
+  "name": "on_broken_pipe",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "sys.stdout.fileno",
+    "os.dup2",
+    "os.open",
+    "SystemExit"
+  ],
+  "variables": [
+    "devnull"
+  ],
+  "start_line": 2013,
+  "end_line": 2025
+}

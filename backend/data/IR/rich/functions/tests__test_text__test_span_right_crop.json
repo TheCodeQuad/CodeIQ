@@ -1,0 +1,13 @@
+{
+  "name": "test_span_right_crop",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Span",
+    "Span(5, 10, \"foo\").right_crop"
+  ],
+  "variables": [],
+  "start_line": 30,
+  "end_line": 32
+}

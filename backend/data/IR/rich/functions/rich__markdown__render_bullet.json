@@ -1,0 +1,36 @@
+{
+  "name": "render_bullet",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Console"
+    },
+    {
+      "name": null,
+      "type": "ConsoleOptions"
+    }
+  ],
+  "return_type": "RenderResult",
+  "docstring": null,
+  "calls": [
+    "console.render_lines",
+    "Segment",
+    "loop_first",
+    "options.update",
+    "console.get_style"
+  ],
+  "variables": [
+    "render_options",
+    "lines",
+    "bullet_style",
+    "bullet",
+    "padding",
+    "new_line"
+  ],
+  "start_line": 369,
+  "end_line": 380
+}

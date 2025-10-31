@@ -1,0 +1,19 @@
+{
+  "name": "process_renderables",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "List[ConsoleRenderable]"
+    }
+  ],
+  "return_type": "List[ConsoleRenderable]",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 554,
+  "end_line": 566
+}

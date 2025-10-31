@@ -1,0 +1,23 @@
+{
+  "name": "test_reference_cycle_attrs",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Example",
+    "pretty_repr"
+  ],
+  "variables": [
+    "x",
+    "y",
+    "test",
+    "res",
+    "test",
+    "res",
+    "a",
+    "test",
+    "res"
+  ],
+  "start_line": 370,
+  "end_line": 390
+}

@@ -1,0 +1,17 @@
+{
+  "name": "default_lexer",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Lexer",
+  "docstring": null,
+  "calls": [
+    "get_lexer_by_name"
+  ],
+  "variables": [],
+  "start_line": 458,
+  "end_line": 465
+}

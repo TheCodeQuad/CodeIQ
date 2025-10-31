@@ -1,0 +1,21 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": "name",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "list"
+  ],
+  "variables": [],
+  "start_line": 6,
+  "end_line": 10
+}

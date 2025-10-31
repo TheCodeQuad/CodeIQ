@@ -1,0 +1,17 @@
+{
+  "name": "setup",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment"
+  ],
+  "variables": [],
+  "start_line": 208,
+  "end_line": 215
+}

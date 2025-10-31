@@ -1,0 +1,14 @@
+{
+  "name": "get_console",
+  "parameters": [],
+  "return_type": "\"Console\"",
+  "docstring": null,
+  "calls": [
+    "Console"
+  ],
+  "variables": [
+    "_console"
+  ],
+  "start_line": 23,
+  "end_line": 36
+}

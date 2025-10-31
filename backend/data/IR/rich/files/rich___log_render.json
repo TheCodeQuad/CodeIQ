@@ -1,0 +1,93 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_log_render.py",
+  "imports": [
+    "from datetime import datetime",
+    "from typing import Iterable, List, Optional, TYPE_CHECKING, Union, Callable",
+    "from .text import Text, TextType",
+    "from .console import Console, ConsoleRenderable, RenderableType",
+    "from .table import Table",
+    "from .containers import Renderables",
+    "from .table import Table",
+    "from rich.console import Console"
+  ],
+  "classes": [
+    {
+      "name": "LogRender",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 15,
+      "end_line": 30
+    },
+    {
+      "name": "__call__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "Iterable[\"ConsoleRenderable\"]"
+        }
+      ],
+      "return_type": "\"Table\"",
+      "docstring": null,
+      "calls": [
+        "callable",
+        "path_text.append",
+        "time_format",
+        "output.add_column",
+        "Text",
+        "console.get_datetime",
+        "log_time.strftime",
+        "row.append",
+        "Table.grid",
+        "output.add_row",
+        "Renderables",
+        "len"
+      ],
+      "variables": [
+        "output",
+        "row",
+        "log_time",
+        "time_format",
+        "log_time_display",
+        "log_time_display",
+        "path_text"
+      ],
+      "start_line": 32,
+      "end_line": 86
+    }
+  ],
+  "variables": [
+    "FormatTimeCallable",
+    "output",
+    "row",
+    "log_time",
+    "time_format",
+    "log_time_display",
+    "log_time_display",
+    "path_text",
+    "c"
+  ]
+}

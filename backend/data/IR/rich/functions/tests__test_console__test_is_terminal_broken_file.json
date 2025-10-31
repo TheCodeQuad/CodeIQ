@@ -1,0 +1,15 @@
+{
+  "name": "test_is_terminal_broken_file",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "ValueError"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 866,
+  "end_line": 874
+}

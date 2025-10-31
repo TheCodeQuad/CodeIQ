@@ -1,0 +1,56 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\terminal_theme.py",
+  "imports": [
+    "from typing import List, Optional, Tuple",
+    "from .color_triplet import ColorTriplet",
+    "from .palette import Palette"
+  ],
+  "classes": [
+    {
+      "name": "TerminalTheme",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "_ColorTuple"
+        },
+        {
+          "name": null,
+          "type": "_ColorTuple"
+        },
+        {
+          "name": null,
+          "type": "List[_ColorTuple]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "Palette"
+      ],
+      "variables": [],
+      "start_line": 20,
+      "end_line": 29
+    }
+  ],
+  "variables": [
+    "_ColorTuple",
+    "DEFAULT_TERMINAL_THEME",
+    "MONOKAI",
+    "DIMMED_MONOKAI",
+    "NIGHT_OWLISH",
+    "SVG_EXPORT_THEME"
+  ]
+}

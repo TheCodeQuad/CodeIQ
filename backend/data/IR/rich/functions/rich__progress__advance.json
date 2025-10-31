@@ -1,0 +1,33 @@
+{
+  "name": "advance",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "TaskID"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "ProgressSample",
+    "_progress.append",
+    "self.get_time",
+    "popleft",
+    "len"
+  ],
+  "variables": [
+    "current_time",
+    "task",
+    "completed_start",
+    "update_completed",
+    "old_sample_time",
+    "_progress",
+    "popleft"
+  ],
+  "start_line": 1516,
+  "end_line": 1544
+}

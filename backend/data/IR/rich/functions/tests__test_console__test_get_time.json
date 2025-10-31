@@ -1,0 +1,17 @@
+{
+  "name": "test_get_time",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "datetime.datetime",
+    "console.get_datetime",
+    "console.get_time"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 681,
+  "end_line": 686
+}

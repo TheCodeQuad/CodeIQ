@@ -1,0 +1,42 @@
+{
+  "name": "write_styled",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "Style"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "color.downgrade",
+    "self.write_text",
+    "SetConsoleTextAttribute",
+    "ctypes.c_ushort",
+    "bgcolor.downgrade"
+  ],
+  "variables": [
+    "color",
+    "bgcolor",
+    "fore",
+    "fore",
+    "fore",
+    "fore",
+    "fore",
+    "fore",
+    "back",
+    "back",
+    "back",
+    "back"
+  ],
+  "start_line": 405,
+  "end_line": 442
+}

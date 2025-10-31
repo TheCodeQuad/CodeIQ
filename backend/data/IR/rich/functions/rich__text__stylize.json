@@ -1,0 +1,29 @@
+{
+  "name": "stylize",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[str, Style]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "len",
+    "Span",
+    "min",
+    "self._spans.append"
+  ],
+  "variables": [
+    "length",
+    "start",
+    "end",
+    "end"
+  ],
+  "start_line": 457,
+  "end_line": 481
+}

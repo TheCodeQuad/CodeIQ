@@ -1,0 +1,341 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_align.py",
+  "imports": [
+    "import io",
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.align import Align, VerticalCenter",
+    "from rich.measure import Measurement"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_bad_align_legal",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "pytest.raises"
+      ],
+      "variables": [],
+      "start_line": 10,
+      "end_line": 26
+    },
+    {
+      "name": "test_repr",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "repr",
+        "Align"
+      ],
+      "variables": [],
+      "start_line": 29,
+      "end_line": 32
+    },
+    {
+      "name": "test_align_left",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 35,
+      "end_line": 38
+    },
+    {
+      "name": "test_align_center",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 41,
+      "end_line": 44
+    },
+    {
+      "name": "test_align_right",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 47,
+      "end_line": 50
+    },
+    {
+      "name": "test_align_top",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 53,
+      "end_line": 59
+    },
+    {
+      "name": "test_align_middle",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 62,
+      "end_line": 68
+    },
+    {
+      "name": "test_align_bottom",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 71,
+      "end_line": 77
+    },
+    {
+      "name": "test_align_center_middle",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 80,
+      "end_line": 86
+    },
+    {
+      "name": "test_align_fit",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 89,
+      "end_line": 92
+    },
+    {
+      "name": "test_align_right_style",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 95,
+      "end_line": 104
+    },
+    {
+      "name": "test_measure",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "Align",
+        "Measurement.get"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 107,
+      "end_line": 111
+    },
+    {
+      "name": "test_align_no_pad",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 114,
+      "end_line": 118
+    },
+    {
+      "name": "test_align_width",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console",
+        "words",
+        "result",
+        "expected"
+      ],
+      "start_line": 121,
+      "end_line": 127
+    },
+    {
+      "name": "test_shortcuts",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Align.right",
+        "Align.left",
+        "Align.center"
+      ],
+      "variables": [],
+      "start_line": 130,
+      "end_line": 136
+    },
+    {
+      "name": "test_vertical_center",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "console.print",
+        "repr",
+        "VerticalCenter",
+        "print",
+        "Measurement",
+        "Measurement.get"
+      ],
+      "variables": [
+        "console",
+        "vertical_center",
+        "result",
+        "expected"
+      ],
+      "start_line": 139,
+      "end_line": 151
+    }
+  ],
+  "variables": [
+    "console",
+    "console",
+    "console",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "expected",
+    "result",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "words",
+    "result",
+    "expected",
+    "console",
+    "vertical_center",
+    "result",
+    "expected"
+  ]
+}

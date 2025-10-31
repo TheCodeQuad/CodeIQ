@@ -1,0 +1,17 @@
+{
+  "name": "test_locals",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.log"
+  ],
+  "variables": [
+    "foo",
+    "movies",
+    "console"
+  ],
+  "start_line": 53,
+  "end_line": 74
+}

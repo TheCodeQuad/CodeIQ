@@ -1,0 +1,17 @@
+{
+  "name": "time_wrapping",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "self.text.wrap"
+  ],
+  "variables": [],
+  "start_line": 22,
+  "end_line": 23
+}

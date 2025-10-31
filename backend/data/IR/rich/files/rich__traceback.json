@@ -1,0 +1,834 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\traceback.py",
+  "imports": [
+    "import inspect",
+    "import linecache",
+    "import os",
+    "import sys",
+    "from dataclasses import dataclass, field",
+    "from itertools import islice",
+    "from traceback import walk_tb",
+    "from types import ModuleType, TracebackType",
+    "from typing import (\n    Any,\n    Callable,\n    Dict,\n    Iterable,\n    List,\n    Optional,\n    Sequence,\n    Set,\n    Tuple,\n    Type,\n    Union,\n)",
+    "from pygments.lexers import guess_lexer_for_filename",
+    "from pygments.token import Comment, Keyword, Name, Number, Operator, String",
+    "from pygments.token import Text as TextToken",
+    "from pygments.token import Token",
+    "from pygments.util import ClassNotFound",
+    "from . import pretty",
+    "from ._loop import loop_first_last, loop_last",
+    "from .columns import Columns",
+    "from .console import (\n    Console,\n    ConsoleOptions,\n    ConsoleRenderable,\n    Group,\n    RenderResult,\n    group,\n)",
+    "from .constrain import Constrain",
+    "from .highlighter import RegexHighlighter, ReprHighlighter",
+    "from .panel import Panel",
+    "from .scope import render_scope",
+    "from .style import Style",
+    "from .syntax import Syntax, SyntaxPosition",
+    "from .text import Text",
+    "from .theme import Theme",
+    "from rich import _IMPORT_CWD",
+    "import sys"
+  ],
+  "classes": [
+    {
+      "name": "Frame",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "_SyntaxError",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Stack",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Trace",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "PathHighlighter",
+      "base_classes": "(RegexHighlighter)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Traceback",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "_iter_syntax_lines",
+      "parameters": [
+        {
+          "name": null,
+          "type": "SyntaxPosition"
+        },
+        {
+          "name": null,
+          "type": "SyntaxPosition"
+        }
+      ],
+      "return_type": "Iterable[Tuple[int, int, int]]",
+      "docstring": null,
+      "calls": [
+        "range",
+        "loop_first_last"
+      ],
+      "variables": [],
+      "start_line": 55,
+      "end_line": 80
+    },
+    {
+      "name": "install",
+      "parameters": [],
+      "return_type": "Callable[[Type[BaseException], BaseException, Optional[TracebackType]], Any]",
+      "docstring": null,
+      "calls": [
+        "tb_data.get",
+        "traceback_console.print",
+        "Console",
+        "ipy_excepthook_closure",
+        "ip._get_exc_info",
+        "ipy_display_traceback",
+        "bool",
+        "excepthook",
+        "get_ipython",
+        "Traceback.from_exception",
+        "range",
+        "default_showtraceback"
+      ],
+      "variables": [
+        "traceback_console",
+        "locals_hide_sunder",
+        "exception_traceback",
+        "tb_data",
+        "default_showtraceback",
+        "tb_data",
+        "exc_tuple",
+        "tb",
+        "compiled",
+        "tb_offset",
+        "tb_offset",
+        "tb",
+        "tb_data",
+        "ip",
+        "old_excepthook"
+      ],
+      "start_line": 83,
+      "end_line": 211
+    },
+    {
+      "name": "excepthook",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Type[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "BaseException"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "bool",
+        "Traceback.from_exception",
+        "traceback_console.print"
+      ],
+      "variables": [
+        "exception_traceback"
+      ],
+      "start_line": 134,
+      "end_line": 157
+    },
+    {
+      "name": "ipy_excepthook_closure",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tb_data.get",
+        "ip._get_exc_info",
+        "ipy_display_traceback",
+        "excepthook",
+        "range",
+        "default_showtraceback"
+      ],
+      "variables": [
+        "tb_data",
+        "default_showtraceback",
+        "tb_data",
+        "exc_tuple",
+        "tb",
+        "compiled",
+        "tb_offset",
+        "tb_offset",
+        "tb",
+        "tb_data"
+      ],
+      "start_line": 159,
+      "end_line": 200
+    },
+    {
+      "name": "ipy_show_traceback",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "default_showtraceback"
+      ],
+      "variables": [
+        "tb_data"
+      ],
+      "start_line": 163,
+      "end_line": 167
+    },
+    {
+      "name": "ipy_display_traceback",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ip._get_exc_info",
+        "excepthook",
+        "range",
+        "tb_data.get"
+      ],
+      "variables": [
+        "exc_tuple",
+        "tb",
+        "compiled",
+        "tb_offset",
+        "tb_offset",
+        "tb",
+        "tb_data"
+      ],
+      "start_line": 169,
+      "end_line": 191
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "os.path.abspath",
+        "self.extract",
+        "sys.exc_info",
+        "Syntax.get_theme",
+        "ValueError",
+        "isinstance",
+        "os.path.normpath",
+        "os.path.dirname",
+        "max",
+        "self.suppress.append"
+      ],
+      "variables": [
+        "trace",
+        "path",
+        "path",
+        "path"
+      ],
+      "start_line": 286,
+      "end_line": 337
+    },
+    {
+      "name": "from_exception",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Type[Any]"
+        },
+        {
+          "name": null,
+          "type": "BaseException"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "\"Traceback\"",
+      "docstring": null,
+      "calls": [
+        "cls.extract",
+        "cls"
+      ],
+      "variables": [
+        "rich_traceback"
+      ],
+      "start_line": 340,
+      "end_line": 410
+    },
+    {
+      "name": "extract",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Type[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "BaseException"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "Trace",
+      "docstring": null,
+      "calls": [
+        "append",
+        "key.startswith",
+        "frame_summary.f_locals.get",
+        "walk_tb",
+        "stacks.append",
+        "islice",
+        "frame_summary.f_locals.items",
+        "set",
+        "stack.exceptions.append",
+        "frame_summary.f_code.co_positions",
+        "os.path.isabs",
+        "getattr",
+        "pretty.traverse",
+        "Stack",
+        "str",
+        "get_locals",
+        "os.path.join",
+        "type",
+        "isinstance",
+        "filename.startswith",
+        "inspect.isfunction",
+        "Traceback.extract",
+        "_SyntaxError",
+        "Trace",
+        "next",
+        "inspect.isclass",
+        "Frame",
+        "safe_str",
+        "grouped_exceptions.add"
+      ],
+      "variables": [
+        "stacks",
+        "is_cause",
+        "notes",
+        "grouped_exceptions",
+        "stack",
+        "append",
+        "filename",
+        "last_instruction",
+        "last_instruction",
+        "instruction_index",
+        "instruction_position",
+        "last_instruction",
+        "filename",
+        "frame",
+        "cause",
+        "exc_type",
+        "exc_value",
+        "traceback",
+        "is_cause",
+        "cause",
+        "exc_type",
+        "exc_value",
+        "traceback",
+        "is_cause",
+        "trace"
+      ],
+      "start_line": 413,
+      "end_line": 601
+    },
+    {
+      "name": "safe_str",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "str"
+      ],
+      "variables": [],
+      "start_line": 454,
+      "end_line": 459
+    },
+    {
+      "name": "get_locals",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Iterable[Tuple[str, object]]"
+        }
+      ],
+      "return_type": "Iterable[Tuple[str, object]]",
+      "docstring": null,
+      "calls": [
+        "key.startswith"
+      ],
+      "variables": [],
+      "start_line": 502,
+      "end_line": 514
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "group",
+        "self._render_syntax_error",
+        "render_stack",
+        "grouped_exceptions.append",
+        "enumerate",
+        "loop_last",
+        "Group",
+        "highlighter",
+        "Panel",
+        "ReprHighlighter",
+        "Style",
+        "self._render_stack",
+        "Text.assemble",
+        "theme.get_background_style",
+        "Theme",
+        "console.use_theme",
+        "reversed",
+        "Constrain",
+        "token_style",
+        "Text.from_markup"
+      ],
+      "variables": [
+        "theme",
+        "background_style",
+        "token_style",
+        "traceback_theme",
+        "highlighter",
+        "stack_renderable",
+        "stack_renderable",
+        "grouped_exceptions"
+      ],
+      "start_line": 603,
+      "end_line": 703
+    },
+    {
+      "name": "render_stack",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Stack"
+        },
+        {
+          "name": null,
+          "type": "bool"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "render_stack",
+        "grouped_exceptions.append",
+        "console.use_theme",
+        "enumerate",
+        "loop_last",
+        "Constrain",
+        "Group",
+        "highlighter",
+        "self._render_syntax_error",
+        "Panel",
+        "Text.from_markup",
+        "self._render_stack",
+        "Text.assemble"
+      ],
+      "variables": [
+        "stack_renderable",
+        "stack_renderable",
+        "grouped_exceptions"
+      ],
+      "start_line": 635,
+      "end_line": 700
+    },
+    {
+      "name": "_render_syntax_error",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "_SyntaxError"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "syntax_error_text.stylize",
+        "ReprHighlighter",
+        "path_highlighter",
+        "highlighter",
+        "os.path.exists",
+        "syntax_error.line.rstrip",
+        "str",
+        "len",
+        "PathHighlighter",
+        "Text.from_markup",
+        "min",
+        "Text.assemble"
+      ],
+      "variables": [
+        "highlighter",
+        "path_highlighter",
+        "text",
+        "syntax_error_text",
+        "offset"
+      ],
+      "start_line": 706,
+      "end_line": 726
+    },
+    {
+      "name": "_guess_lexer",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "code.index",
+        "first_line.lower",
+        "os.path.splitext",
+        "guess_lexer_for_filename",
+        "cls.LEXERS.get",
+        "first_line.startswith"
+      ],
+      "variables": [
+        "ext",
+        "new_line_index",
+        "first_line"
+      ],
+      "start_line": 729,
+      "end_line": 742
+    },
+    {
+      "name": "_render_stack",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Stack"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "Syntax",
+        "linecache.getlines",
+        "self._guess_lexer",
+        "len",
+        "Columns",
+        "enumerate",
+        "str",
+        "render_locals",
+        "range",
+        "line.lstrip",
+        "Text",
+        "path_highlighter",
+        "frame.filename.startswith",
+        "render_scope",
+        "Text.assemble",
+        "any",
+        "frame_filename.startswith",
+        "syntax.stylize_range",
+        "os.path.exists",
+        "PathHighlighter",
+        "_iter_syntax_lines",
+        "\"\".join"
+      ],
+      "variables": [
+        "path_highlighter",
+        "theme",
+        "exclude_frames",
+        "exclude_frames",
+        "excluded",
+        "excluded",
+        "excluded",
+        "first",
+        "frame_filename",
+        "suppressed",
+        "text",
+        "text",
+        "code_lines",
+        "code",
+        "lexer_name",
+        "syntax",
+        "line",
+        "column1",
+        "column2"
+      ],
+      "start_line": 745,
+      "end_line": 870
+    },
+    {
+      "name": "render_locals",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Frame"
+        }
+      ],
+      "return_type": "Iterable[ConsoleRenderable]",
+      "docstring": null,
+      "calls": [
+        "render_scope"
+      ],
+      "variables": [],
+      "start_line": 749,
+      "end_line": 757
+    },
+    {
+      "name": "bar",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "print"
+      ],
+      "variables": [
+        "one"
+      ],
+      "start_line": 877,
+      "end_line": 881
+    },
+    {
+      "name": "foo",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "bar"
+      ],
+      "variables": [
+        "_rich_traceback_guard",
+        "zed"
+      ],
+      "start_line": 883,
+      "end_line": 894
+    },
+    {
+      "name": "error",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "foo"
+      ],
+      "variables": [],
+      "start_line": 896,
+      "end_line": 897
+    }
+  ],
+  "variables": [
+    "WINDOWS",
+    "LOCALS_MAX_LENGTH",
+    "LOCALS_MAX_STRING",
+    "traceback_console",
+    "locals_hide_sunder",
+    "exception_traceback",
+    "tb_data",
+    "default_showtraceback",
+    "tb_data",
+    "exc_tuple",
+    "tb",
+    "compiled",
+    "tb_offset",
+    "tb_offset",
+    "tb",
+    "tb_data",
+    "ip",
+    "old_excepthook",
+    "filename",
+    "lineno",
+    "name",
+    "line",
+    "locals",
+    "last_instruction",
+    "offset",
+    "filename",
+    "line",
+    "lineno",
+    "msg",
+    "notes",
+    "exc_type",
+    "exc_value",
+    "syntax_error",
+    "is_cause",
+    "frames",
+    "notes",
+    "is_group",
+    "exceptions",
+    "stacks",
+    "highlights",
+    "LEXERS",
+    "trace",
+    "path",
+    "path",
+    "path",
+    "rich_traceback",
+    "stacks",
+    "is_cause",
+    "notes",
+    "grouped_exceptions",
+    "stack",
+    "append",
+    "filename",
+    "last_instruction",
+    "last_instruction",
+    "instruction_index",
+    "instruction_position",
+    "last_instruction",
+    "filename",
+    "frame",
+    "cause",
+    "exc_type",
+    "exc_value",
+    "traceback",
+    "is_cause",
+    "cause",
+    "exc_type",
+    "exc_value",
+    "traceback",
+    "is_cause",
+    "trace",
+    "theme",
+    "background_style",
+    "token_style",
+    "traceback_theme",
+    "highlighter",
+    "stack_renderable",
+    "stack_renderable",
+    "grouped_exceptions",
+    "highlighter",
+    "path_highlighter",
+    "text",
+    "syntax_error_text",
+    "offset",
+    "ext",
+    "new_line_index",
+    "first_line",
+    "path_highlighter",
+    "theme",
+    "exclude_frames",
+    "exclude_frames",
+    "excluded",
+    "excluded",
+    "excluded",
+    "first",
+    "frame_filename",
+    "suppressed",
+    "text",
+    "text",
+    "code_lines",
+    "code",
+    "lexer_name",
+    "syntax",
+    "line",
+    "column1",
+    "column2",
+    "one",
+    "_rich_traceback_guard",
+    "zed"
+  ]
+}

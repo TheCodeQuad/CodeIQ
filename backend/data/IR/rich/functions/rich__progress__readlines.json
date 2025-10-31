@@ -1,0 +1,22 @@
+{
+  "name": "readlines",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "List[bytes]",
+  "docstring": null,
+  "calls": [
+    "map",
+    "self.progress.advance",
+    "sum",
+    "self.handle.readlines"
+  ],
+  "variables": [
+    "lines"
+  ],
+  "start_line": 260,
+  "end_line": 263
+}

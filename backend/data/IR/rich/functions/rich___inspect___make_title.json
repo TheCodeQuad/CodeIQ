@@ -1,0 +1,29 @@
+{
+  "name": "_make_title",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "Text",
+  "docstring": null,
+  "calls": [
+    "callable",
+    "type",
+    "isclass",
+    "str",
+    "self.highlighter",
+    "ismodule"
+  ],
+  "variables": [
+    "title_str",
+    "title_text"
+  ],
+  "start_line": 64,
+  "end_line": 72
+}

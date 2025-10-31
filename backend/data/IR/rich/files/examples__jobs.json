@@ -1,0 +1,16 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\jobs.py",
+  "imports": [
+    "from time import sleep",
+    "from rich.panel import Panel",
+    "from rich.progress import Progress"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "JOBS",
+    "progress",
+    "master_task",
+    "jobs_task"
+  ]
+}

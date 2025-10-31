@@ -1,0 +1,26 @@
+{
+  "name": "test_print_sep_end",
+  "parameters": [
+    {
+      "name": "print_text",
+      "type": null
+    },
+    {
+      "name": "result",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.file.getvalue",
+    "StringIO",
+    "console.print"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 700,
+  "end_line": 703
+}

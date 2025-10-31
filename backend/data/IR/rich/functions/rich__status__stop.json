@@ -1,0 +1,17 @@
+{
+  "name": "stop",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._live.stop"
+  ],
+  "variables": [],
+  "start_line": 89,
+  "end_line": 91
+}

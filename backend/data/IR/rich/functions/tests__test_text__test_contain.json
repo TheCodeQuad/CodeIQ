@@ -1,0 +1,14 @@
+{
+  "name": "test_contain",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 69,
+  "end_line": 74
+}

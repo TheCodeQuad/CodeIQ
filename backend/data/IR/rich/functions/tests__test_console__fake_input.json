@@ -1,0 +1,17 @@
+{
+  "name": "fake_input",
+  "parameters": [
+    {
+      "name": "prompt",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.file.write"
+  ],
+  "variables": [],
+  "start_line": 399,
+  "end_line": 401
+}

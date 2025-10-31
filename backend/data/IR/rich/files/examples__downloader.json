@@ -1,0 +1,113 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\downloader.py",
+  "imports": [
+    "import os.path",
+    "import sys",
+    "from concurrent.futures import ThreadPoolExecutor",
+    "import signal",
+    "from functools import partial",
+    "from threading import Event",
+    "from typing import Iterable",
+    "from urllib.request import urlopen",
+    "from rich.progress import (\n    BarColumn,\n    DownloadColumn,\n    Progress,\n    TaskID,\n    TextColumn,\n    TimeRemainingColumn,\n    TransferSpeedColumn,\n)"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "handle_sigint",
+      "parameters": [
+        {
+          "name": "signum",
+          "type": null
+        },
+        {
+          "name": "frame",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "done_event.set"
+      ],
+      "variables": [],
+      "start_line": 40,
+      "end_line": 41
+    },
+    {
+      "name": "copy_url",
+      "parameters": [
+        {
+          "name": null,
+          "type": "TaskID"
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "progress.start_task",
+        "dest_file.write",
+        "iter",
+        "partial",
+        "int",
+        "progress.console.log",
+        "done_event.is_set",
+        "open",
+        "urlopen",
+        "response.info",
+        "len",
+        "progress.update"
+      ],
+      "variables": [
+        "response"
+      ],
+      "start_line": 47,
+      "end_line": 60
+    },
+    {
+      "name": "download",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Iterable[str]"
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "os.path.join",
+        "pool.submit",
+        "progress.add_task",
+        "url.split",
+        "ThreadPoolExecutor"
+      ],
+      "variables": [
+        "filename",
+        "dest_path",
+        "task_id"
+      ],
+      "start_line": 63,
+      "end_line": 72
+    }
+  ],
+  "variables": [
+    "progress",
+    "done_event",
+    "response",
+    "filename",
+    "dest_path",
+    "task_id"
+  ]
+}

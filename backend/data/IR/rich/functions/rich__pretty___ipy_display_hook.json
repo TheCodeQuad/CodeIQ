@@ -1,0 +1,26 @@
+{
+  "name": "_ipy_display_hook",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "Union[str, None]",
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "get_console",
+    "_safe_isinstance",
+    "console.line",
+    "console.print",
+    "Pretty",
+    "capture.get().rstrip",
+    "capture.get"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 113,
+  "end_line": 158
+}

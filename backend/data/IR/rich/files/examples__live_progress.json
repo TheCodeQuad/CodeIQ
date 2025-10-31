@@ -1,0 +1,23 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\live_progress.py",
+  "imports": [
+    "from time import sleep",
+    "from rich.live import Live",
+    "from rich.panel import Panel",
+    "from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn",
+    "from rich.table import Table"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "job_progress",
+    "job1",
+    "job2",
+    "job3",
+    "total",
+    "overall_progress",
+    "overall_task",
+    "progress_table",
+    "completed"
+  ]
+}

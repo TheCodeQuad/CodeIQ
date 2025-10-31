@@ -1,0 +1,15 @@
+{
+  "name": "__rich__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "RenderableType",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 93,
+  "end_line": 94
+}

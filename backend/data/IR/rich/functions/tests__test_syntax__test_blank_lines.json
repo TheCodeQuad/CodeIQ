@@ -1,0 +1,19 @@
+{
+  "name": "test_blank_lines",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "render",
+    "print",
+    "repr",
+    "Syntax"
+  ],
+  "variables": [
+    "code",
+    "syntax",
+    "result"
+  ],
+  "start_line": 43,
+  "end_line": 53
+}

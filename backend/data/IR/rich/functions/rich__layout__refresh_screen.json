@@ -1,0 +1,31 @@
+{
+  "name": "refresh_screen",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.render_lines",
+    "console.update_screen_lines",
+    "console.options.update_dimensions",
+    "LayoutRender"
+  ],
+  "variables": [
+    "layout",
+    "lines"
+  ],
+  "start_line": 328,
+  "end_line": 343
+}

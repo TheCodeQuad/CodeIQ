@@ -1,0 +1,13 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\benchmarks\\snippets.py",
+  "imports": [],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "PYTHON_SNIPPET",
+    "PYTHON_DICT",
+    "LOREM_IPSUM",
+    "UNICODE_HEAVY_TEXT",
+    "MARKUP"
+  ]
+}

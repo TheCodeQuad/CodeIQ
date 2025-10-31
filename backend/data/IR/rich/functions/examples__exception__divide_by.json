@@ -1,0 +1,21 @@
+{
+  "name": "divide_by",
+  "parameters": [
+    {
+      "name": null,
+      "type": "float"
+    },
+    {
+      "name": null,
+      "type": "float"
+    }
+  ],
+  "return_type": "float",
+  "docstring": null,
+  "calls": [],
+  "variables": [
+    "result"
+  ],
+  "start_line": 11,
+  "end_line": 15
+}

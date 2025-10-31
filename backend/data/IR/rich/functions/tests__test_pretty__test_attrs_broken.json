@@ -1,0 +1,20 @@
+{
+  "name": "test_attrs_broken",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "repr",
+    "print",
+    "Foo",
+    "pretty_repr"
+  ],
+  "variables": [
+    "bar",
+    "foo",
+    "result",
+    "expected"
+  ],
+  "start_line": 647,
+  "end_line": 657
+}

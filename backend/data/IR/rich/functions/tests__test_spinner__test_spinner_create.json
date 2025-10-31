@@ -1,0 +1,13 @@
+{
+  "name": "test_spinner_create",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "pytest.raises",
+    "Spinner"
+  ],
+  "variables": [],
+  "start_line": 10,
+  "end_line": 13
+}

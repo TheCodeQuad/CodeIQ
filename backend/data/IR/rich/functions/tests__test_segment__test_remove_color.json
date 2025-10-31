@@ -1,0 +1,17 @@
+{
+  "name": "test_remove_color",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "list",
+    "Style",
+    "Segment.remove_color"
+  ],
+  "variables": [
+    "segments"
+  ],
+  "start_line": 111,
+  "end_line": 119
+}

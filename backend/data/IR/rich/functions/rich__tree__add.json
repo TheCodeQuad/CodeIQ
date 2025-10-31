@@ -1,0 +1,24 @@
+{
+  "name": "add",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "RenderableType"
+    }
+  ],
+  "return_type": "\"Tree\"",
+  "docstring": null,
+  "calls": [
+    "self.children.append",
+    "Tree"
+  ],
+  "variables": [
+    "node"
+  ],
+  "start_line": 55,
+  "end_line": 84
+}

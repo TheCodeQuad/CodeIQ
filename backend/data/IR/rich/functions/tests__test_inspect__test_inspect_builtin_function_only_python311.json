@@ -1,0 +1,14 @@
+{
+  "name": "test_inspect_builtin_function_only_python311",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render"
+  ],
+  "variables": [
+    "expected"
+  ],
+  "start_line": 173,
+  "end_line": 187
+}

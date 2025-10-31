@@ -1,0 +1,18 @@
+{
+  "name": "test_ipy_display_hook__multiple_special_reprs",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "io.StringIO",
+    "Thing",
+    "_ipy_display_hook"
+  ],
+  "variables": [
+    "console",
+    "result"
+  ],
+  "start_line": 79,
+  "end_line": 98
+}

@@ -1,0 +1,20 @@
+{
+  "name": "test_tree_measure",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "tree.add",
+    "Console",
+    "Tree",
+    "Measurement",
+    "Measurement.get"
+  ],
+  "variables": [
+    "tree",
+    "console",
+    "measurement"
+  ],
+  "start_line": 139,
+  "end_line": 145
+}

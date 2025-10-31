@@ -1,0 +1,19 @@
+{
+  "name": "test_python_render_simple_indent_guides",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "render",
+    "print",
+    "repr",
+    "Syntax"
+  ],
+  "variables": [
+    "syntax",
+    "rendered_syntax",
+    "expected"
+  ],
+  "start_line": 106,
+  "end_line": 119
+}

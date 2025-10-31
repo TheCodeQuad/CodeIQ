@@ -1,0 +1,20 @@
+{
+  "name": "screen_size",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "WindowsCoordinates",
+  "docstring": null,
+  "calls": [
+    "WindowsCoordinates",
+    "GetConsoleScreenBufferInfo"
+  ],
+  "variables": [
+    "screen_size"
+  ],
+  "start_line": 387,
+  "end_line": 394
+}

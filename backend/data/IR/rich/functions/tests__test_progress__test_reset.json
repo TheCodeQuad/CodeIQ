@@ -1,0 +1,19 @@
+{
+  "name": "test_reset",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "progress.add_task",
+    "progress.advance",
+    "progress.reset",
+    "Progress"
+  ],
+  "variables": [
+    "progress",
+    "task_id",
+    "task"
+  ],
+  "start_line": 465,
+  "end_line": 487
+}

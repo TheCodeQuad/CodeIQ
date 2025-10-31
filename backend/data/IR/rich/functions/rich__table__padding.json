@@ -1,0 +1,21 @@
+{
+  "name": "padding",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "PaddingDimensions"
+    }
+  ],
+  "return_type": "\"Table\"",
+  "docstring": null,
+  "calls": [
+    "Padding.unpack"
+  ],
+  "variables": [],
+  "start_line": 360,
+  "end_line": 363
+}

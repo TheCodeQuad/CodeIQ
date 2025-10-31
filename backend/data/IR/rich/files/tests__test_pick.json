@@ -1,0 +1,22 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_pick.py",
+  "imports": [
+    "from rich._pick import pick_bool"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_pick_bool",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "pick_bool"
+      ],
+      "variables": [],
+      "start_line": 4,
+      "end_line": 14
+    }
+  ],
+  "variables": []
+}

@@ -1,0 +1,21 @@
+{
+  "name": "add_column",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "len",
+    "Column",
+    "self.columns.append"
+  ],
+  "variables": [
+    "column"
+  ],
+  "start_line": 365,
+  "end_line": 421
+}

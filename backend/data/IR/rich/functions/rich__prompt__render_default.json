@@ -1,0 +1,21 @@
+{
+  "name": "render_default",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "DefaultType"
+    }
+  ],
+  "return_type": "Text",
+  "docstring": null,
+  "calls": [
+    "Text"
+  ],
+  "variables": [],
+  "start_line": 353,
+  "end_line": 356
+}

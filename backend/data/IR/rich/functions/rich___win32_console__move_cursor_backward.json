@@ -1,0 +1,20 @@
+{
+  "name": "move_cursor_backward",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "WindowsCoordinates",
+    "SetConsoleCursorPosition"
+  ],
+  "variables": [
+    "col"
+  ],
+  "start_line": 535,
+  "end_line": 545
+}

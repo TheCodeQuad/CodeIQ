@@ -1,0 +1,13 @@
+{
+  "name": "test_set_shape",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "Segment.set_shape"
+  ],
+  "variables": [],
+  "start_line": 70,
+  "end_line": 77
+}

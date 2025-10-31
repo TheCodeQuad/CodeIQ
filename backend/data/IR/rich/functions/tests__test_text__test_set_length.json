@@ -1,0 +1,20 @@
+{
+  "name": "test_set_length",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "text.set_length",
+    "Text",
+    "expected.append",
+    "text.stylize"
+  ],
+  "variables": [
+    "text",
+    "text",
+    "text",
+    "expected"
+  ],
+  "start_line": 297,
+  "end_line": 313
+}

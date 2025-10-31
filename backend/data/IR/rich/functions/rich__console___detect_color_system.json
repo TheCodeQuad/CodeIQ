@@ -1,0 +1,29 @@
+{
+  "name": "_detect_color_system",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Optional[ColorSystem]",
+  "docstring": null,
+  "calls": [
+    "term.rpartition",
+    "self._environ.get(\"TERM\", \"\").strip().lower",
+    "self._environ.get(\"TERM\", \"\").strip",
+    "_TERM_COLORS.get",
+    "self._environ.get(\"COLORTERM\", \"\").strip",
+    "self._environ.get",
+    "get_windows_console_features",
+    "self._environ.get(\"COLORTERM\", \"\").strip().lower"
+  ],
+  "variables": [
+    "windows_console_features",
+    "color_term",
+    "term",
+    "color_system"
+  ],
+  "start_line": 795,
+  "end_line": 817
+}

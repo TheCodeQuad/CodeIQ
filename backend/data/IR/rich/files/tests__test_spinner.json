@@ -1,0 +1,147 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_spinner.py",
+  "imports": [
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.measure import Measurement",
+    "from rich.rule import Rule",
+    "from rich.spinner import Spinner",
+    "from rich.text import Text"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_spinner_create",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "pytest.raises",
+        "Spinner"
+      ],
+      "variables": [],
+      "start_line": 10,
+      "end_line": 13
+    },
+    {
+      "name": "test_spinner_render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "console.print",
+        "repr",
+        "print",
+        "Spinner"
+      ],
+      "variables": [
+        "time",
+        "console",
+        "spinner",
+        "result",
+        "expected"
+      ],
+      "start_line": 16,
+      "end_line": 34
+    },
+    {
+      "name": "get_time",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 19,
+      "end_line": 21
+    },
+    {
+      "name": "test_spinner_update",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "Rule",
+        "spinner.update",
+        "console.print",
+        "repr",
+        "print",
+        "Spinner"
+      ],
+      "variables": [
+        "time",
+        "console",
+        "spinner",
+        "rule",
+        "result",
+        "expected"
+      ],
+      "start_line": 37,
+      "end_line": 58
+    },
+    {
+      "name": "get_time",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 40,
+      "end_line": 42
+    },
+    {
+      "name": "test_rich_measure",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "Measurement.get",
+        "Spinner"
+      ],
+      "variables": [
+        "console",
+        "spinner"
+      ],
+      "start_line": 61,
+      "end_line": 66
+    },
+    {
+      "name": "test_spinner_markup",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "str",
+        "Spinner"
+      ],
+      "variables": [
+        "spinner"
+      ],
+      "start_line": 69,
+      "end_line": 72
+    }
+  ],
+  "variables": [
+    "time",
+    "console",
+    "spinner",
+    "result",
+    "expected",
+    "time",
+    "console",
+    "spinner",
+    "rule",
+    "result",
+    "expected",
+    "console",
+    "spinner",
+    "spinner"
+  ]
+}

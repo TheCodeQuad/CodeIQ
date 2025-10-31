@@ -1,0 +1,28 @@
+{
+  "name": "_ansi_tokenize",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "Iterable[_AnsiToken]",
+  "docstring": null,
+  "calls": [
+    "_AnsiToken",
+    "match.groups",
+    "re_ansi.finditer",
+    "len",
+    "sgr.endswith",
+    "match.span"
+  ],
+  "variables": [
+    "position",
+    "sgr",
+    "osc",
+    "position",
+    "position"
+  ],
+  "start_line": 28,
+  "end_line": 56
+}

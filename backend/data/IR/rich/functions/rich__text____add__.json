@@ -1,0 +1,25 @@
+{
+  "name": "__add__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "\"Text\"",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "result.append",
+    "self.copy"
+  ],
+  "variables": [
+    "result"
+  ],
+  "start_line": 179,
+  "end_line": 184
+}

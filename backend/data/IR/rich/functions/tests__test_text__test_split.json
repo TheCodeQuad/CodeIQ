@@ -1,0 +1,24 @@
+{
+  "name": "test_split",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "text.split",
+    "Text",
+    "list",
+    "line2.append",
+    "text.append",
+    "Text(\"foo\").split",
+    "len",
+    "line1.append"
+  ],
+  "variables": [
+    "text",
+    "line1",
+    "line2",
+    "split"
+  ],
+  "start_line": 378,
+  "end_line": 394
+}

@@ -1,0 +1,14 @@
+{
+  "name": "test_chop_cells_mixed_width",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "chop_cells"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 60,
+  "end_line": 63
+}

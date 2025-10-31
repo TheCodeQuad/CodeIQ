@@ -1,0 +1,211 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\palette.py",
+  "imports": [
+    "from math import sqrt",
+    "from functools import lru_cache",
+    "from typing import Sequence, Tuple, TYPE_CHECKING",
+    "from .color_triplet import ColorTriplet",
+    "from rich.table import Table",
+    "from rich.color import Color",
+    "from rich.style import Style",
+    "from rich.text import Text",
+    "from rich.table import Table",
+    "import colorsys",
+    "from typing import Iterable",
+    "from rich.color import Color",
+    "from rich.console import Console, ConsoleOptions",
+    "from rich.segment import Segment",
+    "from rich.style import Style"
+  ],
+  "classes": [
+    {
+      "name": "Palette",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ColorBox",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Sequence[Tuple[int, int, int]]"
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 14,
+      "end_line": 15
+    },
+    {
+      "name": "__getitem__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "ColorTriplet",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet"
+      ],
+      "variables": [],
+      "start_line": 17,
+      "end_line": 18
+    },
+    {
+      "name": "__rich__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "\"Table\"",
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "Color.from_rgb",
+        "Text",
+        "enumerate",
+        "Style",
+        "repr",
+        "Table",
+        "str",
+        "len"
+      ],
+      "variables": [
+        "table"
+      ],
+      "start_line": 20,
+      "end_line": 41
+    },
+    {
+      "name": "match",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Tuple[int, int, int]"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "get_color",
+        "min",
+        "_sqrt",
+        "len",
+        "range"
+      ],
+      "variables": [
+        "_sqrt",
+        "get_color",
+        "red_mean",
+        "red",
+        "green",
+        "blue",
+        "min_index"
+      ],
+      "start_line": 45,
+      "end_line": 72
+    },
+    {
+      "name": "get_color_distance",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "float",
+      "docstring": null,
+      "calls": [
+        "get_color",
+        "_sqrt"
+      ],
+      "variables": [
+        "red_mean",
+        "red",
+        "green",
+        "blue"
+      ],
+      "start_line": 58,
+      "end_line": 69
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "Iterable[Segment]",
+      "docstring": null,
+      "calls": [
+        "colorsys.hls_to_rgb",
+        "Color.from_rgb",
+        "Segment.line",
+        "Segment",
+        "Style",
+        "range"
+      ],
+      "variables": [
+        "height",
+        "h",
+        "l",
+        "bgcolor",
+        "color"
+      ],
+      "start_line": 84,
+      "end_line": 97
+    }
+  ],
+  "variables": [
+    "table",
+    "_sqrt",
+    "get_color",
+    "red_mean",
+    "red",
+    "green",
+    "blue",
+    "min_index",
+    "height",
+    "h",
+    "l",
+    "bgcolor",
+    "color",
+    "console"
+  ]
+}

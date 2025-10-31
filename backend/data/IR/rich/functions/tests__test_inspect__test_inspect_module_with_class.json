@@ -1,0 +1,16 @@
+{
+  "name": "test_inspect_module_with_class",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "ModuleType"
+  ],
+  "variables": [
+    "module",
+    "expected"
+  ],
+  "start_line": 385,
+  "end_line": 404
+}

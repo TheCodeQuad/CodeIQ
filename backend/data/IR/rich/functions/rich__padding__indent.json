@@ -1,0 +1,25 @@
+{
+  "name": "indent",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"RenderableType\""
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "\"Padding\"",
+  "docstring": null,
+  "calls": [
+    "Padding"
+  ],
+  "variables": [],
+  "start_line": 47,
+  "end_line": 58
+}

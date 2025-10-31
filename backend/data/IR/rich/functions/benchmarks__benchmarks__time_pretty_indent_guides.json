@@ -1,0 +1,20 @@
+{
+  "name": "time_pretty_indent_guides",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Pretty",
+    "self.console.print"
+  ],
+  "variables": [
+    "pretty"
+  ],
+  "start_line": 139,
+  "end_line": 141
+}

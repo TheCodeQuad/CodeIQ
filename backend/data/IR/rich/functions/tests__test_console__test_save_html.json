@@ -1,0 +1,25 @@
+{
+  "name": "test_save_html",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "os.path.join",
+    "Console",
+    "tempfile.TemporaryDirectory",
+    "html_file.read",
+    "open",
+    "console.print",
+    "repr",
+    "print",
+    "console.save_html"
+  ],
+  "variables": [
+    "expected",
+    "console",
+    "export_path",
+    "html"
+  ],
+  "start_line": 579,
+  "end_line": 589
+}

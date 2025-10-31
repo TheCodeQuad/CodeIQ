@@ -1,0 +1,33 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_timer.py",
+  "imports": [
+    "from time import time",
+    "import contextlib",
+    "from typing import Generator"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "timer",
+      "parameters": [],
+      "return_type": "Generator[None, None, None]",
+      "docstring": null,
+      "calls": [
+        "time",
+        "print"
+      ],
+      "variables": [
+        "start",
+        "elapsed",
+        "elapsed_ms"
+      ],
+      "start_line": 13,
+      "end_line": 19
+    }
+  ],
+  "variables": [
+    "start",
+    "elapsed",
+    "elapsed_ms"
+  ]
+}

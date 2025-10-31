@@ -1,0 +1,27 @@
+{
+  "name": "__rich__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Table\"",
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "Color.from_rgb",
+    "Text",
+    "enumerate",
+    "Style",
+    "repr",
+    "Table",
+    "str",
+    "len"
+  ],
+  "variables": [
+    "table"
+  ],
+  "start_line": 20,
+  "end_line": 41
+}

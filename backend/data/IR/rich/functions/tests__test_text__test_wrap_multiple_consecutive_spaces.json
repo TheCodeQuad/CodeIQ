@@ -1,0 +1,17 @@
+{
+  "name": "test_wrap_multiple_consecutive_spaces",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "text.wrap",
+    "Text"
+  ],
+  "variables": [
+    "text",
+    "lines"
+  ],
+  "start_line": 595,
+  "end_line": 605
+}

@@ -1,0 +1,17 @@
+{
+  "name": "decimal",
+  "parameters": [
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "_to_str"
+  ],
+  "variables": [],
+  "start_line": 52,
+  "end_line": 88
+}

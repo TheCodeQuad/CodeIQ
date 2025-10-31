@@ -1,0 +1,14 @@
+{
+  "name": "test_hash",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "hash",
+    "Style"
+  ],
+  "variables": [],
+  "start_line": 73,
+  "end_line": 74
+}

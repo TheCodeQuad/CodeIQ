@@ -1,0 +1,201 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\padding.py",
+  "imports": [
+    "from typing import TYPE_CHECKING, List, Optional, Tuple, Union",
+    "from .console import (\n        Console,\n        ConsoleOptions,\n        RenderableType,\n        RenderResult,\n    )",
+    "from .jupyter import JupyterMixin",
+    "from .measure import Measurement",
+    "from .segment import Segment",
+    "from .style import Style",
+    "from rich import print"
+  ],
+  "classes": [
+    {
+      "name": "Padding",
+      "base_classes": "(JupyterMixin)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"RenderableType\""
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.unpack"
+      ],
+      "variables": [],
+      "start_line": 33,
+      "end_line": 44
+    },
+    {
+      "name": "indent",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"RenderableType\""
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "\"Padding\"",
+      "docstring": null,
+      "calls": [
+        "Padding"
+      ],
+      "variables": [],
+      "start_line": 47,
+      "end_line": 58
+    },
+    {
+      "name": "unpack",
+      "parameters": [
+        {
+          "name": null,
+          "type": "\"PaddingDimensions\""
+        }
+      ],
+      "return_type": "Tuple[int, int, int, int]",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "len",
+        "ValueError"
+      ],
+      "variables": [
+        "_pad"
+      ],
+      "start_line": 61,
+      "end_line": 74
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 76,
+      "end_line": 77
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "\"ConsoleOptions\""
+        }
+      ],
+      "return_type": "\"RenderResult\"",
+      "docstring": null,
+      "calls": [
+        "console.render_lines",
+        "options.update_width",
+        "_Segment",
+        "render_options.update_height",
+        "console.get_style",
+        "_Segment.line",
+        "min",
+        "Measurement.get"
+      ],
+      "variables": [
+        "style",
+        "width",
+        "width",
+        "render_options",
+        "render_options",
+        "lines",
+        "_Segment",
+        "left",
+        "right",
+        "blank_line",
+        "blank_line",
+        "blank_line"
+      ],
+      "start_line": 79,
+      "end_line": 123
+    },
+    {
+      "name": "__rich_measure__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "\"ConsoleOptions\""
+        }
+      ],
+      "return_type": "\"Measurement\"",
+      "docstring": null,
+      "calls": [
+        "Measurement",
+        "Measurement.get",
+        "measurement.with_maximum"
+      ],
+      "variables": [
+        "max_width",
+        "extra_width",
+        "measurement",
+        "measurement"
+      ],
+      "start_line": 125,
+      "end_line": 135
+    }
+  ],
+  "variables": [
+    "PaddingDimensions",
+    "_pad",
+    "style",
+    "width",
+    "width",
+    "render_options",
+    "render_options",
+    "lines",
+    "_Segment",
+    "left",
+    "right",
+    "blank_line",
+    "blank_line",
+    "blank_line",
+    "max_width",
+    "extra_width",
+    "measurement",
+    "measurement"
+  ]
+}

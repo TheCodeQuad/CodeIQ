@@ -1,0 +1,16 @@
+{
+  "name": "test_extend_style",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "text.extend_style",
+    "Text.from_markup",
+    "Span"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 1028,
+  "end_line": 1041
+}

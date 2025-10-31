@@ -1,0 +1,151 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\live_render.py",
+  "imports": [
+    "from typing import Optional, Tuple, Literal",
+    "from ._loop import loop_last",
+    "from .console import Console, ConsoleOptions, RenderableType, RenderResult",
+    "from .control import Control",
+    "from .segment import ControlType, Segment",
+    "from .style import StyleType",
+    "from .text import Text"
+  ],
+  "classes": [
+    {
+      "name": "LiveRender",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "RenderableType"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 22,
+      "end_line": 31
+    },
+    {
+      "name": "set_renderable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "RenderableType"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 33,
+      "end_line": 39
+    },
+    {
+      "name": "position_cursor",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Control",
+      "docstring": null,
+      "calls": [
+        "Control"
+      ],
+      "variables": [],
+      "start_line": 41,
+      "end_line": 60
+    },
+    {
+      "name": "restore_cursor",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Control",
+      "docstring": null,
+      "calls": [
+        "Control"
+      ],
+      "variables": [],
+      "start_line": 62,
+      "end_line": 74
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "console.render_lines",
+        "Segment.line",
+        "Text",
+        "Segment.get_shape",
+        "loop_last",
+        "list",
+        "console.get_style",
+        "lines.append",
+        "console.render"
+      ],
+      "variables": [
+        "renderable",
+        "style",
+        "lines",
+        "shape",
+        "lines",
+        "shape",
+        "lines",
+        "overflow_text",
+        "shape",
+        "new_line"
+      ],
+      "start_line": 76,
+      "end_line": 106
+    }
+  ],
+  "variables": [
+    "VerticalOverflowMethod",
+    "renderable",
+    "style",
+    "lines",
+    "shape",
+    "lines",
+    "shape",
+    "lines",
+    "overflow_text",
+    "shape",
+    "new_line"
+  ]
+}

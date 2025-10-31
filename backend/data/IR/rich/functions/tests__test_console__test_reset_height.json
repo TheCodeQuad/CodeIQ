@@ -1,0 +1,23 @@
+{
+  "name": "test_reset_height",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "Console",
+    "repr",
+    "console.print",
+    "Panels",
+    "Panel",
+    "print",
+    "capture.get"
+  ],
+  "variables": [
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 883,
+  "end_line": 906
+}

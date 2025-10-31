@@ -1,0 +1,28 @@
+{
+  "name": "split_lines",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[\"Segment\"]"
+    }
+  ],
+  "return_type": "Iterable[List[\"Segment\"]]",
+  "docstring": null,
+  "calls": [
+    "append",
+    "text.partition",
+    "cls"
+  ],
+  "variables": [
+    "line",
+    "append",
+    "line",
+    "append"
+  ],
+  "start_line": 250,
+  "end_line": 276
+}

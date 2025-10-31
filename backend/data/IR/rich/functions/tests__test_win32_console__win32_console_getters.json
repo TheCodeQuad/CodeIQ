@@ -1,0 +1,12 @@
+{
+  "name": "win32_console_getters",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "mock.patch.object"
+  ],
+  "variables": [],
+  "start_line": 42,
+  "end_line": 57
+}

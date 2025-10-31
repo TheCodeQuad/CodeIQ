@@ -1,0 +1,16 @@
+{
+  "name": "test_broken_getattr",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "pretty_repr",
+    "BrokenAttr"
+  ],
+  "variables": [
+    "test",
+    "result"
+  ],
+  "start_line": 299,
+  "end_line": 309
+}

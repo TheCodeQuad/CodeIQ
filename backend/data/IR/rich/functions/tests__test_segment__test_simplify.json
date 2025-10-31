@@ -1,0 +1,14 @@
+{
+  "name": "test_simplify",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "list",
+    "Segment.simplify"
+  ],
+  "variables": [],
+  "start_line": 80,
+  "end_line": 89
+}

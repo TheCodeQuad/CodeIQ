@@ -1,0 +1,62 @@
+{
+  "name": "_calculate_column_widths",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "List[int]",
+  "docstring": null,
+  "calls": [
+    "next",
+    "iter",
+    "sum",
+    "any",
+    "options.update_width",
+    "self._measure_column",
+    "enumerate",
+    "self._collapse_widths",
+    "min",
+    "ratio_reduce",
+    "len",
+    "get_padding_width",
+    "ratio_distribute",
+    "zip"
+  ],
+  "variables": [
+    "max_width",
+    "columns",
+    "width_ranges",
+    "widths",
+    "get_padding_width",
+    "extra_width",
+    "ratios",
+    "fixed_widths",
+    "flex_minimum",
+    "flexible_width",
+    "flex_widths",
+    "iter_flex_widths",
+    "table_width",
+    "widths",
+    "table_width",
+    "excess_width",
+    "widths",
+    "table_width",
+    "width_ranges",
+    "widths",
+    "_max_width",
+    "pad_widths",
+    "widths"
+  ],
+  "start_line": 523,
+  "end_line": 585
+}

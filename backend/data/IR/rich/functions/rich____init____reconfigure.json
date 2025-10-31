@@ -1,0 +1,25 @@
+{
+  "name": "reconfigure",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "get_console"
+  ],
+  "variables": [
+    "new_console",
+    "_console"
+  ],
+  "start_line": 39,
+  "end_line": 50
+}

@@ -1,0 +1,19 @@
+{
+  "name": "test_cast_recursive",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "B",
+    "A",
+    "console.file.getvalue",
+    "console.print"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 67,
+  "end_line": 84
+}

@@ -1,0 +1,30 @@
+{
+  "name": "make_tag",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "object"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "stringify",
+    "isinstance",
+    "k.lstrip",
+    "format",
+    "str",
+    "attribs.items",
+    "k.lstrip(\"_\").replace",
+    "\" \".join"
+  ],
+  "variables": [
+    "tag_attribs"
+  ],
+  "start_line": 2420,
+  "end_line": 2438
+}

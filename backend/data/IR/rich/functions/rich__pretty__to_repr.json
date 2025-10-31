@@ -1,0 +1,25 @@
+{
+  "name": "to_repr",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "len",
+    "_safe_isinstance",
+    "str",
+    "repr"
+  ],
+  "variables": [
+    "truncated",
+    "obj_repr",
+    "obj_repr",
+    "obj_repr"
+  ],
+  "start_line": 601,
+  "end_line": 615
+}

@@ -1,0 +1,15 @@
+{
+  "name": "test_is_single_cell_widths",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "_is_single_cell_widths",
+    "ord"
+  ],
+  "variables": [
+    "BOX"
+  ],
+  "start_line": 66,
+  "end_line": 81
+}

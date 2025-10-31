@@ -1,0 +1,22 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "iter",
+    "box.splitlines"
+  ],
+  "variables": [],
+  "start_line": 27,
+  "end_line": 59
+}

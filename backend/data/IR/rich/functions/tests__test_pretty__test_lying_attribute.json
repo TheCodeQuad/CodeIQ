@@ -1,0 +1,16 @@
+{
+  "name": "test_lying_attribute",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Foo",
+    "pretty_repr"
+  ],
+  "variables": [
+    "foo",
+    "result"
+  ],
+  "start_line": 696,
+  "end_line": 705
+}

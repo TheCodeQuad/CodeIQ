@@ -1,0 +1,25 @@
+{
+  "name": "test_decode_issue_2688",
+  "parameters": [
+    {
+      "name": "ansi_bytes",
+      "type": null
+    },
+    {
+      "name": "expected_text",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text.from_ansi",
+    "ansi_bytes.decode",
+    "str"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 67,
+  "end_line": 70
+}

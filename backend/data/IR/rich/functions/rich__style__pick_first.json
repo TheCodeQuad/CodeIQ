@@ -1,0 +1,21 @@
+{
+  "name": "pick_first",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Optional[StyleType]"
+    }
+  ],
+  "return_type": "StyleType",
+  "docstring": null,
+  "calls": [
+    "ValueError"
+  ],
+  "variables": [],
+  "start_line": 401,
+  "end_line": 406
+}

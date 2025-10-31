@@ -1,0 +1,101 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\scope.py",
+  "imports": [
+    "from collections.abc import Mapping",
+    "from typing import TYPE_CHECKING, Any, Optional, Tuple",
+    "from .highlighter import ReprHighlighter",
+    "from .panel import Panel",
+    "from .pretty import Pretty",
+    "from .table import Table",
+    "from .text import Text, TextType",
+    "from .console import ConsoleRenderable",
+    "from rich import print"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "render_scope",
+      "parameters": [
+        {
+          "name": null,
+          "type": "\"Mapping[str, Any]\""
+        }
+      ],
+      "return_type": "\"ConsoleRenderable\"",
+      "docstring": null,
+      "calls": [
+        "sorted",
+        "Panel.fit",
+        "key.lower",
+        "ReprHighlighter",
+        "key.startswith",
+        "Table.grid",
+        "Pretty",
+        "scope.items",
+        "items_table.add_row",
+        "items_table.add_column",
+        "Text.assemble"
+      ],
+      "variables": [
+        "highlighter",
+        "items_table",
+        "items",
+        "key_text"
+      ],
+      "start_line": 14,
+      "end_line": 67
+    },
+    {
+      "name": "sort_items",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Tuple[str, Any]"
+        }
+      ],
+      "return_type": "Tuple[bool, str]",
+      "docstring": null,
+      "calls": [
+        "key.lower",
+        "key.startswith"
+      ],
+      "variables": [],
+      "start_line": 41,
+      "end_line": 44
+    },
+    {
+      "name": "test",
+      "parameters": [
+        {
+          "name": null,
+          "type": "float"
+        },
+        {
+          "name": null,
+          "type": "float"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "locals",
+        "render_scope",
+        "print"
+      ],
+      "variables": [
+        "list_of_things",
+        "dict_of_things"
+      ],
+      "start_line": 75,
+      "end_line": 83
+    }
+  ],
+  "variables": [
+    "highlighter",
+    "items_table",
+    "items",
+    "key_text",
+    "list_of_things",
+    "dict_of_things"
+  ]
+}

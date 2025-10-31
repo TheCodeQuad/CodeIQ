@@ -1,0 +1,19 @@
+{
+  "name": "_buffer_index",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 787,
+  "end_line": 788
+}

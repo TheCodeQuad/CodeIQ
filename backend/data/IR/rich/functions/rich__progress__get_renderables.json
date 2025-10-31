@@ -1,0 +1,19 @@
+{
+  "name": "get_renderables",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Iterable[RenderableType]",
+  "docstring": null,
+  "calls": [
+    "self.make_tasks_table"
+  ],
+  "variables": [
+    "table"
+  ],
+  "start_line": 1556,
+  "end_line": 1559
+}

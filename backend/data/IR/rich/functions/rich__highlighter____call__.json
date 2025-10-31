@@ -1,0 +1,28 @@
+{
+  "name": "__call__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[str, Text]"
+    }
+  ],
+  "return_type": "Text",
+  "docstring": null,
+  "calls": [
+    "self.highlight",
+    "isinstance",
+    "Text",
+    "text.copy",
+    "TypeError"
+  ],
+  "variables": [
+    "highlight_text",
+    "highlight_text"
+  ],
+  "start_line": 20,
+  "end_line": 39
+}

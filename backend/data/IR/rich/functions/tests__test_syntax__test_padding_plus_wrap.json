@@ -1,0 +1,23 @@
+{
+  "name": "test_padding_plus_wrap",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Syntax",
+    "Console",
+    "console.file.getvalue",
+    "console.print",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "syntax",
+    "output",
+    "expected"
+  ],
+  "start_line": 422,
+  "end_line": 435
+}

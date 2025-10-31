@@ -1,0 +1,15 @@
+{
+  "name": "test_force_color",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "io.StringIO"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 962,
+  "end_line": 971
+}

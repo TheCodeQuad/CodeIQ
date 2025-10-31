@@ -1,0 +1,148 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\bar.py",
+  "imports": [
+    "from typing import Optional, Union",
+    "from .color import Color",
+    "from .console import Console, ConsoleOptions, RenderResult",
+    "from .jupyter import JupyterMixin",
+    "from .measure import Measurement",
+    "from .segment import Segment",
+    "from .style import Style"
+  ],
+  "classes": [
+    {
+      "name": "Bar",
+      "base_classes": "(JupyterMixin)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "float"
+        },
+        {
+          "name": null,
+          "type": "float"
+        },
+        {
+          "name": null,
+          "type": "float"
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "max",
+        "Style",
+        "min"
+      ],
+      "variables": [],
+      "start_line": 29,
+      "end_line": 43
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 45,
+      "end_line": 46
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "Segment.line",
+        "int",
+        "Segment",
+        "len",
+        "min"
+      ],
+      "variables": [
+        "width",
+        "prefix_complete_eights",
+        "prefix_bar_count",
+        "prefix_eights_count",
+        "body_complete_eights",
+        "body_bar_count",
+        "body_eights_count",
+        "prefix",
+        "body",
+        "suffix"
+      ],
+      "start_line": 48,
+      "end_line": 84
+    },
+    {
+      "name": "__rich_measure__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "Measurement",
+      "docstring": null,
+      "calls": [
+        "Measurement"
+      ],
+      "variables": [],
+      "start_line": 86,
+      "end_line": 93
+    }
+  ],
+  "variables": [
+    "BEGIN_BLOCK_ELEMENTS",
+    "END_BLOCK_ELEMENTS",
+    "FULL_BLOCK",
+    "width",
+    "prefix_complete_eights",
+    "prefix_bar_count",
+    "prefix_eights_count",
+    "body_complete_eights",
+    "body_bar_count",
+    "body_eights_count",
+    "prefix",
+    "body",
+    "suffix"
+  ]
+}

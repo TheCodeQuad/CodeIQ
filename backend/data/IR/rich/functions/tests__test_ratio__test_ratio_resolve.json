@@ -1,0 +1,13 @@
+{
+  "name": "test_ratio_resolve",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "ratio_resolve",
+    "Edge"
+  ],
+  "variables": [],
+  "start_line": 28,
+  "end_line": 58
+}

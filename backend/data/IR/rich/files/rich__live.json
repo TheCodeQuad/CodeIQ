@@ -1,0 +1,420 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\live.py",
+  "imports": [
+    "import sys",
+    "from threading import Event, RLock, Thread",
+    "from types import TracebackType",
+    "from typing import IO, TYPE_CHECKING, Any, Callable, List, Optional, TextIO, Type, cast",
+    "from . import get_console",
+    "from .console import Console, ConsoleRenderable, Group, RenderableType, RenderHook",
+    "from .control import Control",
+    "from .file_proxy import FileProxy",
+    "from .jupyter import JupyterMixin",
+    "from .live_render import LiveRender, VerticalOverflowMethod",
+    "from .screen import Screen",
+    "from .text import Text",
+    "from typing_extensions import Self",
+    "from IPython.display import display",
+    "from ipywidgets import Output",
+    "import warnings",
+    "import random",
+    "import time",
+    "from itertools import cycle",
+    "from typing import Dict, List, Tuple",
+    "from .align import Align",
+    "from .console import Console",
+    "from .live import Live as Live",
+    "from .panel import Panel",
+    "from .rule import Rule",
+    "from .syntax import Syntax",
+    "from .table import Table"
+  ],
+  "classes": [
+    {
+      "name": "_RefreshThread",
+      "base_classes": "(Thread)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Live",
+      "base_classes": "(JupyterMixin, RenderHook)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Live\""
+        },
+        {
+          "name": null,
+          "type": "float"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "Event",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 25,
+      "end_line": 29
+    },
+    {
+      "name": "stop",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.done.set"
+      ],
+      "variables": [],
+      "start_line": 31,
+      "end_line": 32
+    },
+    {
+      "name": "run",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.live.refresh",
+        "self.done.is_set",
+        "self.done.wait"
+      ],
+      "variables": [],
+      "start_line": 34,
+      "end_line": 38
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.get_renderable",
+        "RLock",
+        "get_console",
+        "LiveRender"
+      ],
+      "variables": [],
+      "start_line": 57,
+      "end_line": 96
+    },
+    {
+      "name": "is_started",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 99,
+      "end_line": 101
+    },
+    {
+      "name": "get_renderable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [
+        "self._get_renderable"
+      ],
+      "variables": [
+        "renderable"
+      ],
+      "start_line": 103,
+      "end_line": 109
+    },
+    {
+      "name": "start",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.console.set_alt_screen",
+        "self.stop",
+        "self.console.push_render_hook",
+        "self.console.set_live",
+        "self.console.show_cursor",
+        "self._enable_redirect_io",
+        "self.refresh",
+        "self._refresh_thread.start",
+        "_RefreshThread"
+      ],
+      "variables": [],
+      "start_line": 111,
+      "end_line": 143
+    },
+    {
+      "name": "stop",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.console.print",
+        "self.console.set_alt_screen",
+        "self.ipy_widget.close",
+        "self._refresh_thread.stop",
+        "self._live_render.restore_cursor",
+        "self.console.control",
+        "self._disable_redirect_io",
+        "self.refresh",
+        "self.console.show_cursor",
+        "self.console.line",
+        "self.console.pop_render_hook",
+        "self.console.clear_live"
+      ],
+      "variables": [],
+      "start_line": 145,
+      "end_line": 177
+    },
+    {
+      "name": "__enter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Self",
+      "docstring": null,
+      "calls": [
+        "self.start"
+      ],
+      "variables": [],
+      "start_line": 179,
+      "end_line": 181
+    },
+    {
+      "name": "__exit__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[Type[BaseException]]"
+        },
+        {
+          "name": null,
+          "type": "Optional[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.stop"
+      ],
+      "variables": [],
+      "start_line": 183,
+      "end_line": 189
+    },
+    {
+      "name": "_enable_redirect_io",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "cast",
+        "FileProxy"
+      ],
+      "variables": [],
+      "start_line": 191,
+      "end_line": 199
+    },
+    {
+      "name": "_disable_redirect_io",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "cast"
+      ],
+      "variables": [],
+      "start_line": 201,
+      "end_line": 208
+    },
+    {
+      "name": "renderable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [
+        "Screen",
+        "self.get_renderable",
+        "live.get_renderable",
+        "Group"
+      ],
+      "variables": [
+        "live_stack",
+        "renderable",
+        "renderable",
+        "renderable"
+      ],
+      "start_line": 211,
+      "end_line": 224
+    },
+    {
+      "name": "update",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "RenderableType"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "self.refresh",
+        "self.console.render_str"
+      ],
+      "variables": [
+        "renderable"
+      ],
+      "start_line": 226,
+      "end_line": 238
+    },
+    {
+      "name": "refresh",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "warnings.warn",
+        "self.console.print",
+        "self.ipy_widget.clear_output",
+        "Output",
+        "Control",
+        "display",
+        "self._live_render.set_renderable",
+        "self.console._live_stack[0].refresh"
+      ],
+      "variables": [],
+      "start_line": 240,
+      "end_line": 272
+    },
+    {
+      "name": "process_renderables",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "List[ConsoleRenderable]"
+        }
+      ],
+      "return_type": "List[ConsoleRenderable]",
+      "docstring": null,
+      "calls": [
+        "Control.home",
+        "self._live_render.position_cursor"
+      ],
+      "variables": [
+        "reset",
+        "renderables",
+        "renderables"
+      ],
+      "start_line": 274,
+      "end_line": 293
+    }
+  ],
+  "variables": [
+    "renderable",
+    "live_stack",
+    "renderable",
+    "renderable",
+    "renderable",
+    "renderable",
+    "reset",
+    "renderables",
+    "renderables",
+    "console",
+    "syntax",
+    "table",
+    "progress_renderables",
+    "examples",
+    "exchanges",
+    "exchange_rate_dict",
+    "select_exchange",
+    "table"
+  ]
+}

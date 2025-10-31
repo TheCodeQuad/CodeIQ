@@ -1,0 +1,33 @@
+{
+  "name": "ipy_excepthook_closure",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "tb_data.get",
+    "ip._get_exc_info",
+    "ipy_display_traceback",
+    "excepthook",
+    "range",
+    "default_showtraceback"
+  ],
+  "variables": [
+    "tb_data",
+    "default_showtraceback",
+    "tb_data",
+    "exc_tuple",
+    "tb",
+    "compiled",
+    "tb_offset",
+    "tb_offset",
+    "tb",
+    "tb_data"
+  ],
+  "start_line": 159,
+  "end_line": 200
+}

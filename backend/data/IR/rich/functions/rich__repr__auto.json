@@ -1,0 +1,30 @@
+{
+  "name": "auto",
+  "parameters": [],
+  "return_type": "Union[Type[T], Callable[[Type[T]], Type[T]]]",
+  "docstring": null,
+  "calls": [
+    "self.__rich_repr__",
+    "append",
+    "inspect.signature",
+    "ReprError",
+    "partial",
+    "isinstance",
+    "repr",
+    "getattr",
+    "' '.join",
+    "do_replace",
+    "signature.parameters.items",
+    "len",
+    "hasattr",
+    "', '.join"
+  ],
+  "variables": [
+    "repr_str",
+    "append",
+    "angular",
+    "signature"
+  ],
+  "start_line": 37,
+  "end_line": 101
+}

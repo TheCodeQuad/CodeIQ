@@ -1,0 +1,23 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": "name",
+      "type": null
+    },
+    {
+      "name": "eats",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 82,
+  "end_line": 89
+}

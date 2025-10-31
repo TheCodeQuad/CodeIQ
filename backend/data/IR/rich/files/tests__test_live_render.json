@@ -1,0 +1,110 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_live_render.py",
+  "imports": [
+    "import pytest",
+    "from rich.live_render import LiveRender",
+    "from rich.console import Console, ConsoleDimensions, ConsoleOptions",
+    "from rich.style import Style",
+    "from rich.segment import Segment"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "live_render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "LiveRender"
+      ],
+      "variables": [],
+      "start_line": 9,
+      "end_line": 10
+    },
+    {
+      "name": "test_renderable",
+      "parameters": [
+        {
+          "name": "live_render",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "live_render.set_renderable"
+      ],
+      "variables": [],
+      "start_line": 13,
+      "end_line": 16
+    },
+    {
+      "name": "test_position_cursor",
+      "parameters": [
+        {
+          "name": "live_render",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "live_render.position_cursor",
+        "str"
+      ],
+      "variables": [],
+      "start_line": 19,
+      "end_line": 22
+    },
+    {
+      "name": "test_restore_cursor",
+      "parameters": [
+        {
+          "name": "live_render",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "live_render.restore_cursor",
+        "str"
+      ],
+      "variables": [],
+      "start_line": 25,
+      "end_line": 28
+    },
+    {
+      "name": "test_rich_console",
+      "parameters": [
+        {
+          "name": "live_render",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "ConsoleOptions",
+        "live_render.__rich_console__",
+        "Console",
+        "Segment",
+        "list",
+        "Style.parse",
+        "ConsoleDimensions"
+      ],
+      "variables": [
+        "options",
+        "rich_console",
+        "rich_console"
+      ],
+      "start_line": 31,
+      "end_line": 45
+    }
+  ],
+  "variables": [
+    "options",
+    "rich_console",
+    "rich_console"
+  ]
+}

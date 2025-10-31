@@ -1,0 +1,19 @@
+{
+  "name": "spans",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "List[Span]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 426,
+  "end_line": 428
+}

@@ -1,0 +1,25 @@
+{
+  "name": "__rich__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Panel",
+  "docstring": null,
+  "calls": [
+    "datetime.now().ctime",
+    "grid.add_column",
+    "Table.grid",
+    "Panel",
+    "datetime.now",
+    "datetime.now().ctime().replace",
+    "grid.add_row"
+  ],
+  "variables": [
+    "grid"
+  ],
+  "start_line": 75,
+  "end_line": 83
+}

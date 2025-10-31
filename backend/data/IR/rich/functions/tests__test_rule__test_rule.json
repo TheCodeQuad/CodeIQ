@@ -1,0 +1,22 @@
+{
+  "name": "test_rule",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.rule",
+    "io.StringIO",
+    "Console",
+    "Rule",
+    "Text",
+    "console.file.getvalue",
+    "console.print"
+  ],
+  "variables": [
+    "console",
+    "expected",
+    "result"
+  ],
+  "start_line": 10,
+  "end_line": 28
+}

@@ -1,0 +1,15 @@
+{
+  "name": "test_detect_color_system",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console._detect_color_system"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 878,
+  "end_line": 880
+}

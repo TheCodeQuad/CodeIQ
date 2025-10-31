@@ -1,0 +1,14 @@
+{
+  "name": "test_span_split",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Span(5, 10, \"foo\").split",
+    "Span(0, 10, \"foo\").split",
+    "Span"
+  ],
+  "variables": [],
+  "start_line": 20,
+  "end_line": 23
+}

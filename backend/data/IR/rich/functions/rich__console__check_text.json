@@ -1,0 +1,17 @@
+{
+  "name": "check_text",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "append",
+    "Text",
+    "text.clear",
+    "sep_text.join"
+  ],
+  "variables": [
+    "sep_text"
+  ],
+  "start_line": 1548,
+  "end_line": 1552
+}

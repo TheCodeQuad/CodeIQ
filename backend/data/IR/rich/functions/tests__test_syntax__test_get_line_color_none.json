@@ -1,0 +1,19 @@
+{
+  "name": "test_get_line_color_none",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Color.default",
+    "PygmentsSyntaxTheme",
+    "Syntax",
+    "Style",
+    "syntax._get_line_numbers_color"
+  ],
+  "variables": [
+    "style",
+    "syntax"
+  ],
+  "start_line": 172,
+  "end_line": 185
+}

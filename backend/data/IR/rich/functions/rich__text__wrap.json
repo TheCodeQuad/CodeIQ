@@ -1,0 +1,43 @@
+{
+  "name": "wrap",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "Lines",
+  "docstring": null,
+  "calls": [
+    "line.expand_tabs",
+    "self.split",
+    "line.rstrip_end",
+    "lines.extend",
+    "new_lines.justify",
+    "str",
+    "pick_bool",
+    "line.truncate",
+    "divide_line",
+    "line.divide",
+    "Lines"
+  ],
+  "variables": [
+    "wrap_justify",
+    "wrap_overflow",
+    "no_wrap",
+    "lines",
+    "new_lines",
+    "offsets",
+    "new_lines"
+  ],
+  "start_line": 1202,
+  "end_line": 1248
+}

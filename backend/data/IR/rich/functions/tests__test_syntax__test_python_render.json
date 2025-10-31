@@ -1,0 +1,20 @@
+{
+  "name": "test_python_render",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "render",
+    "Panel.fit",
+    "Syntax",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "syntax",
+    "rendered_syntax",
+    "expected"
+  ],
+  "start_line": 56,
+  "end_line": 72
+}

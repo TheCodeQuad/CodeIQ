@@ -1,0 +1,249 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_rule.py",
+  "imports": [
+    "import io",
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.rule import Rule",
+    "from rich.text import Text"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_rule",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.rule",
+        "io.StringIO",
+        "Console",
+        "Rule",
+        "Text",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console",
+        "expected",
+        "result"
+      ],
+      "start_line": 10,
+      "end_line": 28
+    },
+    {
+      "name": "test_rule_error",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.rule",
+        "io.StringIO",
+        "pytest.raises"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 31,
+      "end_line": 34
+    },
+    {
+      "name": "test_rule_align",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.rule",
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 37,
+      "end_line": 47
+    },
+    {
+      "name": "test_rule_cjk",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.rule",
+        "io.StringIO",
+        "console.file.getvalue"
+      ],
+      "variables": [
+        "console",
+        "expected"
+      ],
+      "start_line": 50,
+      "end_line": 61
+    },
+    {
+      "name": "test_rule_not_enough_space_for_title_text",
+      "parameters": [
+        {
+          "name": "align",
+          "type": null
+        },
+        {
+          "name": "outcome",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.rule",
+        "io.StringIO",
+        "console.file.getvalue"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 72,
+      "end_line": 75
+    },
+    {
+      "name": "test_rule_center_aligned_title_not_enough_space_for_rule",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.rule",
+        "io.StringIO",
+        "console.file.getvalue"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 78,
+      "end_line": 81
+    },
+    {
+      "name": "test_rule_side_aligned_not_enough_space_for_rule",
+      "parameters": [
+        {
+          "name": "align",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.rule",
+        "io.StringIO",
+        "console.file.getvalue"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 85,
+      "end_line": 88
+    },
+    {
+      "name": "test_rule_just_enough_width_available_for_title",
+      "parameters": [
+        {
+          "name": "align",
+          "type": null
+        },
+        {
+          "name": "outcome",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "console.rule",
+        "io.StringIO",
+        "console.file.getvalue"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 99,
+      "end_line": 102
+    },
+    {
+      "name": "test_characters",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.rule",
+        "io.StringIO",
+        "Console",
+        "Rule",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console",
+        "expected"
+      ],
+      "start_line": 105,
+      "end_line": 120
+    },
+    {
+      "name": "test_repr",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Rule",
+        "repr",
+        "isinstance"
+      ],
+      "variables": [
+        "rule"
+      ],
+      "start_line": 123,
+      "end_line": 125
+    },
+    {
+      "name": "test_error",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Rule",
+        "pytest.raises"
+      ],
+      "variables": [],
+      "start_line": 128,
+      "end_line": 130
+    }
+  ],
+  "variables": [
+    "console",
+    "expected",
+    "result",
+    "console",
+    "console",
+    "result",
+    "expected",
+    "console",
+    "expected",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "expected",
+    "rule"
+  ]
+}

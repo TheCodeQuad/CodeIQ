@@ -1,0 +1,16 @@
+{
+  "name": "test_add",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text(\"foo\").__add__",
+    "Text",
+    "str"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 57,
+  "end_line": 60
+}

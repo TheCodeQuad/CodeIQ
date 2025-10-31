@@ -1,0 +1,25 @@
+{
+  "name": "render_speed",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Optional[float]"
+    }
+  ],
+  "return_type": "Text",
+  "docstring": null,
+  "calls": [
+    "int",
+    "Text",
+    "filesize.pick_unit_and_suffix"
+  ],
+  "variables": [
+    "data_speed"
+  ],
+  "start_line": 737,
+  "end_line": 754
+}

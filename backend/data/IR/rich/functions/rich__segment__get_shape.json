@@ -1,0 +1,26 @@
+{
+  "name": "get_shape",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "List[List[\"Segment\"]]"
+    }
+  ],
+  "return_type": "Tuple[int, int]",
+  "docstring": null,
+  "calls": [
+    "len",
+    "max",
+    "get_line_length"
+  ],
+  "variables": [
+    "get_line_length",
+    "max_width"
+  ],
+  "start_line": 384,
+  "end_line": 395
+}

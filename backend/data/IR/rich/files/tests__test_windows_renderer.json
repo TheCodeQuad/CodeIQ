@@ -1,0 +1,321 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_windows_renderer.py",
+  "imports": [
+    "import sys",
+    "from unittest.mock import call, create_autospec",
+    "import pytest",
+    "from rich._win32_console import LegacyWindowsTerm, WindowsCoordinates",
+    "from rich._windows_renderer import legacy_windows_render",
+    "from rich.segment import ControlType, Segment",
+    "from rich.style import Style"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "legacy_term_mock",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "create_autospec"
+      ],
+      "variables": [],
+      "start_line": 19,
+      "end_line": 20
+    },
+    {
+      "name": "test_text_only",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment",
+        "legacy_windows_render",
+        "legacy_term_mock.write_text.assert_called_once_with"
+      ],
+      "variables": [
+        "text",
+        "buffer"
+      ],
+      "start_line": 23,
+      "end_line": 28
+    },
+    {
+      "name": "test_text_multiple_segments",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment",
+        "call",
+        "legacy_windows_render"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 31,
+      "end_line": 38
+    },
+    {
+      "name": "test_text_with_style",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment",
+        "Style.parse",
+        "legacy_windows_render",
+        "legacy_term_mock.write_styled.assert_called_once_with"
+      ],
+      "variables": [
+        "text",
+        "style",
+        "buffer"
+      ],
+      "start_line": 41,
+      "end_line": 48
+    },
+    {
+      "name": "test_control_cursor_move_to",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "legacy_term_mock.move_cursor_to.assert_called_once_with",
+        "Segment",
+        "legacy_windows_render",
+        "WindowsCoordinates"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 51,
+      "end_line": 58
+    },
+    {
+      "name": "test_control_carriage_return",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment",
+        "legacy_windows_render",
+        "legacy_term_mock.write_text.assert_called_once_with"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 61,
+      "end_line": 66
+    },
+    {
+      "name": "test_control_home",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "legacy_term_mock.move_cursor_to.assert_called_once_with",
+        "Segment",
+        "legacy_windows_render",
+        "WindowsCoordinates"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 69,
+      "end_line": 74
+    },
+    {
+      "name": "test_control_cursor_single_cell_movement",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        },
+        {
+          "name": "control_type",
+          "type": null
+        },
+        {
+          "name": "method_name",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "getattr(legacy_term_mock, method_name).assert_called_once_with",
+        "Segment",
+        "getattr",
+        "legacy_windows_render"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 86,
+      "end_line": 93
+    },
+    {
+      "name": "test_control_erase_line",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        },
+        {
+          "name": "erase_mode",
+          "type": null
+        },
+        {
+          "name": "method_name",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "getattr(legacy_term_mock, method_name).assert_called_once_with",
+        "Segment",
+        "getattr",
+        "legacy_windows_render"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 104,
+      "end_line": 109
+    },
+    {
+      "name": "test_control_show_cursor",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment",
+        "legacy_windows_render",
+        "legacy_term_mock.show_cursor.assert_called_once_with"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 112,
+      "end_line": 117
+    },
+    {
+      "name": "test_control_hide_cursor",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "legacy_term_mock.hide_cursor.assert_called_once_with",
+        "Segment",
+        "legacy_windows_render"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 120,
+      "end_line": 125
+    },
+    {
+      "name": "test_control_cursor_move_to_column",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "legacy_term_mock.move_cursor_to_column.assert_called_once_with",
+        "Segment",
+        "legacy_windows_render"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 128,
+      "end_line": 133
+    },
+    {
+      "name": "test_control_set_terminal_window_title",
+      "parameters": [
+        {
+          "name": "legacy_term_mock",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment",
+        "legacy_windows_render",
+        "legacy_term_mock.set_title.assert_called_once_with"
+      ],
+      "variables": [
+        "buffer"
+      ],
+      "start_line": 136,
+      "end_line": 141
+    }
+  ],
+  "variables": [
+    "pytestmark",
+    "text",
+    "buffer",
+    "buffer",
+    "text",
+    "style",
+    "buffer",
+    "buffer",
+    "buffer",
+    "buffer",
+    "buffer",
+    "buffer",
+    "buffer",
+    "buffer",
+    "buffer",
+    "buffer"
+  ]
+}

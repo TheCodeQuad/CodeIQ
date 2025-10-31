@@ -1,0 +1,15 @@
+{
+  "name": "test_get_console",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "rich.get_console"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 8,
+  "end_line": 10
+}

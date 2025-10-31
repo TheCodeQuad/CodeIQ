@@ -1,0 +1,26 @@
+{
+  "name": "test_rule_just_enough_width_available_for_title",
+  "parameters": [
+    {
+      "name": "align",
+      "type": null
+    },
+    {
+      "name": "outcome",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.rule",
+    "io.StringIO",
+    "console.file.getvalue"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 99,
+  "end_line": 102
+}

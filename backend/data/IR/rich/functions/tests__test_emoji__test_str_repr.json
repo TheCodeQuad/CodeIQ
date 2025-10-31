@@ -1,0 +1,14 @@
+{
+  "name": "test_str_repr",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Emoji",
+    "str",
+    "repr"
+  ],
+  "variables": [],
+  "start_line": 13,
+  "end_line": 15
+}

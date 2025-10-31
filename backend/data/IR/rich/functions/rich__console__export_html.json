@@ -1,0 +1,48 @@
+{
+  "name": "export_html",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "append",
+    "Segment.simplify",
+    "render_code_format.format",
+    "styles.items",
+    "\"\".join",
+    "Segment.filter_control",
+    "stylesheet_append",
+    "\"\\n\".join",
+    "escape",
+    "len",
+    "style.get_html_style",
+    "styles.setdefault"
+  ],
+  "variables": [
+    "fragments",
+    "append",
+    "_theme",
+    "stylesheet",
+    "render_code_format",
+    "text",
+    "rule",
+    "text",
+    "text",
+    "styles",
+    "text",
+    "rule",
+    "style_number",
+    "text",
+    "text",
+    "stylesheet_rules",
+    "stylesheet_append",
+    "stylesheet",
+    "rendered_code"
+  ],
+  "start_line": 2219,
+  "end_line": 2292
+}

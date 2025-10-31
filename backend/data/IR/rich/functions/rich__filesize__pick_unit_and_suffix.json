@@ -1,0 +1,27 @@
+{
+  "name": "pick_unit_and_suffix",
+  "parameters": [
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "List[str]"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "Tuple[int, str]",
+  "docstring": null,
+  "calls": [
+    "enumerate"
+  ],
+  "variables": [
+    "unit"
+  ],
+  "start_line": 43,
+  "end_line": 49
+}

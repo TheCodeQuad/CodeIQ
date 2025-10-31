@@ -1,0 +1,17 @@
+{
+  "name": "pop_render_hook",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._render_hooks.pop"
+  ],
+  "variables": [],
+  "start_line": 858,
+  "end_line": 861
+}

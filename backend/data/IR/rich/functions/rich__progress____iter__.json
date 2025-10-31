@@ -1,0 +1,15 @@
+{
+  "name": "__iter__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "BinaryIO",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 210,
+  "end_line": 211
+}

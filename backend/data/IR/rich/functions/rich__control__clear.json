@@ -1,0 +1,17 @@
+{
+  "name": "clear",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    }
+  ],
+  "return_type": "\"Control\"",
+  "docstring": null,
+  "calls": [
+    "cls"
+  ],
+  "variables": [],
+  "start_line": 145,
+  "end_line": 147
+}

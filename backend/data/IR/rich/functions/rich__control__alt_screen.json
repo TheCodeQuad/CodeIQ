@@ -1,0 +1,21 @@
+{
+  "name": "alt_screen",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "bool"
+    }
+  ],
+  "return_type": "\"Control\"",
+  "docstring": null,
+  "calls": [
+    "cls"
+  ],
+  "variables": [],
+  "start_line": 155,
+  "end_line": 160
+}

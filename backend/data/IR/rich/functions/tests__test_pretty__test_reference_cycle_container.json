@@ -1,0 +1,22 @@
+{
+  "name": "test_reference_cycle_container",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "test[1].append",
+    "test.append",
+    "pretty_repr"
+  ],
+  "variables": [
+    "test",
+    "res",
+    "test",
+    "res",
+    "a",
+    "test",
+    "res"
+  ],
+  "start_line": 312,
+  "end_line": 327
+}

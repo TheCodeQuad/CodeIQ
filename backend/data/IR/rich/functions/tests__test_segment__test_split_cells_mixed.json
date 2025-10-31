@@ -1,0 +1,20 @@
+{
+  "name": "test_split_cells_mixed",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Segment"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "all",
+    "Segment.split_cells",
+    "range",
+    "cell_len"
+  ],
+  "variables": [],
+  "start_line": 301,
+  "end_line": 311
+}

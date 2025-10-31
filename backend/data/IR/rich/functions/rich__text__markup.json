@@ -1,0 +1,30 @@
+{
+  "name": "markup",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "append",
+    "itemgetter",
+    "markup_spans.sort",
+    "escape",
+    "len",
+    "\"\".join"
+  ],
+  "variables": [
+    "output",
+    "plain",
+    "markup_spans",
+    "position",
+    "append",
+    "position",
+    "markup"
+  ],
+  "start_line": 230,
+  "end_line": 257
+}

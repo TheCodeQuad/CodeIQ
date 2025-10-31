@@ -1,0 +1,485 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\color.py",
+  "imports": [
+    "import re",
+    "import sys",
+    "from colorsys import rgb_to_hls",
+    "from enum import IntEnum",
+    "from functools import lru_cache",
+    "from typing import TYPE_CHECKING, NamedTuple, Optional, Tuple",
+    "from ._palettes import EIGHT_BIT_PALETTE, STANDARD_PALETTE, WINDOWS_PALETTE",
+    "from .color_triplet import ColorTriplet",
+    "from .repr import Result, rich_repr",
+    "from .terminal_theme import DEFAULT_TERMINAL_THEME",
+    "from .terminal_theme import TerminalTheme",
+    "from .text import Text",
+    "from .style import Style",
+    "from .text import Text",
+    "from .console import Console",
+    "from .table import Table",
+    "from .text import Text"
+  ],
+  "classes": [
+    {
+      "name": "ColorSystem",
+      "base_classes": "(IntEnum)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ColorType",
+      "base_classes": "(IntEnum)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ColorParseError",
+      "base_classes": "(Exception)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Color",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 29,
+      "end_line": 30
+    },
+    {
+      "name": "__str__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "repr"
+      ],
+      "variables": [],
+      "start_line": 32,
+      "end_line": 33
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 45,
+      "end_line": 46
+    },
+    {
+      "name": "__rich__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "\"Text\"",
+      "docstring": null,
+      "calls": [
+        "self.type.name.lower",
+        "Style",
+        "Text.assemble"
+      ],
+      "variables": [],
+      "start_line": 315,
+      "end_line": 324
+    },
+    {
+      "name": "__rich_repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Result",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 326,
+      "end_line": 330
+    },
+    {
+      "name": "system",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "ColorSystem",
+      "docstring": null,
+      "calls": [
+        "int",
+        "ColorSystem"
+      ],
+      "variables": [],
+      "start_line": 333,
+      "end_line": 337
+    },
+    {
+      "name": "is_system_defined",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 340,
+      "end_line": 342
+    },
+    {
+      "name": "is_default",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 345,
+      "end_line": 347
+    },
+    {
+      "name": "get_truecolor",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "ColorTriplet",
+      "docstring": null,
+      "calls": [],
+      "variables": [
+        "theme"
+      ],
+      "start_line": 349,
+      "end_line": 378
+    },
+    {
+      "name": "from_ansi",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "\"Color\"",
+      "docstring": null,
+      "calls": [
+        "cls"
+      ],
+      "variables": [],
+      "start_line": 381,
+      "end_line": 394
+    },
+    {
+      "name": "from_triplet",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"ColorTriplet\""
+        }
+      ],
+      "return_type": "\"Color\"",
+      "docstring": null,
+      "calls": [
+        "cls"
+      ],
+      "variables": [],
+      "start_line": 397,
+      "end_line": 406
+    },
+    {
+      "name": "from_rgb",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "float"
+        },
+        {
+          "name": null,
+          "type": "float"
+        },
+        {
+          "name": null,
+          "type": "float"
+        }
+      ],
+      "return_type": "\"Color\"",
+      "docstring": null,
+      "calls": [
+        "cls.from_triplet",
+        "ColorTriplet",
+        "int"
+      ],
+      "variables": [],
+      "start_line": 409,
+      "end_line": 420
+    },
+    {
+      "name": "default",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        }
+      ],
+      "return_type": "\"Color\"",
+      "docstring": null,
+      "calls": [
+        "cls"
+      ],
+      "variables": [],
+      "start_line": 423,
+      "end_line": 429
+    },
+    {
+      "name": "parse",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "\"Color\"",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "int",
+        "color_rgb.split",
+        "ANSI_COLOR_NAMES.get",
+        "color.lower",
+        "RE_COLOR.match",
+        "color_match.groups",
+        "all",
+        "len",
+        "ColorParseError",
+        "cls",
+        "color.lower().strip"
+      ],
+      "variables": [
+        "original_color",
+        "color",
+        "color_number",
+        "color_match",
+        "triplet",
+        "number",
+        "components",
+        "triplet"
+      ],
+      "start_line": 433,
+      "end_line": 482
+    },
+    {
+      "name": "get_ansi_codes",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Tuple[str, ...]",
+      "docstring": null,
+      "calls": [
+        "str"
+      ],
+      "variables": [
+        "_type",
+        "number",
+        "number"
+      ],
+      "start_line": 485,
+      "end_line": 510
+    },
+    {
+      "name": "downgrade",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "ColorSystem"
+        }
+      ],
+      "return_type": "\"Color\"",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "round",
+        "STANDARD_PALETTE.match",
+        "rgb_to_hls",
+        "WINDOWS_PALETTE.match",
+        "Color"
+      ],
+      "variables": [
+        "gray",
+        "color_number",
+        "color_number",
+        "color_number",
+        "six_red",
+        "six_green",
+        "six_blue",
+        "color_number",
+        "triplet",
+        "triplet",
+        "color_number",
+        "triplet",
+        "triplet",
+        "color_number"
+      ],
+      "start_line": 513,
+      "end_line": 568
+    },
+    {
+      "name": "parse_rgb_hex",
+      "parameters": [
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "ColorTriplet",
+      "docstring": null,
+      "calls": [
+        "len",
+        "ColorTriplet",
+        "int"
+      ],
+      "variables": [
+        "color"
+      ],
+      "start_line": 571,
+      "end_line": 577
+    },
+    {
+      "name": "blend_rgb",
+      "parameters": [
+        {
+          "name": null,
+          "type": "ColorTriplet"
+        },
+        {
+          "name": null,
+          "type": "ColorTriplet"
+        }
+      ],
+      "return_type": "ColorTriplet",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "int"
+      ],
+      "variables": [
+        "new_color"
+      ],
+      "start_line": 580,
+      "end_line": 591
+    }
+  ],
+  "variables": [
+    "WINDOWS",
+    "STANDARD",
+    "EIGHT_BIT",
+    "TRUECOLOR",
+    "WINDOWS",
+    "DEFAULT",
+    "STANDARD",
+    "EIGHT_BIT",
+    "TRUECOLOR",
+    "WINDOWS",
+    "ANSI_COLOR_NAMES",
+    "RE_COLOR",
+    "name",
+    "type",
+    "number",
+    "triplet",
+    "theme",
+    "original_color",
+    "color",
+    "color_number",
+    "color_match",
+    "triplet",
+    "number",
+    "components",
+    "triplet",
+    "_type",
+    "number",
+    "number",
+    "gray",
+    "color_number",
+    "color_number",
+    "color_number",
+    "six_red",
+    "six_green",
+    "six_blue",
+    "color_number",
+    "triplet",
+    "triplet",
+    "color_number",
+    "triplet",
+    "triplet",
+    "color_number",
+    "color",
+    "new_color",
+    "console",
+    "table",
+    "colors",
+    "color_cell",
+    "color"
+  ]
+}

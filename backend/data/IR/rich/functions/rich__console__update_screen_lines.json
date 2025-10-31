@@ -1,0 +1,28 @@
+{
+  "name": "update_screen_lines",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "List[List[Segment]]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._buffer.extend",
+    "errors.NoAltScreen",
+    "ScreenUpdate",
+    "self.render",
+    "self._check_buffer"
+  ],
+  "variables": [
+    "screen_update",
+    "segments"
+  ],
+  "start_line": 1842,
+  "end_line": 1860
+}

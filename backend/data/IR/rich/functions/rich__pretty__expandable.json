@@ -1,0 +1,17 @@
+{
+  "name": "expandable",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "bool"
+  ],
+  "variables": [],
+  "start_line": 507,
+  "end_line": 509
+}

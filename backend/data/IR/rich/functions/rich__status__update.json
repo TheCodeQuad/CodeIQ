@@ -1,0 +1,19 @@
+{
+  "name": "update",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._spinner.update",
+    "self._live.update",
+    "Spinner"
+  ],
+  "variables": [],
+  "start_line": 53,
+  "end_line": 83
+}

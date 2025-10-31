@@ -1,0 +1,475 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\prompt.py",
+  "imports": [
+    "from typing import Any, Generic, List, Optional, TextIO, TypeVar, Union, overload",
+    "from . import get_console",
+    "from .console import Console",
+    "from .text import Text, TextType",
+    "from rich import print"
+  ],
+  "classes": [
+    {
+      "name": "PromptError",
+      "base_classes": "(Exception)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "InvalidResponse",
+      "base_classes": "(PromptError)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "PromptBase",
+      "base_classes": "(Generic[PromptType])",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Prompt",
+      "base_classes": "(PromptBase[str])",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "IntPrompt",
+      "base_classes": "(PromptBase[int])",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "FloatPrompt",
+      "base_classes": "(PromptBase[float])",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Confirm",
+      "base_classes": "(PromptBase[bool])",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "TextType"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 23,
+      "end_line": 24
+    },
+    {
+      "name": "__rich__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "TextType",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 26,
+      "end_line": 27
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "Text.from_markup",
+        "get_console"
+      ],
+      "variables": [],
+      "start_line": 54,
+      "end_line": 76
+    },
+    {
+      "name": "ask",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "DefaultType"
+        }
+      ],
+      "return_type": "Union[DefaultType, PromptType]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 80,
+      "end_line": 93
+    },
+    {
+      "name": "ask",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        }
+      ],
+      "return_type": "PromptType",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 97,
+      "end_line": 109
+    },
+    {
+      "name": "ask",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        }
+      ],
+      "return_type": "Any",
+      "docstring": null,
+      "calls": [
+        "cls",
+        "_prompt"
+      ],
+      "variables": [
+        "_prompt"
+      ],
+      "start_line": 112,
+      "end_line": 149
+    },
+    {
+      "name": "render_default",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "DefaultType"
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "Text"
+      ],
+      "variables": [],
+      "start_line": 151,
+      "end_line": 160
+    },
+    {
+      "name": "make_prompt",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "DefaultType"
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "self.prompt.copy",
+        "isinstance",
+        "\"/\".join",
+        "prompt.append",
+        "self.render_default"
+      ],
+      "variables": [
+        "prompt",
+        "_choices",
+        "choices",
+        "_default"
+      ],
+      "start_line": 162,
+      "end_line": 191
+    },
+    {
+      "name": "get_input",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "TextType"
+        },
+        {
+          "name": null,
+          "type": "bool"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "console.input"
+      ],
+      "variables": [],
+      "start_line": 194,
+      "end_line": 211
+    },
+    {
+      "name": "check_choice",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "choice.lower",
+        "value.strip().lower",
+        "value.strip"
+      ],
+      "variables": [],
+      "start_line": 213,
+      "end_line": 225
+    },
+    {
+      "name": "process_response",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "PromptType",
+      "docstring": null,
+      "calls": [
+        "value.strip",
+        "self.response_type",
+        "[choice.lower() for choice in self.choices].index",
+        "self.check_choice",
+        "choice.lower",
+        "InvalidResponse",
+        "value.lower"
+      ],
+      "variables": [
+        "value",
+        "return_value",
+        "return_value"
+      ],
+      "start_line": 227,
+      "end_line": 256
+    },
+    {
+      "name": "on_validate_error",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "InvalidResponse"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.console.print"
+      ],
+      "variables": [],
+      "start_line": 258,
+      "end_line": 265
+    },
+    {
+      "name": "pre_prompt",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 267,
+      "end_line": 268
+    },
+    {
+      "name": "__call__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "PromptType",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 271,
+      "end_line": 272
+    },
+    {
+      "name": "__call__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "DefaultType"
+        }
+      ],
+      "return_type": "Union[PromptType, DefaultType]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 275,
+      "end_line": 278
+    },
+    {
+      "name": "__call__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Any",
+      "docstring": null,
+      "calls": [
+        "self.make_prompt",
+        "self.get_input",
+        "self.pre_prompt",
+        "self.on_validate_error",
+        "self.process_response"
+      ],
+      "variables": [
+        "prompt",
+        "value",
+        "return_value"
+      ],
+      "start_line": 280,
+      "end_line": 301
+    },
+    {
+      "name": "render_default",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "DefaultType"
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "Text"
+      ],
+      "variables": [],
+      "start_line": 353,
+      "end_line": 356
+    },
+    {
+      "name": "process_response",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "value.strip().lower",
+        "value.strip",
+        "InvalidResponse"
+      ],
+      "variables": [
+        "value"
+      ],
+      "start_line": 358,
+      "end_line": 363
+    }
+  ],
+  "variables": [
+    "PromptType",
+    "DefaultType",
+    "response_type",
+    "validate_error_message",
+    "illegal_choice_message",
+    "prompt_suffix",
+    "choices",
+    "_prompt",
+    "prompt",
+    "_choices",
+    "choices",
+    "_default",
+    "value",
+    "return_value",
+    "return_value",
+    "prompt",
+    "value",
+    "return_value",
+    "response_type",
+    "response_type",
+    "validate_error_message",
+    "response_type",
+    "validate_error_message",
+    "response_type",
+    "validate_error_message",
+    "choices",
+    "value",
+    "result",
+    "password",
+    "fruit",
+    "doggie"
+  ]
+}

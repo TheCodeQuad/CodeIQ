@@ -1,0 +1,17 @@
+{
+  "name": "test_strip_styles",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment.strip_styles",
+    "Segment",
+    "list",
+    "Style"
+  ],
+  "variables": [
+    "segments"
+  ],
+  "start_line": 101,
+  "end_line": 103
+}

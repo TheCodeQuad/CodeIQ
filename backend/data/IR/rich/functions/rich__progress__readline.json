@@ -1,0 +1,21 @@
+{
+  "name": "readline",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "bytes",
+  "docstring": null,
+  "calls": [
+    "self.handle.readline",
+    "self.progress.advance",
+    "len"
+  ],
+  "variables": [
+    "line"
+  ],
+  "start_line": 255,
+  "end_line": 258
+}

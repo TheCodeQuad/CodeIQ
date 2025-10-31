@@ -1,0 +1,21 @@
+{
+  "name": "from_ansi",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "\"Color\"",
+  "docstring": null,
+  "calls": [
+    "cls"
+  ],
+  "variables": [],
+  "start_line": 381,
+  "end_line": 394
+}

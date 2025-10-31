@@ -1,0 +1,22 @@
+{
+  "name": "with_maximum",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "\"Measurement\"",
+  "docstring": null,
+  "calls": [
+    "min",
+    "Measurement"
+  ],
+  "variables": [],
+  "start_line": 34,
+  "end_line": 44
+}

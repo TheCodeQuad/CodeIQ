@@ -1,0 +1,17 @@
+{
+  "name": "test_not_renderable",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "Table",
+    "pytest.raises",
+    "Foo"
+  ],
+  "variables": [
+    "table"
+  ],
+  "start_line": 96,
+  "end_line": 102
+}

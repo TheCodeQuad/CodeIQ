@@ -1,0 +1,28 @@
+{
+  "name": "stop",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.console.print",
+    "self.console.set_alt_screen",
+    "self.ipy_widget.close",
+    "self._refresh_thread.stop",
+    "self._live_render.restore_cursor",
+    "self.console.control",
+    "self._disable_redirect_io",
+    "self.refresh",
+    "self.console.show_cursor",
+    "self.console.line",
+    "self.console.pop_render_hook",
+    "self.console.clear_live"
+  ],
+  "variables": [],
+  "start_line": 145,
+  "end_line": 177
+}

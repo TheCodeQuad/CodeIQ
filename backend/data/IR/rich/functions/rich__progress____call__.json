@@ -1,0 +1,25 @@
+{
+  "name": "__call__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Task\""
+    }
+  ],
+  "return_type": "RenderableType",
+  "docstring": null,
+  "calls": [
+    "self.render",
+    "task.get_time"
+  ],
+  "variables": [
+    "current_time",
+    "renderable"
+  ],
+  "start_line": 521,
+  "end_line": 542
+}

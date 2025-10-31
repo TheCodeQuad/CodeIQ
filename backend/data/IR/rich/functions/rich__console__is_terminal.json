@@ -1,0 +1,26 @@
+{
+  "name": "is_terminal",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "isatty",
+    "sys.stdin.__module__.startswith",
+    "getattr",
+    "environ.get",
+    "hasattr"
+  ],
+  "variables": [
+    "environ",
+    "tty_compatible",
+    "force_color",
+    "isatty"
+  ],
+  "start_line": 937,
+  "end_line": 982
+}

@@ -1,0 +1,28 @@
+{
+  "name": "_to_str",
+  "parameters": [
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "Iterable[str]"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "\"{:,.{precision}f}{separator}{}\".format",
+    "enumerate"
+  ],
+  "variables": [
+    "unit"
+  ],
+  "start_line": 18,
+  "end_line": 40
+}

@@ -1,0 +1,15 @@
+{
+  "name": "span",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 20,
+  "end_line": 22
+}

@@ -1,0 +1,28 @@
+{
+  "name": "test_truncate_ellipsis",
+  "parameters": [
+    {
+      "name": "input",
+      "type": null
+    },
+    {
+      "name": "count",
+      "type": null
+    },
+    {
+      "name": "expected",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "text.truncate",
+    "Text"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 888,
+  "end_line": 891
+}

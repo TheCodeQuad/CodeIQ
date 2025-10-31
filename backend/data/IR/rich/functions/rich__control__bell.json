@@ -1,0 +1,17 @@
+{
+  "name": "bell",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    }
+  ],
+  "return_type": "\"Control\"",
+  "docstring": null,
+  "calls": [
+    "cls"
+  ],
+  "variables": [],
+  "start_line": 69,
+  "end_line": 71
+}

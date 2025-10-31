@@ -1,0 +1,17 @@
+{
+  "name": "get_table_column",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Column",
+  "docstring": null,
+  "calls": [
+    "Column"
+  ],
+  "variables": [],
+  "start_line": 517,
+  "end_line": 519
+}

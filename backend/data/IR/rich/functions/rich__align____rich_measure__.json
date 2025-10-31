@@ -1,0 +1,27 @@
+{
+  "name": "__rich_measure__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "Measurement",
+  "docstring": null,
+  "calls": [
+    "Measurement.get"
+  ],
+  "variables": [
+    "measurement"
+  ],
+  "start_line": 278,
+  "end_line": 282
+}

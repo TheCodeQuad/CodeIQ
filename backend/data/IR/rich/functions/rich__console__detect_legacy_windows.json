@@ -1,0 +1,12 @@
+{
+  "name": "detect_legacy_windows",
+  "parameters": [],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "get_windows_console_features"
+  ],
+  "variables": [],
+  "start_line": 582,
+  "end_line": 584
+}

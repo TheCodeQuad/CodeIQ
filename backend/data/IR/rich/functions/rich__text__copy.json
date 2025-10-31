@@ -1,0 +1,19 @@
+{
+  "name": "copy",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Text\"",
+  "docstring": null,
+  "calls": [
+    "Text"
+  ],
+  "variables": [
+    "copy_self"
+  ],
+  "start_line": 443,
+  "end_line": 455
+}

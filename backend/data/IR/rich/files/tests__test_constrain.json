@@ -1,0 +1,34 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_constrain.py",
+  "imports": [
+    "from rich.console import Console",
+    "from rich.constrain import Constrain",
+    "from rich.text import Text"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_width_of_none",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "Text",
+        "Constrain",
+        "console.options.update_width",
+        "constrain.__rich_measure__"
+      ],
+      "variables": [
+        "console",
+        "constrain"
+      ],
+      "start_line": 6,
+      "end_line": 13
+    }
+  ],
+  "variables": [
+    "console",
+    "constrain"
+  ]
+}

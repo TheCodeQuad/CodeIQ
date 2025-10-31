@@ -1,0 +1,17 @@
+{
+  "name": "_combine_regex",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "\"|\".join"
+  ],
+  "variables": [],
+  "start_line": 8,
+  "end_line": 14
+}

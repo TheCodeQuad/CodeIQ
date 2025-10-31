@@ -1,0 +1,19 @@
+{
+  "name": "test_segments_renderable",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment.line",
+    "Segment",
+    "list",
+    "Segments",
+    "segments.__rich_console__"
+  ],
+  "variables": [
+    "segments",
+    "segments"
+  ],
+  "start_line": 128,
+  "end_line": 136
+}

@@ -1,0 +1,55 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_stack.py",
+  "imports": [
+    "from typing import List, TypeVar"
+  ],
+  "classes": [
+    {
+      "name": "Stack",
+      "base_classes": "(List[T])",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "top",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "T",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 10,
+      "end_line": 12
+    },
+    {
+      "name": "push",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "T"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.append"
+      ],
+      "variables": [],
+      "start_line": 14,
+      "end_line": 16
+    }
+  ],
+  "variables": [
+    "T"
+  ]
+}

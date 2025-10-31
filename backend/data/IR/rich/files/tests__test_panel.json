@@ -1,0 +1,220 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_panel.py",
+  "imports": [
+    "import io",
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.panel import Panel",
+    "from rich.segment import Segment",
+    "from rich.style import Style",
+    "from rich.text import Text"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "panel",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "result"
+      ],
+      "start_line": 32,
+      "end_line": 37
+    },
+    {
+      "name": "test_render_panel",
+      "parameters": [
+        {
+          "name": "panel",
+          "type": null
+        },
+        {
+          "name": "expected",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render"
+      ],
+      "variables": [],
+      "start_line": 41,
+      "end_line": 42
+    },
+    {
+      "name": "test_console_width",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "panel.__rich_measure__",
+        "Panel"
+      ],
+      "variables": [
+        "console",
+        "panel"
+      ],
+      "start_line": 45,
+      "end_line": 50
+    },
+    {
+      "name": "test_fixed_width",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "io.StringIO",
+        "panel.__rich_measure__",
+        "Panel"
+      ],
+      "variables": [
+        "console",
+        "panel"
+      ],
+      "start_line": 53,
+      "end_line": 58
+    },
+    {
+      "name": "test_render_size",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.render_lines",
+        "console.options.update_dimensions",
+        "Console",
+        "Segment",
+        "Style",
+        "repr",
+        "Panel",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "options",
+        "lines",
+        "expected"
+      ],
+      "start_line": 61,
+      "end_line": 102
+    },
+    {
+      "name": "test_title_text",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Text",
+        "repr",
+        "console.file.getvalue",
+        "console.print",
+        "Panel",
+        "print"
+      ],
+      "variables": [
+        "panel",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 105,
+      "end_line": 124
+    },
+    {
+      "name": "test_title_text_with_border_color",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Text",
+        "repr",
+        "console.file.getvalue",
+        "console.print",
+        "Panel",
+        "print"
+      ],
+      "variables": [
+        "panel",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 127,
+      "end_line": 148
+    },
+    {
+      "name": "test_title_text_with_panel_background",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Console",
+        "Text",
+        "repr",
+        "console.file.getvalue",
+        "console.print",
+        "Panel",
+        "print"
+      ],
+      "variables": [
+        "panel",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 151,
+      "end_line": 172
+    }
+  ],
+  "variables": [
+    "tests",
+    "expected",
+    "console",
+    "result",
+    "console",
+    "panel",
+    "console",
+    "panel",
+    "console",
+    "options",
+    "lines",
+    "expected",
+    "panel",
+    "console",
+    "result",
+    "expected",
+    "panel",
+    "console",
+    "result",
+    "expected",
+    "panel",
+    "console",
+    "result",
+    "expected",
+    "expected",
+    "result"
+  ]
+}

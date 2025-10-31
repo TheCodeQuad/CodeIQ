@@ -1,0 +1,19 @@
+{
+  "name": "run",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.live.refresh",
+    "self.done.is_set",
+    "self.done.wait"
+  ],
+  "variables": [],
+  "start_line": 34,
+  "end_line": 38
+}

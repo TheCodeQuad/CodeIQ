@@ -1,0 +1,23 @@
+{
+  "name": "_get_padding_width",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "max"
+  ],
+  "variables": [
+    "pad_left"
+  ],
+  "start_line": 699,
+  "end_line": 705
+}

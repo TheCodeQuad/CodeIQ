@@ -1,0 +1,13 @@
+{
+  "name": "test_pretty_namedtuple_custom_repr",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Thing",
+    "pretty_repr"
+  ],
+  "variables": [],
+  "start_line": 244,
+  "end_line": 249
+}

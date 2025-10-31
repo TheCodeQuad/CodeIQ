@@ -1,0 +1,25 @@
+{
+  "name": "check_length",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "len",
+    "self.node.check_length",
+    "cell_len"
+  ],
+  "variables": [
+    "start_length"
+  ],
+  "start_line": 511,
+  "end_line": 517
+}

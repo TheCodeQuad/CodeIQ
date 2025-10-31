@@ -1,0 +1,22 @@
+{
+  "name": "__str__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "append",
+    "\" \".join"
+  ],
+  "variables": [
+    "attributes",
+    "append",
+    "bits"
+  ],
+  "start_line": 290,
+  "end_line": 334
+}

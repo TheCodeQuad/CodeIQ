@@ -1,0 +1,13 @@
+{
+  "name": "test_chain",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style",
+    "Style.chain"
+  ],
+  "variables": [],
+  "start_line": 144,
+  "end_line": 147
+}

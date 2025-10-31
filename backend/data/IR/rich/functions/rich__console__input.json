@@ -1,0 +1,24 @@
+{
+  "name": "input",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "getpass",
+    "self.print",
+    "stream.readline",
+    "input"
+  ],
+  "variables": [
+    "result",
+    "result",
+    "result"
+  ],
+  "start_line": 2139,
+  "end_line": 2171
+}

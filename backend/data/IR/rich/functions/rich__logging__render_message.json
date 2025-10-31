@@ -1,0 +1,34 @@
+{
+  "name": "render_message",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "LogRecord"
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "\"ConsoleRenderable\"",
+  "docstring": null,
+  "calls": [
+    "message_text.highlight_words",
+    "Text",
+    "highlighter",
+    "getattr",
+    "Text.from_markup"
+  ],
+  "variables": [
+    "use_markup",
+    "message_text",
+    "highlighter",
+    "message_text"
+  ],
+  "start_line": 182,
+  "end_line": 205
+}

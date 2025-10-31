@@ -1,0 +1,25 @@
+{
+  "name": "__call__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Any",
+  "docstring": null,
+  "calls": [
+    "self.make_prompt",
+    "self.get_input",
+    "self.pre_prompt",
+    "self.on_validate_error",
+    "self.process_response"
+  ],
+  "variables": [
+    "prompt",
+    "value",
+    "return_value"
+  ],
+  "start_line": 280,
+  "end_line": 301
+}

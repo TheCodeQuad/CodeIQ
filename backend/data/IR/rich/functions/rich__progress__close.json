@@ -1,0 +1,17 @@
+{
+  "name": "close",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.handle.close"
+  ],
+  "variables": [],
+  "start_line": 265,
+  "end_line": 268
+}

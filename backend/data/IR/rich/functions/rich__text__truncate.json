@@ -1,0 +1,27 @@
+{
+  "name": "truncate",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "len",
+    "set_cell_size",
+    "cell_len"
+  ],
+  "variables": [
+    "_overflow",
+    "length",
+    "spaces"
+  ],
+  "start_line": 860,
+  "end_line": 885
+}

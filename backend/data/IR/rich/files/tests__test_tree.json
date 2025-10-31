@@ -1,0 +1,287 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_tree.py",
+  "imports": [
+    "import sys",
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.measure import Measurement",
+    "from rich.tree import Tree"
+  ],
+  "classes": [
+    {
+      "name": "AsciiConsole",
+      "base_classes": "(Console)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "test_render_single_node",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "console.print",
+        "Tree"
+      ],
+      "variables": [
+        "tree",
+        "console"
+      ],
+      "start_line": 10,
+      "end_line": 15
+    },
+    {
+      "name": "test_render_single_branch",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "tree.add",
+        "Console",
+        "console.print",
+        "repr",
+        "Tree",
+        "print"
+      ],
+      "variables": [
+        "tree",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 18,
+      "end_line": 27
+    },
+    {
+      "name": "test_render_double_branch",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "tree.add",
+        "Console",
+        "console.print",
+        "repr",
+        "Tree",
+        "print"
+      ],
+      "variables": [
+        "tree",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 30,
+      "end_line": 40
+    },
+    {
+      "name": "test_render_ascii",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "tree.add",
+        "AsciiConsole",
+        "console.print",
+        "Tree"
+      ],
+      "variables": [
+        "tree",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 43,
+      "end_line": 58
+    },
+    {
+      "name": "encoding",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 50,
+      "end_line": 51
+    },
+    {
+      "name": "test_render_tree_non_win32",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "tree.add",
+        "Console",
+        "console.print",
+        "repr",
+        "Tree",
+        "print",
+        "baz_tree.add"
+      ],
+      "variables": [
+        "tree",
+        "baz_tree",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 62,
+      "end_line": 78
+    },
+    {
+      "name": "test_render_tree_win32",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "tree.add",
+        "Console",
+        "console.print",
+        "repr",
+        "Tree",
+        "print",
+        "baz_tree.add"
+      ],
+      "variables": [
+        "tree",
+        "baz_tree",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 82,
+      "end_line": 98
+    },
+    {
+      "name": "test_render_tree_hide_root_non_win32",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "tree.add",
+        "Console",
+        "console.print",
+        "repr",
+        "Tree",
+        "print",
+        "baz_tree.add"
+      ],
+      "variables": [
+        "tree",
+        "baz_tree",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 102,
+      "end_line": 118
+    },
+    {
+      "name": "test_render_tree_hide_root_win32",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "tree.add",
+        "Console",
+        "console.print",
+        "repr",
+        "Tree",
+        "print",
+        "baz_tree.add"
+      ],
+      "variables": [
+        "tree",
+        "baz_tree",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 122,
+      "end_line": 136
+    },
+    {
+      "name": "test_tree_measure",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "tree.add",
+        "Console",
+        "Tree",
+        "Measurement",
+        "Measurement.get"
+      ],
+      "variables": [
+        "tree",
+        "console",
+        "measurement"
+      ],
+      "start_line": 139,
+      "end_line": 145
+    }
+  ],
+  "variables": [
+    "tree",
+    "console",
+    "tree",
+    "console",
+    "result",
+    "expected",
+    "tree",
+    "console",
+    "result",
+    "expected",
+    "tree",
+    "console",
+    "result",
+    "expected",
+    "tree",
+    "baz_tree",
+    "console",
+    "result",
+    "expected",
+    "tree",
+    "baz_tree",
+    "console",
+    "result",
+    "expected",
+    "tree",
+    "baz_tree",
+    "console",
+    "result",
+    "expected",
+    "tree",
+    "baz_tree",
+    "console",
+    "result",
+    "expected",
+    "tree",
+    "console",
+    "measurement"
+  ]
+}

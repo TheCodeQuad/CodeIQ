@@ -1,0 +1,17 @@
+{
+  "name": "pager",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "PagerContext",
+  "docstring": null,
+  "calls": [
+    "PagerContext"
+  ],
+  "variables": [],
+  "start_line": 1119,
+  "end_line": 1140
+}

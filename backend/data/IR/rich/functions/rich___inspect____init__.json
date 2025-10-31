@@ -1,0 +1,26 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._make_title",
+    "ReprHighlighter"
+  ],
+  "variables": [
+    "methods",
+    "private",
+    "dunder"
+  ],
+  "start_line": 37,
+  "end_line": 62
+}

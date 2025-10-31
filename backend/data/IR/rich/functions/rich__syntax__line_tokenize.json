@@ -1,0 +1,13 @@
+{
+  "name": "line_tokenize",
+  "parameters": [],
+  "return_type": "Iterable[Tuple[Any, str]]",
+  "docstring": null,
+  "calls": [
+    "token.partition",
+    "lexer.get_tokens"
+  ],
+  "variables": [],
+  "start_line": 505,
+  "end_line": 512
+}

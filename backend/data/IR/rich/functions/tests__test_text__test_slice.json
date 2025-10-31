@@ -1,0 +1,17 @@
+{
+  "name": "test_slice",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "Text.from_markup",
+    "Span",
+    "pytest.raises"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 970,
+  "end_line": 981
+}

@@ -1,0 +1,24 @@
+{
+  "name": "test_text_column",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "text_column.render",
+    "Text",
+    "NullHighlighter",
+    "TextColumn",
+    "str",
+    "Task"
+  ],
+  "variables": [
+    "text_column",
+    "task",
+    "text",
+    "text_column",
+    "task",
+    "text"
+  ],
+  "start_line": 64,
+  "end_line": 73
+}

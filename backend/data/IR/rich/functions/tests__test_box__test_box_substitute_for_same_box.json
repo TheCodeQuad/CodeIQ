@@ -1,0 +1,21 @@
+{
+  "name": "test_box_substitute_for_same_box",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "ConsoleOptions",
+    "MINIMAL_HEAVY_HEAD.substitute",
+    "HEAVY_EDGE.substitute",
+    "ROUNDED.substitute",
+    "SIMPLE_HEAVY.substitute",
+    "HEAVY_HEAD.substitute",
+    "HEAVY.substitute",
+    "ConsoleDimensions"
+  ],
+  "variables": [
+    "options"
+  ],
+  "start_line": 51,
+  "end_line": 67
+}

@@ -1,0 +1,23 @@
+{
+  "name": "test_rich_print_json_round_trip",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "rich.print_json",
+    "json.loads",
+    "rich.get_console",
+    "repr",
+    "print",
+    "capture.get"
+  ],
+  "variables": [
+    "data",
+    "console",
+    "result",
+    "result_data"
+  ],
+  "start_line": 42,
+  "end_line": 50
+}

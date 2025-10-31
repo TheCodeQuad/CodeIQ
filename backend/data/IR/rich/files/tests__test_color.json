@@ -1,0 +1,266 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_color.py",
+  "imports": [
+    "from rich.color import (\n    blend_rgb,\n    parse_rgb_hex,\n    Color,\n    ColorParseError,\n    ColorSystem,\n    ColorType,\n    ColorTriplet,\n)",
+    "from rich.style import Style",
+    "from rich.text import Text, Span",
+    "import pytest"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_str",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.parse",
+        "str"
+      ],
+      "variables": [],
+      "start_line": 16,
+      "end_line": 17
+    },
+    {
+      "name": "test_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "repr",
+        "Color.parse"
+      ],
+      "variables": [],
+      "start_line": 20,
+      "end_line": 21
+    },
+    {
+      "name": "test_color_system_repr",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "repr"
+      ],
+      "variables": [],
+      "start_line": 24,
+      "end_line": 25
+    },
+    {
+      "name": "test_rich",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Span",
+        "color.__rich__",
+        "Text",
+        "Color.parse",
+        "Style",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "color",
+        "as_text"
+      ],
+      "start_line": 28,
+      "end_line": 35
+    },
+    {
+      "name": "test_system",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.parse"
+      ],
+      "variables": [],
+      "start_line": 38,
+      "end_line": 41
+    },
+    {
+      "name": "test_windows",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color(\"red\", ColorType.WINDOWS, number=1).get_ansi_codes",
+        "Color"
+      ],
+      "variables": [],
+      "start_line": 44,
+      "end_line": 45
+    },
+    {
+      "name": "test_truecolor",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "Color.parse(\"color(17)\").get_truecolor",
+        "Color.parse(\"default\").get_truecolor",
+        "Color.parse",
+        "Color.parse(\"color(1)\").get_truecolor",
+        "Color",
+        "Color(\"red\", ColorType.WINDOWS, number=1).get_truecolor",
+        "Color.parse(\"red\").get_truecolor",
+        "Color.parse(\"#ff0000\").get_truecolor"
+      ],
+      "variables": [],
+      "start_line": 48,
+      "end_line": 59
+    },
+    {
+      "name": "test_parse_success",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "Color.parse",
+        "Color"
+      ],
+      "variables": [],
+      "start_line": 62,
+      "end_line": 75
+    },
+    {
+      "name": "test_from_triplet",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "Color.from_triplet",
+        "Color"
+      ],
+      "variables": [],
+      "start_line": 78,
+      "end_line": 81
+    },
+    {
+      "name": "test_from_rgb",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "Color",
+        "Color.from_rgb"
+      ],
+      "variables": [],
+      "start_line": 84,
+      "end_line": 87
+    },
+    {
+      "name": "test_from_ansi",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.from_ansi",
+        "Color"
+      ],
+      "variables": [],
+      "start_line": 90,
+      "end_line": 91
+    },
+    {
+      "name": "test_default",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.default",
+        "Color"
+      ],
+      "variables": [],
+      "start_line": 94,
+      "end_line": 95
+    },
+    {
+      "name": "test_parse_error",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.parse",
+        "pytest.raises"
+      ],
+      "variables": [],
+      "start_line": 98,
+      "end_line": 112
+    },
+    {
+      "name": "test_get_ansi_codes",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.parse(\"red\").get_ansi_codes",
+        "Color.parse(\"default\").get_ansi_codes",
+        "Color.parse",
+        "Color.parse(\"color(1)\").get_ansi_codes",
+        "Color.parse(\"#ff0000\").get_ansi_codes"
+      ],
+      "variables": [],
+      "start_line": 115,
+      "end_line": 123
+    },
+    {
+      "name": "test_downgrade",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.parse(\"color(255)\").downgrade",
+        "Color.parse(\"bright_red\").downgrade",
+        "Color.parse(\"#ff0000\").downgrade",
+        "Color.parse(\"#00ff00\").downgrade",
+        "Color.parse",
+        "Color.parse(\"color(9)\").downgrade",
+        "Color.parse(\"color(20)\").downgrade",
+        "Color",
+        "Color.parse(\"#404142\").downgrade",
+        "Color.parse(\"red\").downgrade",
+        "Color.parse(\"#ffffff\").downgrade",
+        "Color.parse(\"#000000\").downgrade"
+      ],
+      "variables": [],
+      "start_line": 126,
+      "end_line": 177
+    },
+    {
+      "name": "test_parse_rgb_hex",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "parse_rgb_hex"
+      ],
+      "variables": [],
+      "start_line": 180,
+      "end_line": 181
+    },
+    {
+      "name": "test_blend_rgb",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ColorTriplet",
+        "blend_rgb"
+      ],
+      "variables": [],
+      "start_line": 184,
+      "end_line": 187
+    }
+  ],
+  "variables": [
+    "color",
+    "as_text"
+  ]
+}

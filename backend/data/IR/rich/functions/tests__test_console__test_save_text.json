@@ -1,0 +1,21 @@
+{
+  "name": "test_save_text",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.save_text",
+    "os.path.join",
+    "Console",
+    "tempfile.TemporaryDirectory",
+    "open",
+    "console.print",
+    "text_file.read"
+  ],
+  "variables": [
+    "console",
+    "export_path"
+  ],
+  "start_line": 569,
+  "end_line": 576
+}

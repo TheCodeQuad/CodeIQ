@@ -1,0 +1,37 @@
+{
+  "name": "FillConsoleOutputCharacter",
+  "parameters": [
+    {
+      "name": null,
+      "type": "wintypes.HANDLE"
+    },
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "WindowsCoordinates"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "wintypes.DWORD",
+    "char.encode",
+    "byref",
+    "ctypes.c_char",
+    "_FillConsoleOutputCharacterW"
+  ],
+  "variables": [
+    "character",
+    "num_characters",
+    "num_written"
+  ],
+  "start_line": 128,
+  "end_line": 155
+}

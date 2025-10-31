@@ -1,0 +1,18 @@
+{
+  "name": "test_measure",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "bar.__rich_measure__",
+    "ProgressBar"
+  ],
+  "variables": [
+    "console",
+    "bar",
+    "measurement"
+  ],
+  "start_line": 42,
+  "end_line": 47
+}

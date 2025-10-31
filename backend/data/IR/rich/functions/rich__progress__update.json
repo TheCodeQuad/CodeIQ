@@ -1,0 +1,39 @@
+{
+  "name": "update",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "TaskID"
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "ProgressSample",
+    "_progress.append",
+    "self.refresh",
+    "task._reset",
+    "self.get_time",
+    "popleft",
+    "task.fields.update"
+  ],
+  "variables": [
+    "task",
+    "completed_start",
+    "update_completed",
+    "current_time",
+    "old_sample_time",
+    "_progress",
+    "popleft"
+  ],
+  "start_line": 1416,
+  "end_line": 1475
+}

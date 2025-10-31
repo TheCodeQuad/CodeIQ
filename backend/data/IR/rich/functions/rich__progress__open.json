@@ -1,0 +1,39 @@
+{
+  "name": "open",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[str, \"PathLike[str]\", bytes]"
+    }
+  ],
+  "return_type": "Union[BinaryIO, TextIO]",
+  "docstring": null,
+  "calls": [
+    "warnings.warn",
+    "sorted",
+    "io.TextIOWrapper",
+    "ValueError",
+    "_Reader",
+    "self.add_task",
+    "io.open",
+    "stat",
+    "self.update",
+    "\"\".join"
+  ],
+  "variables": [
+    "_mode",
+    "line_buffering",
+    "buffering",
+    "buffering",
+    "total",
+    "task_id",
+    "handle",
+    "reader"
+  ],
+  "start_line": 1310,
+  "end_line": 1385
+}

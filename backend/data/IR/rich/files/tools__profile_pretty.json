@@ -1,0 +1,20 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tools\\profile_pretty.py",
+  "imports": [
+    "import json",
+    "import io",
+    "from time import time",
+    "from rich.console import Console",
+    "from rich.pretty import Pretty"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "console",
+    "cats",
+    "start",
+    "pretty",
+    "result",
+    "taken"
+  ]
+}

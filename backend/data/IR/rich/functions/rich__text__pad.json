@@ -1,0 +1,25 @@
+{
+  "name": "pad",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "len",
+    "_Span"
+  ],
+  "variables": [
+    "pad_characters",
+    "_Span"
+  ],
+  "start_line": 901,
+  "end_line": 916
+}

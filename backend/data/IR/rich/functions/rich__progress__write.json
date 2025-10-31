@@ -1,0 +1,21 @@
+{
+  "name": "write",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "UnsupportedOperation"
+  ],
+  "variables": [],
+  "start_line": 278,
+  "end_line": 279
+}

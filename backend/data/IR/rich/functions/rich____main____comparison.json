@@ -1,0 +1,25 @@
+{
+  "name": "comparison",
+  "parameters": [
+    {
+      "name": null,
+      "type": "RenderableType"
+    },
+    {
+      "name": null,
+      "type": "RenderableType"
+    }
+  ],
+  "return_type": "Table",
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "Table",
+    "table.add_column"
+  ],
+  "variables": [
+    "table"
+  ],
+  "start_line": 90,
+  "end_line": 95
+}

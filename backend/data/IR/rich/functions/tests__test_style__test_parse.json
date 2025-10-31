@@ -1,0 +1,14 @@
+{
+  "name": "test_parse",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style.parse",
+    "pytest.raises",
+    "Style"
+  ],
+  "variables": [],
+  "start_line": 96,
+  "end_line": 115
+}

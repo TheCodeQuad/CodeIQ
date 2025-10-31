@@ -1,0 +1,23 @@
+{
+  "name": "render",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.rule",
+    "io.StringIO",
+    "Console",
+    "Columns",
+    "columns.add_renderable",
+    "console.file.getvalue",
+    "console.print"
+  ],
+  "variables": [
+    "console",
+    "empty_columns",
+    "columns",
+    "render_result"
+  ],
+  "start_line": 31,
+  "end_line": 61
+}

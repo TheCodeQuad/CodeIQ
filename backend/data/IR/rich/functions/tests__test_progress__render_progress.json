@@ -1,0 +1,18 @@
+{
+  "name": "render_progress",
+  "parameters": [],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "progress.stop",
+    "progress.start",
+    "make_progress",
+    "progress.console.file.getvalue"
+  ],
+  "variables": [
+    "progress",
+    "progress_render"
+  ],
+  "start_line": 213,
+  "end_line": 220
+}

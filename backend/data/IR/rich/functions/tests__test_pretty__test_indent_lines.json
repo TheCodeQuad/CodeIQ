@@ -1,0 +1,22 @@
+{
+  "name": "test_indent_lines",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "Console",
+    "console.print",
+    "Pretty",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "expected",
+    "result"
+  ],
+  "start_line": 541,
+  "end_line": 554
+}

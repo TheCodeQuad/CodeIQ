@@ -1,0 +1,14 @@
+{
+  "name": "test_guess_lexer",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Traceback._guess_lexer"
+  ],
+  "variables": [
+    "code_python"
+  ],
+  "start_line": 251,
+  "end_line": 255
+}

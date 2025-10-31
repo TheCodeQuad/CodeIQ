@@ -1,0 +1,22 @@
+{
+  "name": "test_text_only",
+  "parameters": [
+    {
+      "name": "legacy_term_mock",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "legacy_windows_render",
+    "legacy_term_mock.write_text.assert_called_once_with"
+  ],
+  "variables": [
+    "text",
+    "buffer"
+  ],
+  "start_line": 23,
+  "end_line": 28
+}

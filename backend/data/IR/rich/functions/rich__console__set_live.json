@@ -1,0 +1,22 @@
+{
+  "name": "set_live",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Live\""
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "len",
+    "self._live_stack.append"
+  ],
+  "variables": [],
+  "start_line": 828,
+  "end_line": 842
+}

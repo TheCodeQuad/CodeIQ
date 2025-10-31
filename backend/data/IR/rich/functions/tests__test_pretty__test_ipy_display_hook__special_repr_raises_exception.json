@@ -1,0 +1,19 @@
+{
+  "name": "test_ipy_display_hook__special_repr_raises_exception",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "Thing",
+    "Exception",
+    "_ipy_display_hook"
+  ],
+  "variables": [
+    "console",
+    "result"
+  ],
+  "start_line": 113,
+  "end_line": 134
+}

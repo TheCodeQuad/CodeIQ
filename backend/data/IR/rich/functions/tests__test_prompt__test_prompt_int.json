@@ -1,0 +1,23 @@
+{
+  "name": "test_prompt_int",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "IntPrompt.ask",
+    "Console",
+    "console.file.getvalue",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "INPUT",
+    "console",
+    "number",
+    "expected",
+    "output"
+  ],
+  "start_line": 58,
+  "end_line": 70
+}

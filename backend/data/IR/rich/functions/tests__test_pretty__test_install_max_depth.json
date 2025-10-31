@@ -1,0 +1,19 @@
+{
+  "name": "test_install_max_depth",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "install",
+    "Console",
+    "console.file.getvalue",
+    "sys.displayhook"
+  ],
+  "variables": [
+    "console",
+    "dh"
+  ],
+  "start_line": 56,
+  "end_line": 62
+}

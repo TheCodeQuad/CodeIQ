@@ -1,0 +1,17 @@
+{
+  "name": "tell",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "self.handle.tell"
+  ],
+  "variables": [],
+  "start_line": 275,
+  "end_line": 276
+}

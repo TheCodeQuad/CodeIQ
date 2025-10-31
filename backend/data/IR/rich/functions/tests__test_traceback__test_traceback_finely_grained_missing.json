@@ -1,0 +1,15 @@
+{
+  "name": "test_traceback_finely_grained_missing",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Traceback"
+  ],
+  "variables": [
+    "traceback",
+    "last_instruction"
+  ],
+  "start_line": 335,
+  "end_line": 342
+}

@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "parameters": [
+    {
+      "name": null,
+      "type": "float"
+    },
+    {
+      "name": null,
+      "type": "float"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "locals",
+    "render_scope",
+    "print"
+  ],
+  "variables": [
+    "list_of_things",
+    "dict_of_things"
+  ],
+  "start_line": 75,
+  "end_line": 83
+}

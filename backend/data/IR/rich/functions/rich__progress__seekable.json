@@ -1,0 +1,17 @@
+{
+  "name": "seekable",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "self.handle.seekable"
+  ],
+  "variables": [],
+  "start_line": 239,
+  "end_line": 240
+}

@@ -1,0 +1,13 @@
+{
+  "name": "test_eq",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "Text(\"foo\").__eq__"
+  ],
+  "variables": [],
+  "start_line": 63,
+  "end_line": 66
+}

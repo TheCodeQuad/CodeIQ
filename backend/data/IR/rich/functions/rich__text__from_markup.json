@@ -1,0 +1,23 @@
+{
+  "name": "from_markup",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "\"Text\"",
+  "docstring": null,
+  "calls": [
+    "render"
+  ],
+  "variables": [
+    "rendered_text"
+  ],
+  "start_line": 260,
+  "end_line": 291
+}

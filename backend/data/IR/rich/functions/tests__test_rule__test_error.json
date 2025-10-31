@@ -1,0 +1,13 @@
+{
+  "name": "test_error",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Rule",
+    "pytest.raises"
+  ],
+  "variables": [],
+  "start_line": 128,
+  "end_line": 130
+}

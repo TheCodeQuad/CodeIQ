@@ -1,0 +1,18 @@
+{
+  "name": "test_apply_meta",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "Text",
+    "text.apply_meta",
+    "text.get_style_at_offset"
+  ],
+  "variables": [
+    "text",
+    "console"
+  ],
+  "start_line": 991,
+  "end_line": 999
+}

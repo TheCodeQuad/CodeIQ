@@ -1,0 +1,23 @@
+{
+  "name": "__get__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Syntax"
+    },
+    {
+      "name": null,
+      "type": "Type[Syntax]"
+    }
+  ],
+  "return_type": "Tuple[int, int, int, int]",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 232,
+  "end_line": 234
+}

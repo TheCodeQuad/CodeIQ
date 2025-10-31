@@ -1,0 +1,25 @@
+{
+  "name": "test_set_title",
+  "parameters": [
+    {
+      "name": "SetConsoleTitle",
+      "type": null
+    },
+    {
+      "name": "win32_console_getters",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "LegacyWindowsTerm",
+    "term.set_title",
+    "SetConsoleTitle.assert_called_once_with"
+  ],
+  "variables": [
+    "term"
+  ],
+  "start_line": 401,
+  "end_line": 405
+}

@@ -1,0 +1,31 @@
+{
+  "name": "get_padding",
+  "parameters": [
+    {
+      "name": null,
+      "type": "bool"
+    },
+    {
+      "name": null,
+      "type": "bool"
+    }
+  ],
+  "return_type": "Tuple[int, int, int, int]",
+  "docstring": null,
+  "calls": [
+    "_padding_cache.get",
+    "max"
+  ],
+  "variables": [
+    "cached",
+    "left",
+    "bottom",
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "_padding"
+  ],
+  "start_line": 641,
+  "end_line": 664
+}

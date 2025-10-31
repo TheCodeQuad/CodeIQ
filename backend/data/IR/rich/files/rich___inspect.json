@@ -1,0 +1,396 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_inspect.py",
+  "imports": [
+    "import inspect",
+    "from inspect import cleandoc, getdoc, getfile, isclass, ismodule, signature",
+    "from typing import Any, Collection, Iterable, Optional, Tuple, Type, Union",
+    "from .console import Group, RenderableType",
+    "from .control import escape_control_codes",
+    "from .highlighter import ReprHighlighter",
+    "from .jupyter import JupyterMixin",
+    "from .panel import Panel",
+    "from .pretty import Pretty",
+    "from .table import Table",
+    "from .text import Text, TextType"
+  ],
+  "classes": [
+    {
+      "name": "Inspect",
+      "base_classes": "(JupyterMixin)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "_first_paragraph",
+      "parameters": [
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "doc.partition"
+      ],
+      "variables": [],
+      "start_line": 15,
+      "end_line": 18
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self._make_title",
+        "ReprHighlighter"
+      ],
+      "variables": [
+        "methods",
+        "private",
+        "dunder"
+      ],
+      "start_line": 37,
+      "end_line": 62
+    },
+    {
+      "name": "_make_title",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "callable",
+        "type",
+        "isclass",
+        "str",
+        "self.highlighter",
+        "ismodule"
+      ],
+      "variables": [
+        "title_str",
+        "title_text"
+      ],
+      "start_line": 64,
+      "end_line": 72
+    },
+    {
+      "name": "__rich__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Panel",
+      "docstring": null,
+      "calls": [
+        "Panel.fit",
+        "Group",
+        "self._render"
+      ],
+      "variables": [],
+      "start_line": 74,
+      "end_line": 80
+    },
+    {
+      "name": "_get_signature",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Optional[Text]",
+      "docstring": null,
+      "calls": [
+        "Text.assemble",
+        "inspect.isclass",
+        "prefix.replace",
+        "Text",
+        "inspect.iscoroutinefunction",
+        "getattr",
+        "str",
+        "self.highlighter",
+        "getfile",
+        "callable_name.stylize",
+        "signature"
+      ],
+      "variables": [
+        "_signature",
+        "_signature",
+        "source_filename",
+        "source_filename",
+        "callable_name",
+        "signature_text",
+        "qualname",
+        "prefix",
+        "prefix",
+        "prefix",
+        "qual_signature"
+      ],
+      "start_line": 82,
+      "end_line": 119
+    },
+    {
+      "name": "_render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Iterable[RenderableType]",
+      "docstring": null,
+      "calls": [
+        "callable",
+        "key.strip(\"_\").lower",
+        "safe_getattr",
+        "key.startswith",
+        "len",
+        "dir",
+        "items.sort",
+        "doc.stylize",
+        "highlighter",
+        "getattr",
+        "add_row",
+        "ismodule",
+        "Panel",
+        "items_table.add_column",
+        "self._get_signature",
+        "Text",
+        "self._get_formatted_doc",
+        "Table.grid",
+        "repr",
+        "Text.assemble",
+        "isclass",
+        "key_text.copy",
+        "Pretty",
+        "_signature_text.append",
+        "warning.stylize",
+        "Text.from_markup",
+        "key.strip"
+      ],
+      "variables": [
+        "obj",
+        "keys",
+        "total_items",
+        "keys",
+        "keys",
+        "not_shown_count",
+        "items",
+        "items_table",
+        "add_row",
+        "highlighter",
+        "signature",
+        "_doc",
+        "doc_text",
+        "doc_text",
+        "key_text",
+        "warning",
+        "_signature_text",
+        "docs",
+        "doc"
+      ],
+      "start_line": 121,
+      "end_line": 212
+    },
+    {
+      "name": "sort_items",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Tuple[str, Any]"
+        }
+      ],
+      "return_type": "Tuple[bool, str]",
+      "docstring": null,
+      "calls": [
+        "callable",
+        "key.strip(\"_\").lower",
+        "key.strip"
+      ],
+      "variables": [],
+      "start_line": 124,
+      "end_line": 126
+    },
+    {
+      "name": "safe_getattr",
+      "parameters": [
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "Tuple[Any, Any]",
+      "docstring": null,
+      "calls": [
+        "getattr"
+      ],
+      "variables": [],
+      "start_line": 128,
+      "end_line": 133
+    },
+    {
+      "name": "_get_formatted_doc",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Optional[str]",
+      "docstring": null,
+      "calls": [
+        "escape_control_codes",
+        "getdoc",
+        "_first_paragraph",
+        "cleandoc(docs).strip",
+        "cleandoc"
+      ],
+      "variables": [
+        "docs",
+        "docs",
+        "docs"
+      ],
+      "start_line": 214,
+      "end_line": 233
+    },
+    {
+      "name": "get_object_types_mro",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Union[object, Type[Any]]"
+        }
+      ],
+      "return_type": "Tuple[type, ...]",
+      "docstring": null,
+      "calls": [
+        "hasattr",
+        "getattr",
+        "type"
+      ],
+      "variables": [
+        "obj"
+      ],
+      "start_line": 236,
+      "end_line": 242
+    },
+    {
+      "name": "get_object_types_mro_as_strings",
+      "parameters": [
+        {
+          "name": null,
+          "type": "object"
+        }
+      ],
+      "return_type": "Collection[str]",
+      "docstring": null,
+      "calls": [
+        "getattr",
+        "get_object_types_mro"
+      ],
+      "variables": [],
+      "start_line": 245,
+      "end_line": 255
+    },
+    {
+      "name": "is_object_one_of_types",
+      "parameters": [
+        {
+          "name": null,
+          "type": "object"
+        },
+        {
+          "name": null,
+          "type": "Collection[str]"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "get_object_types_mro_as_strings"
+      ],
+      "variables": [],
+      "start_line": 258,
+      "end_line": 268
+    }
+  ],
+  "variables": [
+    "methods",
+    "private",
+    "dunder",
+    "private",
+    "dunder",
+    "dunder",
+    "title_str",
+    "title_text",
+    "_signature",
+    "_signature",
+    "source_filename",
+    "source_filename",
+    "callable_name",
+    "signature_text",
+    "qualname",
+    "prefix",
+    "prefix",
+    "prefix",
+    "qual_signature",
+    "obj",
+    "keys",
+    "total_items",
+    "keys",
+    "keys",
+    "not_shown_count",
+    "items",
+    "items_table",
+    "add_row",
+    "highlighter",
+    "signature",
+    "_doc",
+    "doc_text",
+    "doc_text",
+    "key_text",
+    "warning",
+    "_signature_text",
+    "docs",
+    "doc",
+    "docs",
+    "docs",
+    "docs",
+    "obj"
+  ]
+}

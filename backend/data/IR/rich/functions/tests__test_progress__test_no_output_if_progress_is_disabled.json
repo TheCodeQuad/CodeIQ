@@ -1,0 +1,27 @@
+{
+  "name": "test_no_output_if_progress_is_disabled",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "next",
+    "iter",
+    "Progress",
+    "Console",
+    "progress.track",
+    "console.file.getvalue",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "progress",
+    "test",
+    "expected_values",
+    "result",
+    "expected"
+  ],
+  "start_line": 544,
+  "end_line": 565
+}

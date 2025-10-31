@@ -1,0 +1,19 @@
+{
+  "name": "test_render_broken_renderable",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "BrokenRenderable",
+    "list",
+    "console.render",
+    "pytest.raises"
+  ],
+  "variables": [
+    "console",
+    "broken"
+  ],
+  "start_line": 498,
+  "end_line": 502
+}

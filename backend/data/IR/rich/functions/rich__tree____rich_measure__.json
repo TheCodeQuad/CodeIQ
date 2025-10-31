@@ -1,0 +1,44 @@
+{
+  "name": "__rich_measure__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "\"Measurement\"",
+  "docstring": null,
+  "calls": [
+    "next",
+    "iter",
+    "pop",
+    "measure",
+    "push",
+    "max",
+    "Measurement"
+  ],
+  "variables": [
+    "stack",
+    "pop",
+    "push",
+    "minimum",
+    "maximum",
+    "measure",
+    "level",
+    "iter_tree",
+    "tree",
+    "indent",
+    "minimum",
+    "maximum"
+  ],
+  "start_line": 176,
+  "end_line": 201
+}

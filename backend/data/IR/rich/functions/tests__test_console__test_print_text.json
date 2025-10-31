@@ -1,0 +1,18 @@
+{
+  "name": "test_print_text",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "Text",
+    "console.file.getvalue",
+    "console.print"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 201,
+  "end_line": 204
+}

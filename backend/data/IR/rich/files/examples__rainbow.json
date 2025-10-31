@@ -1,0 +1,45 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\rainbow.py",
+  "imports": [
+    "from random import randint",
+    "from rich import print",
+    "from rich.highlighter import Highlighter"
+  ],
+  "classes": [
+    {
+      "name": "RainbowHighlighter",
+      "base_classes": "(Highlighter)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "highlight",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": "text",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "len",
+        "randint",
+        "range",
+        "text.stylize"
+      ],
+      "variables": [],
+      "start_line": 14,
+      "end_line": 16
+    }
+  ],
+  "variables": [
+    "rainbow"
+  ]
+}

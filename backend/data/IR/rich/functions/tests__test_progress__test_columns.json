@@ -1,0 +1,41 @@
+{
+  "name": "test_columns",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "MockClock",
+    "console.print",
+    "print",
+    "progress.advance",
+    "Console",
+    "TextColumn",
+    "TimeElapsedColumn",
+    "console.log",
+    "range",
+    "TotalFileSizeColumn",
+    "MofNCompleteColumn",
+    "TransferSpeedColumn",
+    "console.file.getvalue",
+    "replace_link_ids",
+    "progress.add_task",
+    "FileSizeColumn",
+    "repr",
+    "io.StringIO",
+    "Progress",
+    "BarColumn",
+    "TimeRemainingColumn",
+    "DownloadColumn",
+    "progress.refresh"
+  ],
+  "variables": [
+    "console",
+    "progress",
+    "task1",
+    "task2",
+    "result",
+    "expected"
+  ],
+  "start_line": 338,
+  "end_line": 382
+}

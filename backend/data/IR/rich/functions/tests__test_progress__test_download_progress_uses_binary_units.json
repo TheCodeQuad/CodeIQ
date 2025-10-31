@@ -1,0 +1,20 @@
+{
+  "name": "test_download_progress_uses_binary_units",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "DownloadColumn",
+    "column.render",
+    "Task",
+    "str"
+  ],
+  "variables": [
+    "column",
+    "test_task",
+    "rendered_progress",
+    "expected"
+  ],
+  "start_line": 160,
+  "end_line": 165
+}

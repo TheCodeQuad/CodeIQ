@@ -1,0 +1,26 @@
+{
+  "name": "get_top",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[int]"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "append",
+    "loop_last",
+    "\"\".join"
+  ],
+  "variables": [
+    "parts",
+    "append"
+  ],
+  "start_line": 95,
+  "end_line": 113
+}

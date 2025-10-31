@@ -1,0 +1,26 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "MarkdownIt",
+    "MarkdownIt().enable",
+    "parser.parse",
+    "MarkdownIt().enable(\"strikethrough\").enable"
+  ],
+  "variables": [
+    "parser"
+  ],
+  "start_line": 534,
+  "end_line": 552
+}

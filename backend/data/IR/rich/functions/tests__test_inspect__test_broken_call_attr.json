@@ -1,0 +1,23 @@
+{
+  "name": "test_broken_call_attr",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "callable",
+    "NotCallable",
+    "Foo",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "__call__",
+    "foo",
+    "foo",
+    "expected",
+    "result"
+  ],
+  "start_line": 352,
+  "end_line": 367
+}

@@ -1,0 +1,28 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Union[ControlType, ControlCode]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "_format_map[code]",
+    "Segment",
+    "\"\".join"
+  ],
+  "variables": [
+    "control_codes",
+    "_format_map",
+    "rendered_codes"
+  ],
+  "start_line": 58,
+  "end_line": 66
+}

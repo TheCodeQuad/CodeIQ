@@ -1,0 +1,22 @@
+{
+  "name": "_pager",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "Any",
+  "docstring": null,
+  "calls": [
+    "__import__(\"pydoc\").pager",
+    "__import__"
+  ],
+  "variables": [],
+  "start_line": 20,
+  "end_line": 21
+}

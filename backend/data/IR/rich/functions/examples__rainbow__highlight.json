@@ -1,0 +1,24 @@
+{
+  "name": "highlight",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": "text",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "len",
+    "randint",
+    "range",
+    "text.stylize"
+  ],
+  "variables": [],
+  "start_line": 14,
+  "end_line": 16
+}

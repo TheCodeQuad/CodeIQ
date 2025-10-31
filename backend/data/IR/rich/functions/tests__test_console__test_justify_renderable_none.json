@@ -1,0 +1,18 @@
+{
+  "name": "test_justify_renderable_none",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "console.file.getvalue",
+    "console.print",
+    "Panel"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 442,
+  "end_line": 451
+}

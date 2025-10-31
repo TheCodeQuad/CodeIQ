@@ -1,0 +1,17 @@
+{
+  "name": "test_join",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "str",
+    "Span",
+    "Text(\"bar\").join"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 324,
+  "end_line": 327
+}

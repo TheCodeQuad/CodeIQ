@@ -1,0 +1,15 @@
+{
+  "name": "null",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    }
+  ],
+  "return_type": "\"Style\"",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 204,
+  "end_line": 206
+}

@@ -1,0 +1,18 @@
+{
+  "name": "is_renderable",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "hasattr"
+  ],
+  "variables": [],
+  "start_line": 10,
+  "end_line": 16
+}

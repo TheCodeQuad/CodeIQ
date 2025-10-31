@@ -1,0 +1,21 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\region.py",
+  "imports": [
+    "from typing import NamedTuple"
+  ],
+  "classes": [
+    {
+      "name": "Region",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [],
+  "variables": [
+    "x",
+    "y",
+    "width",
+    "height"
+  ]
+}

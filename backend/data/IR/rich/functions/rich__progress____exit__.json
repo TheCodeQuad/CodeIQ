@@ -1,0 +1,29 @@
+{
+  "name": "__exit__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Optional[Type[BaseException]]"
+    },
+    {
+      "name": null,
+      "type": "Optional[BaseException]"
+    },
+    {
+      "name": null,
+      "type": "Optional[TracebackType]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.stop"
+  ],
+  "variables": [],
+  "start_line": 1183,
+  "end_line": 1189
+}

@@ -1,0 +1,23 @@
+{
+  "name": "GetConsoleMode",
+  "parameters": [
+    {
+      "name": null,
+      "type": "wintypes.HANDLE"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "bool",
+    "_GetConsoleMode",
+    "wintypes.DWORD",
+    "LegacyWindowsError"
+  ],
+  "variables": [
+    "console_mode",
+    "success"
+  ],
+  "start_line": 95,
+  "end_line": 114
+}

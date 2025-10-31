@@ -1,0 +1,16 @@
+{
+  "name": "test_highlight_background_color",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Style.parse",
+    "syntax.highlight",
+    "Syntax"
+  ],
+  "variables": [
+    "syntax"
+  ],
+  "start_line": 188,
+  "end_line": 199
+}

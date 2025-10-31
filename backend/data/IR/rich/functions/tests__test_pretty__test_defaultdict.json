@@ -1,0 +1,16 @@
+{
+  "name": "test_defaultdict",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "defaultdict",
+    "pretty_repr"
+  ],
+  "variables": [
+    "test_dict",
+    "result"
+  ],
+  "start_line": 493,
+  "end_line": 496
+}

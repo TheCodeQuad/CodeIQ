@@ -1,0 +1,2424 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\progress.py",
+  "imports": [
+    "import io",
+    "import typing",
+    "import warnings",
+    "from abc import ABC, abstractmethod",
+    "from collections import deque",
+    "from dataclasses import dataclass, field",
+    "from datetime import timedelta",
+    "from io import RawIOBase, UnsupportedOperation",
+    "from math import ceil",
+    "from mmap import mmap",
+    "from operator import length_hint",
+    "from os import PathLike, stat",
+    "from threading import Event, RLock, Thread",
+    "from types import TracebackType",
+    "from typing import (\n    TYPE_CHECKING,\n    Any,\n    BinaryIO,\n    Callable,\n    ContextManager,\n    Deque,\n    Dict,\n    Generic,\n    Iterable,\n    List,\n    Literal,\n    NamedTuple,\n    NewType,\n    Optional,\n    TextIO,\n    Tuple,\n    Type,\n    TypeVar,\n    Union,\n)",
+    "from typing_extensions import Self",
+    "from . import filesize, get_console",
+    "from .console import Console, Group, JustifyMethod, RenderableType",
+    "from .highlighter import Highlighter",
+    "from .jupyter import JupyterMixin",
+    "from .live import Live",
+    "from .progress_bar import ProgressBar",
+    "from .spinner import Spinner",
+    "from .style import StyleType",
+    "from .table import Column, Table",
+    "from .text import Text, TextType",
+    "import random",
+    "import time",
+    "from .panel import Panel",
+    "from .rule import Rule",
+    "from .syntax import Syntax",
+    "from .table import Table",
+    "from itertools import cycle"
+  ],
+  "classes": [
+    {
+      "name": "_TrackThread",
+      "base_classes": "(Thread)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "_Reader",
+      "base_classes": "(RawIOBase, BinaryIO)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "_ReadContext",
+      "base_classes": "(ContextManager[_I], Generic[_I])",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ProgressColumn",
+      "base_classes": "(ABC)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "RenderableColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "SpinnerColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TextColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "BarColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TimeElapsedColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TaskProgressColumn",
+      "base_classes": "(TextColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TimeRemainingColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "FileSizeColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TotalFileSizeColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "MofNCompleteColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "DownloadColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TransferSpeedColumn",
+      "base_classes": "(ProgressColumn)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ProgressSample",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Task",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Progress",
+      "base_classes": "(JupyterMixin)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Progress\""
+        },
+        {
+          "name": null,
+          "type": "\"TaskID\""
+        },
+        {
+          "name": null,
+          "type": "float"
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "Event",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 67,
+      "end_line": 74
+    },
+    {
+      "name": "run",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "advance",
+        "self.progress.update",
+        "wait"
+      ],
+      "variables": [
+        "task_id",
+        "advance",
+        "update_period",
+        "last_completed",
+        "wait",
+        "completed",
+        "last_completed"
+      ],
+      "start_line": 76,
+      "end_line": 88
+    },
+    {
+      "name": "__enter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "\"_TrackThread\"",
+      "docstring": null,
+      "calls": [
+        "self.start"
+      ],
+      "variables": [],
+      "start_line": 90,
+      "end_line": 92
+    },
+    {
+      "name": "__exit__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[Type[BaseException]]"
+        },
+        {
+          "name": null,
+          "type": "Optional[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.join",
+        "self.done.set"
+      ],
+      "variables": [],
+      "start_line": 94,
+      "end_line": 101
+    },
+    {
+      "name": "track",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Iterable[ProgressType]"
+        }
+      ],
+      "return_type": "Iterable[ProgressType]",
+      "docstring": null,
+      "calls": [
+        "Progress",
+        "BarColumn",
+        "progress.track",
+        "TextColumn",
+        "TaskProgressColumn",
+        "columns.extend",
+        "TimeRemainingColumn"
+      ],
+      "variables": [
+        "columns",
+        "progress"
+      ],
+      "start_line": 104,
+      "end_line": 179
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "BinaryIO"
+        },
+        {
+          "name": null,
+          "type": "\"Progress\""
+        },
+        {
+          "name": null,
+          "type": "TaskID"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 185,
+      "end_line": 196
+    },
+    {
+      "name": "__enter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "\"_Reader\"",
+      "docstring": null,
+      "calls": [
+        "self.handle.__enter__"
+      ],
+      "variables": [],
+      "start_line": 198,
+      "end_line": 200
+    },
+    {
+      "name": "__exit__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[Type[BaseException]]"
+        },
+        {
+          "name": null,
+          "type": "Optional[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.close"
+      ],
+      "variables": [],
+      "start_line": 202,
+      "end_line": 208
+    },
+    {
+      "name": "__iter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "BinaryIO",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 210,
+      "end_line": 211
+    },
+    {
+      "name": "__next__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bytes",
+      "docstring": null,
+      "calls": [
+        "len",
+        "self.progress.advance",
+        "next"
+      ],
+      "variables": [
+        "line"
+      ],
+      "start_line": 213,
+      "end_line": 216
+    },
+    {
+      "name": "closed",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 219,
+      "end_line": 220
+    },
+    {
+      "name": "fileno",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "self.handle.fileno"
+      ],
+      "variables": [],
+      "start_line": 222,
+      "end_line": 223
+    },
+    {
+      "name": "isatty",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "self.handle.isatty"
+      ],
+      "variables": [],
+      "start_line": 225,
+      "end_line": 226
+    },
+    {
+      "name": "mode",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 229,
+      "end_line": 230
+    },
+    {
+      "name": "name",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 233,
+      "end_line": 234
+    },
+    {
+      "name": "readable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "self.handle.readable"
+      ],
+      "variables": [],
+      "start_line": 236,
+      "end_line": 237
+    },
+    {
+      "name": "seekable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "self.handle.seekable"
+      ],
+      "variables": [],
+      "start_line": 239,
+      "end_line": 240
+    },
+    {
+      "name": "writable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 242,
+      "end_line": 243
+    },
+    {
+      "name": "read",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bytes",
+      "docstring": null,
+      "calls": [
+        "len",
+        "self.progress.advance",
+        "self.handle.read"
+      ],
+      "variables": [
+        "block"
+      ],
+      "start_line": 245,
+      "end_line": 248
+    },
+    {
+      "name": "readinto",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Union[bytearray, memoryview, mmap]"
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "self.progress.advance",
+        "self.handle.readinto"
+      ],
+      "variables": [
+        "n"
+      ],
+      "start_line": 250,
+      "end_line": 253
+    },
+    {
+      "name": "readline",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bytes",
+      "docstring": null,
+      "calls": [
+        "self.handle.readline",
+        "self.progress.advance",
+        "len"
+      ],
+      "variables": [
+        "line"
+      ],
+      "start_line": 255,
+      "end_line": 258
+    },
+    {
+      "name": "readlines",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "List[bytes]",
+      "docstring": null,
+      "calls": [
+        "map",
+        "self.progress.advance",
+        "sum",
+        "self.handle.readlines"
+      ],
+      "variables": [
+        "lines"
+      ],
+      "start_line": 260,
+      "end_line": 263
+    },
+    {
+      "name": "close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.handle.close"
+      ],
+      "variables": [],
+      "start_line": 265,
+      "end_line": 268
+    },
+    {
+      "name": "seek",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "self.progress.update",
+        "self.handle.seek"
+      ],
+      "variables": [
+        "pos"
+      ],
+      "start_line": 270,
+      "end_line": 273
+    },
+    {
+      "name": "tell",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "self.handle.tell"
+      ],
+      "variables": [],
+      "start_line": 275,
+      "end_line": 276
+    },
+    {
+      "name": "write",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "UnsupportedOperation"
+      ],
+      "variables": [],
+      "start_line": 278,
+      "end_line": 279
+    },
+    {
+      "name": "writelines",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Iterable[Any]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "UnsupportedOperation"
+      ],
+      "variables": [],
+      "start_line": 281,
+      "end_line": 282
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Progress\""
+        },
+        {
+          "name": null,
+          "type": "_I"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 288,
+      "end_line": 290
+    },
+    {
+      "name": "__enter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "_I",
+      "docstring": null,
+      "calls": [
+        "self.reader.__enter__",
+        "self.progress.start"
+      ],
+      "variables": [],
+      "start_line": 292,
+      "end_line": 294
+    },
+    {
+      "name": "__exit__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[Type[BaseException]]"
+        },
+        {
+          "name": null,
+          "type": "Optional[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.reader.__exit__",
+        "self.progress.stop"
+      ],
+      "variables": [],
+      "start_line": 296,
+      "end_line": 303
+    },
+    {
+      "name": "wrap_file",
+      "parameters": [
+        {
+          "name": null,
+          "type": "BinaryIO"
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "ContextManager[BinaryIO]",
+      "docstring": null,
+      "calls": [
+        "Progress",
+        "_ReadContext",
+        "progress.wrap_file",
+        "BarColumn",
+        "TextColumn",
+        "columns.extend",
+        "TimeRemainingColumn",
+        "DownloadColumn"
+      ],
+      "variables": [
+        "columns",
+        "progress",
+        "reader"
+      ],
+      "start_line": 306,
+      "end_line": 368
+    },
+    {
+      "name": "open",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Union[str, \"PathLike[str]\", bytes]"
+        },
+        {
+          "name": null,
+          "type": "Union[Literal[\"rt\"], Literal[\"r\"]]"
+        }
+      ],
+      "return_type": "ContextManager[TextIO]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 372,
+      "end_line": 393
+    },
+    {
+      "name": "open",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Union[str, \"PathLike[str]\", bytes]"
+        },
+        {
+          "name": null,
+          "type": "Literal[\"rb\"]"
+        }
+      ],
+      "return_type": "ContextManager[BinaryIO]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 397,
+      "end_line": 418
+    },
+    {
+      "name": "open",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Union[str, \"PathLike[str]\", bytes]"
+        }
+      ],
+      "return_type": "Union[ContextManager[BinaryIO], ContextManager[TextIO]]",
+      "docstring": null,
+      "calls": [
+        "Progress",
+        "_ReadContext",
+        "BarColumn",
+        "TextColumn",
+        "columns.extend",
+        "TimeRemainingColumn",
+        "DownloadColumn",
+        "progress.open"
+      ],
+      "variables": [
+        "columns",
+        "progress",
+        "reader"
+      ],
+      "start_line": 421,
+      "end_line": 504
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 512,
+      "end_line": 515
+    },
+    {
+      "name": "get_table_column",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Column",
+      "docstring": null,
+      "calls": [
+        "Column"
+      ],
+      "variables": [],
+      "start_line": 517,
+      "end_line": 519
+    },
+    {
+      "name": "__call__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [
+        "self.render",
+        "task.get_time"
+      ],
+      "variables": [
+        "current_time",
+        "renderable"
+      ],
+      "start_line": 521,
+      "end_line": 542
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 545,
+      "end_line": 546
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 556,
+      "end_line": 560
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 562,
+      "end_line": 563
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "super().__init__",
+        "super",
+        "Text.from_markup",
+        "Spinner"
+      ],
+      "variables": [],
+      "start_line": 576,
+      "end_line": 590
+    },
+    {
+      "name": "set_spinner",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Spinner"
+      ],
+      "variables": [],
+      "start_line": 592,
+      "end_line": 605
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [
+        "task.get_time",
+        "self.spinner.render"
+      ],
+      "variables": [
+        "text"
+      ],
+      "start_line": 607,
+      "end_line": 613
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "Column",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 619,
+      "end_line": 633
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "self.highlighter.highlight",
+        "Text",
+        "Text.from_markup",
+        "self.text_format.format"
+      ],
+      "variables": [
+        "_text",
+        "text",
+        "text"
+      ],
+      "start_line": 635,
+      "end_line": 643
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 657,
+      "end_line": 671
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "ProgressBar",
+      "docstring": null,
+      "calls": [
+        "max",
+        "task.get_time",
+        "ProgressBar"
+      ],
+      "variables": [],
+      "start_line": 673,
+      "end_line": 685
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "Text",
+        "timedelta",
+        "str",
+        "max"
+      ],
+      "variables": [
+        "elapsed",
+        "delta"
+      ],
+      "start_line": 691,
+      "end_line": 697
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 714,
+      "end_line": 734
+    },
+    {
+      "name": "render_speed",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[float]"
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "Text",
+        "filesize.pick_unit_and_suffix"
+      ],
+      "variables": [
+        "data_speed"
+      ],
+      "start_line": 737,
+      "end_line": 754
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "self.highlighter.highlight",
+        "text_format.format",
+        "Text",
+        "self.render_speed",
+        "Text.from_markup"
+      ],
+      "variables": [
+        "text_format",
+        "_text",
+        "text",
+        "text"
+      ],
+      "start_line": 756,
+      "end_line": 769
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 783,
+      "end_line": 791
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "Text",
+        "divmod"
+      ],
+      "variables": [
+        "task_time",
+        "style",
+        "task_time",
+        "style",
+        "formatted",
+        "formatted"
+      ],
+      "start_line": 793,
+      "end_line": 817
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "filesize.decimal",
+        "Text"
+      ],
+      "variables": [
+        "data_size"
+      ],
+      "start_line": 823,
+      "end_line": 826
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "filesize.decimal",
+        "Text"
+      ],
+      "variables": [
+        "data_size"
+      ],
+      "start_line": 832,
+      "end_line": 835
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 850,
+      "end_line": 852
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "Text",
+        "len",
+        "str"
+      ],
+      "variables": [
+        "completed",
+        "total",
+        "total_width"
+      ],
+      "start_line": 854,
+      "end_line": 862
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 872,
+      "end_line": 876
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "Text",
+        "filesize.pick_unit_and_suffix"
+      ],
+      "variables": [
+        "completed",
+        "unit_and_suffix_calculation_base",
+        "precision",
+        "completed_ratio",
+        "completed_str",
+        "total",
+        "total_ratio",
+        "total_str",
+        "total_str",
+        "download_status",
+        "download_text"
+      ],
+      "start_line": 878,
+      "end_line": 911
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Task\""
+        }
+      ],
+      "return_type": "Text",
+      "docstring": null,
+      "calls": [
+        "int",
+        "Text",
+        "filesize.decimal"
+      ],
+      "variables": [
+        "speed",
+        "data_speed"
+      ],
+      "start_line": 917,
+      "end_line": 923
+    },
+    {
+      "name": "get_time",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "float",
+      "docstring": null,
+      "calls": [
+        "self._get_time"
+      ],
+      "variables": [],
+      "start_line": 983,
+      "end_line": 985
+    },
+    {
+      "name": "started",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 988,
+      "end_line": 990
+    },
+    {
+      "name": "remaining",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Optional[float]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 993,
+      "end_line": 997
+    },
+    {
+      "name": "elapsed",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Optional[float]",
+      "docstring": null,
+      "calls": [
+        "self.get_time"
+      ],
+      "variables": [],
+      "start_line": 1000,
+      "end_line": 1006
+    },
+    {
+      "name": "finished",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1009,
+      "end_line": 1011
+    },
+    {
+      "name": "percentage",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "float",
+      "docstring": null,
+      "calls": [
+        "max",
+        "min"
+      ],
+      "variables": [
+        "completed",
+        "completed"
+      ],
+      "start_line": 1014,
+      "end_line": 1020
+    },
+    {
+      "name": "speed",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Optional[float]",
+      "docstring": null,
+      "calls": [
+        "next",
+        "iter",
+        "sum"
+      ],
+      "variables": [
+        "progress",
+        "total_time",
+        "iter_progress",
+        "total_completed",
+        "speed"
+      ],
+      "start_line": 1023,
+      "end_line": 1038
+    },
+    {
+      "name": "time_remaining",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Optional[float]",
+      "docstring": null,
+      "calls": [
+        "ceil"
+      ],
+      "variables": [
+        "speed",
+        "remaining",
+        "estimate"
+      ],
+      "start_line": 1041,
+      "end_line": 1052
+    },
+    {
+      "name": "_reset",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self._progress.clear"
+      ],
+      "variables": [],
+      "start_line": 1054,
+      "end_line": 1058
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Union[str, ProgressColumn]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.get_default_columns",
+        "get_console",
+        "TaskID",
+        "RLock",
+        "Live"
+      ],
+      "variables": [],
+      "start_line": 1077,
+      "end_line": 1111
+    },
+    {
+      "name": "get_default_columns",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        }
+      ],
+      "return_type": "Tuple[ProgressColumn, ...]",
+      "docstring": null,
+      "calls": [
+        "TextColumn",
+        "TimeRemainingColumn",
+        "TaskProgressColumn",
+        "BarColumn"
+      ],
+      "variables": [],
+      "start_line": 1114,
+      "end_line": 1142
+    },
+    {
+      "name": "console",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Console",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1145,
+      "end_line": 1146
+    },
+    {
+      "name": "tasks",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "List[Task]",
+      "docstring": null,
+      "calls": [
+        "list",
+        "self._tasks.values"
+      ],
+      "variables": [],
+      "start_line": 1149,
+      "end_line": 1152
+    },
+    {
+      "name": "task_ids",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "List[TaskID]",
+      "docstring": null,
+      "calls": [
+        "list",
+        "self._tasks.keys"
+      ],
+      "variables": [],
+      "start_line": 1155,
+      "end_line": 1158
+    },
+    {
+      "name": "finished",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "all",
+        "self._tasks.values"
+      ],
+      "variables": [],
+      "start_line": 1161,
+      "end_line": 1166
+    },
+    {
+      "name": "start",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.live.start"
+      ],
+      "variables": [],
+      "start_line": 1168,
+      "end_line": 1171
+    },
+    {
+      "name": "stop",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.live.stop",
+        "self.console.print"
+      ],
+      "variables": [],
+      "start_line": 1173,
+      "end_line": 1177
+    },
+    {
+      "name": "__enter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Self",
+      "docstring": null,
+      "calls": [
+        "self.start"
+      ],
+      "variables": [],
+      "start_line": 1179,
+      "end_line": 1181
+    },
+    {
+      "name": "__exit__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[Type[BaseException]]"
+        },
+        {
+          "name": null,
+          "type": "Optional[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.stop"
+      ],
+      "variables": [],
+      "start_line": 1183,
+      "end_line": 1189
+    },
+    {
+      "name": "track",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Iterable[ProgressType]"
+        }
+      ],
+      "return_type": "Iterable[ProgressType]",
+      "docstring": null,
+      "calls": [
+        "float",
+        "self.add_task",
+        "_TrackThread",
+        "refresh",
+        "length_hint",
+        "advance",
+        "self.update"
+      ],
+      "variables": [
+        "total",
+        "task_id",
+        "advance",
+        "refresh"
+      ],
+      "start_line": 1191,
+      "end_line": 1234
+    },
+    {
+      "name": "wrap_file",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "BinaryIO"
+        }
+      ],
+      "return_type": "BinaryIO",
+      "docstring": null,
+      "calls": [
+        "ValueError",
+        "_Reader",
+        "self.add_task",
+        "self.update"
+      ],
+      "variables": [
+        "total_bytes",
+        "total_bytes",
+        "total_bytes",
+        "task_id"
+      ],
+      "start_line": 1236,
+      "end_line": 1276
+    },
+    {
+      "name": "open",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Union[str, \"PathLike[str]\", bytes]"
+        },
+        {
+          "name": null,
+          "type": "Literal[\"rb\"]"
+        }
+      ],
+      "return_type": "BinaryIO",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1279,
+      "end_line": 1292
+    },
+    {
+      "name": "open",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Union[str, \"PathLike[str]\", bytes]"
+        },
+        {
+          "name": null,
+          "type": "Union[Literal[\"r\"], Literal[\"rt\"]]"
+        }
+      ],
+      "return_type": "TextIO",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1295,
+      "end_line": 1308
+    },
+    {
+      "name": "open",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Union[str, \"PathLike[str]\", bytes]"
+        }
+      ],
+      "return_type": "Union[BinaryIO, TextIO]",
+      "docstring": null,
+      "calls": [
+        "warnings.warn",
+        "sorted",
+        "io.TextIOWrapper",
+        "ValueError",
+        "_Reader",
+        "self.add_task",
+        "io.open",
+        "stat",
+        "self.update",
+        "\"\".join"
+      ],
+      "variables": [
+        "_mode",
+        "line_buffering",
+        "buffering",
+        "buffering",
+        "total",
+        "task_id",
+        "handle",
+        "reader"
+      ],
+      "start_line": 1310,
+      "end_line": 1385
+    },
+    {
+      "name": "start_task",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "TaskID"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.get_time"
+      ],
+      "variables": [
+        "task"
+      ],
+      "start_line": 1387,
+      "end_line": 1399
+    },
+    {
+      "name": "stop_task",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "TaskID"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.get_time"
+      ],
+      "variables": [
+        "task",
+        "current_time"
+      ],
+      "start_line": 1401,
+      "end_line": 1414
+    },
+    {
+      "name": "update",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "TaskID"
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ProgressSample",
+        "_progress.append",
+        "self.refresh",
+        "task._reset",
+        "self.get_time",
+        "popleft",
+        "task.fields.update"
+      ],
+      "variables": [
+        "task",
+        "completed_start",
+        "update_completed",
+        "current_time",
+        "old_sample_time",
+        "_progress",
+        "popleft"
+      ],
+      "start_line": 1416,
+      "end_line": 1475
+    },
+    {
+      "name": "reset",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "TaskID"
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.get_time",
+        "self.refresh",
+        "task._reset"
+      ],
+      "variables": [
+        "current_time",
+        "task"
+      ],
+      "start_line": 1477,
+      "end_line": 1514
+    },
+    {
+      "name": "advance",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "TaskID"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ProgressSample",
+        "_progress.append",
+        "self.get_time",
+        "popleft",
+        "len"
+      ],
+      "variables": [
+        "current_time",
+        "task",
+        "completed_start",
+        "update_completed",
+        "old_sample_time",
+        "_progress",
+        "popleft"
+      ],
+      "start_line": 1516,
+      "end_line": 1544
+    },
+    {
+      "name": "refresh",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.live.refresh"
+      ],
+      "variables": [],
+      "start_line": 1546,
+      "end_line": 1549
+    },
+    {
+      "name": "get_renderable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [
+        "self.get_renderables",
+        "Group"
+      ],
+      "variables": [
+        "renderable"
+      ],
+      "start_line": 1551,
+      "end_line": 1554
+    },
+    {
+      "name": "get_renderables",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Iterable[RenderableType]",
+      "docstring": null,
+      "calls": [
+        "self.make_tasks_table"
+      ],
+      "variables": [
+        "table"
+      ],
+      "start_line": 1556,
+      "end_line": 1559
+    },
+    {
+      "name": "make_tasks_table",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Iterable[Task]"
+        }
+      ],
+      "return_type": "Table",
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "isinstance",
+        "_column.get_table_column",
+        "column.format",
+        "Table.grid",
+        "Column",
+        "_column.get_table_column().copy",
+        "column"
+      ],
+      "variables": [
+        "table_columns",
+        "table"
+      ],
+      "start_line": 1561,
+      "end_line": 1592
+    },
+    {
+      "name": "__rich__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "RenderableType",
+      "docstring": null,
+      "calls": [
+        "self.get_renderable"
+      ],
+      "variables": [],
+      "start_line": 1594,
+      "end_line": 1597
+    },
+    {
+      "name": "add_task",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "TaskID",
+      "docstring": null,
+      "calls": [
+        "TaskID",
+        "int",
+        "self.start_task",
+        "self.refresh",
+        "Task"
+      ],
+      "variables": [
+        "task",
+        "new_task_index"
+      ],
+      "start_line": 1599,
+      "end_line": 1640
+    },
+    {
+      "name": "remove_task",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "TaskID"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1642,
+      "end_line": 1650
+    }
+  ],
+  "variables": [
+    "TaskID",
+    "ProgressType",
+    "GetTimeCallable",
+    "_I",
+    "task_id",
+    "advance",
+    "update_period",
+    "last_completed",
+    "wait",
+    "completed",
+    "last_completed",
+    "columns",
+    "progress",
+    "line",
+    "block",
+    "n",
+    "line",
+    "lines",
+    "pos",
+    "columns",
+    "progress",
+    "reader",
+    "columns",
+    "progress",
+    "reader",
+    "max_refresh",
+    "current_time",
+    "renderable",
+    "text",
+    "_text",
+    "text",
+    "text",
+    "elapsed",
+    "delta",
+    "data_speed",
+    "text_format",
+    "_text",
+    "text",
+    "text",
+    "max_refresh",
+    "task_time",
+    "style",
+    "task_time",
+    "style",
+    "formatted",
+    "formatted",
+    "data_size",
+    "data_size",
+    "completed",
+    "total",
+    "total_width",
+    "completed",
+    "unit_and_suffix_calculation_base",
+    "precision",
+    "completed_ratio",
+    "completed_str",
+    "total",
+    "total_ratio",
+    "total_str",
+    "total_str",
+    "download_status",
+    "download_text",
+    "speed",
+    "data_speed",
+    "timestamp",
+    "completed",
+    "id",
+    "description",
+    "total",
+    "completed",
+    "_get_time",
+    "finished_time",
+    "visible",
+    "fields",
+    "start_time",
+    "stop_time",
+    "finished_speed",
+    "_progress",
+    "_lock",
+    "completed",
+    "completed",
+    "progress",
+    "total_time",
+    "iter_progress",
+    "total_completed",
+    "speed",
+    "speed",
+    "remaining",
+    "estimate",
+    "total",
+    "task_id",
+    "advance",
+    "refresh",
+    "total_bytes",
+    "total_bytes",
+    "total_bytes",
+    "task_id",
+    "_mode",
+    "line_buffering",
+    "buffering",
+    "buffering",
+    "total",
+    "task_id",
+    "handle",
+    "reader",
+    "task",
+    "task",
+    "current_time",
+    "task",
+    "completed_start",
+    "update_completed",
+    "current_time",
+    "old_sample_time",
+    "_progress",
+    "popleft",
+    "current_time",
+    "task",
+    "current_time",
+    "task",
+    "completed_start",
+    "update_completed",
+    "old_sample_time",
+    "_progress",
+    "popleft",
+    "renderable",
+    "table",
+    "table_columns",
+    "table",
+    "task",
+    "new_task_index",
+    "syntax",
+    "table",
+    "progress_renderables",
+    "examples",
+    "console",
+    "task1",
+    "task2",
+    "task3"
+  ]
+}

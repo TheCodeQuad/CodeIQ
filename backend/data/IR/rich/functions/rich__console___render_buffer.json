@@ -1,0 +1,32 @@
+{
+  "name": "_render_buffer",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[Segment]"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "append",
+    "style.render",
+    "Segment.remove_color",
+    "\"\".join"
+  ],
+  "variables": [
+    "output",
+    "append",
+    "color_system",
+    "legacy_windows",
+    "not_terminal",
+    "buffer",
+    "rendered"
+  ],
+  "start_line": 2115,
+  "end_line": 2137
+}

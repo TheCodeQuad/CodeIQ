@@ -1,0 +1,24 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\docs\\source\\conf.py",
+  "imports": [
+    "import sphinx_rtd_theme",
+    "from importlib.metadata import Distribution"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "html_theme",
+    "html_theme_path",
+    "project",
+    "copyright",
+    "author",
+    "release",
+    "extensions",
+    "templates_path",
+    "exclude_patterns",
+    "html_static_path",
+    "intersphinx_mapping",
+    "autodoc_typehints",
+    "html_css_files"
+  ]
+}

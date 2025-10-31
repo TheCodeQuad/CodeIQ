@@ -1,0 +1,16 @@
+{
+  "name": "get_terminal_size_mock_impl",
+  "parameters": [],
+  "return_type": "Tuple[int, int]",
+  "docstring": null,
+  "calls": [
+    "sys.__stdout__.fileno",
+    "sys.__stderr__.fileno",
+    "sys.__stdin__.fileno"
+  ],
+  "variables": [
+    "value"
+  ],
+  "start_line": 164,
+  "end_line": 173
+}

@@ -1,0 +1,17 @@
+{
+  "name": "test_init_append_column",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Table",
+    "Column",
+    "enumerate"
+  ],
+  "variables": [
+    "header_names",
+    "test_columns"
+  ],
+  "start_line": 105,
+  "end_line": 114
+}

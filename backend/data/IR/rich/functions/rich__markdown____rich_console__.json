@@ -1,0 +1,71 @@
+{
+  "name": "__rich_console__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Console"
+    },
+    {
+      "name": null,
+      "type": "ConsoleOptions"
+    }
+  ],
+  "return_type": "RenderResult",
+  "docstring": null,
+  "calls": [
+    "self.elements.get",
+    "element_class.create",
+    "context.stack.push",
+    "options.update",
+    "console.get_style",
+    "MarkdownContext",
+    "Link.create",
+    "context.on_text",
+    "element.on_leave",
+    "context.enter_style",
+    "context.stack.pop",
+    "context.stack.top.on_child_close",
+    "str",
+    "element.on_enter",
+    "Segment.line",
+    "isinstance",
+    "Style",
+    "element.on_text",
+    "token.attrs.get",
+    "context.leave_style",
+    "self._flatten_tokens",
+    "console.render"
+  ],
+  "variables": [
+    "style",
+    "options",
+    "context",
+    "tokens",
+    "inline_style_tags",
+    "new_line",
+    "_new_line_segment",
+    "node_type",
+    "tag",
+    "entering",
+    "exiting",
+    "self_closing",
+    "href",
+    "link_style",
+    "element",
+    "link_style",
+    "link_url_style",
+    "element_class",
+    "element",
+    "element",
+    "should_render",
+    "text",
+    "should_render",
+    "new_line"
+  ],
+  "start_line": 564,
+  "end_line": 681
+}

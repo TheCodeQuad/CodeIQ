@@ -1,0 +1,86 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\filesize.py",
+  "imports": [
+    "from typing import Iterable, List, Optional, Tuple"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "_to_str",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "Iterable[str]"
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "\"{:,.{precision}f}{separator}{}\".format",
+        "enumerate"
+      ],
+      "variables": [
+        "unit"
+      ],
+      "start_line": 18,
+      "end_line": 40
+    },
+    {
+      "name": "pick_unit_and_suffix",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "List[str]"
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "Tuple[int, str]",
+      "docstring": null,
+      "calls": [
+        "enumerate"
+      ],
+      "variables": [
+        "unit"
+      ],
+      "start_line": 43,
+      "end_line": 49
+    },
+    {
+      "name": "decimal",
+      "parameters": [
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "_to_str"
+      ],
+      "variables": [],
+      "start_line": 52,
+      "end_line": 88
+    }
+  ],
+  "variables": [
+    "__all__",
+    "unit",
+    "unit"
+  ]
+}

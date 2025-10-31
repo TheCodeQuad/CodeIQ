@@ -1,0 +1,22 @@
+{
+  "name": "_iter_syntax_lines",
+  "parameters": [
+    {
+      "name": null,
+      "type": "SyntaxPosition"
+    },
+    {
+      "name": null,
+      "type": "SyntaxPosition"
+    }
+  ],
+  "return_type": "Iterable[Tuple[int, int, int]]",
+  "docstring": null,
+  "calls": [
+    "range",
+    "loop_first_last"
+  ],
+  "variables": [],
+  "start_line": 55,
+  "end_line": 80
+}

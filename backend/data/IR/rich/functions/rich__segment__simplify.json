@@ -1,0 +1,29 @@
+{
+  "name": "simplify",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[\"Segment\"]"
+    }
+  ],
+  "return_type": "Iterable[\"Segment\"]",
+  "docstring": null,
+  "calls": [
+    "next",
+    "iter",
+    "_Segment"
+  ],
+  "variables": [
+    "iter_segments",
+    "last_segment",
+    "_Segment",
+    "last_segment",
+    "last_segment"
+  ],
+  "start_line": 523,
+  "end_line": 547
+}

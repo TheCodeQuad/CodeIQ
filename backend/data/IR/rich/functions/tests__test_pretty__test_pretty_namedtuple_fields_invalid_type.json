@@ -1,0 +1,17 @@
+{
+  "name": "test_pretty_namedtuple_fields_invalid_type",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "LooksLikeANamedTupleButIsnt",
+    "pretty_repr"
+  ],
+  "variables": [
+    "_fields",
+    "instance",
+    "result"
+  ],
+  "start_line": 252,
+  "end_line": 258
+}

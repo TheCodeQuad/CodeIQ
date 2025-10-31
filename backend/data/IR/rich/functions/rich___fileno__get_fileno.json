@@ -1,0 +1,20 @@
+{
+  "name": "get_fileno",
+  "parameters": [
+    {
+      "name": null,
+      "type": "IO[str]"
+    }
+  ],
+  "return_type": "int | None",
+  "docstring": null,
+  "calls": [
+    "fileno",
+    "getattr"
+  ],
+  "variables": [
+    "fileno"
+  ],
+  "start_line": 6,
+  "end_line": 24
+}

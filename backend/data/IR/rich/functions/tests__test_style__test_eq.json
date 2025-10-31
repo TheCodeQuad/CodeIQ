@@ -1,0 +1,13 @@
+{
+  "name": "test_eq",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style().__eq__",
+    "Style"
+  ],
+  "variables": [],
+  "start_line": 67,
+  "end_line": 70
+}

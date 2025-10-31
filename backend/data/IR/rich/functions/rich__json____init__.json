@@ -1,0 +1,29 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "NullHighlighter",
+    "highlighter",
+    "dumps",
+    "JSONHighlighter",
+    "loads"
+  ],
+  "variables": [
+    "data",
+    "json",
+    "highlighter"
+  ],
+  "start_line": 25,
+  "end_line": 51
+}

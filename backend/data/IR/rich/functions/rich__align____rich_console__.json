@@ -1,0 +1,41 @@
+{
+  "name": "__rich_console__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "\"RenderResult\"",
+  "docstring": null,
+  "calls": [
+    "console.render_lines",
+    "Segment.line",
+    "Segment",
+    "Segment.get_shape",
+    "options.update",
+    "console.get_style",
+    "blank_lines",
+    "len",
+    "range"
+  ],
+  "variables": [
+    "style",
+    "lines",
+    "new_line",
+    "height",
+    "top_space",
+    "bottom_space",
+    "blank_line"
+  ],
+  "start_line": 251,
+  "end_line": 276
+}

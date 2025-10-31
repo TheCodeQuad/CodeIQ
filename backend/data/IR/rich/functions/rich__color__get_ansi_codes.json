@@ -1,0 +1,21 @@
+{
+  "name": "get_ansi_codes",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Tuple[str, ...]",
+  "docstring": null,
+  "calls": [
+    "str"
+  ],
+  "variables": [
+    "_type",
+    "number",
+    "number"
+  ],
+  "start_line": 485,
+  "end_line": 510
+}

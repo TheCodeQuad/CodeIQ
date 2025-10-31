@@ -1,0 +1,21 @@
+{
+  "name": "test_tuples",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "pprint",
+    "Console",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 585,
+  "end_line": 597
+}

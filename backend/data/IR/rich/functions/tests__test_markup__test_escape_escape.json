@@ -1,0 +1,20 @@
+{
+  "name": "test_escape_escape",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render",
+    "str"
+  ],
+  "variables": [
+    "result",
+    "result",
+    "result",
+    "result",
+    "result",
+    "result"
+  ],
+  "start_line": 163,
+  "end_line": 185
+}

@@ -1,0 +1,58 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_columns_align.py",
+  "imports": [
+    "import io",
+    "from rich import box",
+    "from rich.columns import Columns",
+    "from rich.console import Console",
+    "from rich.panel import Panel"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.rule",
+        "io.StringIO",
+        "Panel.fit",
+        "Console",
+        "Columns",
+        "console.file.getvalue",
+        "console.print"
+      ],
+      "variables": [
+        "console",
+        "panel",
+        "columns"
+      ],
+      "start_line": 11,
+      "end_line": 31
+    },
+    {
+      "name": "test_align",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "render"
+      ],
+      "variables": [
+        "result",
+        "expected"
+      ],
+      "start_line": 34,
+      "end_line": 37
+    }
+  ],
+  "variables": [
+    "console",
+    "panel",
+    "columns",
+    "result",
+    "expected",
+    "rendered"
+  ]
+}

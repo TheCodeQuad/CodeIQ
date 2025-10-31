@@ -1,0 +1,24 @@
+{
+  "name": "_add",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Optional[\"Style\"]"
+    }
+  ],
+  "return_type": "\"Style\"",
+  "docstring": null,
+  "calls": [
+    "self.__new__",
+    "dumps"
+  ],
+  "variables": [
+    "new_style"
+  ],
+  "start_line": 729,
+  "end_line": 751
+}

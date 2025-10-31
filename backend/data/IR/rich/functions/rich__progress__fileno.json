@@ -1,0 +1,17 @@
+{
+  "name": "fileno",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "self.handle.fileno"
+  ],
+  "variables": [],
+  "start_line": 222,
+  "end_line": 223
+}

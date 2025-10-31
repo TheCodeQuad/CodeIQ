@@ -1,0 +1,16 @@
+{
+  "name": "test_split_lines",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "list",
+    "Segment.split_lines"
+  ],
+  "variables": [
+    "lines"
+  ],
+  "start_line": 32,
+  "end_line": 34
+}

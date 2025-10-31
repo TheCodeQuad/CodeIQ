@@ -1,0 +1,17 @@
+{
+  "name": "test_rule_error",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.rule",
+    "io.StringIO",
+    "pytest.raises"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 31,
+  "end_line": 34
+}

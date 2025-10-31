@@ -1,0 +1,69 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_ratio.py",
+  "imports": [
+    "import pytest",
+    "from typing import NamedTuple, Optional",
+    "from rich._ratio import ratio_reduce, ratio_resolve"
+  ],
+  "classes": [
+    {
+      "name": "Edge",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "test_ratio_reduce",
+      "parameters": [
+        {
+          "name": "total",
+          "type": null
+        },
+        {
+          "name": "ratios",
+          "type": null
+        },
+        {
+          "name": "maximums",
+          "type": null
+        },
+        {
+          "name": "values",
+          "type": null
+        },
+        {
+          "name": "result",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "ratio_reduce"
+      ],
+      "variables": [],
+      "start_line": 24,
+      "end_line": 25
+    },
+    {
+      "name": "test_ratio_resolve",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "ratio_resolve",
+        "Edge"
+      ],
+      "variables": [],
+      "start_line": 28,
+      "end_line": 58
+    }
+  ],
+  "variables": [
+    "size",
+    "ratio",
+    "minimum_size"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "test_from_path_lexer_override",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "tempfile.mkstemp",
+    "os.write",
+    "os.remove",
+    "Syntax.from_path"
+  ],
+  "variables": [
+    "syntax"
+  ],
+  "start_line": 343,
+  "end_line": 351
+}

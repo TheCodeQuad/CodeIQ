@@ -1,0 +1,17 @@
+{
+  "name": "broken",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "InspectError"
+  ],
+  "variables": [],
+  "start_line": 80,
+  "end_line": 81
+}

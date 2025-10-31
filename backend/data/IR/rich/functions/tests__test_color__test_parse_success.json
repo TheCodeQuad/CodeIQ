@@ -1,0 +1,14 @@
+{
+  "name": "test_parse_success",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "ColorTriplet",
+    "Color.parse",
+    "Color"
+  ],
+  "variables": [],
+  "start_line": 62,
+  "end_line": 75
+}

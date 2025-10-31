@@ -1,0 +1,22 @@
+{
+  "name": "render",
+  "parameters": [
+    {
+      "name": "obj",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "io.StringIO",
+    "console.file.getvalue",
+    "inspect"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 58,
+  "end_line": 61
+}

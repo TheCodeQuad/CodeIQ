@@ -1,0 +1,20 @@
+{
+  "name": "test_traceback_console_theme_applies",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "Theme",
+    "Console",
+    "console.print_exception",
+    "repr"
+  ],
+  "variables": [
+    "console",
+    "result"
+  ],
+  "start_line": 213,
+  "end_line": 233
+}

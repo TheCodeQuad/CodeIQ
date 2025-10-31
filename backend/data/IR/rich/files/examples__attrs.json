@@ -1,0 +1,45 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\attrs.py",
+  "imports": [
+    "from typing import List",
+    "import attr",
+    "from rich.console import Console",
+    "from rich.pretty import Pretty",
+    "from rich.table import Column, Table",
+    "from rich.text import Text"
+  ],
+  "classes": [
+    {
+      "name": "Point3D",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Triangle",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Model",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [],
+  "variables": [
+    "x",
+    "y",
+    "z",
+    "point1",
+    "point2",
+    "point3",
+    "name",
+    "triangles",
+    "model",
+    "console",
+    "table"
+  ]
+}

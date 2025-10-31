@@ -1,0 +1,81 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_windows.py",
+  "imports": [
+    "import sys",
+    "from dataclasses import dataclass",
+    "import ctypes",
+    "from ctypes import LibraryLoader",
+    "from rich._win32_console import (\n        ENABLE_VIRTUAL_TERMINAL_PROCESSING,\n        GetConsoleMode,\n        GetStdHandle,\n        LegacyWindowsError,\n    )",
+    "import platform",
+    "from rich import print"
+  ],
+  "classes": [
+    {
+      "name": "WindowsConsoleFeatures",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "get_windows_console_features",
+      "parameters": [],
+      "return_type": "WindowsConsoleFeatures",
+      "docstring": null,
+      "calls": [
+        "WindowsConsoleFeatures"
+      ],
+      "variables": [
+        "features"
+      ],
+      "start_line": 34,
+      "end_line": 36
+    },
+    {
+      "name": "get_windows_console_features",
+      "parameters": [],
+      "return_type": "WindowsConsoleFeatures",
+      "docstring": null,
+      "calls": [
+        "sys.getwindowsversion",
+        "GetStdHandle",
+        "bool",
+        "GetConsoleMode",
+        "WindowsConsoleFeatures"
+      ],
+      "variables": [
+        "handle",
+        "console_mode",
+        "success",
+        "console_mode",
+        "success",
+        "vt",
+        "truecolor",
+        "win_version",
+        "truecolor",
+        "features"
+      ],
+      "start_line": 40,
+      "end_line": 61
+    }
+  ],
+  "variables": [
+    "vt",
+    "truecolor",
+    "windll",
+    "windll",
+    "features",
+    "handle",
+    "console_mode",
+    "success",
+    "console_mode",
+    "success",
+    "vt",
+    "truecolor",
+    "win_version",
+    "truecolor",
+    "features",
+    "features"
+  ]
+}

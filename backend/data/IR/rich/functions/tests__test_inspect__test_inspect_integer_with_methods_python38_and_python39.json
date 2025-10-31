@@ -1,0 +1,14 @@
+{
+  "name": "test_inspect_integer_with_methods_python38_and_python39",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "render"
+  ],
+  "variables": [
+    "expected"
+  ],
+  "start_line": 230,
+  "end_line": 260
+}

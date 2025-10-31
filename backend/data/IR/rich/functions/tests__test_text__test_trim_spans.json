@@ -1,0 +1,16 @@
+{
+  "name": "test_trim_spans",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "text._trim_spans",
+    "Span"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 330,
+  "end_line": 334
+}

@@ -1,0 +1,18 @@
+{
+  "name": "load_ipython_extension",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "tr_install",
+    "install"
+  ],
+  "variables": [],
+  "start_line": 4,
+  "end_line": 10
+}

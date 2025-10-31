@@ -1,0 +1,16 @@
+{
+  "name": "test_pad_left",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "text.pad_left",
+    "Text",
+    "str"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 337,
+  "end_line": 340
+}

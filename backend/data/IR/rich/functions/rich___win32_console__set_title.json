@@ -1,0 +1,22 @@
+{
+  "name": "set_title",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "len",
+    "SetConsoleTitle"
+  ],
+  "variables": [],
+  "start_line": 559,
+  "end_line": 566
+}

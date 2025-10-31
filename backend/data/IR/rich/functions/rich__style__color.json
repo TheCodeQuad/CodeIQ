@@ -1,0 +1,15 @@
+{
+  "name": "color",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Optional[Color]",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 444,
+  "end_line": 446
+}

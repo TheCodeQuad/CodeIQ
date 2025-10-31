@@ -1,0 +1,13 @@
+{
+  "name": "test_color_property",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style",
+    "Color"
+  ],
+  "variables": [],
+  "start_line": 88,
+  "end_line": 89
+}

@@ -1,0 +1,14 @@
+{
+  "name": "get_codes",
+  "parameters": [],
+  "return_type": "Iterable[ControlCode]",
+  "docstring": null,
+  "calls": [
+    "abs"
+  ],
+  "variables": [
+    "control"
+  ],
+  "start_line": 91,
+  "end_line": 102
+}

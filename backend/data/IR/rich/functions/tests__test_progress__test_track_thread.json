@@ -1,0 +1,19 @@
+{
+  "name": "test_track_thread",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "_TrackThread",
+    "progress.add_task",
+    "sleep",
+    "Progress"
+  ],
+  "variables": [
+    "progress",
+    "task_id",
+    "track_thread"
+  ],
+  "start_line": 451,
+  "end_line": 462
+}

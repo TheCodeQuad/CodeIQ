@@ -1,0 +1,30 @@
+{
+  "name": "test_show_cursor",
+  "parameters": [
+    {
+      "name": "SetConsoleCursorInfo",
+      "type": null
+    },
+    {
+      "name": "win32_console_getters",
+      "type": null
+    },
+    {
+      "name": "win32_handle",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "len",
+    "LegacyWindowsTerm",
+    "term.show_cursor"
+  ],
+  "variables": [
+    "term",
+    "call_args"
+  ],
+  "start_line": 388,
+  "end_line": 398
+}

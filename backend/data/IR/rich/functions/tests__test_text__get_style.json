@@ -1,0 +1,17 @@
+{
+  "name": "get_style",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "Style",
+  "docstring": null,
+  "calls": [
+    "Style.parse"
+  ],
+  "variables": [],
+  "start_line": 235,
+  "end_line": 238
+}

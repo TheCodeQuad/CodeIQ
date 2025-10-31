@@ -1,0 +1,15 @@
+{
+  "name": "test_notes",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Traceback",
+    "error.add_note"
+  ],
+  "variables": [
+    "traceback"
+  ],
+  "start_line": 366,
+  "end_line": 375
+}

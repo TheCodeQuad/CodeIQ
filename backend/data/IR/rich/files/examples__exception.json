@@ -1,0 +1,58 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\exception.py",
+  "imports": [
+    "from typing import List, Tuple",
+    "from rich.console import Console"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "divide_by",
+      "parameters": [
+        {
+          "name": null,
+          "type": "float"
+        },
+        {
+          "name": null,
+          "type": "float"
+        }
+      ],
+      "return_type": "float",
+      "docstring": null,
+      "calls": [],
+      "variables": [
+        "result"
+      ],
+      "start_line": 11,
+      "end_line": 15
+    },
+    {
+      "name": "divide_all",
+      "parameters": [
+        {
+          "name": null,
+          "type": "List[Tuple[float, float]]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "divide_by",
+        "console.print",
+        "console.print_exception"
+      ],
+      "variables": [
+        "result"
+      ],
+      "start_line": 18,
+      "end_line": 28
+    }
+  ],
+  "variables": [
+    "console",
+    "result",
+    "result",
+    "DIVIDES"
+  ]
+}

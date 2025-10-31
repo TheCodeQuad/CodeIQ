@@ -1,0 +1,16 @@
+{
+  "name": "test_jupyter_columns_env",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console"
+  ],
+  "variables": [
+    "console",
+    "console",
+    "console"
+  ],
+  "start_line": 11,
+  "end_line": 20
+}

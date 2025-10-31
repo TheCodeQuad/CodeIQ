@@ -1,0 +1,13 @@
+{
+  "name": "test_reconfigure_console",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "rich.get_console",
+    "rich.reconfigure"
+  ],
+  "variables": [],
+  "start_line": 13,
+  "end_line": 15
+}

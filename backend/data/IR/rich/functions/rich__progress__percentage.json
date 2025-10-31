@@ -1,0 +1,21 @@
+{
+  "name": "percentage",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "float",
+  "docstring": null,
+  "calls": [
+    "max",
+    "min"
+  ],
+  "variables": [
+    "completed",
+    "completed"
+  ],
+  "start_line": 1014,
+  "end_line": 1020
+}

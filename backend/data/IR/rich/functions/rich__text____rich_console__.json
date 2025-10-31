@@ -1,0 +1,35 @@
+{
+  "name": "__rich_console__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "Iterable[Segment]",
+  "docstring": null,
+  "calls": [
+    "all_lines.render",
+    "Text(\"\\n\").join",
+    "self.wrap",
+    "Text",
+    "pick_bool"
+  ],
+  "variables": [
+    "tab_size",
+    "justify",
+    "overflow",
+    "lines",
+    "all_lines"
+  ],
+  "start_line": 689,
+  "end_line": 706
+}

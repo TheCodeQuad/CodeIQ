@@ -1,0 +1,24 @@
+{
+  "name": "with_minimum",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "\"Measurement\"",
+  "docstring": null,
+  "calls": [
+    "max",
+    "Measurement"
+  ],
+  "variables": [
+    "width"
+  ],
+  "start_line": 46,
+  "end_line": 57
+}

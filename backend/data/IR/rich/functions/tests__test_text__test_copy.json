@@ -1,0 +1,17 @@
+{
+  "name": "test_copy",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "text.append",
+    "text.copy"
+  ],
+  "variables": [
+    "text",
+    "test_copy"
+  ],
+  "start_line": 119,
+  "end_line": 126
+}

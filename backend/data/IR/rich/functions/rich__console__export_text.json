@@ -1,0 +1,21 @@
+{
+  "name": "export_text",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "style.render",
+    "\"\".join"
+  ],
+  "variables": [
+    "text",
+    "text"
+  ],
+  "start_line": 2173,
+  "end_line": 2203
+}

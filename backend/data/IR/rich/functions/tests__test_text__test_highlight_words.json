@@ -1,0 +1,27 @@
+{
+  "name": "test_highlight_words",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "sorted",
+    "Text",
+    "Span",
+    "text.highlight_words"
+  ],
+  "variables": [
+    "text",
+    "words",
+    "count",
+    "text",
+    "words",
+    "count",
+    "text",
+    "words",
+    "count",
+    "text",
+    "count"
+  ],
+  "start_line": 266,
+  "end_line": 294
+}

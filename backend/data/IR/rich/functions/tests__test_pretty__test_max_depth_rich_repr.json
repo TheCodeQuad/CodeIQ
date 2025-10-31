@@ -1,0 +1,14 @@
+{
+  "name": "test_max_depth_rich_repr",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Bar",
+    "Foo",
+    "pretty_repr"
+  ],
+  "variables": [],
+  "start_line": 442,
+  "end_line": 460
+}

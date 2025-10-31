@@ -1,0 +1,15 @@
+{
+  "name": "test_windows_coordinates_to_ctype",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "WindowsCoordinates.from_param",
+    "WindowsCoordinates"
+  ],
+  "variables": [
+    "coord"
+  ],
+  "start_line": 30,
+  "end_line": 33
+}

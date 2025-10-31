@@ -1,0 +1,21 @@
+{
+  "name": "print",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "write_console.print",
+    "get_console"
+  ],
+  "variables": [
+    "write_console"
+  ],
+  "start_line": 53,
+  "end_line": 74
+}

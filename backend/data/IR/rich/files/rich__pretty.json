@@ -1,0 +1,1117 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\pretty.py",
+  "imports": [
+    "import builtins",
+    "import collections",
+    "import dataclasses",
+    "import inspect",
+    "import os",
+    "import reprlib",
+    "import sys",
+    "from array import array",
+    "from collections import Counter, UserDict, UserList, defaultdict, deque",
+    "from dataclasses import dataclass, fields, is_dataclass",
+    "from inspect import isclass",
+    "from itertools import islice",
+    "from types import MappingProxyType",
+    "from typing import (\n    TYPE_CHECKING,\n    Any,\n    Callable,\n    DefaultDict,\n    Deque,\n    Dict,\n    Iterable,\n    List,\n    Optional,\n    Sequence,\n    Set,\n    Tuple,\n    Union,\n)",
+    "from rich.repr import RichReprResult",
+    "import attr as _attr_module",
+    "from . import get_console",
+    "from ._loop import loop_last",
+    "from ._pick import pick_bool",
+    "from .abc import RichRenderable",
+    "from .cells import cell_len",
+    "from .highlighter import ReprHighlighter",
+    "from .jupyter import JupyterMixin, JupyterRenderable",
+    "from .measure import Measurement",
+    "from .text import Text",
+    "from .console import (\n        Console,\n        ConsoleOptions,\n        HighlighterType,\n        JustifyMethod,\n        OverflowMethod,\n        RenderResult,\n    )",
+    "from .console import ConsoleRenderable",
+    "from rich import get_console",
+    "from IPython.core.formatters import BaseFormatter",
+    "from typing import NamedTuple",
+    "from rich import print"
+  ],
+  "classes": [
+    {
+      "name": "RichFormatter",
+      "base_classes": "(BaseFormatter)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Pretty",
+      "base_classes": "(JupyterMixin)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Node",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "_Line",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "BrokenRepr",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "StockKeepingUnit",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Thing",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "_is_attr_object",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "_attr_module.has",
+        "type"
+      ],
+      "variables": [],
+      "start_line": 60,
+      "end_line": 62
+    },
+    {
+      "name": "_get_attr_fields",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Sequence[\"_attr_module.Attribute[Any]\"]",
+      "docstring": null,
+      "calls": [
+        "_attr_module.fields",
+        "type"
+      ],
+      "variables": [],
+      "start_line": 65,
+      "end_line": 67
+    },
+    {
+      "name": "_is_dataclass_repr",
+      "parameters": [
+        {
+          "name": null,
+          "type": "object"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 70,
+      "end_line": 87
+    },
+    {
+      "name": "_has_default_namedtuple_repr",
+      "parameters": [
+        {
+          "name": null,
+          "type": "object"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "inspect.getfile"
+      ],
+      "variables": [
+        "obj_file",
+        "obj_file",
+        "default_repr_file"
+      ],
+      "start_line": 93,
+      "end_line": 110
+    },
+    {
+      "name": "_ipy_display_hook",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Union[str, None]",
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "get_console",
+        "_safe_isinstance",
+        "console.line",
+        "console.print",
+        "Pretty",
+        "capture.get().rstrip",
+        "capture.get"
+      ],
+      "variables": [
+        "console"
+      ],
+      "start_line": 113,
+      "end_line": 158
+    },
+    {
+      "name": "_safe_isinstance",
+      "parameters": [
+        {
+          "name": null,
+          "type": "object"
+        },
+        {
+          "name": null,
+          "type": "Union[type, Tuple[type, ...]]"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isinstance"
+      ],
+      "variables": [],
+      "start_line": 161,
+      "end_line": 168
+    },
+    {
+      "name": "install",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "get_console",
+        "RichFormatter",
+        "_safe_isinstance",
+        "_ipy_display_hook",
+        "console.print",
+        "Pretty",
+        "get_ipython",
+        "repr"
+      ],
+      "variables": [
+        "console",
+        "ip",
+        "pprint",
+        "rich_formatter"
+      ],
+      "start_line": 171,
+      "end_line": 250
+    },
+    {
+      "name": "display_hook",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "console.print",
+        "_safe_isinstance",
+        "Pretty"
+      ],
+      "variables": [],
+      "start_line": 200,
+      "end_line": 221
+    },
+    {
+      "name": "__call__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Any",
+      "docstring": null,
+      "calls": [
+        "repr",
+        "get_console",
+        "_ipy_display_hook"
+      ],
+      "variables": [],
+      "start_line": 233,
+      "end_line": 246
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "ReprHighlighter"
+      ],
+      "variables": [],
+      "start_line": 273,
+      "end_line": 302
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "\"ConsoleOptions\""
+        }
+      ],
+      "return_type": "\"RenderResult\"",
+      "docstring": null,
+      "calls": [
+        "Text.from_ansi",
+        "type",
+        "Text",
+        "pretty_text.with_indent_guides",
+        "self.highlighter",
+        "pick_bool",
+        "pretty_repr"
+      ],
+      "variables": [
+        "pretty_str",
+        "pretty_text",
+        "pretty_text",
+        "pretty_text"
+      ],
+      "start_line": 304,
+      "end_line": 337
+    },
+    {
+      "name": "__rich_measure__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"Console\""
+        },
+        {
+          "name": null,
+          "type": "\"ConsoleOptions\""
+        }
+      ],
+      "return_type": "\"Measurement\"",
+      "docstring": null,
+      "calls": [
+        "cell_len",
+        "pretty_repr",
+        "max",
+        "Measurement",
+        "pretty_str.splitlines"
+      ],
+      "variables": [
+        "pretty_str",
+        "text_width"
+      ],
+      "start_line": 339,
+      "end_line": 354
+    },
+    {
+      "name": "_get_braces_for_defaultdict",
+      "parameters": [
+        {
+          "name": null,
+          "type": "DefaultDict[Any, Any]"
+        }
+      ],
+      "return_type": "Tuple[str, str, str]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 357,
+      "end_line": 362
+    },
+    {
+      "name": "_get_braces_for_deque",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Deque[Any]"
+        }
+      ],
+      "return_type": "Tuple[str, str, str]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 365,
+      "end_line": 372
+    },
+    {
+      "name": "_get_braces_for_array",
+      "parameters": [
+        {
+          "name": null,
+          "type": "\"array[Any]\""
+        }
+      ],
+      "return_type": "Tuple[str, str, str]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 375,
+      "end_line": 376
+    },
+    {
+      "name": "is_expandable",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isclass",
+        "_is_attr_object",
+        "_safe_isinstance",
+        "hasattr",
+        "is_dataclass"
+      ],
+      "variables": [],
+      "start_line": 398,
+      "end_line": 405
+    },
+    {
+      "name": "iter_tokens",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Iterable[str]",
+      "docstring": null,
+      "calls": [
+        "len",
+        "self.children[0].iter_tokens",
+        "child.iter_tokens"
+      ],
+      "variables": [],
+      "start_line": 424,
+      "end_line": 444
+    },
+    {
+      "name": "check_length",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "self.iter_tokens",
+        "cell_len"
+      ],
+      "variables": [
+        "total_length"
+      ],
+      "start_line": 446,
+      "end_line": 461
+    },
+    {
+      "name": "__str__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "self.iter_tokens",
+        "\"\".join"
+      ],
+      "variables": [
+        "repr_text"
+      ],
+      "start_line": 463,
+      "end_line": 465
+    },
+    {
+      "name": "render",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "_Line",
+        "line.check_length",
+        "line.expand",
+        "\"\\n\".join",
+        "str",
+        "len"
+      ],
+      "variables": [
+        "lines",
+        "line_no",
+        "line",
+        "repr_str"
+      ],
+      "start_line": 467,
+      "end_line": 490
+    },
+    {
+      "name": "expandable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "bool"
+      ],
+      "variables": [],
+      "start_line": 507,
+      "end_line": 509
+    },
+    {
+      "name": "check_length",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "len",
+        "self.node.check_length",
+        "cell_len"
+      ],
+      "variables": [
+        "start_length"
+      ],
+      "start_line": 511,
+      "end_line": 517
+    },
+    {
+      "name": "expand",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "Iterable[\"_Line\"]",
+      "docstring": null,
+      "calls": [
+        "len",
+        "_Line",
+        "loop_last"
+      ],
+      "variables": [
+        "node",
+        "whitespace",
+        "new_line",
+        "new_line",
+        "child_whitespace",
+        "tuple_of_one",
+        "separator",
+        "line"
+      ],
+      "start_line": 519,
+      "end_line": 550
+    },
+    {
+      "name": "__str__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "self.suffix.rstrip"
+      ],
+      "variables": [],
+      "start_line": 552,
+      "end_line": 558
+    },
+    {
+      "name": "_is_namedtuple",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "getattr"
+      ],
+      "variables": [
+        "fields"
+      ],
+      "start_line": 561,
+      "end_line": 577
+    },
+    {
+      "name": "traverse",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Node",
+      "docstring": null,
+      "calls": [
+        "append",
+        "callable",
+        "push_visited",
+        "repr_callable",
+        "len",
+        "hasattr",
+        "obj.items",
+        "islice",
+        "_BRACES[obj_type]",
+        "set",
+        "fields",
+        "enumerate",
+        "loop_last",
+        "obj.__rich_repr__",
+        "id",
+        "getattr",
+        "list",
+        "_get_attr_fields",
+        "str",
+        "_traverse",
+        "obj._asdict().items",
+        "_is_dataclass_repr",
+        "iter",
+        "type",
+        "_is_attr_object",
+        "pop_visited",
+        "Node",
+        "_is_namedtuple",
+        "repr",
+        "to_repr",
+        "iter_attrs",
+        "isclass",
+        "_safe_isinstance",
+        "_has_default_namedtuple_repr",
+        "is_dataclass",
+        "iter_rich_args",
+        "obj._asdict"
+      ],
+      "variables": [
+        "truncated",
+        "obj_repr",
+        "obj_repr",
+        "obj_repr",
+        "visited_ids",
+        "push_visited",
+        "pop_visited",
+        "obj_id",
+        "obj_type",
+        "children",
+        "reached_max_depth",
+        "fake_attributes",
+        "fake_attributes",
+        "rich_repr_result",
+        "rich_repr_result",
+        "angular",
+        "args",
+        "class_name",
+        "children",
+        "append",
+        "node",
+        "node",
+        "node",
+        "node",
+        "child_node",
+        "child_node",
+        "node",
+        "children",
+        "append",
+        "attr_fields",
+        "node",
+        "node",
+        "value",
+        "child_node",
+        "child_node",
+        "node",
+        "children",
+        "append",
+        "node",
+        "node",
+        "child_node",
+        "class_name",
+        "node",
+        "children",
+        "append",
+        "node",
+        "child_node",
+        "obj_type",
+        "node",
+        "node",
+        "children",
+        "node",
+        "append",
+        "num_items",
+        "last_item_index",
+        "iter_items",
+        "iter_items",
+        "child_node",
+        "iter_values",
+        "iter_values",
+        "child_node",
+        "node",
+        "node",
+        "node"
+      ],
+      "start_line": 580,
+      "end_line": 875
+    },
+    {
+      "name": "to_repr",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "len",
+        "_safe_isinstance",
+        "str",
+        "repr"
+      ],
+      "variables": [
+        "truncated",
+        "obj_repr",
+        "obj_repr",
+        "obj_repr"
+      ],
+      "start_line": 601,
+      "end_line": 615
+    },
+    {
+      "name": "_traverse",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Node",
+      "docstring": null,
+      "calls": [
+        "append",
+        "callable",
+        "push_visited",
+        "repr_callable",
+        "len",
+        "hasattr",
+        "obj.items",
+        "islice",
+        "_BRACES[obj_type]",
+        "fields",
+        "enumerate",
+        "loop_last",
+        "obj.__rich_repr__",
+        "id",
+        "getattr",
+        "list",
+        "_get_attr_fields",
+        "str",
+        "_traverse",
+        "obj._asdict().items",
+        "_is_dataclass_repr",
+        "iter",
+        "type",
+        "_is_attr_object",
+        "pop_visited",
+        "Node",
+        "_is_namedtuple",
+        "to_repr",
+        "iter_attrs",
+        "isclass",
+        "_safe_isinstance",
+        "_has_default_namedtuple_repr",
+        "is_dataclass",
+        "iter_rich_args",
+        "obj._asdict"
+      ],
+      "variables": [
+        "obj_id",
+        "obj_type",
+        "children",
+        "reached_max_depth",
+        "fake_attributes",
+        "fake_attributes",
+        "rich_repr_result",
+        "rich_repr_result",
+        "angular",
+        "args",
+        "class_name",
+        "children",
+        "append",
+        "node",
+        "node",
+        "node",
+        "node",
+        "child_node",
+        "child_node",
+        "node",
+        "children",
+        "append",
+        "attr_fields",
+        "node",
+        "node",
+        "value",
+        "child_node",
+        "child_node",
+        "node",
+        "children",
+        "append",
+        "node",
+        "node",
+        "child_node",
+        "class_name",
+        "node",
+        "children",
+        "append",
+        "node",
+        "child_node",
+        "obj_type",
+        "node",
+        "node",
+        "children",
+        "node",
+        "append",
+        "num_items",
+        "last_item_index",
+        "iter_items",
+        "iter_items",
+        "child_node",
+        "iter_values",
+        "iter_values",
+        "child_node",
+        "node",
+        "node"
+      ],
+      "start_line": 621,
+      "end_line": 872
+    },
+    {
+      "name": "iter_rich_args",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "Iterable[Union[Any, Tuple[str, Any]]]",
+      "docstring": null,
+      "calls": [
+        "len",
+        "_safe_isinstance"
+      ],
+      "variables": [],
+      "start_line": 633,
+      "end_line": 647
+    },
+    {
+      "name": "iter_attrs",
+      "parameters": [],
+      "return_type": "(\n                        Iterable[Tuple[str, Any, Optional[Callable[[Any], str]]]]\n                    )",
+      "docstring": null,
+      "calls": [
+        "callable",
+        "getattr"
+      ],
+      "variables": [
+        "value"
+      ],
+      "start_line": 731,
+      "end_line": 747
+    },
+    {
+      "name": "pretty_repr",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [
+        "traverse",
+        "node.render",
+        "_safe_isinstance"
+      ],
+      "variables": [
+        "node",
+        "node",
+        "repr_str"
+      ],
+      "start_line": 878,
+      "end_line": 915
+    },
+    {
+      "name": "pprint",
+      "parameters": [
+        {
+          "name": null,
+          "type": "Any"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Pretty",
+        "get_console",
+        "_console.print"
+      ],
+      "variables": [
+        "_console"
+      ],
+      "start_line": 918,
+      "end_line": 952
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 958,
+      "end_line": 960
+    },
+    {
+      "name": "__repr__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 1013,
+      "end_line": 1014
+    }
+  ],
+  "variables": [
+    "_has_attrs",
+    "_has_attrs",
+    "_dummy_namedtuple",
+    "obj_file",
+    "obj_file",
+    "default_repr_file",
+    "console",
+    "console",
+    "ip",
+    "pprint",
+    "rich_formatter",
+    "pretty_str",
+    "pretty_text",
+    "pretty_text",
+    "pretty_text",
+    "pretty_str",
+    "text_width",
+    "_BRACES",
+    "_CONTAINERS",
+    "_MAPPING_CONTAINERS",
+    "key_repr",
+    "value_repr",
+    "open_brace",
+    "close_brace",
+    "empty",
+    "last",
+    "is_tuple",
+    "is_namedtuple",
+    "children",
+    "key_separator",
+    "separator",
+    "total_length",
+    "repr_text",
+    "lines",
+    "line_no",
+    "line",
+    "repr_str",
+    "parent",
+    "is_root",
+    "node",
+    "text",
+    "suffix",
+    "whitespace",
+    "expanded",
+    "last",
+    "start_length",
+    "node",
+    "whitespace",
+    "new_line",
+    "new_line",
+    "child_whitespace",
+    "tuple_of_one",
+    "separator",
+    "line",
+    "fields",
+    "truncated",
+    "obj_repr",
+    "obj_repr",
+    "obj_repr",
+    "visited_ids",
+    "push_visited",
+    "pop_visited",
+    "obj_id",
+    "obj_type",
+    "children",
+    "reached_max_depth",
+    "fake_attributes",
+    "fake_attributes",
+    "rich_repr_result",
+    "rich_repr_result",
+    "angular",
+    "args",
+    "class_name",
+    "children",
+    "append",
+    "node",
+    "node",
+    "node",
+    "node",
+    "child_node",
+    "child_node",
+    "node",
+    "children",
+    "append",
+    "attr_fields",
+    "node",
+    "node",
+    "value",
+    "child_node",
+    "child_node",
+    "node",
+    "children",
+    "append",
+    "node",
+    "node",
+    "child_node",
+    "class_name",
+    "node",
+    "children",
+    "append",
+    "node",
+    "child_node",
+    "obj_type",
+    "node",
+    "node",
+    "children",
+    "node",
+    "append",
+    "num_items",
+    "last_item_index",
+    "iter_items",
+    "iter_items",
+    "child_node",
+    "iter_values",
+    "iter_values",
+    "child_node",
+    "node",
+    "node",
+    "node",
+    "node",
+    "node",
+    "repr_str",
+    "_console",
+    "name",
+    "description",
+    "price",
+    "category",
+    "reviews",
+    "d",
+    "data"
+  ]
+}

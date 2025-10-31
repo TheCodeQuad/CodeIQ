@@ -1,0 +1,331 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_null_file.py",
+  "imports": [
+    "from types import TracebackType",
+    "from typing import IO, Iterable, Iterator, List, Optional, Type"
+  ],
+  "classes": [
+    {
+      "name": "NullFile",
+      "base_classes": "(IO[str])",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 6,
+      "end_line": 7
+    },
+    {
+      "name": "isatty",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 9,
+      "end_line": 10
+    },
+    {
+      "name": "read",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 12,
+      "end_line": 13
+    },
+    {
+      "name": "readable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 15,
+      "end_line": 16
+    },
+    {
+      "name": "readline",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 18,
+      "end_line": 19
+    },
+    {
+      "name": "readlines",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "List[str]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 21,
+      "end_line": 22
+    },
+    {
+      "name": "seek",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 24,
+      "end_line": 25
+    },
+    {
+      "name": "seekable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 27,
+      "end_line": 28
+    },
+    {
+      "name": "tell",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 30,
+      "end_line": 31
+    },
+    {
+      "name": "truncate",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 33,
+      "end_line": 34
+    },
+    {
+      "name": "writable",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 36,
+      "end_line": 37
+    },
+    {
+      "name": "writelines",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Iterable[str]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 39,
+      "end_line": 40
+    },
+    {
+      "name": "__next__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "str",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 42,
+      "end_line": 43
+    },
+    {
+      "name": "__iter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Iterator[str]",
+      "docstring": null,
+      "calls": [
+        "iter"
+      ],
+      "variables": [],
+      "start_line": 45,
+      "end_line": 46
+    },
+    {
+      "name": "__enter__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "IO[str]",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 48,
+      "end_line": 49
+    },
+    {
+      "name": "__exit__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Optional[Type[BaseException]]"
+        },
+        {
+          "name": null,
+          "type": "Optional[BaseException]"
+        },
+        {
+          "name": null,
+          "type": "Optional[TracebackType]"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 51,
+      "end_line": 57
+    },
+    {
+      "name": "write",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 59,
+      "end_line": 60
+    },
+    {
+      "name": "flush",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 62,
+      "end_line": 63
+    },
+    {
+      "name": "fileno",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 65,
+      "end_line": 66
+    }
+  ],
+  "variables": [
+    "NULL_FILE"
+  ]
+}

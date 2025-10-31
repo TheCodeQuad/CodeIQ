@@ -1,0 +1,18 @@
+{
+  "name": "time_wrapping_unicode_heavy",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text(snippets.UNICODE_HEAVY_TEXT).wrap",
+    "Text"
+  ],
+  "variables": [],
+  "start_line": 43,
+  "end_line": 44
+}

@@ -1,0 +1,46 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\recursive_error.py",
+  "imports": [
+    "from rich.console import Console"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "foo",
+      "parameters": [
+        {
+          "name": "n",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "bar"
+      ],
+      "variables": [],
+      "start_line": 12,
+      "end_line": 13
+    },
+    {
+      "name": "bar",
+      "parameters": [
+        {
+          "name": "n",
+          "type": null
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "foo"
+      ],
+      "variables": [],
+      "start_line": 16,
+      "end_line": 17
+    }
+  ],
+  "variables": [
+    "console"
+  ]
+}

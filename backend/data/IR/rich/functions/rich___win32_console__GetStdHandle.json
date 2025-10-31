@@ -1,0 +1,13 @@
+{
+  "name": "GetStdHandle",
+  "parameters": [],
+  "return_type": "wintypes.HANDLE",
+  "docstring": null,
+  "calls": [
+    "cast",
+    "_GetStdHandle"
+  ],
+  "variables": [],
+  "start_line": 78,
+  "end_line": 87
+}

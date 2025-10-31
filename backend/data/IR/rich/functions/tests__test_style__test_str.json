@@ -1,0 +1,16 @@
+{
+  "name": "test_str",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style",
+    "str"
+  ],
+  "variables": [
+    "all_styles",
+    "expected"
+  ],
+  "start_line": 8,
+  "end_line": 35
+}

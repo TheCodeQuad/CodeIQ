@@ -1,0 +1,15 @@
+{
+  "name": "test_inherit",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Theme",
+    "Style"
+  ],
+  "variables": [
+    "theme"
+  ],
+  "start_line": 11,
+  "end_line": 14
+}

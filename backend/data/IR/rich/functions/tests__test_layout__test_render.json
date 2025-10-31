@@ -1,0 +1,32 @@
+{
+  "name": "test_render",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "type",
+    "isinstance",
+    "Layout",
+    "Console",
+    "layout.split_column",
+    "top.update",
+    "console.print",
+    "layout[\"bottom\"].split_row",
+    "Panel",
+    "layout[\"left\"].update",
+    "repr",
+    "print",
+    "pytest.raises",
+    "capture.get"
+  ],
+  "variables": [
+    "layout",
+    "top",
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 35,
+  "end_line": 67
+}

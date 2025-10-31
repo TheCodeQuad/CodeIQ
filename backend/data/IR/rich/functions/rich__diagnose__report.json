@@ -1,0 +1,24 @@
+{
+  "name": "report",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Panel.fit",
+    "Console",
+    "inspect",
+    "platform.system",
+    "console.print",
+    "Pretty",
+    "get_windows_console_features",
+    "os.getenv"
+  ],
+  "variables": [
+    "console",
+    "features",
+    "env_names",
+    "env"
+  ],
+  "start_line": 10,
+  "end_line": 35
+}

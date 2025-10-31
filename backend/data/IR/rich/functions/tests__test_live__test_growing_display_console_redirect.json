@@ -1,0 +1,22 @@
+{
+  "name": "test_growing_display_console_redirect",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "live.update",
+    "console.print",
+    "create_capture_console",
+    "Live",
+    "range"
+  ],
+  "variables": [
+    "console",
+    "display",
+    "output"
+  ],
+  "start_line": 130,
+  "end_line": 143
+}

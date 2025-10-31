@@ -1,0 +1,17 @@
+{
+  "name": "row_count",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "len"
+  ],
+  "variables": [],
+  "start_line": 307,
+  "end_line": 309
+}

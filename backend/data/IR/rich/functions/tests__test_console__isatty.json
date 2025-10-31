@@ -1,0 +1,15 @@
+{
+  "name": "isatty",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 1085,
+  "end_line": 1087
+}

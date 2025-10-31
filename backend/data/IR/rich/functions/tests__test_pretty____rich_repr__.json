@@ -1,0 +1,15 @@
+{
+  "name": "__rich_repr__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 736,
+  "end_line": 737
+}

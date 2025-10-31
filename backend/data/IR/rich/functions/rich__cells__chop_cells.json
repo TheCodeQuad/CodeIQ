@@ -1,0 +1,34 @@
+{
+  "name": "chop_cells",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "list[str]",
+  "docstring": null,
+  "calls": [
+    "append_new_line",
+    "_get_character_cell_size",
+    "append_to_last_line",
+    "\"\".join"
+  ],
+  "variables": [
+    "_get_character_cell_size",
+    "lines",
+    "append_new_line",
+    "append_to_last_line",
+    "total_width",
+    "cell_width",
+    "char_doesnt_fit",
+    "append_to_last_line",
+    "total_width"
+  ],
+  "start_line": 131,
+  "end_line": 165
+}

@@ -1,0 +1,48 @@
+{
+  "name": "render_number",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Console"
+    },
+    {
+      "name": null,
+      "type": "ConsoleOptions"
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "RenderResult",
+  "docstring": null,
+  "calls": [
+    "console.render_lines",
+    "f\"{number}\".rjust",
+    "Segment",
+    "loop_first",
+    "options.update",
+    "console.get_style",
+    "str",
+    "len"
+  ],
+  "variables": [
+    "number_width",
+    "render_options",
+    "lines",
+    "number_style",
+    "new_line",
+    "padding",
+    "numeral"
+  ],
+  "start_line": 382,
+  "end_line": 396
+}

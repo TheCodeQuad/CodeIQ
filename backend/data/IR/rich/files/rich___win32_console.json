@@ -1,0 +1,781 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\_win32_console.py",
+  "imports": [
+    "import ctypes",
+    "import sys",
+    "from typing import Any",
+    "import time",
+    "from ctypes import Structure, byref, wintypes",
+    "from typing import IO, NamedTuple, Type, cast",
+    "from rich.color import ColorSystem",
+    "from rich.style import Style",
+    "from rich.console import Console"
+  ],
+  "classes": [
+    {
+      "name": "LegacyWindowsError",
+      "base_classes": "(Exception)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "WindowsCoordinates",
+      "base_classes": "(NamedTuple)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "CONSOLE_SCREEN_BUFFER_INFO",
+      "base_classes": "(Structure)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "CONSOLE_CURSOR_INFO",
+      "base_classes": "(ctypes.Structure)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "LegacyWindowsTerm",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "from_param",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"WindowsCoordinates\""
+        }
+      ],
+      "return_type": "COORD",
+      "docstring": null,
+      "calls": [
+        "COORD"
+      ],
+      "variables": [],
+      "start_line": 44,
+      "end_line": 54
+    },
+    {
+      "name": "GetStdHandle",
+      "parameters": [],
+      "return_type": "wintypes.HANDLE",
+      "docstring": null,
+      "calls": [
+        "cast",
+        "_GetStdHandle"
+      ],
+      "variables": [],
+      "start_line": 78,
+      "end_line": 87
+    },
+    {
+      "name": "GetConsoleMode",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "bool",
+        "_GetConsoleMode",
+        "wintypes.DWORD",
+        "LegacyWindowsError"
+      ],
+      "variables": [
+        "console_mode",
+        "success"
+      ],
+      "start_line": 95,
+      "end_line": 114
+    },
+    {
+      "name": "FillConsoleOutputCharacter",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "WindowsCoordinates"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "wintypes.DWORD",
+        "char.encode",
+        "byref",
+        "ctypes.c_char",
+        "_FillConsoleOutputCharacterW"
+      ],
+      "variables": [
+        "character",
+        "num_characters",
+        "num_written"
+      ],
+      "start_line": 128,
+      "end_line": 155
+    },
+    {
+      "name": "FillConsoleOutputAttribute",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        },
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "WindowsCoordinates"
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "_FillConsoleOutputAttribute",
+        "wintypes.DWORD",
+        "wintypes.WORD",
+        "byref"
+      ],
+      "variables": [
+        "num_cells",
+        "style_attrs",
+        "num_written"
+      ],
+      "start_line": 169,
+      "end_line": 193
+    },
+    {
+      "name": "SetConsoleTextAttribute",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        },
+        {
+          "name": null,
+          "type": "wintypes.WORD"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "bool",
+        "_SetConsoleTextAttribute"
+      ],
+      "variables": [],
+      "start_line": 204,
+      "end_line": 217
+    },
+    {
+      "name": "GetConsoleScreenBufferInfo",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        }
+      ],
+      "return_type": "CONSOLE_SCREEN_BUFFER_INFO",
+      "docstring": null,
+      "calls": [
+        "CONSOLE_SCREEN_BUFFER_INFO",
+        "byref",
+        "_GetConsoleScreenBufferInfo"
+      ],
+      "variables": [
+        "console_screen_buffer_info"
+      ],
+      "start_line": 228,
+      "end_line": 241
+    },
+    {
+      "name": "SetConsoleCursorPosition",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        },
+        {
+          "name": null,
+          "type": "WindowsCoordinates"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "bool",
+        "_SetConsoleCursorPosition"
+      ],
+      "variables": [],
+      "start_line": 252,
+      "end_line": 264
+    },
+    {
+      "name": "GetConsoleCursorInfo",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        },
+        {
+          "name": null,
+          "type": "CONSOLE_CURSOR_INFO"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "bool",
+        "byref",
+        "_GetConsoleCursorInfo"
+      ],
+      "variables": [],
+      "start_line": 275,
+      "end_line": 288
+    },
+    {
+      "name": "SetConsoleCursorInfo",
+      "parameters": [
+        {
+          "name": null,
+          "type": "wintypes.HANDLE"
+        },
+        {
+          "name": null,
+          "type": "CONSOLE_CURSOR_INFO"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "_SetConsoleCursorInfo",
+        "bool",
+        "byref"
+      ],
+      "variables": [],
+      "start_line": 299,
+      "end_line": 311
+    },
+    {
+      "name": "SetConsoleTitle",
+      "parameters": [
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "_SetConsoleTitle",
+        "bool"
+      ],
+      "variables": [],
+      "start_line": 319,
+      "end_line": 328
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "\"IO[str]\""
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "GetStdHandle",
+        "GetConsoleScreenBufferInfo"
+      ],
+      "variables": [
+        "handle",
+        "default_text"
+      ],
+      "start_line": 362,
+      "end_line": 374
+    },
+    {
+      "name": "cursor_position",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "WindowsCoordinates",
+      "docstring": null,
+      "calls": [
+        "WindowsCoordinates",
+        "GetConsoleScreenBufferInfo"
+      ],
+      "variables": [
+        "coord"
+      ],
+      "start_line": 377,
+      "end_line": 384
+    },
+    {
+      "name": "screen_size",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "WindowsCoordinates",
+      "docstring": null,
+      "calls": [
+        "WindowsCoordinates",
+        "GetConsoleScreenBufferInfo"
+      ],
+      "variables": [
+        "screen_size"
+      ],
+      "start_line": 387,
+      "end_line": 394
+    },
+    {
+      "name": "write_text",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "self.flush",
+        "self.write"
+      ],
+      "variables": [],
+      "start_line": 396,
+      "end_line": 403
+    },
+    {
+      "name": "write_styled",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "Style"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "color.downgrade",
+        "self.write_text",
+        "SetConsoleTextAttribute",
+        "ctypes.c_ushort",
+        "bgcolor.downgrade"
+      ],
+      "variables": [
+        "color",
+        "bgcolor",
+        "fore",
+        "fore",
+        "fore",
+        "fore",
+        "fore",
+        "fore",
+        "back",
+        "back",
+        "back",
+        "back"
+      ],
+      "start_line": 405,
+      "end_line": 442
+    },
+    {
+      "name": "move_cursor_to",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "WindowsCoordinates"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "SetConsoleCursorPosition"
+      ],
+      "variables": [],
+      "start_line": 444,
+      "end_line": 452
+    },
+    {
+      "name": "erase_line",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "FillConsoleOutputCharacter",
+        "FillConsoleOutputAttribute",
+        "WindowsCoordinates"
+      ],
+      "variables": [
+        "screen_size",
+        "cursor_position",
+        "cells_to_erase",
+        "start_coordinates"
+      ],
+      "start_line": 454,
+      "end_line": 468
+    },
+    {
+      "name": "erase_end_of_line",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "FillConsoleOutputCharacter",
+        "FillConsoleOutputAttribute"
+      ],
+      "variables": [
+        "cursor_position",
+        "cells_to_erase"
+      ],
+      "start_line": 470,
+      "end_line": 482
+    },
+    {
+      "name": "erase_start_of_line",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "FillConsoleOutputCharacter",
+        "FillConsoleOutputAttribute",
+        "WindowsCoordinates"
+      ],
+      "variables": [
+        "start"
+      ],
+      "start_line": 484,
+      "end_line": 491
+    },
+    {
+      "name": "move_cursor_up",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "WindowsCoordinates",
+        "SetConsoleCursorPosition"
+      ],
+      "variables": [
+        "cursor_position"
+      ],
+      "start_line": 493,
+      "end_line": 501
+    },
+    {
+      "name": "move_cursor_down",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "WindowsCoordinates",
+        "SetConsoleCursorPosition"
+      ],
+      "variables": [
+        "cursor_position"
+      ],
+      "start_line": 503,
+      "end_line": 512
+    },
+    {
+      "name": "move_cursor_forward",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "WindowsCoordinates",
+        "SetConsoleCursorPosition"
+      ],
+      "variables": [
+        "col"
+      ],
+      "start_line": 514,
+      "end_line": 524
+    },
+    {
+      "name": "move_cursor_to_column",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "WindowsCoordinates",
+        "SetConsoleCursorPosition"
+      ],
+      "variables": [],
+      "start_line": 526,
+      "end_line": 533
+    },
+    {
+      "name": "move_cursor_backward",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "WindowsCoordinates",
+        "SetConsoleCursorPosition"
+      ],
+      "variables": [
+        "col"
+      ],
+      "start_line": 535,
+      "end_line": 545
+    },
+    {
+      "name": "hide_cursor",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "CONSOLE_CURSOR_INFO",
+        "self._get_cursor_size",
+        "SetConsoleCursorInfo"
+      ],
+      "variables": [
+        "current_cursor_size",
+        "invisible_cursor"
+      ],
+      "start_line": 547,
+      "end_line": 551
+    },
+    {
+      "name": "show_cursor",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "CONSOLE_CURSOR_INFO",
+        "self._get_cursor_size",
+        "SetConsoleCursorInfo"
+      ],
+      "variables": [
+        "current_cursor_size",
+        "visible_cursor"
+      ],
+      "start_line": 553,
+      "end_line": 557
+    },
+    {
+      "name": "set_title",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "len",
+        "SetConsoleTitle"
+      ],
+      "variables": [],
+      "start_line": 559,
+      "end_line": 566
+    },
+    {
+      "name": "_get_cursor_size",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "int",
+      "docstring": null,
+      "calls": [
+        "GetConsoleCursorInfo",
+        "CONSOLE_CURSOR_INFO",
+        "int"
+      ],
+      "variables": [
+        "cursor_info"
+      ],
+      "start_line": 568,
+      "end_line": 572
+    }
+  ],
+  "variables": [
+    "windll",
+    "windll",
+    "STDOUT",
+    "ENABLE_VIRTUAL_TERMINAL_PROCESSING",
+    "COORD",
+    "row",
+    "col",
+    "_fields_",
+    "_fields_",
+    "_GetStdHandle",
+    "_GetConsoleMode",
+    "console_mode",
+    "success",
+    "_FillConsoleOutputCharacterW",
+    "character",
+    "num_characters",
+    "num_written",
+    "_FillConsoleOutputAttribute",
+    "num_cells",
+    "style_attrs",
+    "num_written",
+    "_SetConsoleTextAttribute",
+    "_GetConsoleScreenBufferInfo",
+    "console_screen_buffer_info",
+    "_SetConsoleCursorPosition",
+    "_GetConsoleCursorInfo",
+    "_SetConsoleCursorInfo",
+    "_SetConsoleTitle",
+    "BRIGHT_BIT",
+    "ANSI_TO_WINDOWS",
+    "handle",
+    "default_text",
+    "coord",
+    "screen_size",
+    "color",
+    "bgcolor",
+    "fore",
+    "fore",
+    "fore",
+    "fore",
+    "fore",
+    "fore",
+    "back",
+    "back",
+    "back",
+    "back",
+    "screen_size",
+    "cursor_position",
+    "cells_to_erase",
+    "start_coordinates",
+    "cursor_position",
+    "cells_to_erase",
+    "start",
+    "cursor_position",
+    "cursor_position",
+    "col",
+    "col",
+    "current_cursor_size",
+    "invisible_cursor",
+    "current_cursor_size",
+    "visible_cursor",
+    "cursor_info",
+    "handle",
+    "console",
+    "term",
+    "style",
+    "heading"
+  ]
+}

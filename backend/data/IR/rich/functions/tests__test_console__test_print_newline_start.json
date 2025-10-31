@@ -1,0 +1,18 @@
+{
+  "name": "test_print_newline_start",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.begin_capture",
+    "console.print",
+    "console.end_capture"
+  ],
+  "variables": [
+    "console",
+    "result"
+  ],
+  "start_line": 856,
+  "end_line": 863
+}

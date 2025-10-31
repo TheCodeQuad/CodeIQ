@@ -1,0 +1,13 @@
+{
+  "name": "test_get_fileno_missing",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "get_fileno",
+    "FileLike"
+  ],
+  "variables": [],
+  "start_line": 12,
+  "end_line": 16
+}

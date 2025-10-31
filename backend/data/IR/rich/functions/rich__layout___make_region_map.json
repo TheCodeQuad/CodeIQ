@@ -1,0 +1,39 @@
+{
+  "name": "_make_region_map",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "RegionMap",
+  "docstring": null,
+  "calls": [
+    "sorted",
+    "itemgetter",
+    "layout.splitter.divide",
+    "pop",
+    "push",
+    "Region",
+    "append_layout_region"
+  ],
+  "variables": [
+    "stack",
+    "push",
+    "pop",
+    "layout_regions",
+    "append_layout_region",
+    "children",
+    "region_map"
+  ],
+  "start_line": 345,
+  "end_line": 364
+}

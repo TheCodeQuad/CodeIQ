@@ -1,0 +1,21 @@
+{
+  "name": "test_print_json_data",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "console.print_json",
+    "Console",
+    "console.file.getvalue",
+    "repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 228,
+  "end_line": 234
+}

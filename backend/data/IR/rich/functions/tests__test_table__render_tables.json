@@ -1,0 +1,25 @@
+{
+  "name": "render_tables",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "io.StringIO",
+    "Console",
+    "Text",
+    "console.file.getvalue",
+    "console.print",
+    "Table",
+    "range",
+    "Measurement",
+    "Measurement.get",
+    "table.add_column"
+  ],
+  "variables": [
+    "console",
+    "table"
+  ],
+  "start_line": 16,
+  "end_line": 86
+}

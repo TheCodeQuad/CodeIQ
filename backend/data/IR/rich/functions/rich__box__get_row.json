@@ -1,0 +1,43 @@
+{
+  "name": "get_row",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[int]"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "ValueError",
+    "loop_last",
+    "append",
+    "\"\".join"
+  ],
+  "variables": [
+    "left",
+    "horizontal",
+    "cross",
+    "right",
+    "left",
+    "horizontal",
+    "cross",
+    "right",
+    "left",
+    "horizontal",
+    "cross",
+    "right",
+    "left",
+    "horizontal",
+    "cross",
+    "right",
+    "parts",
+    "append"
+  ],
+  "start_line": 115,
+  "end_line": 162
+}

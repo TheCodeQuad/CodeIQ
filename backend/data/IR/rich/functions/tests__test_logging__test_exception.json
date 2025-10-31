@@ -1,0 +1,26 @@
+{
+  "name": "test_exception",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "Console",
+    "handler_with_tracebacks.console.file.getvalue",
+    "RichHandler",
+    "log.addHandler",
+    "log.error",
+    "handler_with_tracebacks.setFormatter",
+    "log.exception",
+    "print",
+    "logging.Formatter"
+  ],
+  "variables": [
+    "console",
+    "handler_with_tracebacks",
+    "formatter",
+    "render"
+  ],
+  "start_line": 35,
+  "end_line": 61
+}

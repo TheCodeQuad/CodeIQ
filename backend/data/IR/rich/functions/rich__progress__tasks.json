@@ -1,0 +1,18 @@
+{
+  "name": "tasks",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "List[Task]",
+  "docstring": null,
+  "calls": [
+    "list",
+    "self._tasks.values"
+  ],
+  "variables": [],
+  "start_line": 1149,
+  "end_line": 1152
+}

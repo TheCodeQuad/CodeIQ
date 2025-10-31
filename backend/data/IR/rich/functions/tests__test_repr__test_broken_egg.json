@@ -1,0 +1,14 @@
+{
+  "name": "test_broken_egg",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "repr",
+    "pytest.raises",
+    "BrokenEgg"
+  ],
+  "variables": [],
+  "start_line": 132,
+  "end_line": 134
+}

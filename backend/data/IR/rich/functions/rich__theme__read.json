@@ -1,0 +1,22 @@
+{
+  "name": "read",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "\"Theme\"",
+  "docstring": null,
+  "calls": [
+    "open",
+    "cls.from_file"
+  ],
+  "variables": [],
+  "start_line": 59,
+  "end_line": 73
+}

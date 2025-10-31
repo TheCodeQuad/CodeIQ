@@ -1,0 +1,19 @@
+{
+  "name": "_get_base_style",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Style",
+  "docstring": null,
+  "calls": [
+    "self._theme.get_background_style"
+  ],
+  "variables": [
+    "default_style"
+  ],
+  "start_line": 421,
+  "end_line": 424
+}

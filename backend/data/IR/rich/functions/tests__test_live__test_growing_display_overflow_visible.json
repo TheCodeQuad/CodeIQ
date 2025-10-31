@@ -1,0 +1,21 @@
+{
+  "name": "test_growing_display_overflow_visible",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "console.end_capture",
+    "live.update",
+    "create_capture_console",
+    "Live",
+    "range"
+  ],
+  "variables": [
+    "console",
+    "display",
+    "output"
+  ],
+  "start_line": 101,
+  "end_line": 113
+}

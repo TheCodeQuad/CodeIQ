@@ -1,0 +1,18 @@
+{
+  "name": "test_background_color_override_includes_padding",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "render",
+    "print",
+    "repr",
+    "Syntax"
+  ],
+  "variables": [
+    "syntax",
+    "result"
+  ],
+  "start_line": 405,
+  "end_line": 419
+}

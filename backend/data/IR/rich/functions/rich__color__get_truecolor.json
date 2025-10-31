@@ -1,0 +1,17 @@
+{
+  "name": "get_truecolor",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "ColorTriplet",
+  "docstring": null,
+  "calls": [],
+  "variables": [
+    "theme"
+  ],
+  "start_line": 349,
+  "end_line": 378
+}

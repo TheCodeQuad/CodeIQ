@@ -1,0 +1,17 @@
+{
+  "name": "time_table_no_wrapping",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "self._print_table"
+  ],
+  "variables": [],
+  "start_line": 98,
+  "end_line": 99
+}

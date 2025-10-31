@@ -1,0 +1,24 @@
+{
+  "name": "test_dataclass_no_attribute",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "Console",
+    "dataclass",
+    "console.print",
+    "BadDataclass",
+    "field",
+    "capture.get"
+  ],
+  "variables": [
+    "item",
+    "bad_data_class",
+    "console",
+    "expected",
+    "result"
+  ],
+  "start_line": 742,
+  "end_line": 759
+}

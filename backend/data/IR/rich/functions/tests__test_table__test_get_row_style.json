@@ -1,0 +1,19 @@
+{
+  "name": "test_get_row_style",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "Console",
+    "Style.parse",
+    "Table",
+    "table.get_row_style"
+  ],
+  "variables": [
+    "console",
+    "table"
+  ],
+  "start_line": 152,
+  "end_line": 158
+}

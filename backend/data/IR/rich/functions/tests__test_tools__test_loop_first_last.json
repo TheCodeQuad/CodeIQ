@@ -1,0 +1,16 @@
+{
+  "name": "test_loop_first_last",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "list",
+    "next",
+    "loop_first_last"
+  ],
+  "variables": [
+    "iterable"
+  ],
+  "start_line": 23,
+  "end_line": 29
+}

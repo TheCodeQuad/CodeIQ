@@ -1,0 +1,58 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_status.py",
+  "imports": [
+    "from time import sleep",
+    "from rich.console import Console",
+    "from rich.spinner import Spinner",
+    "from rich.status import Status"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_status",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "sleep",
+        "Console",
+        "isinstance",
+        "status.update",
+        "Status"
+      ],
+      "variables": [
+        "console",
+        "status",
+        "previous_status_renderable"
+      ],
+      "start_line": 8,
+      "end_line": 24
+    },
+    {
+      "name": "test_renderable",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.begin_capture",
+        "console.end_capture",
+        "Console",
+        "Status",
+        "console.print"
+      ],
+      "variables": [
+        "console",
+        "status"
+      ],
+      "start_line": 27,
+      "end_line": 34
+    }
+  ],
+  "variables": [
+    "console",
+    "status",
+    "previous_status_renderable",
+    "console",
+    "status"
+  ]
+}

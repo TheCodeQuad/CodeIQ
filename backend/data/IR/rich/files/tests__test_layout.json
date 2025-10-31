@@ -1,0 +1,164 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_layout.py",
+  "imports": [
+    "import sys",
+    "import pytest",
+    "from rich.console import Console",
+    "from rich.layout import Layout, NoSplitter",
+    "from rich.panel import Panel"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_no_layout",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Layout",
+        "layout.split",
+        "pytest.raises"
+      ],
+      "variables": [
+        "layout"
+      ],
+      "start_line": 10,
+      "end_line": 13
+    },
+    {
+      "name": "test_add_split",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "len",
+        "Layout",
+        "layout.split",
+        "layout.add_split"
+      ],
+      "variables": [
+        "layout"
+      ],
+      "start_line": 16,
+      "end_line": 22
+    },
+    {
+      "name": "test_unsplit",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "len",
+        "Layout",
+        "layout.split",
+        "layout.unsplit"
+      ],
+      "variables": [
+        "layout"
+      ],
+      "start_line": 25,
+      "end_line": 31
+    },
+    {
+      "name": "test_render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "type",
+        "isinstance",
+        "Layout",
+        "Console",
+        "layout.split_column",
+        "top.update",
+        "console.print",
+        "layout[\"bottom\"].split_row",
+        "Panel",
+        "layout[\"left\"].update",
+        "repr",
+        "print",
+        "pytest.raises",
+        "capture.get"
+      ],
+      "variables": [
+        "layout",
+        "top",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 35,
+      "end_line": 67
+    },
+    {
+      "name": "test_tree",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "Console",
+        "Layout",
+        "layout.split",
+        "layout[\"bar\"].split_row",
+        "console.print",
+        "repr",
+        "print",
+        "capture.get"
+      ],
+      "variables": [
+        "layout",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 70,
+      "end_line": 83
+    },
+    {
+      "name": "test_refresh_screen",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "console.capture",
+        "Console",
+        "Layout",
+        "layout.split_row",
+        "console.screen",
+        "console.print",
+        "repr",
+        "print",
+        "capture.get",
+        "layout.refresh_screen"
+      ],
+      "variables": [
+        "layout",
+        "console",
+        "result",
+        "expected"
+      ],
+      "start_line": 87,
+      "end_line": 100
+    }
+  ],
+  "variables": [
+    "layout",
+    "layout",
+    "layout",
+    "layout",
+    "top",
+    "console",
+    "result",
+    "expected",
+    "layout",
+    "console",
+    "result",
+    "expected",
+    "layout",
+    "console",
+    "result",
+    "expected"
+  ]
+}

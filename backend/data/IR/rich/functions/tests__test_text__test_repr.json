@@ -1,0 +1,14 @@
+{
+  "name": "test_repr",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "Text",
+    "repr"
+  ],
+  "variables": [],
+  "start_line": 53,
+  "end_line": 54
+}

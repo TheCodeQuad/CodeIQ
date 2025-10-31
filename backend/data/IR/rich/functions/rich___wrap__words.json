@@ -1,0 +1,24 @@
+{
+  "name": "words",
+  "parameters": [
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "Iterable[tuple[int, int, str]]",
+  "docstring": null,
+  "calls": [
+    "word_match.span",
+    "word_match.group",
+    "re_word.match"
+  ],
+  "variables": [
+    "position",
+    "word_match",
+    "word",
+    "word_match"
+  ],
+  "start_line": 12,
+  "end_line": 23
+}

@@ -1,0 +1,19 @@
+{
+  "name": "get_current_style",
+  "parameters": [],
+  "return_type": "Style",
+  "docstring": null,
+  "calls": [
+    "style_cache_get",
+    "tuple",
+    "sorted",
+    "combine"
+  ],
+  "variables": [
+    "styles",
+    "cached_style",
+    "current_style"
+  ],
+  "start_line": 759,
+  "end_line": 767
+}

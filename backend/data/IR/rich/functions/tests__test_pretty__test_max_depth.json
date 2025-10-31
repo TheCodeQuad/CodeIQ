@@ -1,0 +1,14 @@
+{
+  "name": "test_max_depth",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "pretty_repr"
+  ],
+  "variables": [
+    "d"
+  ],
+  "start_line": 420,
+  "end_line": 439
+}

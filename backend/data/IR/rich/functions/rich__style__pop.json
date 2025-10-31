@@ -1,0 +1,17 @@
+{
+  "name": "pop",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Style",
+  "docstring": null,
+  "calls": [
+    "self._stack.pop"
+  ],
+  "variables": [],
+  "start_line": 785,
+  "end_line": 792
+}

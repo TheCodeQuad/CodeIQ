@@ -1,0 +1,21 @@
+{
+  "name": "test_ansi_in_pretty_repr",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "io.StringIO",
+    "console.export_text",
+    "Console",
+    "Pretty",
+    "console.print",
+    "Hello"
+  ],
+  "variables": [
+    "pretty",
+    "console",
+    "result"
+  ],
+  "start_line": 274,
+  "end_line": 285
+}

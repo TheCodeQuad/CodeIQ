@@ -1,0 +1,12 @@
+{
+  "name": "level1",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "level2"
+  ],
+  "variables": [],
+  "start_line": 310,
+  "end_line": 311
+}

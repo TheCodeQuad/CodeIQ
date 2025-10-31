@@ -1,0 +1,14 @@
+{
+  "name": "test_truecolor_terminal",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 63,
+  "end_line": 69
+}

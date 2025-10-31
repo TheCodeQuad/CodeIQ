@@ -1,0 +1,16 @@
+{
+  "name": "test_span",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "repr",
+    "bool",
+    "Span"
+  ],
+  "variables": [
+    "span"
+  ],
+  "start_line": 13,
+  "end_line": 17
+}

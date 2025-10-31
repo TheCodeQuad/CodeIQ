@@ -1,0 +1,21 @@
+{
+  "name": "__init__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"RenderableType\""
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "self.unpack"
+  ],
+  "variables": [],
+  "start_line": 33,
+  "end_line": 44
+}

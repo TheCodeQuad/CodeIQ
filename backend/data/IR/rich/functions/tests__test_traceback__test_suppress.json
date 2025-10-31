@@ -1,0 +1,15 @@
+{
+  "name": "test_suppress",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "len",
+    "Traceback"
+  ],
+  "variables": [
+    "traceback"
+  ],
+  "start_line": 286,
+  "end_line": 293
+}

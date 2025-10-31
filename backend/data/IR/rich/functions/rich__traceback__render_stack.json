@@ -1,0 +1,37 @@
+{
+  "name": "render_stack",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Stack"
+    },
+    {
+      "name": null,
+      "type": "bool"
+    }
+  ],
+  "return_type": "RenderResult",
+  "docstring": null,
+  "calls": [
+    "render_stack",
+    "grouped_exceptions.append",
+    "console.use_theme",
+    "enumerate",
+    "loop_last",
+    "Constrain",
+    "Group",
+    "highlighter",
+    "self._render_syntax_error",
+    "Panel",
+    "Text.from_markup",
+    "self._render_stack",
+    "Text.assemble"
+  ],
+  "variables": [
+    "stack_renderable",
+    "stack_renderable",
+    "grouped_exceptions"
+  ],
+  "start_line": 635,
+  "end_line": 700
+}

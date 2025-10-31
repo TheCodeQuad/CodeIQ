@@ -1,0 +1,32 @@
+{
+  "name": "__rich_measure__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "\"Measurement\"",
+  "docstring": null,
+  "calls": [
+    "Measurement",
+    "Measurement.get",
+    "measurement.with_maximum"
+  ],
+  "variables": [
+    "max_width",
+    "extra_width",
+    "measurement",
+    "measurement"
+  ],
+  "start_line": 125,
+  "end_line": 135
+}

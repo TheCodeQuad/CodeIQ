@@ -1,0 +1,21 @@
+{
+  "name": "pad_right",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "len"
+  ],
+  "variables": [],
+  "start_line": 934,
+  "end_line": 943
+}

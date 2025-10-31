@@ -1,0 +1,26 @@
+{
+  "name": "test_rich_console",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "ConsoleOptions",
+    "Console",
+    "Segment",
+    "Style",
+    "Padding",
+    "Padding(renderable, style=style).__rich_console__",
+    "len",
+    "ConsoleDimensions",
+    "zip"
+  ],
+  "variables": [
+    "renderable",
+    "style",
+    "options",
+    "expected_outputs",
+    "padding_generator"
+  ],
+  "start_line": 38,
+  "end_line": 60
+}

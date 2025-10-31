@@ -1,0 +1,38 @@
+{
+  "name": "write",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "type",
+    "isinstance",
+    "buffer.append",
+    "Text(\"\\n\").join",
+    "Text",
+    "text.partition",
+    "console.print",
+    "lines.append",
+    "len",
+    "TypeError",
+    "self.__ansi_decoder.decode_line",
+    "buffer.clear",
+    "\"\".join"
+  ],
+  "variables": [
+    "buffer",
+    "lines",
+    "console",
+    "output"
+  ],
+  "start_line": 28,
+  "end_line": 48
+}

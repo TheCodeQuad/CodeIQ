@@ -1,0 +1,23 @@
+{
+  "name": "pretty_repr",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "traverse",
+    "node.render",
+    "_safe_isinstance"
+  ],
+  "variables": [
+    "node",
+    "node",
+    "repr_str"
+  ],
+  "start_line": 878,
+  "end_line": 915
+}

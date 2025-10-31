@@ -1,0 +1,28 @@
+{
+  "name": "auto_repr",
+  "parameters": [
+    {
+      "name": null,
+      "type": "T"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "self.__rich_repr__",
+    "append",
+    "isinstance",
+    "repr",
+    "getattr",
+    "' '.join",
+    "len",
+    "', '.join"
+  ],
+  "variables": [
+    "repr_str",
+    "append",
+    "angular"
+  ],
+  "start_line": 43,
+  "end_line": 66
+}

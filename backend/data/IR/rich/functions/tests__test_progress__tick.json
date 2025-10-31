@@ -1,0 +1,15 @@
+{
+  "name": "tick",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 50,
+  "end_line": 51
+}

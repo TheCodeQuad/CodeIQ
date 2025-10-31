@@ -1,0 +1,19 @@
+{
+  "name": "test_rich_print_X",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "output.getvalue",
+    "io.StringIO",
+    "rich.get_console",
+    "rich.print"
+  ],
+  "variables": [
+    "console",
+    "output",
+    "backup_file"
+  ],
+  "start_line": 63,
+  "end_line": 74
+}

@@ -1,0 +1,17 @@
+{
+  "name": "get_locals",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Iterable[Tuple[str, object]]"
+    }
+  ],
+  "return_type": "Iterable[Tuple[str, object]]",
+  "docstring": null,
+  "calls": [
+    "key.startswith"
+  ],
+  "variables": [],
+  "start_line": 502,
+  "end_line": 514
+}

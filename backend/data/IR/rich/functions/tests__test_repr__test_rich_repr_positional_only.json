@@ -1,0 +1,20 @@
+{
+  "name": "test_rich_repr_positional_only",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "locals",
+    "exec",
+    "globals",
+    "repr",
+    "locals().copy",
+    "_locals[\"PosOnly\"]"
+  ],
+  "variables": [
+    "_locals",
+    "p"
+  ],
+  "start_line": 97,
+  "end_line": 110
+}

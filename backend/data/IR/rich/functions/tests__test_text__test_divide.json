@@ -1,0 +1,25 @@
+{
+  "name": "test_divide",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "text.divide",
+    "Span",
+    "Text",
+    "text.append",
+    "str",
+    "len",
+    "Text(\"foo\").divide"
+  ],
+  "variables": [
+    "lines",
+    "text",
+    "lines",
+    "text",
+    "lines",
+    "lines"
+  ],
+  "start_line": 406,
+  "end_line": 446
+}

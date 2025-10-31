@@ -1,0 +1,12 @@
+{
+  "name": "get_time",
+  "parameters": [],
+  "return_type": "float",
+  "docstring": null,
+  "calls": [],
+  "variables": [
+    "time"
+  ],
+  "start_line": 494,
+  "end_line": 499
+}

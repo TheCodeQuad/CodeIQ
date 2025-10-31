@@ -1,0 +1,23 @@
+{
+  "name": "get",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "Optional[\"Layout\"]",
+  "docstring": null,
+  "calls": [
+    "child.get"
+  ],
+  "variables": [
+    "named_layout"
+  ],
+  "start_line": 198,
+  "end_line": 214
+}

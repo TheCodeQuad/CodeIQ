@@ -1,0 +1,18 @@
+{
+  "name": "test_print_exception",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Console",
+    "io.StringIO",
+    "console.file.getvalue",
+    "console.print_exception"
+  ],
+  "variables": [
+    "console",
+    "exception_text"
+  ],
+  "start_line": 93,
+  "end_line": 100
+}

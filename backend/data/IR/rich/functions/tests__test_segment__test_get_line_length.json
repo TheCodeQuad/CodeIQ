@@ -1,0 +1,13 @@
+{
+  "name": "test_get_line_length",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment.get_line_length",
+    "Segment"
+  ],
+  "variables": [],
+  "start_line": 61,
+  "end_line": 62
+}

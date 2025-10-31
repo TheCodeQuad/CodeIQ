@@ -1,0 +1,20 @@
+{
+  "name": "test_filename_not_a_file",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "exec",
+    "io.StringIO",
+    "Console",
+    "console.print_exception",
+    "console.file.getvalue",
+    "compile"
+  ],
+  "variables": [
+    "console",
+    "exception_text"
+  ],
+  "start_line": 202,
+  "end_line": 209
+}

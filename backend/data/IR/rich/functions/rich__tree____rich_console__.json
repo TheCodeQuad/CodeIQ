@@ -1,0 +1,73 @@
+{
+  "name": "__rich_console__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Console\""
+    },
+    {
+      "name": null,
+      "type": "\"ConsoleOptions\""
+    }
+  ],
+  "return_type": "\"RenderResult\"",
+  "docstring": null,
+  "calls": [
+    "push",
+    "guide_style_stack.push",
+    "options.update",
+    "len",
+    "style_stack.pop",
+    "make_guide",
+    "pop",
+    "loop_last",
+    "loop_first",
+    "Styled",
+    "Style.null",
+    "range",
+    "StyleStack",
+    "console.render_lines",
+    "levels.pop",
+    "iter",
+    "Segment.line",
+    "guide_style_stack.pop",
+    "Style",
+    "levels.append",
+    "_Segment.apply_style",
+    "style_stack.push",
+    "next",
+    "_Segment",
+    "sum",
+    "get_style"
+  ],
+  "variables": [
+    "stack",
+    "pop",
+    "push",
+    "new_line",
+    "get_style",
+    "null_style",
+    "guide_style",
+    "_Segment",
+    "line",
+    "guide",
+    "line",
+    "levels",
+    "guide_style_stack",
+    "style_stack",
+    "remove_guide_styles",
+    "depth",
+    "stack_node",
+    "guide_style",
+    "guide_style",
+    "style",
+    "prefix",
+    "renderable_lines"
+  ],
+  "start_line": 86,
+  "end_line": 174
+}

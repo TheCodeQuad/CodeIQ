@@ -1,0 +1,21 @@
+{
+  "name": "test_control_cursor_move_to_column",
+  "parameters": [
+    {
+      "name": "legacy_term_mock",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "legacy_term_mock.move_cursor_to_column.assert_called_once_with",
+    "Segment",
+    "legacy_windows_render"
+  ],
+  "variables": [
+    "buffer"
+  ],
+  "start_line": 128,
+  "end_line": 133
+}

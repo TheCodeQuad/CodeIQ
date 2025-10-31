@@ -1,0 +1,15 @@
+{
+  "name": "test_on",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style",
+    "Style.on"
+  ],
+  "variables": [
+    "style"
+  ],
+  "start_line": 229,
+  "end_line": 231
+}

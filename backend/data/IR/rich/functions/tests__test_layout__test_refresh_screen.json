@@ -1,0 +1,26 @@
+{
+  "name": "test_refresh_screen",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "console.capture",
+    "Console",
+    "Layout",
+    "layout.split_row",
+    "console.screen",
+    "console.print",
+    "repr",
+    "print",
+    "capture.get",
+    "layout.refresh_screen"
+  ],
+  "variables": [
+    "layout",
+    "console",
+    "result",
+    "expected"
+  ],
+  "start_line": 87,
+  "end_line": 100
+}

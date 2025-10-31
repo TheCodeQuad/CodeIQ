@@ -1,0 +1,17 @@
+{
+  "name": "time_text_thin_terminal_heavy_wrapping",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "self._print_with_width"
+  ],
+  "variables": [],
+  "start_line": 84,
+  "end_line": 85
+}

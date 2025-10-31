@@ -1,0 +1,21 @@
+{
+  "name": "push",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Style"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._stack.append"
+  ],
+  "variables": [],
+  "start_line": 777,
+  "end_line": 783
+}

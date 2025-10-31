@@ -1,0 +1,15 @@
+{
+  "name": "__call__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "float",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 43,
+  "end_line": 48
+}

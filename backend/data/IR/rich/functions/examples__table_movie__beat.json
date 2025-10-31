@@ -1,0 +1,12 @@
+{
+  "name": "beat",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "time.sleep"
+  ],
+  "variables": [],
+  "start_line": 63,
+  "end_line": 65
+}

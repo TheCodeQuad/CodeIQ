@@ -1,0 +1,18 @@
+{
+  "name": "stop",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.live.stop",
+    "self.console.print"
+  ],
+  "variables": [],
+  "start_line": 1173,
+  "end_line": 1177
+}

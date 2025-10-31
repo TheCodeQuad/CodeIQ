@@ -1,0 +1,19 @@
+{
+  "name": "stringify",
+  "parameters": [
+    {
+      "name": null,
+      "type": "object"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "format",
+    "str"
+  ],
+  "variables": [],
+  "start_line": 2425,
+  "end_line": 2428
+}

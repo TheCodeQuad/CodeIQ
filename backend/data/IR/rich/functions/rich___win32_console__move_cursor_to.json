@@ -1,0 +1,21 @@
+{
+  "name": "move_cursor_to",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "WindowsCoordinates"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "SetConsoleCursorPosition"
+  ],
+  "variables": [],
+  "start_line": 444,
+  "end_line": 452
+}

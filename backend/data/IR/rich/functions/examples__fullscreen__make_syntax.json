@@ -1,0 +1,15 @@
+{
+  "name": "make_syntax",
+  "parameters": [],
+  "return_type": "Syntax",
+  "docstring": null,
+  "calls": [
+    "Syntax"
+  ],
+  "variables": [
+    "code",
+    "syntax"
+  ],
+  "start_line": 86,
+  "end_line": 127
+}

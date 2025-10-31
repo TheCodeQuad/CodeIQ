@@ -1,0 +1,20 @@
+{
+  "name": "test_time_remaining_column_elapsed_when_finished",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "str",
+    "column.render",
+    "SimpleNamespace",
+    "TimeRemainingColumn"
+  ],
+  "variables": [
+    "task_time",
+    "formatted",
+    "task",
+    "column"
+  ],
+  "start_line": 113,
+  "end_line": 120
+}

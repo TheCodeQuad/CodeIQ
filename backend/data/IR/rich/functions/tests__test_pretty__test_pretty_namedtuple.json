@@ -1,0 +1,20 @@
+{
+  "name": "test_pretty_namedtuple",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "console.begin_capture",
+    "StockKeepingUnit",
+    "Console",
+    "pretty_repr",
+    "print"
+  ],
+  "variables": [
+    "console",
+    "example_namedtuple",
+    "result"
+  ],
+  "start_line": 207,
+  "end_line": 231
+}

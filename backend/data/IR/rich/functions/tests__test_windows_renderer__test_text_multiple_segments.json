@@ -1,0 +1,21 @@
+{
+  "name": "test_text_multiple_segments",
+  "parameters": [
+    {
+      "name": "legacy_term_mock",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Segment",
+    "call",
+    "legacy_windows_render"
+  ],
+  "variables": [
+    "buffer"
+  ],
+  "start_line": 31,
+  "end_line": 38
+}

@@ -1,0 +1,17 @@
+{
+  "name": "test_render_error",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "list",
+    "pytest.raises",
+    "console.render"
+  ],
+  "variables": [
+    "console"
+  ],
+  "start_line": 364,
+  "end_line": 367
+}

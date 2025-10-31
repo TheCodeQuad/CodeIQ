@@ -1,0 +1,16 @@
+{
+  "name": "test_get_ansi_codes",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Color.parse(\"red\").get_ansi_codes",
+    "Color.parse(\"default\").get_ansi_codes",
+    "Color.parse",
+    "Color.parse(\"color(1)\").get_ansi_codes",
+    "Color.parse(\"#ff0000\").get_ansi_codes"
+  ],
+  "variables": [],
+  "start_line": 115,
+  "end_line": 123
+}

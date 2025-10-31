@@ -1,0 +1,23 @@
+{
+  "name": "test_recording_no_stdout_and_no_stderr_files",
+  "parameters": [
+    {
+      "name": "monkeypatch",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "console.print",
+    "console.export_text",
+    "monkeypatch.setattr"
+  ],
+  "variables": [
+    "console",
+    "text"
+  ],
+  "start_line": 924,
+  "end_line": 934
+}

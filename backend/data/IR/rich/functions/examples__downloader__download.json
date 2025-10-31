@@ -1,0 +1,29 @@
+{
+  "name": "download",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Iterable[str]"
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "os.path.join",
+    "pool.submit",
+    "progress.add_task",
+    "url.split",
+    "ThreadPoolExecutor"
+  ],
+  "variables": [
+    "filename",
+    "dest_path",
+    "task_id"
+  ],
+  "start_line": 63,
+  "end_line": 72
+}

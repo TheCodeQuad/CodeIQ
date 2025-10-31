@@ -1,0 +1,29 @@
+{
+  "name": "_print_table",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": "width",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "Console",
+    "StringIO",
+    "console.print",
+    "Table",
+    "table.add_column"
+  ],
+  "variables": [
+    "table",
+    "console"
+  ],
+  "start_line": 104,
+  "end_line": 126
+}

@@ -1,0 +1,19 @@
+{
+  "name": "_enable_redirect_io",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "cast",
+    "FileProxy"
+  ],
+  "variables": [],
+  "start_line": 191,
+  "end_line": 199
+}

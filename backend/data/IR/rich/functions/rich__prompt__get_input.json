@@ -1,0 +1,29 @@
+{
+  "name": "get_input",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Console"
+    },
+    {
+      "name": null,
+      "type": "TextType"
+    },
+    {
+      "name": null,
+      "type": "bool"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "console.input"
+  ],
+  "variables": [],
+  "start_line": 194,
+  "end_line": 211
+}

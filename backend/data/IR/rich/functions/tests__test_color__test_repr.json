@@ -1,0 +1,13 @@
+{
+  "name": "test_repr",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "repr",
+    "Color.parse"
+  ],
+  "variables": [],
+  "start_line": 20,
+  "end_line": 21
+}

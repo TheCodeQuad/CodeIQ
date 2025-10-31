@@ -1,0 +1,21 @@
+{
+  "name": "add_renderable",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "RenderableType"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self.renderables.append"
+  ],
+  "variables": [],
+  "start_line": 54,
+  "end_line": 60
+}

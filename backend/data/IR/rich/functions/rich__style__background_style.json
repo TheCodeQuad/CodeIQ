@@ -1,0 +1,17 @@
+{
+  "name": "background_style",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Style\"",
+  "docstring": null,
+  "calls": [
+    "Style"
+  ],
+  "variables": [],
+  "start_line": 464,
+  "end_line": 466
+}

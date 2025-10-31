@@ -1,0 +1,23 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\highlighter.py",
+  "imports": [
+    "from rich.console import Console",
+    "from rich.highlighter import RegexHighlighter",
+    "from rich.theme import Theme"
+  ],
+  "classes": [
+    {
+      "name": "EmailHighlighter",
+      "base_classes": "(RegexHighlighter)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [],
+  "variables": [
+    "base_style",
+    "highlights",
+    "theme",
+    "console"
+  ]
+}

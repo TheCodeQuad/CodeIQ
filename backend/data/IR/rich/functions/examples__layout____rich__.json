@@ -1,0 +1,19 @@
+{
+  "name": "__rich__",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "Text",
+  "docstring": null,
+  "calls": [
+    "Text",
+    "datetime.now",
+    "datetime.now().ctime"
+  ],
+  "variables": [],
+  "start_line": 44,
+  "end_line": 45
+}

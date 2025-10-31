@@ -1,0 +1,12 @@
+{
+  "name": "test_syntax_guess_lexer",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Syntax.guess_lexer"
+  ],
+  "variables": [],
+  "start_line": 366,
+  "end_line": 371
+}

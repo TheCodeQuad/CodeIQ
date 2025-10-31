@@ -1,0 +1,15 @@
+{
+  "name": "_is_dataclass_repr",
+  "parameters": [
+    {
+      "name": null,
+      "type": "object"
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [],
+  "variables": [],
+  "start_line": 70,
+  "end_line": 87
+}

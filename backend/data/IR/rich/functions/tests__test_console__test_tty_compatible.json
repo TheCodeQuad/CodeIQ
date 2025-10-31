@@ -1,0 +1,21 @@
+{
+  "name": "test_tty_compatible",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "FakeTTY",
+    "FakeFile"
+  ],
+  "variables": [
+    "console",
+    "console",
+    "console",
+    "console",
+    "console",
+    "console"
+  ],
+  "start_line": 1066,
+  "end_line": 1129
+}

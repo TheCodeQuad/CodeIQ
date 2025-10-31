@@ -1,0 +1,20 @@
+{
+  "name": "_is_namedtuple",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Any"
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "isinstance",
+    "getattr"
+  ],
+  "variables": [
+    "fields"
+  ],
+  "start_line": 561,
+  "end_line": 577
+}

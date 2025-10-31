@@ -1,0 +1,16 @@
+{
+  "name": "test_wrong_type",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "highlighter",
+    "pytest.raises",
+    "NullHighlighter"
+  ],
+  "variables": [
+    "highlighter"
+  ],
+  "start_line": 16,
+  "end_line": 19
+}

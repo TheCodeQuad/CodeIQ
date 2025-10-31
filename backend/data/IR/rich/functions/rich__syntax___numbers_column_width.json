@@ -1,0 +1,22 @@
+{
+  "name": "_numbers_column_width",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "int",
+  "docstring": null,
+  "calls": [
+    "len",
+    "str",
+    "self.code.count"
+  ],
+  "variables": [
+    "column_width",
+    "column_width"
+  ],
+  "start_line": 589,
+  "end_line": 597
+}

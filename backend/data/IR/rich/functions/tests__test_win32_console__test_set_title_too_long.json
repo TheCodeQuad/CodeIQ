@@ -1,0 +1,25 @@
+{
+  "name": "test_set_title_too_long",
+  "parameters": [
+    {
+      "name": "_",
+      "type": null
+    },
+    {
+      "name": "win32_console_getters",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "LegacyWindowsTerm",
+    "pytest.raises",
+    "term.set_title"
+  ],
+  "variables": [
+    "term"
+  ],
+  "start_line": 408,
+  "end_line": 412
+}

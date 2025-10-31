@@ -1,0 +1,29 @@
+{
+  "name": "_rule_line",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "Text",
+  "docstring": null,
+  "calls": [
+    "rule_text.truncate",
+    "Text",
+    "set_cell_size"
+  ],
+  "variables": [
+    "rule_text"
+  ],
+  "start_line": 105,
+  "end_line": 109
+}

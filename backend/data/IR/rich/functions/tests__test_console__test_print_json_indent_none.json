@@ -1,0 +1,20 @@
+{
+  "name": "test_print_json_indent_none",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "io.StringIO",
+    "console.file.getvalue",
+    "console.print_json"
+  ],
+  "variables": [
+    "console",
+    "data",
+    "result",
+    "expected"
+  ],
+  "start_line": 255,
+  "end_line": 261
+}

@@ -1,0 +1,49 @@
+{
+  "name": "print_calendar",
+  "parameters": [
+    {
+      "name": "year",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "table.add_row",
+    "cal.iterweekdays",
+    "days.append",
+    "day_label.stylize",
+    "console.print",
+    "datetime.today",
+    "cal.monthdayscalendar",
+    "Console",
+    "Columns",
+    "\"{:.3}\".format",
+    "enumerate",
+    "Table",
+    "str",
+    "range",
+    "tables.append",
+    "int",
+    "Text",
+    "Align.center",
+    "table.add_column",
+    "calendar.Calendar",
+    "console.rule"
+  ],
+  "variables": [
+    "today",
+    "year",
+    "cal",
+    "today_tuple",
+    "tables",
+    "table",
+    "month_days",
+    "days",
+    "day_label",
+    "console",
+    "columns"
+  ],
+  "start_line": 20,
+  "end_line": 62
+}

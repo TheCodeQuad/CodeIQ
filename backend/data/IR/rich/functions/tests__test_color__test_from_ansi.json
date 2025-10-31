@@ -1,0 +1,13 @@
+{
+  "name": "test_from_ansi",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Color.from_ansi",
+    "Color"
+  ],
+  "variables": [],
+  "start_line": 90,
+  "end_line": 91
+}

@@ -1,0 +1,19 @@
+{
+  "name": "test_get_row",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "DOUBLE.get_row",
+    "ASCII.get_row",
+    "pytest.raises",
+    "ROUNDED.get_row"
+  ],
+  "variables": [
+    "head_row",
+    "row",
+    "foot_row"
+  ],
+  "start_line": 32,
+  "end_line": 43
+}

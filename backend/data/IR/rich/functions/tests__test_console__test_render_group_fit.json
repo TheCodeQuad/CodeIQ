@@ -1,0 +1,19 @@
+{
+  "name": "test_render_group_fit",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "group",
+    "Console",
+    "renderable",
+    "range",
+    "measure_renderables"
+  ],
+  "variables": [
+    "renderables",
+    "console"
+  ],
+  "start_line": 665,
+  "end_line": 678
+}

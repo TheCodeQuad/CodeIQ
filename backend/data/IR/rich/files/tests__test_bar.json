@@ -1,0 +1,155 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_bar.py",
+  "imports": [
+    "from rich.console import Console",
+    "from rich.progress_bar import ProgressBar",
+    "from rich.segment import Segment",
+    "from rich.style import Style",
+    "from .render import render"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_init",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "repr",
+        "ProgressBar"
+      ],
+      "variables": [
+        "bar"
+      ],
+      "start_line": 9,
+      "end_line": 12
+    },
+    {
+      "name": "test_update",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "bar.update",
+        "ProgressBar"
+      ],
+      "variables": [
+        "bar"
+      ],
+      "start_line": 15,
+      "end_line": 24
+    },
+    {
+      "name": "test_render",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "render",
+        "bar.update",
+        "ProgressBar"
+      ],
+      "variables": [
+        "bar",
+        "bar_render",
+        "bar_render"
+      ],
+      "start_line": 33,
+      "end_line": 39
+    },
+    {
+      "name": "test_measure",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Console",
+        "bar.__rich_measure__",
+        "ProgressBar"
+      ],
+      "variables": [
+        "console",
+        "bar",
+        "measurement"
+      ],
+      "start_line": 42,
+      "end_line": 47
+    },
+    {
+      "name": "test_zero_total",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "render",
+        "ProgressBar"
+      ],
+      "variables": [
+        "bar"
+      ],
+      "start_line": 50,
+      "end_line": 53
+    },
+    {
+      "name": "test_pulse",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "ProgressBar",
+        "repr"
+      ],
+      "variables": [
+        "bar",
+        "bar_render",
+        "expected"
+      ],
+      "start_line": 56,
+      "end_line": 61
+    },
+    {
+      "name": "test_get_pulse_segments",
+      "parameters": [],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Segment",
+        "ProgressBar",
+        "Style.parse",
+        "bar._get_pulse_segments",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "bar",
+        "segments",
+        "expected"
+      ],
+      "start_line": 64,
+      "end_line": 92
+    }
+  ],
+  "variables": [
+    "bar",
+    "bar",
+    "expected",
+    "bar",
+    "bar_render",
+    "bar_render",
+    "console",
+    "bar",
+    "measurement",
+    "bar",
+    "bar",
+    "bar_render",
+    "expected",
+    "bar",
+    "segments",
+    "expected",
+    "bar",
+    "bar_render",
+    "bar_render"
+  ]
+}

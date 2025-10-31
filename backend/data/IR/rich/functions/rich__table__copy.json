@@ -1,0 +1,17 @@
+{
+  "name": "copy",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"Column\"",
+  "docstring": null,
+  "calls": [
+    "replace"
+  ],
+  "variables": [],
+  "start_line": 117,
+  "end_line": 119
+}

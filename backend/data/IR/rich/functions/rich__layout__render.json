@@ -1,0 +1,38 @@
+{
+  "name": "render",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Console"
+    },
+    {
+      "name": null,
+      "type": "ConsoleOptions"
+    }
+  ],
+  "return_type": "RenderMap",
+  "docstring": null,
+  "calls": [
+    "LayoutRender",
+    "update_dimensions",
+    "render_lines",
+    "region_map.items",
+    "self._make_region_map"
+  ],
+  "variables": [
+    "render_width",
+    "render_height",
+    "region_map",
+    "layout_regions",
+    "render_map",
+    "render_lines",
+    "update_dimensions",
+    "lines"
+  ],
+  "start_line": 366,
+  "end_line": 393
+}

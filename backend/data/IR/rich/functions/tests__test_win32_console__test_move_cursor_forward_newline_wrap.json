@@ -1,0 +1,33 @@
+{
+  "name": "test_move_cursor_forward_newline_wrap",
+  "parameters": [
+    {
+      "name": "SetConsoleCursorPosition",
+      "type": null
+    },
+    {
+      "name": "win32_console_getters",
+      "type": null
+    },
+    {
+      "name": "win32_handle",
+      "type": null
+    }
+  ],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "LegacyWindowsTerm",
+    "WindowsCoordinates",
+    "StubScreenBufferInfo",
+    "SetConsoleCursorPosition.assert_called_once_with",
+    "COORD",
+    "term.move_cursor_forward"
+  ],
+  "variables": [
+    "cursor_at_end_of_line",
+    "term"
+  ],
+  "start_line": 321,
+  "end_line": 335
+}

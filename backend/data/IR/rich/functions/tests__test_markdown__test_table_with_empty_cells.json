@@ -1,0 +1,21 @@
+{
+  "name": "test_table_with_empty_cells",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "render",
+    "render(table_with_empty_cells).splitlines",
+    "render(complete_table).splitlines",
+    "Markdown",
+    "len"
+  ],
+  "variables": [
+    "complete_table",
+    "table_with_empty_cells",
+    "result",
+    "expected"
+  ],
+  "start_line": 177,
+  "end_line": 199
+}

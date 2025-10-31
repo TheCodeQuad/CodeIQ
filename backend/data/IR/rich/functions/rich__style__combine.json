@@ -1,0 +1,25 @@
+{
+  "name": "combine",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "Iterable[\"Style\"]"
+    }
+  ],
+  "return_type": "\"Style\"",
+  "docstring": null,
+  "calls": [
+    "next",
+    "iter",
+    "sum"
+  ],
+  "variables": [
+    "iter_styles"
+  ],
+  "start_line": 597,
+  "end_line": 607
+}

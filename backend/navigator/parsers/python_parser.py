@@ -213,12 +213,14 @@ def parse_python_repo(repo_path):
 
     return ir_data
 
-
 # ---------------------------------------------------------
 # CLI test
 # ---------------------------------------------------------
 if __name__ == "__main__":
     import sys
+    import json
+    import os
+
     if len(sys.argv) > 1:
         target = sys.argv[1]
         if os.path.isdir(target):
@@ -228,3 +230,6 @@ if __name__ == "__main__":
         print(json.dumps(result, indent=2, ensure_ascii=False))
     else:
         print("✅ Python parser initialized successfully!")
+
+# Exported function for IR builder
+__all__ = ["parse_python_file"]

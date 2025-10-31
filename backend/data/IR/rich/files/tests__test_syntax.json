@@ -1,0 +1,553 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\tests\\test_syntax.py",
+  "imports": [
+    "import io",
+    "import os",
+    "import sys",
+    "import tempfile",
+    "from importlib.metadata import Distribution",
+    "import pytest",
+    "from pygments.lexers import PythonLexer",
+    "from rich.measure import Measurement",
+    "from rich.panel import Panel",
+    "from rich.style import Style",
+    "from rich.syntax import (\n    ANSISyntaxTheme,\n    Color,\n    Console,\n    PygmentsSyntaxTheme,\n    Syntax,\n    _SyntaxHighlightRange,\n)",
+    "from .render import render",
+    "from pygments.style import Style as PygmentsStyle",
+    "from pygments.style import Token"
+  ],
+  "classes": [],
+  "functions": [
+    {
+      "name": "test_blank_lines",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "repr",
+        "Syntax"
+      ],
+      "variables": [
+        "code",
+        "syntax",
+        "result"
+      ],
+      "start_line": 43,
+      "end_line": 53
+    },
+    {
+      "name": "test_python_render",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "Panel.fit",
+        "Syntax",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "syntax",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 56,
+      "end_line": 72
+    },
+    {
+      "name": "test_python_render_simple",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "repr",
+        "Syntax"
+      ],
+      "variables": [
+        "syntax",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 75,
+      "end_line": 87
+    },
+    {
+      "name": "test_python_render_simple_passing_lexer_instance",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "Syntax",
+        "PythonLexer",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "syntax",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 90,
+      "end_line": 102
+    },
+    {
+      "name": "test_python_render_simple_indent_guides",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "repr",
+        "Syntax"
+      ],
+      "variables": [
+        "syntax",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 106,
+      "end_line": 119
+    },
+    {
+      "name": "test_python_render_line_range_indent_guides",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "repr",
+        "Syntax"
+      ],
+      "variables": [
+        "syntax",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 123,
+      "end_line": 137
+    },
+    {
+      "name": "test_python_render_indent_guides",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "Panel.fit",
+        "Syntax",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "syntax",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 140,
+      "end_line": 157
+    },
+    {
+      "name": "test_pygments_syntax_theme_non_str",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.parse",
+        "PygmentsSyntaxTheme",
+        "style.get_background_style",
+        "PygmentsStyle"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 160,
+      "end_line": 164
+    },
+    {
+      "name": "test_pygments_syntax_theme",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Style.parse",
+        "PygmentsSyntaxTheme",
+        "style.get_style_for_token"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 167,
+      "end_line": 169
+    },
+    {
+      "name": "test_get_line_color_none",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.default",
+        "PygmentsSyntaxTheme",
+        "Syntax",
+        "Style",
+        "syntax._get_line_numbers_color"
+      ],
+      "variables": [
+        "style",
+        "syntax"
+      ],
+      "start_line": 172,
+      "end_line": 185
+    },
+    {
+      "name": "test_highlight_background_color",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Style.parse",
+        "syntax.highlight",
+        "Syntax"
+      ],
+      "variables": [
+        "syntax"
+      ],
+      "start_line": 188,
+      "end_line": 199
+    },
+    {
+      "name": "test_get_number_styles",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "syntax._get_number_styles",
+        "Style.parse",
+        "Syntax"
+      ],
+      "variables": [
+        "syntax",
+        "console"
+      ],
+      "start_line": 202,
+      "end_line": 209
+    },
+    {
+      "name": "test_get_style_for_token",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Color.default",
+        "PygmentsSyntaxTheme",
+        "Syntax",
+        "Style",
+        "syntax._get_line_numbers_color"
+      ],
+      "variables": [
+        "style",
+        "style_dict",
+        "syntax"
+      ],
+      "start_line": 212,
+      "end_line": 230
+    },
+    {
+      "name": "test_option_no_wrap",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "repr",
+        "Syntax"
+      ],
+      "variables": [
+        "syntax",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 233,
+      "end_line": 247
+    },
+    {
+      "name": "test_syntax_highlight_ranges",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "Syntax",
+        "syntax.stylize_range",
+        "Style",
+        "repr",
+        "len",
+        "_SyntaxHighlightRange"
+      ],
+      "variables": [
+        "syntax",
+        "stylized_ranges",
+        "rendered_syntax",
+        "expected"
+      ],
+      "start_line": 250,
+      "end_line": 302
+    },
+    {
+      "name": "test_ansi_theme",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "theme.get_style_for_token",
+        "Style",
+        "ANSISyntaxTheme",
+        "theme.get_background_style"
+      ],
+      "variables": [
+        "style",
+        "theme"
+      ],
+      "start_line": 305,
+      "end_line": 309
+    },
+    {
+      "name": "test_from_path",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "os.write",
+        "os.remove",
+        "Syntax.from_path"
+      ],
+      "variables": [
+        "syntax"
+      ],
+      "start_line": 318,
+      "end_line": 327
+    },
+    {
+      "name": "test_from_path_unknown_lexer",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "os.write",
+        "os.remove",
+        "Syntax.from_path"
+      ],
+      "variables": [
+        "syntax"
+      ],
+      "start_line": 331,
+      "end_line": 339
+    },
+    {
+      "name": "test_from_path_lexer_override",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "os.write",
+        "os.remove",
+        "Syntax.from_path"
+      ],
+      "variables": [
+        "syntax"
+      ],
+      "start_line": 343,
+      "end_line": 351
+    },
+    {
+      "name": "test_from_path_lexer_override_invalid_lexer",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "tempfile.mkstemp",
+        "os.write",
+        "os.remove",
+        "Syntax.from_path"
+      ],
+      "variables": [
+        "syntax"
+      ],
+      "start_line": 355,
+      "end_line": 363
+    },
+    {
+      "name": "test_syntax_guess_lexer",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Syntax.guess_lexer"
+      ],
+      "variables": [],
+      "start_line": 366,
+      "end_line": 371
+    },
+    {
+      "name": "test_syntax_padding",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "console.export_text",
+        "Syntax",
+        "Console",
+        "console.print"
+      ],
+      "variables": [
+        "syntax",
+        "console",
+        "output"
+      ],
+      "start_line": 374,
+      "end_line": 387
+    },
+    {
+      "name": "test_syntax_measure",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Console",
+        "code.__rich_measure__",
+        "Measurement",
+        "Syntax"
+      ],
+      "variables": [
+        "console",
+        "code",
+        "code",
+        "code",
+        "code"
+      ],
+      "start_line": 390,
+      "end_line": 402
+    },
+    {
+      "name": "test_background_color_override_includes_padding",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "render",
+        "print",
+        "repr",
+        "Syntax"
+      ],
+      "variables": [
+        "syntax",
+        "result"
+      ],
+      "start_line": 405,
+      "end_line": 419
+    },
+    {
+      "name": "test_padding_plus_wrap",
+      "parameters": [],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "io.StringIO",
+        "Syntax",
+        "Console",
+        "console.file.getvalue",
+        "console.print",
+        "repr",
+        "print"
+      ],
+      "variables": [
+        "console",
+        "syntax",
+        "output",
+        "expected"
+      ],
+      "start_line": 422,
+      "end_line": 435
+    }
+  ],
+  "variables": [
+    "PYGMENTS_VERSION",
+    "OLD_PYGMENTS",
+    "CODE",
+    "code",
+    "syntax",
+    "result",
+    "syntax",
+    "rendered_syntax",
+    "expected",
+    "syntax",
+    "rendered_syntax",
+    "expected",
+    "syntax",
+    "rendered_syntax",
+    "expected",
+    "syntax",
+    "rendered_syntax",
+    "expected",
+    "syntax",
+    "rendered_syntax",
+    "expected",
+    "syntax",
+    "rendered_syntax",
+    "expected",
+    "style",
+    "style",
+    "style",
+    "syntax",
+    "syntax",
+    "syntax",
+    "console",
+    "style",
+    "style_dict",
+    "syntax",
+    "syntax",
+    "rendered_syntax",
+    "expected",
+    "syntax",
+    "stylized_ranges",
+    "rendered_syntax",
+    "expected",
+    "style",
+    "theme",
+    "skip_windows_permission_error",
+    "syntax",
+    "syntax",
+    "syntax",
+    "syntax",
+    "syntax",
+    "console",
+    "output",
+    "console",
+    "code",
+    "code",
+    "code",
+    "code",
+    "syntax",
+    "result",
+    "console",
+    "syntax",
+    "output",
+    "expected",
+    "syntax",
+    "rendered"
+  ]
+}

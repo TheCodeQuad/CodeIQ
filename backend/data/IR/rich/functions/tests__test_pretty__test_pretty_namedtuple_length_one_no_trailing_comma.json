@@ -1,0 +1,16 @@
+{
+  "name": "test_pretty_namedtuple_length_one_no_trailing_comma",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "collections.namedtuple",
+    "collections.namedtuple(\"Thing\", [\"name\"])",
+    "pretty_repr"
+  ],
+  "variables": [
+    "instance"
+  ],
+  "start_line": 234,
+  "end_line": 236
+}

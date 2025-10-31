@@ -1,0 +1,22 @@
+{
+  "name": "move_to_column",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "\"Control\"",
+  "docstring": null,
+  "calls": [
+    "cls",
+    "abs"
+  ],
+  "variables": [],
+  "start_line": 108,
+  "end_line": 129
+}

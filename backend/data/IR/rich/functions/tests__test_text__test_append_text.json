@@ -1,0 +1,17 @@
+{
+  "name": "test_append_text",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Text",
+    "str",
+    "Span",
+    "text.append_text"
+  ],
+  "variables": [
+    "text"
+  ],
+  "start_line": 364,
+  "end_line": 368
+}

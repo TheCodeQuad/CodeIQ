@@ -1,0 +1,1701 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\rich\\markdown.py",
+  "imports": [
+    "import sys",
+    "from typing import ClassVar, Iterable, get_args",
+    "from markdown_it import MarkdownIt",
+    "from markdown_it.token import Token",
+    "from rich.table import Table",
+    "from . import box",
+    "from ._loop import loop_first",
+    "from ._stack import Stack",
+    "from .console import Console, ConsoleOptions, JustifyMethod, RenderResult",
+    "from .containers import Renderables",
+    "from .jupyter import JupyterMixin",
+    "from .panel import Panel",
+    "from .rule import Rule",
+    "from .segment import Segment",
+    "from .style import Style, StyleStack",
+    "from .syntax import Syntax",
+    "from .text import Text, TextType",
+    "import argparse",
+    "import sys",
+    "from rich.console import Console",
+    "import io",
+    "import pydoc"
+  ],
+  "classes": [
+    {
+      "name": "MarkdownElement",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "UnknownElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TextElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Paragraph",
+      "base_classes": "(TextElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Heading",
+      "base_classes": "(TextElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "CodeBlock",
+      "base_classes": "(TextElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "BlockQuote",
+      "base_classes": "(TextElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "HorizontalRule",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TableElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TableHeaderElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TableBodyElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TableRowElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "TableDataElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ListElement",
+      "base_classes": "(MarkdownElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ListItem",
+      "base_classes": "(TextElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Link",
+      "base_classes": "(TextElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "ImageItem",
+      "base_classes": "(TextElement)",
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "MarkdownContext",
+      "base_classes": null,
+      "docstring": null,
+      "methods": []
+    },
+    {
+      "name": "Markdown",
+      "base_classes": "(JupyterMixin)",
+      "docstring": null,
+      "methods": []
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "MarkdownElement",
+      "docstring": null,
+      "calls": [
+        "cls"
+      ],
+      "variables": [],
+      "start_line": 29,
+      "end_line": 39
+    },
+    {
+      "name": "on_enter",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 41,
+      "end_line": 46
+    },
+    {
+      "name": "on_text",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "TextType"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 48,
+      "end_line": 53
+    },
+    {
+      "name": "on_leave",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 55,
+      "end_line": 60
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 62,
+      "end_line": 74
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 76,
+      "end_line": 79
+    },
+    {
+      "name": "on_enter",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Text",
+        "context.enter_style"
+      ],
+      "variables": [],
+      "start_line": 96,
+      "end_line": 98
+    },
+    {
+      "name": "on_text",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "TextType"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "self.text.append"
+      ],
+      "variables": [],
+      "start_line": 100,
+      "end_line": 101
+    },
+    {
+      "name": "on_leave",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "context.leave_style"
+      ],
+      "variables": [],
+      "start_line": 103,
+      "end_line": 104
+    },
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "Paragraph",
+      "docstring": null,
+      "calls": [
+        "cls"
+      ],
+      "variables": [],
+      "start_line": 114,
+      "end_line": 115
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "JustifyMethod"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 117,
+      "end_line": 118
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 120,
+      "end_line": 124
+    },
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "Heading",
+      "docstring": null,
+      "calls": [
+        "cls"
+      ],
+      "variables": [],
+      "start_line": 131,
+      "end_line": 132
+    },
+    {
+      "name": "on_enter",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Text",
+        "context.enter_style"
+      ],
+      "variables": [],
+      "start_line": 134,
+      "end_line": 136
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 138,
+      "end_line": 141
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "Panel",
+        "Text"
+      ],
+      "variables": [
+        "text"
+      ],
+      "start_line": 143,
+      "end_line": 159
+    },
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "CodeBlock",
+      "docstring": null,
+      "calls": [
+        "node_info.partition",
+        "cls"
+      ],
+      "variables": [
+        "node_info",
+        "lexer_name"
+      ],
+      "start_line": 168,
+      "end_line": 171
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 173,
+      "end_line": 175
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "str",
+        "str(self.text).rstrip",
+        "Syntax"
+      ],
+      "variables": [
+        "code",
+        "syntax"
+      ],
+      "start_line": 177,
+      "end_line": 184
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Renderables"
+      ],
+      "variables": [],
+      "start_line": 192,
+      "end_line": 193
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "self.elements.append"
+      ],
+      "variables": [],
+      "start_line": 195,
+      "end_line": 197
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "console.render_lines",
+        "options.update",
+        "Segment"
+      ],
+      "variables": [
+        "render_options",
+        "lines",
+        "style",
+        "new_line",
+        "padding"
+      ],
+      "start_line": 199,
+      "end_line": 210
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "Rule",
+        "console.get_style"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 218,
+      "end_line": 222
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 228,
+      "end_line": 230
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "RuntimeError"
+      ],
+      "variables": [],
+      "start_line": 232,
+      "end_line": 239
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "table.add_row",
+        "Table",
+        "table.add_column"
+      ],
+      "variables": [
+        "table",
+        "row_content"
+      ],
+      "start_line": 241,
+      "end_line": 255
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 261,
+      "end_line": 262
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isinstance"
+      ],
+      "variables": [],
+      "start_line": 264,
+      "end_line": 267
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 273,
+      "end_line": 274
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "self.rows.append"
+      ],
+      "variables": [],
+      "start_line": 276,
+      "end_line": 279
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 285,
+      "end_line": 286
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "self.cells.append"
+      ],
+      "variables": [],
+      "start_line": 288,
+      "end_line": 291
+    },
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "MarkdownElement",
+      "docstring": null,
+      "calls": [
+        "get_args",
+        "token.attrs.get",
+        "cls",
+        "str"
+      ],
+      "variables": [
+        "style",
+        "justify",
+        "justify",
+        "justify",
+        "justify",
+        "justify"
+      ],
+      "start_line": 299,
+      "end_line": 313
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "JustifyMethod"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Text"
+      ],
+      "variables": [],
+      "start_line": 315,
+      "end_line": 317
+    },
+    {
+      "name": "on_text",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "TextType"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "Text",
+        "text.stylize",
+        "self.content.append_text"
+      ],
+      "variables": [
+        "text"
+      ],
+      "start_line": 319,
+      "end_line": 322
+    },
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "ListElement",
+      "docstring": null,
+      "calls": [
+        "int",
+        "cls",
+        "token.attrs.get"
+      ],
+      "variables": [],
+      "start_line": 329,
+      "end_line": 330
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "int | None"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 332,
+      "end_line": 335
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "isinstance",
+        "self.items.append"
+      ],
+      "variables": [],
+      "start_line": 337,
+      "end_line": 340
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "len",
+        "item.render_number",
+        "enumerate",
+        "item.render_bullet"
+      ],
+      "variables": [
+        "number",
+        "last_number"
+      ],
+      "start_line": 342,
+      "end_line": 354
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Renderables"
+      ],
+      "variables": [],
+      "start_line": 362,
+      "end_line": 363
+    },
+    {
+      "name": "on_child_close",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        },
+        {
+          "name": null,
+          "type": "MarkdownElement"
+        }
+      ],
+      "return_type": "bool",
+      "docstring": null,
+      "calls": [
+        "self.elements.append"
+      ],
+      "variables": [],
+      "start_line": 365,
+      "end_line": 367
+    },
+    {
+      "name": "render_bullet",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "console.render_lines",
+        "Segment",
+        "loop_first",
+        "options.update",
+        "console.get_style"
+      ],
+      "variables": [
+        "render_options",
+        "lines",
+        "bullet_style",
+        "bullet",
+        "padding",
+        "new_line"
+      ],
+      "start_line": 369,
+      "end_line": 380
+    },
+    {
+      "name": "render_number",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        },
+        {
+          "name": null,
+          "type": "int"
+        },
+        {
+          "name": null,
+          "type": "int"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "console.render_lines",
+        "f\"{number}\".rjust",
+        "Segment",
+        "loop_first",
+        "options.update",
+        "console.get_style",
+        "str",
+        "len"
+      ],
+      "variables": [
+        "number_width",
+        "render_options",
+        "lines",
+        "number_style",
+        "new_line",
+        "padding",
+        "numeral"
+      ],
+      "start_line": 382,
+      "end_line": 396
+    },
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "MarkdownElement",
+      "docstring": null,
+      "calls": [
+        "cls",
+        "token.attrs.get",
+        "str"
+      ],
+      "variables": [
+        "url"
+      ],
+      "start_line": 401,
+      "end_line": 403
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": null,
+      "docstring": null,
+      "calls": [
+        "Text"
+      ],
+      "variables": [],
+      "start_line": 405,
+      "end_line": 407
+    },
+    {
+      "name": "create",
+      "parameters": [
+        {
+          "name": "cls",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Markdown"
+        },
+        {
+          "name": null,
+          "type": "Token"
+        }
+      ],
+      "return_type": "MarkdownElement",
+      "docstring": null,
+      "calls": [
+        "cls",
+        "str",
+        "token.attrs.get"
+      ],
+      "variables": [],
+      "start_line": 416,
+      "end_line": 426
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "bool"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "super().__init__",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 428,
+      "end_line": 432
+    },
+    {
+      "name": "on_enter",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "MarkdownContext"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Text",
+        "super().on_enter",
+        "super"
+      ],
+      "variables": [],
+      "start_line": 434,
+      "end_line": 437
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "title.stylize",
+        "Text",
+        "Style",
+        "self.destination.strip(\"/\").rsplit",
+        "self.destination.strip",
+        "Text.assemble"
+      ],
+      "variables": [
+        "link_style",
+        "title",
+        "text"
+      ],
+      "start_line": 439,
+      "end_line": 447
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        },
+        {
+          "name": null,
+          "type": "Style"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "Syntax",
+        "Stack",
+        "StyleStack"
+      ],
+      "variables": [],
+      "start_line": 453,
+      "end_line": 468
+    },
+    {
+      "name": "current_style",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Style",
+      "docstring": null,
+      "calls": [],
+      "variables": [],
+      "start_line": 471,
+      "end_line": 473
+    },
+    {
+      "name": "on_text",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "highlight_text.rstrip",
+        "self._syntax.highlight",
+        "self.stack.top.on_text",
+        "Text.assemble"
+      ],
+      "variables": [
+        "highlight_text"
+      ],
+      "start_line": 475,
+      "end_line": 484
+    },
+    {
+      "name": "enter_style",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str | Style"
+        }
+      ],
+      "return_type": "Style",
+      "docstring": null,
+      "calls": [
+        "self.style_stack.push",
+        "self.console.get_style"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 486,
+      "end_line": 490
+    },
+    {
+      "name": "leave_style",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        }
+      ],
+      "return_type": "Style",
+      "docstring": null,
+      "calls": [
+        "self.style_stack.pop"
+      ],
+      "variables": [
+        "style"
+      ],
+      "start_line": 492,
+      "end_line": 495
+    },
+    {
+      "name": "__init__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "str"
+        }
+      ],
+      "return_type": "None",
+      "docstring": null,
+      "calls": [
+        "MarkdownIt",
+        "MarkdownIt().enable",
+        "parser.parse",
+        "MarkdownIt().enable(\"strikethrough\").enable"
+      ],
+      "variables": [
+        "parser"
+      ],
+      "start_line": 534,
+      "end_line": 552
+    },
+    {
+      "name": "_flatten_tokens",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Iterable[Token]"
+        }
+      ],
+      "return_type": "Iterable[Token]",
+      "docstring": null,
+      "calls": [
+        "self._flatten_tokens"
+      ],
+      "variables": [
+        "is_fence",
+        "is_image"
+      ],
+      "start_line": 554,
+      "end_line": 562
+    },
+    {
+      "name": "__rich_console__",
+      "parameters": [
+        {
+          "name": "self",
+          "type": null
+        },
+        {
+          "name": null,
+          "type": "Console"
+        },
+        {
+          "name": null,
+          "type": "ConsoleOptions"
+        }
+      ],
+      "return_type": "RenderResult",
+      "docstring": null,
+      "calls": [
+        "self.elements.get",
+        "element_class.create",
+        "context.stack.push",
+        "options.update",
+        "console.get_style",
+        "MarkdownContext",
+        "Link.create",
+        "context.on_text",
+        "element.on_leave",
+        "context.enter_style",
+        "context.stack.pop",
+        "context.stack.top.on_child_close",
+        "str",
+        "element.on_enter",
+        "Segment.line",
+        "isinstance",
+        "Style",
+        "element.on_text",
+        "token.attrs.get",
+        "context.leave_style",
+        "self._flatten_tokens",
+        "console.render"
+      ],
+      "variables": [
+        "style",
+        "options",
+        "context",
+        "tokens",
+        "inline_style_tags",
+        "new_line",
+        "_new_line_segment",
+        "node_type",
+        "tag",
+        "entering",
+        "exiting",
+        "self_closing",
+        "href",
+        "link_style",
+        "element",
+        "link_style",
+        "link_url_style",
+        "element_class",
+        "element",
+        "element",
+        "should_render",
+        "text",
+        "should_render",
+        "new_line"
+      ],
+      "start_line": 564,
+      "end_line": 681
+    }
+  ],
+  "variables": [
+    "new_line",
+    "style_name",
+    "style_name",
+    "justify",
+    "text",
+    "style_name",
+    "node_info",
+    "lexer_name",
+    "code",
+    "syntax",
+    "style_name",
+    "render_options",
+    "lines",
+    "style",
+    "new_line",
+    "padding",
+    "new_line",
+    "style",
+    "table",
+    "row_content",
+    "style",
+    "justify",
+    "justify",
+    "justify",
+    "justify",
+    "justify",
+    "text",
+    "number",
+    "last_number",
+    "style_name",
+    "render_options",
+    "lines",
+    "bullet_style",
+    "bullet",
+    "padding",
+    "new_line",
+    "number_width",
+    "render_options",
+    "lines",
+    "number_style",
+    "new_line",
+    "padding",
+    "numeral",
+    "url",
+    "new_line",
+    "link_style",
+    "title",
+    "text",
+    "highlight_text",
+    "style",
+    "style",
+    "elements",
+    "inlines",
+    "parser",
+    "is_fence",
+    "is_image",
+    "style",
+    "options",
+    "context",
+    "tokens",
+    "inline_style_tags",
+    "new_line",
+    "_new_line_segment",
+    "node_type",
+    "tag",
+    "entering",
+    "exiting",
+    "self_closing",
+    "href",
+    "link_style",
+    "element",
+    "link_style",
+    "link_url_style",
+    "element_class",
+    "element",
+    "element",
+    "should_render",
+    "text",
+    "should_render",
+    "new_line",
+    "parser",
+    "args",
+    "markdown_body",
+    "markdown_body",
+    "markdown",
+    "fileio",
+    "console",
+    "console"
+  ]
+}

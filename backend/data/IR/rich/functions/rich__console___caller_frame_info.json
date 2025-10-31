@@ -1,0 +1,22 @@
+{
+  "name": "_caller_frame_info",
+  "parameters": [
+    {
+      "name": null,
+      "type": "int"
+    }
+  ],
+  "return_type": "Tuple[str, int, Dict[str, Any]]",
+  "docstring": null,
+  "calls": [
+    "inspect.stack",
+    "currentframe"
+  ],
+  "variables": [
+    "frame",
+    "frame",
+    "frame_info"
+  ],
+  "start_line": 1898,
+  "end_line": 1930
+}

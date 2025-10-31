@@ -1,0 +1,13 @@
+{
+  "name": "test_empty",
+  "parameters": [],
+  "return_type": null,
+  "docstring": null,
+  "calls": [
+    "Style.null",
+    "Style"
+  ],
+  "variables": [],
+  "start_line": 77,
+  "end_line": 78
+}

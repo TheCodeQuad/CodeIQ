@@ -1,0 +1,34 @@
+{
+  "name": "_guess_lexer",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "str"
+    },
+    {
+      "name": null,
+      "type": "str"
+    }
+  ],
+  "return_type": "str",
+  "docstring": null,
+  "calls": [
+    "code.index",
+    "first_line.lower",
+    "os.path.splitext",
+    "guess_lexer_for_filename",
+    "cls.LEXERS.get",
+    "first_line.startswith"
+  ],
+  "variables": [
+    "ext",
+    "new_line_index",
+    "first_line"
+  ],
+  "start_line": 729,
+  "end_line": 742
+}

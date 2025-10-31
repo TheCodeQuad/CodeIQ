@@ -1,0 +1,16 @@
+{
+  "name": "test_update_options_markup",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console",
+    "options.update"
+  ],
+  "variables": [
+    "console",
+    "options"
+  ],
+  "start_line": 831,
+  "end_line": 835
+}

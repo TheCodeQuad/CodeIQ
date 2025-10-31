@@ -1,0 +1,29 @@
+{
+  "name": "excepthook",
+  "parameters": [
+    {
+      "name": null,
+      "type": "Type[BaseException]"
+    },
+    {
+      "name": null,
+      "type": "BaseException"
+    },
+    {
+      "name": null,
+      "type": "Optional[TracebackType]"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "bool",
+    "Traceback.from_exception",
+    "traceback_console.print"
+  ],
+  "variables": [
+    "exception_traceback"
+  ],
+  "start_line": 134,
+  "end_line": 157
+}

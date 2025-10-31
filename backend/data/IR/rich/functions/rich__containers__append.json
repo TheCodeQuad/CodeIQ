@@ -1,0 +1,21 @@
+{
+  "name": "append",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "\"Text\""
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "self._lines.append"
+  ],
+  "variables": [],
+  "start_line": 102,
+  "end_line": 103
+}

@@ -1,0 +1,41 @@
+{
+  "name": "emit",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    },
+    {
+      "name": null,
+      "type": "LogRecord"
+    }
+  ],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "formatter.formatTime",
+    "self.console.print",
+    "isinstance",
+    "formatter.formatMessage",
+    "self.render_message",
+    "record.getMessage",
+    "self.format",
+    "self.handleError",
+    "hasattr",
+    "self.render",
+    "Traceback.from_exception",
+    "formatter.usesTime"
+  ],
+  "variables": [
+    "message",
+    "traceback",
+    "traceback",
+    "message",
+    "formatter",
+    "message",
+    "message_renderable",
+    "log_renderable"
+  ],
+  "start_line": 132,
+  "end_line": 180
+}

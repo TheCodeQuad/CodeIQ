@@ -1,0 +1,13 @@
+{
+  "path": "C:\\CODEIQNEW\\backend\\data\\rich\\examples\\table.py",
+  "imports": [
+    "from rich.console import Console",
+    "from rich.table import Table"
+  ],
+  "classes": [],
+  "functions": [],
+  "variables": [
+    "table",
+    "console"
+  ]
+}

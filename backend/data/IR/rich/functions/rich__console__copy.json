@@ -1,0 +1,20 @@
+{
+  "name": "copy",
+  "parameters": [
+    {
+      "name": "self",
+      "type": null
+    }
+  ],
+  "return_type": "\"ConsoleOptions\"",
+  "docstring": null,
+  "calls": [
+    "ConsoleOptions.__new__",
+    "self.__dict__.copy"
+  ],
+  "variables": [
+    "options"
+  ],
+  "start_line": 153,
+  "end_line": 161
+}

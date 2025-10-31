@@ -1,0 +1,15 @@
+{
+  "name": "test_dumb_terminal",
+  "parameters": [],
+  "return_type": "None",
+  "docstring": null,
+  "calls": [
+    "Console"
+  ],
+  "variables": [
+    "console",
+    "console"
+  ],
+  "start_line": 37,
+  "end_line": 45
+}

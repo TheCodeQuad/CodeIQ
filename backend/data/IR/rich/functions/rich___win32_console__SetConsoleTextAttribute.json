@@ -1,0 +1,22 @@
+{
+  "name": "SetConsoleTextAttribute",
+  "parameters": [
+    {
+      "name": null,
+      "type": "wintypes.HANDLE"
+    },
+    {
+      "name": null,
+      "type": "wintypes.WORD"
+    }
+  ],
+  "return_type": "bool",
+  "docstring": null,
+  "calls": [
+    "bool",
+    "_SetConsoleTextAttribute"
+  ],
+  "variables": [],
+  "start_line": 204,
+  "end_line": 217
+}

@@ -1,0 +1,20 @@
+{
+  "name": "get_default_columns",
+  "parameters": [
+    {
+      "name": "cls",
+      "type": null
+    }
+  ],
+  "return_type": "Tuple[ProgressColumn, ...]",
+  "docstring": null,
+  "calls": [
+    "TextColumn",
+    "TimeRemainingColumn",
+    "TaskProgressColumn",
+    "BarColumn"
+  ],
+  "variables": [],
+  "start_line": 1114,
+  "end_line": 1142
+}
